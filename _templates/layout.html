@@ -1,0 +1,9 @@
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+  <link rel="stylesheet" id="custom-css" href={{ pathto('_static/styles.css?5', 1) }} type="text/css" media="all">
+{% endblock %}
+
+{% block footer %}
+  {% include "header.html" %}
+{% endblock %}

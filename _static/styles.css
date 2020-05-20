@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(250, 250, 250);
+  position: relative;
+}
+
+body.main-page {
+  min-height: 100%;
+}
+
+.main-page-content {
+  position: relative;
+  padding-top: 100px;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.main-page-content h1 {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 32px;
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-page-content .search-wrapper {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.main-page-content .search-wrapper input[name='q'] {
+  width: 100%;
+}
+
+.tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+.tiles li {
+  width: 200px;
+  height: 220px;
+  box-sizing: border-box;
+  padding: 10px;
+  list-style: none;
+  background-color: white;
+}
+
+.tiles a:nth-child(1) {
+  border-top-color: indigo;
+}
+
+.tiles a:nth-child(2) {
+  border-top-color: orange;
+}
+
+.tiles a:nth-child(3) {
+  border-top-color: turquoise;
+}
+
+.tiles a:nth-child(4) {
+  border-top-color: tomato;
+}
+
+.tiles a {
+  text-decoration: none;
+  color: initial;
+  margin: 20px;
+  border-top: 8px solid;
+  box-shadow: grey 0 0 5px;
+}
+
+.tiles a:hover {
+  transform: scale3d(1.05, 1.05, 1);
+}
+.tiles li h2 {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 15px;
+  font-weight: initial;
+  font-family: 'Roboto', sans-serif;
+}
+.tiles li hr {
+  margin: 13px;
+  border: 1px solid black;
+}
+.tiles li span {
+  display: block;
+  text-align: center;
+  color: dimgray;
+}
+
+.main-page footer {
+  position: absolute;
+  bottom: 0px;
+  background: white;
+  width: 100%;
+  border-top: 1px solid #eee;
+  padding: 15px;
+  color: gray;
+  font-size: 14;
+}
+
+.main-page footer hr {
+  display: none;
+}
+
+.main-page footer p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+header {
+  height: 77px;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+  margin-bottom: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+.header-wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  height: 77px;
+}
+
+.branding {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 15px;
+}
+
+.branding img {
+  height: 30px;
+}
+
+.header-nav {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  height: 77px;
+  margin: 0;
+}
+
+.header-nav li {
+  list-style: none;
+}
+
+.header-nav li a {
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.wy-nav-side {
+  top: 77px;
+  background-color: white;
+  box-shadow: 0px 0px 5px;
+}
+
+.wy-nav-content-wrap {
+  padding-top: 77px;
+}
+
+.wy-menu-vertical li.current a {
+  border-right: none;
+}
+
+.wy-nav-content {
+  min-width: 100%;
+}
+
+body > div > nav > div > div.wy-side-nav-search {
+  margin-bottom: 0 !important;
+  background-color: white;
+}
+
+body > div > nav > div > div.wy-side-nav-search > a {
+  display: none;
+}
+
+body > div.wy-grid-for-nav > nav > div > div.wy-side-nav-search > div.version {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav li:not(:first-child) {
+    display: none;
+  }
+}
