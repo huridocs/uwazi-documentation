@@ -11,6 +11,7 @@
 
 <!DOCTYPE html>
   <head>
+    <meta charset="utf-8">
     <title>UWAZI Documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {# CSS #}
@@ -32,8 +33,6 @@
     {% if favicon %}
       <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
     {% endif %}
-    <link rel="stylesheet" id="custom-styles" href={{ pathto('_static/styles.css?5', 1) }} type="text/css" media="all">
-    <link rel="stylesheet" id="wpb-google-fonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto&amp;ver=5.3.3" type="text/css" media="all">
   </head>
   <body class="main-page">
     {% include "header.html" %}

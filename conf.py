@@ -63,6 +63,11 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_css_files = [
+    'styles.css',
+    'https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto&amp;ver=5.3.3'
+]
+
 html_favicon = 'favicon.png'
 
 def setup(app):
