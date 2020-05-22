@@ -22,7 +22,7 @@
 
 - **Landing page** is the first page or the home page that the users see when visiting your Uwazi instance.
 
-- **Library** ![image alt text](images/image_0.png) is the place where all of your entities are displayed together for the user to easily access.
+- **Library** ![library icon](images/image_0.png) is the place where all of your entities are displayed together for the user to easily access.
 
 - **Metadata** is data that provides information about other data. In Uwazi, it usually describes an entity.
 
