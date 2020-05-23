@@ -1,4 +1,4 @@
-# Glossary of Terms
+# Glossary of terms
 
 - **API** stands for application programming interface. It allows one program to request data from another.
 
