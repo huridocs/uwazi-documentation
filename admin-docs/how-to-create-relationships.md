@@ -1,4 +1,4 @@
-# How to Create Relationships
+# How to create relationships
 
 > In Uwazi, a relationship connects two or more entities to each other so that it’s possible to investigate and analyse "who did what to whom" (and when, and where, etc). Note: we use the terms “relationship” and “connection” interchangeably.
 
