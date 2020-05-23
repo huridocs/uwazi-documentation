@@ -1,4 +1,4 @@
-# How to Create a Public Intake Form on Your Website
+# How to create a public intake form on your website
 
 An intake or submission form allows visitors to submit a form that creates an unpublished/private entity in your database.
 
