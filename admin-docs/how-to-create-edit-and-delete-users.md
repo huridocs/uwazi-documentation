@@ -1,4 +1,4 @@
-# How to Create, Edit and Delete Users
+# How to create, edit and delete users
 
 ## Understanding user permissions
 
@@ -6,7 +6,7 @@ If you work in a team or in collaboration with other people, Uwazi allows admini
 
 ![image alt text](images/image_3.png)
 
-## Add new users to your instance ([screencast](https://drive.google.com/open?id=12Z-HtNoPU2vcS80CG30496ECAL5vEJI3))
+## Add new users to your instance
 
 Step 1: Only an Admin can create new users. Go to **Settings** and click on **Users**.
 
@@ -17,3 +17,5 @@ Step 3: You can create new users by clicking the green **Add user** button at th
 Step 4: Enter a **username**, their **email address** and select a role (**Admin** or **Editor**) for them.
 
 Step 5: Once this information is entered, click the green **Save** button and an email will be sent to that person with a link that allows them to set their own password.
+
+Watch a [screencast](https://drive.google.com/open?id=12Z-HtNoPU2vcS80CG30496ECAL5vEJI3).
