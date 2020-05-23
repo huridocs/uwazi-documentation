@@ -1,4 +1,4 @@
-# How to Configure Main and Secondary Filters
+# How to configure main and secondary filters
 
 Filter options will depend on the metadata properties you have included on each entity in your collection. In Uwazi, you can choose which fields that you want to show as filters.
 
@@ -32,7 +32,7 @@ Step 4: Check the **Use as filter** and the **Default filter** options.
 
 Step 5: You may optionally want to check the **Show in cards** option, as well.
 
-Step 5: Click on **Save**. You can now go to the library section ![image alt text](images/image_42.png)and view the filters you have just configured.
+Step 5: Click on **Save**. You can now go to the library section ![library icon](images/image_0.png) and view the filters you have just configured.
 
 These filters are presented to the users of your collection when no entity is selected. This option is best used when you want to apply relevant filters to several templates.
 
