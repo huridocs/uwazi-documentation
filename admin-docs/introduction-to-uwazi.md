@@ -19,5 +19,3 @@ Uwazi addresses these problems by putting content and connections at the heart o
 Uwazi was designed to address the needs of human rights organisations. Human rights NGOs, National Human Rights Institutions, Universities, Journalists, Courts, and others working with large document collections can also benefit from Uwazi’s user friendly features.
 
 More information: [https://www.uwazi.io/](https://www.uwazi.io/)
-
-This user guide (as of 15 May 2020) is continuously updated and can be found online: [https://github.com/huridocs/uwazi/wiki](https://github.com/huridocs/uwazi/wiki)
