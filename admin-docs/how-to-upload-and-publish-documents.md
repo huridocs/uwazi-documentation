@@ -1,4 +1,4 @@
-# How to Upload and Publish Documents
+# How to upload and publish documents
 
 Uwazi currently supports document uploads in PDF format. This allows Uwazi to be able to carry out numerous functions on the document like conducting full text search, creating a table of contents, text references and other functions.
 
@@ -12,13 +12,15 @@ Step 2: Once you have collected your documents and created template(s) for them,
 
 There are two ways in which documents can be uploaded onto Uwazi -- one is **a direct upload** (Step 2a) and second mode is through **a csv import** (Step 2b), which is helpful for a large migration of documents.
 
-## Upload the document directly ([*screencast*](https://drive.google.com/open?id=1HVadM8ZHQdlDVGq5LBO_3k1abperX_8G))
+## Upload the document directly
 
 Step 2a: You can either drag or drop your PDF files into the dotted box, or you can click on **Browse your files to upload** and select the file or files that you want to upload.
 
 - Your files will be added to the upload section ![image alt text](images/image_33.png) of Uwazi, but they will remain in the private documents section until you click on **Publish**, which will make them public.
 
 - Skip to Step 3 to learn more about how to publish your document(s).
+
+Watch a [screencast](https://drive.google.com/open?id=1HVadM8ZHQdlDVGq5LBO_3k1abperX_8G).
 
 ### Import your documents through csv import (data migration)
 
@@ -48,8 +50,6 @@ Step 2b: Organise your PDFs that are ready to be imported, and create a **Comma-
 
 ### Publish your documents
 
-.
-
 - If you have chosen to upload your documents using Step 2(a), you will need to choose a template and assign metadata to your documents before they will be ready to be published.
 
 - Select the document you want to publish, and click **Edit**. This will open a sidebar (as outlined in the red box here).
@@ -58,4 +58,4 @@ Step 2b: Organise your PDFs that are ready to be imported, and create a **Comma-
 
 - Ensure that you click **Save** after you are done.
 
-- Once the document is ready with all its metadata in place, you can click on **Publish**. Users will now be able to view your document publicly in the Library![image alt text](images/image_39.png).
+- Once the document is ready with all its metadata in place, you can click on **Publish**. Users will now be able to view your document publicly in the Library ![library icon](images/image_0.png).
