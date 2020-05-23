@@ -1,4 +1,4 @@
-# How to Access the API for Your Instance
+# How to access the API for your instance
 
 > An API allows one program to request data from another. API stands for application programming interface. An API provides you with data its programmers have made available to outside users.
 
