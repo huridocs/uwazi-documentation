@@ -8,7 +8,7 @@ Step 1: Create or identify a template that will encapsulate the details of your 
 
 ![image alt text](images/image_31.png)
 
-Step 2: Once you have collected your documents and created template(s) for them, you have to upload them. Go to the the private documents section ![image alt text](images/image_32.png)on the navigation bar.
+Step 2: Once you have collected your documents and created template(s) for them, you have to upload them. Go to the the private documents section ![](images/image_27.png) on the navigation bar.
 
 There are two ways in which documents can be uploaded onto Uwazi -- one is **a direct upload** (Step 2a) and second mode is through **a csv import** (Step 2b), which is helpful for a large migration of documents.
 
@@ -16,7 +16,7 @@ There are two ways in which documents can be uploaded onto Uwazi -- one is **a d
 
 Step 2a: You can either drag or drop your PDF files into the dotted box, or you can click on **Browse your files to upload** and select the file or files that you want to upload.
 
-- Your files will be added to the upload section ![image alt text](images/image_33.png) of Uwazi, but they will remain in the private documents section until you click on **Publish**, which will make them public.
+- Your files will be added to the upload section ![](images/image_27.png) of Uwazi, but they will remain in the private documents section until you click on **Publish**, which will make them public.
 
 - Skip to Step 3 to learn more about how to publish your document(s).
 
@@ -42,7 +42,7 @@ Step 2b: Organise your PDFs that are ready to be imported, and create a **Comma-
 
 ![image alt text](images/image_35.png) ![image alt text](images/image_36.png)
 
-- To import the CSV file, click on the Private Documents icon ![image alt text](images/image_37.png) and then **Import**. Select your compressed ZIP file, and ensure that you choose the correct template before clicking import (as illustrated in the screenshot below).
+- To import the CSV file, click on the Private Documents icon ![](images/image_27.png) and then **Import**. Select your compressed ZIP file, and ensure that you choose the correct template before clicking import (as illustrated in the screenshot below).
 
 - All your PDF files along with the corresponding metadata will be imported into Uwazi.
 
@@ -58,4 +58,4 @@ Step 2b: Organise your PDFs that are ready to be imported, and create a **Comma-
 
 - Ensure that you click **Save** after you are done.
 
-- Once the document is ready with all its metadata in place, you can click on **Publish**. Users will now be able to view your document publicly in the Library ![library icon](images/image_0.png).
+- Once the document is ready with all its metadata in place, you can click on **Publish**. Users will now be able to view your document publicly in the Library ![](images/image_0.png).
