@@ -1,4 +1,4 @@
-# How to Build Data Visualisation Components
+# How to build data visualisation components
 
 You can add charts and other data visualisation elements to **pages** and **rich text fields**, using the code snippets explained below.
 
