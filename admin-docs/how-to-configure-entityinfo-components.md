@@ -1,4 +1,4 @@
-# How to Configure EntityInfo Components
+# How to configure EntityInfo components
 
 > EntityInfo is a collection of data visualization components that allows an entity’s information to display by opening the side panel and loading its data inside. It assigns that flow to the "click" event of whatever tag element you define. The default is a DIV, but you can configure this to a button or any other element. (Note: This requires programming knowledge.)
 
