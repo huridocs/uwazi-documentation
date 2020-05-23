@@ -28,7 +28,7 @@ Step 1: Go to **Settings** and click on **Relationship types** to add a "type of
 
 Step 2: Select **View** on the entity that you want to add a connection with.
 
-Step 3: At the right side menu, click on the **Connection** icon ![image alt text](images/image_59.png).
+Step 3: At the right side menu, click on the **Connection** icon ![](images/image_59.png).
 
 Step 4: Click on the blue **Edit** button.
 
@@ -44,7 +44,7 @@ Step 6: Select the entity from the right bar. You can search for it by title, if
 
 Step 8: Click **Save** when you have made the connections you want. Your new connections will appear on the Connections tab.
 
-- You can view the connections on an entity by clicking on **View**, then on ![image alt text](images/image_62.png)**Connections** in the right side panel. You will see existing connections of that particular entity.
+- You can view the connections on an entity by clicking on **View**, then on ![](images/image_59.png) **Connections** in the right side panel. You will see existing connections of that particular entity.
 
 ![image alt text](images/image_63.png)
 
@@ -52,7 +52,7 @@ Step 8: Click **Save** when you have made the connections you want. Your new con
 
 Step 1: You can edit existing connections on an entity by clicking on **View** on the entity for which you want to edit existing connections.
 
-Step 2: Click on ![image alt text](images/image_64.png)**Connections** in the right side panel.
+Step 2: Click on ![](images/image_59.png) **Connections** in the right side panel.
 
 ![image alt text](images/image_65.png)
 
