@@ -10,7 +10,7 @@ Step 3: You can change your email address here, as well as your account password
 
 ![image alt text](images/image_1.png)
 
-## Recover your password ([screencast](https://drive.google.com/open?id=1fJcdhGPGRZEZMn6ExzS2csinH3FJwcBd))
+## Recover your password
 
 Step 1: At the login screen, click **Forgot Password?**.
 
@@ -20,7 +20,9 @@ Step 2: You will receive an email from the [no-reply@uwazi.io](mailto:no-reply@u
 
 - To reinforce your account’s security, we recommend that you use unique and long passwords (a-Z, 0-9, &%).
 
-## Enable two-factor authentication ([screencast](https://drive.google.com/open?id=1G02gKDvIejl4NxwpyiIqiIU5KPjbamBE))
+Watch a [screencast](https://drive.google.com/open?id=1fJcdhGPGRZEZMn6ExzS2csinH3FJwcBd).
+
+## Enable two-factor authentication
 
 To add an extra layer of security to your Uwazi instance:
 
@@ -38,13 +40,17 @@ Step 5: Enter the code and click **Confirm**.
 
 ![image alt text](images/image_2.png)
 
-## Login with two-factor authentication ([screencast](https://drive.google.com/open?id=1lYbJHkDrDoAeYzoVcPcYQPoAWyUf3JmR))
+Watch a [screencast](https://drive.google.com/open?id=1G02gKDvIejl4NxwpyiIqiIU5KPjbamBE).
+
+## Login with two-factor authentication
 
 Step 1: Login to Uwazi with your credentials..
 
 Step 2: You will be prompted to input your authentication code. Enter the code from Authy or Google Authenticator.
 
 - If the code is approved, you will be logged in.
+
+Watch a [screencast](https://drive.google.com/open?id=1lYbJHkDrDoAeYzoVcPcYQPoAWyUf3JmR).
 
 FAQs related to two-factor authentication
 
