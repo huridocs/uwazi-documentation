@@ -1,14 +1,16 @@
-# How to Edit Your Site Settings
+# How to edit your site settings
 
 Step 1: Click on **Settings**, then click on **Collection**.
 
 Step 2: After you have made all your changes, please ensure that you click **Save**.
 
-## Change the name of your collection ([*screencast*](https://drive.google.com/open?id=1_6ele0a2bmdSbLD1-UjUfSd53JaUL54T))
+## Change the name of your collection
 
 ![image alt text](images/image_4.png)
 
 - The name is "Uwazi" by default, but you can change it to anything you like.
+
+Watch a [screencast](https://drive.google.com/open?id=1_6ele0a2bmdSbLD1-UjUfSd53JaUL54T).
 
 ## Make your collection private (or public)
 
@@ -28,7 +30,7 @@ Step 2: After you have made all your changes, please ensure that you click **Sav
 
 - The landing page is the first thing users will see when visiting your Uwazi instance.
 
-- By default, the landing page is set to the full Library![image alt text](images/image_7.png)without any filters applied.
+- By default, the landing page is set to the full Library ![library icon](images/image_0.png) without any filters applied.
 
 - But you can use any page from your Uwazi instance as the landing page instead. Copy and paste the URL on the text box, accordingly. These are some examples:
   
