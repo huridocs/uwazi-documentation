@@ -1,6 +1,6 @@
-# How to View a Document from a Card
+# How to view a document from a card
 
-In the library section![image alt text](images/image_43.png), you will find your entire collection. Each entity will be displayed in this library as a card. To open and view the full document or more information about the record, you can either:
+In the library section ![library icon](images/image_0.png), you will find your entire collection. Each entity will be displayed in this library as a card. To open and view the full document or more information about the record, you can either:
 
 - hover over the document card and click the **View** button, which will open or
 
