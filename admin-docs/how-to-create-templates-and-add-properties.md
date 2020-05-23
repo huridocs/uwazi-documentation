@@ -1,4 +1,4 @@
-# How to Create Templates and Add Properties
+# How to create templates and add properties
 
 Templates are the foundation of your Uwazi platform as they allow you to attribute consistent, structured metadata to your entities. Within each template, you can assign a variety of properties like:
 
@@ -22,7 +22,7 @@ Templates are the foundation of your Uwazi platform as they allow you to attribu
 
 - Relationship - allow you to create connections between this entity and another one
 
-## Add different properties to a template ([screencast](https://drive.google.com/open?id=1pqcKphveaHFJqrrBPT53b2jE5lo75BMf))
+## Add different properties to a template
 
 Properties provide an important way for users to view important metadata at a glance and filter the collection to better understand and analyse the collection.
 
@@ -43,6 +43,8 @@ Step 5: Drag and drop one property at a time onto the template, and give it a na
 Step 6: Remember to click on **Save** after you have created properties for each template.
 
 ![image alt text](images/image_17.png)
+
+Watch a [screencast](https://drive.google.com/open?id=1pqcKphveaHFJqrrBPT53b2jE5lo75BMf).
 
 > Note: When you add a select or multi-select property to a template, you will see a field entitled "Select list*" in which you are required to choose a Thesaurus from the dropdown. Related to: How to create thesauri.
 > If you intend to do a CSV import to bring your metadata into Uwazi in bulk, remember that the property names on these templates must match your field names in the CSV file. This will allow the data migration to be imported successfully with all the metadata in the correct template.
