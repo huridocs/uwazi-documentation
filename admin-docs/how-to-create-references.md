@@ -28,7 +28,7 @@ Step 5: Select the relevant part of the text you want to reference, highlight it
 
 ![image alt text](images/image_53.png)
 
-- This will create the reference for you. Users will see this referenced text under the References tab ![image alt text](images/image_54.png) in the right sidebar.
+- This will create the reference for you. Users will see this referenced text under the References tab ![](images/image_54.png) in the right sidebar.
 
 ### Reference another document
 
@@ -50,6 +50,6 @@ Step 4: Select the document you want to reference. You can manually search for i
 
 Step 4: Click on **Save**.
 
-Users will see the referenced document under the **References** tab ![image alt text](images/image_56.png)in the right sidebar.
+Users will see the referenced document under the **References** tab ![](images/image_54.png) in the right sidebar.
 
 When the reference is selected, the highlighted text will be displayed in the PDF.
