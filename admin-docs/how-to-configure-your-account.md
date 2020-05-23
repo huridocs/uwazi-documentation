@@ -1,4 +1,4 @@
-# How to configure Your account
+# How to configure your account
 
 ## Change your account information
 
