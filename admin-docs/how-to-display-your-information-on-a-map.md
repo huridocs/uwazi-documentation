@@ -1,4 +1,4 @@
-# How to Display Your Information on a Map
+# How to display your information on a map
 
 > In Uwazi, there are two ways to display your information on a geographic map: by using the map toggle in the Uwazi library, and by using a map visualisation component in a page. These instructions will help you configure your information to include geographic data and display that geographic data on a map.
 
