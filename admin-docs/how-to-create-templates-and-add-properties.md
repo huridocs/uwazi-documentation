@@ -46,8 +46,8 @@ Step 6: Remember to click on **Save** after you have created properties for each
 
 Watch a [screencast](https://drive.google.com/open?id=1pqcKphveaHFJqrrBPT53b2jE5lo75BMf).
 
-> Note: When you add a select or multi-select property to a template, you will see a field entitled "Select list*" in which you are required to choose a Thesaurus from the dropdown. Related to: [How to create thesauri](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-create-thesauri.html).
+> **Note:** When you add a select or multi-select property to a template, you will see a field entitled "Select list*" in which you are required to choose a Thesaurus from the dropdown. Related to: [How to create thesauri](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-create-thesauri.html).
 > 
-> If you intend to do a CSV import to bring your metadata into Uwazi in bulk, remember that the property names on these templates must match your field names in the CSV file. This will allow the data migration to be imported successfully with all the metadata in the correct template.
+> If you intend to do a CSV import to bring your metadata into Uwazi in bulk, remember that the property names on these templates must match your field names in the CSV file. This will allow the data migration to be imported successfully with all the metadata in the correct template. Related to: [How to migrate data with csv import](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-upload-and-publish-documents.html#import-your-documents-through-csv-import-data-migration).
 > 
 > **Warning:** If your instance will be in Arabic by default, the templates and properties should be created in latin characters and then translated into Arabic. If this is not done, it will trigger a known bug. Our developers are working to fix it.
