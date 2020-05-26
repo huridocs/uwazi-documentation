@@ -36,17 +36,17 @@ Step 3: Name your template.
 
 Step 4: On the right side of the template, there is the sidebar with different **Properties**. Each property will provide the user with more information about your document. You can add as few or as many as you wish.
 
-![image alt text](images/image_16.png)
+![](images/image_16.png)
 
 Step 5: Drag and drop one property at a time onto the template, and give it a name.
 
 Step 6: Remember to click on **Save** after you have created properties for each template.
 
-![image alt text](images/image_17.png)
+![](images/image_17.png)
 
 Watch a [screencast](https://drive.google.com/open?id=1pqcKphveaHFJqrrBPT53b2jE5lo75BMf).
 
-> Note: When you add a select or multi-select property to a template, you will see a field entitled "Select list*" in which you are required to choose a Thesaurus from the dropdown. Related to: [How to create thesauri](https://github.com/huridocs/uwazi-documentation/blob/initial-setup/admin-docs/how-to-create-thesauri.md).
+> Note: When you add a select or multi-select property to a template, you will see a field entitled "Select list*" in which you are required to choose a Thesaurus from the dropdown. Related to: [How to create thesauri](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-create-thesauri.html).
 > 
 > If you intend to do a CSV import to bring your metadata into Uwazi in bulk, remember that the property names on these templates must match your field names in the CSV file. This will allow the data migration to be imported successfully with all the metadata in the correct template.
 > 
