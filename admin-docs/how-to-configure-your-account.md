@@ -8,7 +8,7 @@ Step 2: Under **Settings**, click **Accounts**.
 
 Step 3: You can change your email address here, as well as your account password.
 
-![image alt text](images/image_1.png)
+![](images/image_1.png)
 
 ## Recover your password
 
@@ -38,7 +38,7 @@ Step 5: Enter the code and click **Confirm**.
 
 - If you have successfully enabled two-factor authentication, your account settings will reflect this.
 
-![image alt text](images/image_2.png)
+![](images/image_2.png)
 
 Watch a [screencast](https://drive.google.com/open?id=1G02gKDvIejl4NxwpyiIqiIU5KPjbamBE).
 
