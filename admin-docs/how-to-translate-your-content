@@ -29,7 +29,6 @@ Step 1: Login to your Uwazi instance.
 Step 2: Under **Settings**, click **Translations**.
 Step 3: Click on the content that you want to translate.
 Step 4: Translate each term and click **Save**.
--   Note: Uwazi does not support the use of non-Latin characters (such as Arabic text or accented characters) on template configuration. This includes template titles and property names. In order to use non-Latin characters in template titles or property names, you must first create them in Latin characters, and then translate those phrases under the "Translations" tab in Settings as described in [How to Translate Your Content]. If this is not done, it will trigger a known bug. Our developers are working to fix it.
 
 ### How to upload translated documents (PDFs)
 
