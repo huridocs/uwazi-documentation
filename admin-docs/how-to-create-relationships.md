@@ -4,19 +4,19 @@
 
 Uwazi supports connecting data in unstructured ways, meaning you don't need to follow a particular data structure or predefine a relational model upfront. Entities can be connected to each other in one-to-one or one-to-many relations arbitrarily:
 
-![image alt text](images/image_57.png)
+![](images/image_57.png)
 
 ## Understanding "information hubs"
 
 Information hubs hold together a series of entities. These hubs allow you to see the relationships between your entities. They also help to infer other relationships that might have previously been overlooked.
 
-![image alt text](images/image_58.png)
+![](images/image_58.png)
 
 There are two ways in Uwazi to create connections between entities in your collection.
 
 ## Create relationships when adding new entities
 
-You can create relationships when adding new entities if you have defined a template with a "Relationship" property. Click [here](#bookmark=id.u42q2wwp7f4d) to learn how to add a “Relationship” property to a template.
+You can create relationships when adding new entities if you have defined a template with a "Relationship" property. Click [here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-connect-properties-on-different-templates.html) to learn how to add a “Relationship” property to a template.
 
 When creating a new entity that has a "Relationship" property in its template, you will see the relevant options that can be linked to the new entity that you are adding. You can search for entities by title using the search box.
 
@@ -34,19 +34,19 @@ Step 4: Click on the blue **Edit** button.
 
 Step 5: Here, you can make your connection. Click on **New relationships group +**.
 
-![image alt text](images/image_60.png)
+![](images/image_60.png)
 
 Step 6: Select the type of relationship that you want to create in the **New connection type** dropdown.
 
 Step 6: Select the entity from the right bar. You can search for it by title, if it has not been recommended by the system. You can add more connections in this hub by selecting **Add entities / documents +**.
 
-![image alt text](images/image_61.png)
+![](images/image_61.png)
 
 Step 8: Click **Save** when you have made the connections you want. Your new connections will appear on the Connections tab.
 
 - You can view the connections on an entity by clicking on **View**, then on ![](images/image_59.png) **Connections** in the right side panel. You will see existing connections of that particular entity.
 
-![image alt text](images/image_63.png)
+![](images/image_63.png)
 
 ### Edit connections
 
@@ -54,7 +54,7 @@ Step 1: You can edit existing connections on an entity by clicking on **View** o
 
 Step 2: Click on ![](images/image_59.png) **Connections** in the right side panel.
 
-![image alt text](images/image_65.png)
+![](images/image_65.png)
 
 Step 3: Click on the blue **Edit** button. You can change the relationship type labels or remove a connection altogether by clicking on the **Delete** button.
 
