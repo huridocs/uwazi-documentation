@@ -6,4 +6,4 @@ In Uwazi, there are two areas where entities can be stored:
 
 2. The private documents section ![](images/image_27.png) are unpublished entities.
 
-![image alt text](images/image_28.png)
+![](images/image_28.png)
