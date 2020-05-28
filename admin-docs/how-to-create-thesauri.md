@@ -20,7 +20,7 @@ Step 3: Name your thesaurus, then you can start typing items to include on this 
 
 Step 4: When you are finished, click **Save**.
 
-![image alt text](images/image_18.png)
+![](images/image_18.png)
 
 ## Import thesauri from csv files
 
@@ -50,7 +50,7 @@ Child,Enfant,Kind
 
 Here's the same file viewed in a spreadsheet program:
 
-![image alt text](images/image_19.png)
+![](images/image_19.png)
 
 Step 2: Click the blue **Import** button, and locate and open the csv file.
 
