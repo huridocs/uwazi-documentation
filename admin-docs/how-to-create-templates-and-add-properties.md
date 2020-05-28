@@ -38,13 +38,13 @@ Step 4: On the right side panel, there is a list of **Properties**. Each propert
 
 ![](images/image_16.png)
 
-Step 5: For each added property, click **Edit** and give it a name (Label). Review the other options for the property, wihch may include the following:
+Step 5: For each added property, click **Edit** and give it a name (Label). Review the other options for the property, which may include the following:
 
 - **Select list** - for Select and Multi Select properties, choose which Thesaurus will be used for this property. Related to: [How to create thesauri](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-create-thesauri.html).
 - **Hide label** will show this property without the label/name.
 - **Required property** will prevent the entity from being saved if this property isn't filled in.
 - **Show in cards** means this property will appear in the Uwazi library cards as part of the basic info.
-  - Note that the Uwazi library cards will also show the user's _current sorting criterion_ even if that property is not configured with "Show in cards." For example, this happens frequently with the "Date added" property, which is the default sorting criterion in the libary. When the cards are sorted by "Date added," the "Date added" property is visible in the cards to show the user why the cards are in the current order.
+  - Note that the Uwazi library cards will also show the user's _current sorting criterion_ even if that property is not configured with "Show in cards." For example, this happens frequently with the "Date added" property, which is the default sorting criterion in the library. When the cards are sorted by "Date added," the "Date added" property is visible in the cards to show the user why the cards are in the current order.
 - **Use as filter** means this property will be able to be used to filter the library view.
 - **Default filter** means this property will be used as a default filter in the library view.
 - **Priority sorting** means this property will be used as default sorting criterion.
