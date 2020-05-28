@@ -6,7 +6,7 @@ Menu links are useful because they direct users to either the results of a speci
 
 Step 1: Go to **Settings**, and click on **Menu**.
 
-![image alt text](images/image_66.png)
+![](images/image_66.png)
 
 Step 2: Click on the **Add link** button, or **Edit** any of the existing links.
 
