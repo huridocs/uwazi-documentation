@@ -6,7 +6,7 @@ Step 2: After you have made all your changes, please ensure that you click **Sav
 
 ## Change the name of your collection
 
-![image alt text](images/image_4.png)
+![](images/image_4.png)
 
 - The name is "Uwazi" by default, but you can change it to anything you like.
 
@@ -14,7 +14,7 @@ Watch a [screencast](https://drive.google.com/open?id=1_6ele0a2bmdSbLD1-UjUfSd53
 
 ## Make your collection private (or public)
 
-![image alt text](images/image_5.png)
+![](images/image_5.png)
 
 - If you are handling sensitive information or you just want your collection to be accessible only via login, you can click the checkbox to make the instance private.
 
@@ -26,7 +26,7 @@ Watch a [screencast](https://drive.google.com/open?id=1_6ele0a2bmdSbLD1-UjUfSd53
 
 ## Set your landing page
 
-![image alt text](images/image_6.png)
+![](images/image_6.png)
 
 - The landing page is the first thing users will see when visiting your Uwazi instance.
 
@@ -44,9 +44,9 @@ Watch a [screencast](https://drive.google.com/open?id=1_6ele0a2bmdSbLD1-UjUfSd53
 
 ## Track web analytics
 
-![image alt text](images/image_8.png)
+![](images/image_8.png)
 
-![image alt text](images/image_9.png)
+![](images/image_9.png)
 
 If you want to track analytics related to your collection visits, Uwazi supports both Google Analytics and Matomo.
 
@@ -60,7 +60,7 @@ If you want to track analytics related to your collection visits, Uwazi supports
 
 ## Mailer configuration
 
-![image alt text](images/image_10.png)
+![](images/image_10.png)
 
 This allows you to configure your own SMTP or any other mail server. Instances hosted by HURIDOCS have the mail system already configured.
 
@@ -70,27 +70,27 @@ This allows you to configure your own SMTP or any other mail server. Instances h
 
 ## Contact form configuration
 
-![image alt text](images/image_11.png)
+![](images/image_11.png)
 
-If you have added a contact form on one of your pages, this is where you would add the email address that receives the information from that form. Click [here](#heading=h.2foqgdkokzfp) to learn how to add and configure a contact form on a webpage.
+If you have added a contact form on one of your pages, this is where you would add the email address that receives the information from that form. Click [here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-create-a-contact-form.html) to learn how to add and configure a contact form on a webpage.
 
 ## Public form configuration
 
-![image alt text](images/image_12.png)
+![](images/image_12.png)
 
-![image alt text](images/image_13.png)
+![](images/image_13.png)
 
-If you have added a public intake or submission form on one of your pages, this is where you would add the template ID (representing the numbers in the template URL). You must white-list the template IDs for which public forms are expected. Please include a comma-separated list of template IDs without spaces. Click [here](#bookmark=id.7zow8h6oowf5) to learn how to add and configure a public submission form on a webpage.
+If you have added a public intake or submission form on one of your pages, this is where you would add the template ID (representing the numbers in the template URL). You must white-list the template IDs for which public forms are expected. Please include a comma-separated list of template IDs without spaces. Click [here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-create-a-public-intake-form-on-your-website.html) to learn how to add and configure a public submission form on a webpage.
 
 ## Show cookies policy on your site
 
-![image alt text](images/image_14.png)
+![](images/image_14.png)
 
 Cookies are bits of information used by some websites you visit and stored on your computer’s hard drive. Uwazi uses cookies to deliver an optimal experience to users. If you would like users to see a notification about the use of cookies on your instance, check **Show Cookie Policy**.
 
 ## Advanced customisations
 
-![image alt text](images/image_15.png)
+![](images/image_15.png)
 
 This area is reserved for changing the style or appearance of your Uwazi instance.
 
