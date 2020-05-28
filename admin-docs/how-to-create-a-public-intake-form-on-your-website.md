@@ -12,7 +12,7 @@ Step 3 (_optional_):
 
 - Attachments are attached to an entity and available for download, but their contents are not visible in Uwazi. To add an attachment field, add this line of code: `<PublicForm template="ID_OF_THE_TEMPLATE" attachments />`
 
-![image alt text](images/image_72.png)
+![](images/image_72.png)
 
 In order for the form to sync into its corresponding template, you must also do the following:
 
