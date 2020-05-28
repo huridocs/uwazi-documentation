@@ -12,7 +12,7 @@ Step 4: Repeat this process until you have created a full table of contents. You
 
 - You can add indentation by clicking on the arrow buttons. Uwazi currently supports 6 levels of indentations with different styles for every level to improve readability.
 
-![image alt text](images/image_50.png)
+![](images/image_50.png)
 
 Step 5: Once you are done, click **Save**. The table of contents will now be showing. Users can click on the heading and they will be directed to the relevant segment.
 
