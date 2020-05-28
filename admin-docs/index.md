@@ -26,6 +26,7 @@
    how-to-create-relationships
    how-to-configure-the-available-languages
    how-to-translate-the-Uwazi-interface
+   how-to-translate-your-content
    how-to-configure-the-menu-navigation-bar
    how-to-create-new-web-pages
    how-to-create-a-contact-form
