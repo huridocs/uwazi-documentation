@@ -12,4 +12,4 @@ Step 2: Once you have selected all the cards, click **Edit**.
 
 Step 3: You can edit any number of the metadata fields, then click **Save**.
 
-![image alt text](images/image_41.png)
+![](images/image_41.png)
