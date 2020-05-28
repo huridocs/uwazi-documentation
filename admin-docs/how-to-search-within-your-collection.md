@@ -6,21 +6,21 @@ Your Uwazi database offers a few different ways to search.
 
 **Filters**: choose and combine filters to narrow down your search.
 
-![image alt text](images/image_46.png)
+![](images/image_46.png)
 
 ### Search the entire collection
 
 **Text search**: a simple way to search entities in your collection is using the Search box on the top left side of your screen.
 
-![image alt text](images/image_47.png)
+![](images/image_47.png)
 
 - You can perform a generic text search, which will show any terms mentioned in the search query.
 
-![image alt text](images/image_48.png)
+![](images/image_48.png)
 
 - Or you can search for a specific term or phrase using **"**...**"** to find the exact match, e.g. ''United Nations Committee on Enforced Disappearances'’.
 
-![image alt text](images/image_49.png)
+![](images/image_49.png)
 
 ### Search only within a particular document
 
@@ -44,4 +44,4 @@ To search for a word or a phrase **within a particular document**.
 - ~ for proximity searches. Ie: "the status"~5 will find anything having "the" and "status" within a distance of 5 words, such as "the procedural status", "the specific legal status".
 - AND, OR and NOT for boolean searches. Ie. "status AND women NOT Nicaragua" will match anything containing both the words status and women, and necessarily not containing the word Nicaragua.
 
-> Please refer to Elasticsearch's [query string syntax page](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/query-dsl-query-string-query.html#query-string-syntax) for more information on search options.
+Please refer to Elasticsearch's [query string syntax page](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/query-dsl-query-string-query.html#query-string-syntax) for more information on search options.
