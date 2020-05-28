@@ -2,11 +2,11 @@
 
 Uwazi currently supports document uploads in PDF format. This allows Uwazi to be able to carry out numerous functions on the document like conducting full text search, creating a table of contents, text references and other functions.
 
-Other formats like .doc, .txt, .odt, .jpg can be included in your collection, but they must be uploaded as an attachment to your entity Please refer to Step 4 at the end of this section for further guidelines regarding this.
+Other formats like .doc, .txt, .odt, .jpg can be included in your collection, but they must be uploaded as an attachment to your entity. Please refer to [the next section](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-add-attachments-to-entities.html) for further guidelines regarding this. 
 
 Step 1: Create or identify a template that will encapsulate the details of your document.
 
-![image alt text](images/image_31.png)
+![](images/image_31.png)
 
 Step 2: Once you have collected your documents and created template(s) for them, you have to upload them. Go to the the private documents section ![](images/image_27.png) on the navigation bar.
 
@@ -30,7 +30,7 @@ Step 2b: Organise your PDFs that are ready to be imported, and create a **Comma-
 
 - **Note:** Field names are not case sensitive, which means you can use either lowercase, capitals or a combination of both. It is also possible to rename fields in Uwazi after the import.
 
-![image alt text](images/image_34.png)
+![](images/image_34.png)
 
 - The "**Title**" field is required in your CSV file. It serves to identify the document or entity, but does not have to be unique.
 
@@ -40,13 +40,13 @@ Step 2b: Organise your PDFs that are ready to be imported, and create a **Comma-
 
 - To do your CSV import, the main PDF file(s) and this csv file should be compressed within a single ZIP file. See the illustration below:
 
-![image alt text](images/image_35.png) ![image alt text](images/image_36.png)
+![](images/image_35.png) ![](images/image_36.png)
 
 - To import the CSV file, click on the Private Documents icon ![](images/image_27.png) and then **Import**. Select your compressed ZIP file, and ensure that you choose the correct template before clicking import (as illustrated in the screenshot below).
 
 - All your PDF files along with the corresponding metadata will be imported into Uwazi.
 
-### ![image alt text](images/image_38.png)
+### ![](images/image_38.png)
 
 ### Publish your documents
 
