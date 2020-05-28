@@ -4,7 +4,7 @@
 
 If you work in a team or in collaboration with other people, Uwazi allows administrators to create new users with specific permissions to help you update your collection of documents. Uwazi currently supports two different kinds of roles:
 
-![image alt text](images/image_3.png)
+![](images/image_3.png)
 
 ## Add new users to your instance
 
