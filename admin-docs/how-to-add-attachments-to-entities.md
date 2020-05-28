@@ -14,8 +14,14 @@ Step 3: You can add a file that will be visible along with your entity.
 
 - You can use the **Add to all languages** option if you would like your attachment to be accessible to those viewing the entity in any of the languages Uwazi supports. **Note:** This option will only be available if your instance has more than one UI language.
 
-![image alt text](images/image_40.png)
+![](images/image_40.png)
 
 ## Import your attachments through csv import (data migration)
 
-Step 1:
+Step 1: To import multiple attachments to a single entity, use the pipe symbol | as the separator and do not include spaces between (e.g. example.doc|sample.jpg).
+
+![]()
+
+**Note:** All attachments using import are going to be assigned to the entity in all languages. *(This option is only available if your instance has more than one UI language.)*
+
+Step 2: Otherwise, follow the rest of the csv import guidelines as outlined [here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-upload-and-publish-documents.html#import-your-documents-through-csv-import-data-migration).
