@@ -5,7 +5,7 @@ You can increase the accessibility of your Uwazi collection by translating it in
 Step 1: Login to your Uwazi instance.
 Step 2: Under **Settings**, click **Languages**.
 
-![]()
+![](images/image_90.png)
 
 Step 3: Select the language(s) you want to add.
 Step 4: Type **CONFIRM** (in all capital letters) in the confirmation dialog, and click **Accept**.
