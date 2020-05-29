@@ -1,6 +1,6 @@
 # How to translate your content
 
-This guide describes how to translate your content in Uwazi. If you want to learn about how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc, [click here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-translate-your-content.html).
+This guide describes how to translate your content in Uwazi. If you want to learn about how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc, [click here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-translate-the-Uwazi-interface.html).
 
 There are three aspects of translating your content:
 1.  Translating entity titles and text values
