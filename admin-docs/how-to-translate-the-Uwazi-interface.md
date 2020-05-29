@@ -2,7 +2,7 @@
 
 This guide describes how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc. If you want to learn about how to translate your content, [click here](https://docs.google.com/document/d/1qqIhhaeZD6ocx03awXV-2hrCt1BWDtlg-7n5YowtZi8/edit?ts=5ecedf3e#heading=h.ud6k2r7heq88).
 
-![]()
+![](images/image_91.jpg)
 There are two methods you can use to translate the Uwazi interface.
 
 Option 1: Live Translation
@@ -12,7 +12,7 @@ This is the recommended translation method. It allows you to translate the inter
 -   Step 1: Login to your Uwazi instance.
 -   Step 2: Click on the **Translations** toggle in the top bar next to the language options. This will underline all translatable items in the current view.
 
-![]()
+![](images/image_92.png)
 Step 3: Click on the item you want to translate, add the translations, and click **Submit**.
 
  
@@ -24,5 +24,5 @@ This option has the advantage of allowing you to translate all Uwazi interface t
 -   Step 2: Under **Settings**, click **Translations**.
 -   Step 3: Find the row called “System” and click the **Translate** button in that row.
 
-![]()
+![](images/image_93.png)
 -   Step 4: Translate each term and click **Save**.
