@@ -13,7 +13,7 @@ There are three aspects of translating your content:
 
 Entity titles and text-based metadata values need to be translated for each of your entities. Until they are translated, they will show in their original language regardless of the user’s interface language.
 
-![]()
+![](images/image_91.jpg)
 Step 1: Login to your Uwazi instance.
 Step 2: Change the interface language to the language you want to translate to. The language options are at the top right on desktop and tablet devices, and on mobile they are at the bottom of the menu opened by the collapsed menu icon at the top left.
 Step 3: Select the entity you want to translate.
@@ -24,7 +24,7 @@ Step 5: Click **Save**.
 
 For data labels such as property labels, thesauri values, relationship types, custom menu items or filters, you can translate the terms in Settings and don’t have to do any extra per-entity translation.
 
-![]()
+![](images/image_95.jpg)
 Step 1: Login to your Uwazi instance.
 Step 2: Under **Settings**, click **Translations**.
 Step 3: Click on the content that you want to translate.
@@ -32,7 +32,7 @@ Step 4: Translate each term and click **Save**.
 
 ### How to upload translated documents (PDFs)
 
-![]()
+![](images/image_96.jpg)
 
 Step 1: Login to your Uwazi instance.
 Step 2: Select the entity to which you want to attach documents (PDFs), or create a new entity.
