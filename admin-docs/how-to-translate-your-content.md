@@ -11,7 +11,7 @@ There are three aspects of translating your content:
 3.  Uploading translated documents (PDFs)
 -   [Click here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-upload-and-publish-documents.html) to learn more about documents in Uwazi.
 
-### How to translate entity titles and text values
+### 1. How to translate entity titles and text values
 
 Entity titles and text-based metadata values need to be translated for each of your entities. Until they are translated, they will show in their original language regardless of the user’s interface language.
 
@@ -26,7 +26,7 @@ Step 4: In the right side panel, update the title and other text-based metadata 
 
 Step 5: Click **Save**.
 
-### How to translate data labels
+### 2. How to translate data labels
 
 For data labels such as property labels, thesauri values, relationship types, custom menu items or filters, you can translate the terms in Settings and don’t have to do any extra per-entity translation.
 
@@ -39,7 +39,7 @@ Step 3: Click on the content that you want to translate.
 
 Step 4: Translate each term and click **Save**.
 
-### How to upload translated documents (PDFs)
+### 3. How to upload translated documents (PDFs)
 
 ![](images/image_96.jpg)
 
@@ -51,3 +51,24 @@ Step 3: In the right side panel, under **Documents**, click **Upload new file**.
 
 Step 4: For each document now attached to the entity, click on Edit, select the language of the document, and click **Save**.
 -   Note: If translations of a document aren’t available for all of your collection’s configured languages, users may see a document in a different language than the interface they’re using.
+
+### Managing Translations Over Time
+
+#### Creating a new entity
+When you create a new entity, all of its metadata properties are synced to all languages when the entity is first saved. 
+
+#### Editing an existing entity
+When you edit an existing entity, changes to the following metadata properties will get synced to all languages:
+* Thesaurus-based properties (select and multiselect fields)
+* Relationships
+* Date-based properties
+* Geolocation
+* Numeric properties
+* The Table of Contents if the same source document is used in other languages (since it depends on the contents of the document)
+
+Changes to the following metadata properties will NOT be synced, so you will need to make any necessary updates in other languages manually:
+* Text references
+* Media
+* Text and Rich Text fields
+
+
