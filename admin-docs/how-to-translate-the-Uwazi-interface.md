@@ -13,7 +13,8 @@ This is the recommended translation method. It allows you to translate the inter
 -   Step 2: Click on the **Translations** toggle in the top bar next to the language options. This will underline all translatable items in the current view.
 
 ![](images/image_92.png)
-Step 3: Click on the item you want to translate, add the translations, and click **Submit**.
+-   Step 3: Click on the item you want to translate, add the translations, and click **Submit**. Repeat for the other underlined items on the page.
+-   Step 4: Navigate to other Uwazi views and translate all underlined items.
 
  
 Option 2: Settings
