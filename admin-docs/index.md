@@ -7,9 +7,7 @@
    introduction-to-uwazi
    history-of-uwazi
    glossary-of-terms
-   how-to-configure-your-account
-   how-to-create-edit-and-delete-users
-   how-to-edit-your-site-settings
+   managing-settings
    how-to-create-templates-and-add-properties
    how-to-create-thesauri
    how-to-connect-properties-on-different-templates
