@@ -1,4 +1,4 @@
-# B. BUILDING YOUR INFORMATION ARCHITECTURE
+# BUILDING YOUR INFORMATION ARCHITECTURE
 
 ## How to create templates and add properties
 
