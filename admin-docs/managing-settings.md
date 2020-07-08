@@ -1,4 +1,4 @@
-# A. MANAGING SETTINGS
+# MANAGING SETTINGS
 
 ## How to configure your account
 
