@@ -8,9 +8,7 @@
    history-of-uwazi
    glossary-of-terms
    managing-settings
-   how-to-create-templates-and-add-properties
-   how-to-create-thesauri
-   how-to-connect-properties-on-different-templates
+   building-info-architecture
    understanding-public-vs-private-entities
    how-to-add-new-entities
    how-to-upload-and-publish-documents
