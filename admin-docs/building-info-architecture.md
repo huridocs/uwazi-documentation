@@ -1,4 +1,6 @@
-# How to create templates and add properties
+# B. BUILDING YOUR INFORMATION ARCHITECTURE
+
+## How to create templates and add properties
 
 Templates are the foundation of your Uwazi platform as they allow you to attribute consistent, structured metadata to your entities. Within each template, you can assign a variety of properties like:
 
@@ -22,7 +24,7 @@ Templates are the foundation of your Uwazi platform as they allow you to attribu
 
 - Relationship - allow you to create connections between this entity and another one
 
-## Add different properties to a template
+### Add different properties to a template
 
 Properties provide an important way for users to view important metadata at a glance and filter the collection to better understand and analyse the collection.
 
