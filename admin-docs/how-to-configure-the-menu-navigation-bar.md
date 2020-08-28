@@ -16,8 +16,24 @@ Step 4: Click **Save** when you are finished.
 
 ## Customise the header
 
-At the moment, it is not possible to edit the header from the **Settings**. We hope to make this available soon, however if you need this, you can create a [Github issue](https://github.com/huridocs/uwazi/issue/) and we would be happy to upload a header background image for you. In order to do so, we require:
+To edit the header from the **Settings**, please follow the directions below:
 
-- Your logotype in PNG format (transparent background) and 72px height. Width is not fixed, but limited to 288px, so you can play until that size.
+1. Upload the picture in settings > collection > custom uploads (you'll find this option at the bottom).
 
-- Your brand colour if you would like to change the header background.
+2. Add some custom CSS in settings > collection > custom CSS.
+
+Here are some sample CSS to help you out:
+
+    header {
+    background-color: #191916;
+    border-bottom: 0;
+    }
+
+    .logotype {
+    background-image: url(/uploaded_documents/1532354013023uzqh9gcnmztchlw8iacibpgb9.png);
+    background-size: auto 30px;
+    background-position: left 15px center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 265px;
+    }
