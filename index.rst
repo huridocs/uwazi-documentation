@@ -8,3 +8,4 @@ UWAZI Documentation
    :glob:
 
    Administrator's guide <admin-docs/index>
+   Systems administrator's guide <sysadmin-docs/index>
