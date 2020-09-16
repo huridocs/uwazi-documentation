@@ -1,4 +1,4 @@
-# How to edit properties on multiple entities
+# HOW TO EDIT PROPERTIES ON MULTIPLE ENTITIES 
 
 Step 1: Click on all the documents that you want to edit.
 
