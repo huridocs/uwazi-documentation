@@ -1,4 +1,4 @@
-# How to report bugs or problems in Uwazi
+# HOW TO REPORT BUGS OR PROBLEMS IN UWAZI
 
 Our main support channel is [our Github repository](https://github.com/huridocs/uwazi/issues).
 
