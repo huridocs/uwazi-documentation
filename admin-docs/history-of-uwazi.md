@@ -1,4 +1,4 @@
-# History of Uwazi
+# HISTORY OF UWAZI
 
 Human rights defenders rely on information from many sources in order to do their work effectively, from laws and jurisprudence to victim testimonies and resolutions. This information is crucial for ensuring human rights are respected and protected.
 
