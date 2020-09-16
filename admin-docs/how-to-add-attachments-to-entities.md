@@ -1,4 +1,4 @@
-# How to add attachments to entities
+# HOW TO ADD ATTACHMENTS TO ENTITIES 
 
 ## Add attachment(s) to your entity
 
