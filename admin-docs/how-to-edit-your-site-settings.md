@@ -1,4 +1,4 @@
-# How to edit your site settings
+# HOW TO EDIT YOUR SITE SETTINGS 
 
 Step 1: Click on **Settings**, then click on **Collection**.
 
