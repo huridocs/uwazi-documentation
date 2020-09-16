@@ -1,4 +1,4 @@
-# Introduction to Uwazi
+# INTRODUCTION TO UWAZI 
 
 To manage records and documents, most organisations today use folders or categories on platforms like DropBox, OneDrive and Google Drive so that staff can access them later. Although safe and effective, these platforms simply provide a safe space for these documents and provide no connections or analysis.
 
