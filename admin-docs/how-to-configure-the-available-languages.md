@@ -1,4 +1,4 @@
-# How to configure the available languages for your collection
+# HOW TO CONFIGURE THE AVAILABLE LANGUAGES FOR YOUR COLLECTION 
 
 You can increase the accessibility of your Uwazi collection by translating it into one or more languages.
 
