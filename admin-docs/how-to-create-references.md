@@ -1,4 +1,4 @@
-# How to create references
+# HOW TO CREATE REFERENCES 
 
 > In Uwazi, a reference is a bookmark that connects highlighted content in one document to something else -- such as other selected content in the same document, other selected content in a different document, or even an entire document or an entity.
 
