@@ -1,4 +1,4 @@
-# How to search within your collection
+# HOW TO SEARCH WITHIN YOUR COLLECTION 
 
 Your Uwazi database offers a few different ways to search.
 
