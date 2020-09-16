@@ -1,4 +1,4 @@
-# Understanding "public" versus “private” entities
+# UNDERSTANDING "PUBLIC" VERSUS "PRIVATE" ENTITIES
 
 In Uwazi, there are two areas where entities can be stored:
 
