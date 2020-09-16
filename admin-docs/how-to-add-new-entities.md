@@ -1,4 +1,4 @@
-# How to add new entities
+# HOW TO ADD NEW ENTITIES 
 
 > Entity:  Something that has properties, is filterable, and can have connections. Some examples of entities may include a court, a case, a specific person or event. Before you can create a new entity, make sure you have already created a corresponding template!
 
