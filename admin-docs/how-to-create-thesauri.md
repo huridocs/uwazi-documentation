@@ -1,4 +1,4 @@
-# How to create thesauri
+# HOW TO CREATE THESAURI 
 
 > In Uwazi, a thesaurus is a list of terms that are referred to throughout an Uwazi instance to provide structured details. These terms are also referenced as properties within each entity. Thesauri is the plural form of thesaurus.
 
