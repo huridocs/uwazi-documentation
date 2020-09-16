@@ -1,4 +1,4 @@
-# How to configure the menu / navigation bar
+# HOW TO CONFIGURE THE MENU / NAVIGATION BAR
 
 ## Add pages to the main header
 
