@@ -1,4 +1,4 @@
-# HOW TO CONFIGURE MAIN AND SECONDARY FILTERS 
+# How to Configure Main and Secondary Filters
 
 Filter options will depend on the metadata properties you have included on each entity in your collection. In Uwazi, you can choose which fields that you want to show as filters.
 
