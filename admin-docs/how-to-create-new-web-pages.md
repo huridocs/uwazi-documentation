@@ -1,4 +1,4 @@
-# HOW TO CREATE NEW WEB PAGES 
+# How to Create New Web Pages
 
 You can add static pages to your Uwazi collection in order to share information on what the purpose of your collection is, how the general public can contact you, etc.
 
