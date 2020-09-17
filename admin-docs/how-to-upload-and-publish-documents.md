@@ -1,4 +1,4 @@
-# HOW TO UPLOAD AND PUBLISH DOCUMENTS 
+# How to Upload and Publish Documents
 
 Uwazi currently supports document uploads in PDF format. This allows Uwazi to be able to carry out numerous functions on the document like conducting full text search, creating a table of contents, text references and other functions.
 
