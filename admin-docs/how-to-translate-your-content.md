@@ -1,4 +1,4 @@
-# HOW TO TRANSLATE YOUR CONTENT 
+# How to Translate Your Content	
 
 This guide describes how to translate your content in Uwazi. If you want to learn about how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc, [click here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-translate-the-Uwazi-interface.html).
 
