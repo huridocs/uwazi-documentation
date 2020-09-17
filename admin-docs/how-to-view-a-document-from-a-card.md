@@ -1,4 +1,4 @@
-# HOW TO VIEW A DOCUMENT FROM A CARD 
+# How to View a Document from a Card
 
 In the library section ![](images/image_0.png), you will find your entire collection. Each entity will be displayed in this library as a card. To open and view the full document or more information about the record, you can either:
 
