@@ -1,4 +1,4 @@
-# HOW TO CREATE A TABLE OF CONTENTS 
+# How to Create a Table of Contents
 
 Most documents have a defined structure through its pages. Creating a table of contents will allow your end-users to quickly navigate through the document’s contents. Alternatively, you can create your own structure that would be most useful to them.
 
