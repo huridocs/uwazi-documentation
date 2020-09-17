@@ -1,4 +1,4 @@
-# HOW TO CREATE A CONTACT FORM
+# How to Create a Contact Form
 
 A contact form allows your users to message you and share their ideas.
 
