@@ -1,4 +1,4 @@
-# HOW TO CREATE, EDIT AND DELETE USERS
+# How to Create, Edit and Delete Users
 
 ## Understanding user permissions
 
