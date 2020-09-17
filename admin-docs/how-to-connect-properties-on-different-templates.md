@@ -1,4 +1,4 @@
-# HOW TO CONNECT PROPERTIES ON DIFFERENT TEMPLATES 
+# How to Connect Properties on Different Templates
 
 Uwazi has a relationship property that can be added as a field on a template. This will allow you to build a connection, or "relationship", with another entity.
 
