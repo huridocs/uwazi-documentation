@@ -13,3 +13,6 @@ Follow these steps in a fresh Uwazi install:
 3. Run "yarn migrate" in the uwazi directory. This will update your data if needed.
 4. Run "yarn reindex".
 5. Run the server and navigate to localhost:3000
+
+$ export DBHOST=localhost
+$ export DATABASE_NAME=uwazi_development
