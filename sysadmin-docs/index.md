@@ -4,7 +4,6 @@
 .. toctree::
    :maxdepth: 2
 
-   work-in-progress
    install
    back-up-restore
 
