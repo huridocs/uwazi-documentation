@@ -9,7 +9,7 @@
    glossary-of-terms
    managing-settings
    building-info-architecture
-   adding-documents-and-entities-to-your-collection.md
+   adding-documents-and-entities-to-your-collection
    understanding-public-vs-private-entities
    how-to-add-new-entities
    how-to-upload-and-publish-documents
