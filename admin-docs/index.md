@@ -10,6 +10,10 @@
    managing-settings
    building-info-architecture
    adding-documents-and-entities-to-your-collection
+   organising-your-collection
+   designing-your-website
+   translating-your-collection
+   analysing-and-visualising-your-collection
    understanding-public-vs-private-entities
    how-to-add-new-entities
    how-to-upload-and-publish-documents
