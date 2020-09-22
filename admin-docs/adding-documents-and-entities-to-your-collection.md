@@ -177,3 +177,17 @@ These filters are presented to the users of your collection when no entity is se
 - Using the AND operator will display the entities that contain all the properties for which you are filtering.
 
 - Using the OR operator will display the entities that contain at least one of the properties for which you are filtering.
+
+
+## How to use Copy From
+
+The copy from feature allows you to copy certain fields from one entity to another.
+
+1. Click on the ‘private library’ view on the top right navigation.
+2. When you are in “Private Documents” mode, click on “+New Entity”. (A blank form will slide left and appear) 
+3. When the blank form appears, click on ‘copy from’ on the bottom right corner.
+4. Under “Title”, select the “Type” of template that you would like to copy data to.
+5. Using the search bar, search for any part of the title of the entity that you would like to copy fields from. As you search, options will appear containing the searched keyword and the matching templates. In the image below, the word “Federal” was typed into the search bar.
+6. Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. Once you have entered a new “Title”, click “Copy Highlighted” then click “Save”.
+7. Notice that the overlapping information (ie the victim’s information) has been copied into the destination template. Your new entry will appear first underneath your files.
+
