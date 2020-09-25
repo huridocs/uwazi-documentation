@@ -48,7 +48,7 @@ There are three aspects of translating your content:
 
 Entity titles and text-based metadata values need to be translated for each of your entities. Until they are translated, they will show in their original language regardless of the user’s interface language.
 
-![](images/image_91.jpg)
+![](images/image_94.jpg)
 Step 1: Login to your Uwazi instance.
 
 Step 2: Change the interface language to the language you want to translate to. The language options are at the top right on desktop and tablet devices, and on mobile they are at the bottom of the menu opened by the collapsed menu icon at the top left.
