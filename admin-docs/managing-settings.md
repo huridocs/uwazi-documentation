@@ -164,6 +164,22 @@ If you have added a contact form on one of your pages, this is where you would a
 
 If you have added a public intake or submission form on one of your pages, this is where you would add the template ID (representing the numbers in the template URL). You must white-list the template IDs for which public forms are expected. Please include a comma-separated list of template IDs without spaces. Click [here](#bookmark=id.7zow8h6oowf5) to learn how to add and configure a public submission form on a webpage.
 
+### Maptiler Key
+
+![image alt text](images/edit-site-settings-1.png)
+
+### Map Starting Point
+
+To set your own geolocation default, drag the map and click to select the destination, or enter the latitude and longitude, if known.
+
+![image alt text](images/edit-site-settings-2.png)
+
+### Support Non-Latin Characters in Property Names
+
+Checking the box will update non-latin languages as default languages and properties, automatically. In addition, the links or URLS will be updated as well.
+
+![image alt text](images/edit-site-settings-3.png)
+
 ### Show cookies policy on your site
 
 ![image alt text](images/image_14.png)
