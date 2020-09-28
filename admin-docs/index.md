@@ -9,7 +9,7 @@
    glossary-of-terms
    managing-settings
    building-info-architecture
-   adding-documents-and-entities-to-your-collection
+   working-with-entities-in-your-collection
    organising-your-collection
    designing-your-website
    translating-your-collection
