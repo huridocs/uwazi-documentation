@@ -199,3 +199,17 @@ The copy from feature allows you to copy certain fields from one entity to anoth
 ![](images/copy-from-7.png)
 
 ## How to Export Entities
+
+The CSV export feature allows users to export data for further analysis and visualisation.  
+
+**Step 1: Use the filter bar to select the data that you want to export**
+As a user, you can use the filter bar to export specific data or even export the entire collection if you need to. [Use the different filters](https://uwazi.readthedocs.io/en/2601-read-the-docs/admin-docs/how-to-configure-main-and-secondary-filters.html) to select the entities you want to export. If you want a smaller subset of data, ensure that you enable the specific filters in order to be able to do so. 
+If you want to export the entire collection, do not click on any filter as shown in Image 3 below, which will enable you to get the entire collection. 
+
+![](images/export-csv-1.png) ![](images/export-csv-2.png) ![](images/export-csv-3.png)
+
+**Step 2: Click on the CSV export button.**
+
+On the corner most right hand side, you will see a blue button labelled ‘Export CSV’. Once you have selected the data you want to export, click on this button. A CSV file will automatically get downloaded on your computer for your use.
+
+![](images/export-csv-4.png)
