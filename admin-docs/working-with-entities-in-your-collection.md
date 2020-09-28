@@ -1,4 +1,4 @@
-# ADDING DOCUMENTS AND ENTITIES TO YOUR COLLECTION 
+# WORKING WITH ENTITIES IN YOUR COLLECTION 
 
 ## Understanding "Public" versus "Private" Entities
 
@@ -28,7 +28,7 @@ When you are ready to share your entity in the Public documents section ![](imag
 
 (**Note:** if your Uwazi instance is set to Private, the entities are only shared with other logged in users who have the permission to view this information.)
 
-## How to Upload and Publish Documents
+## How to Upload and Publish Entities
 
 Uwazi currently supports document uploads in PDF format. This allows Uwazi to be able to carry out numerous functions on the document like conducting full text search, creating a table of contents, text references and other functions.
 
@@ -197,3 +197,5 @@ The copy from feature allows you to copy certain fields from one entity to anoth
 
 7. Notice that the overlapping information (ie the victim’s information) has been copied into the destination template. Your new entry will appear first underneath your files.
 ![](images/copy-from-7.png)
+
+## How to Export Entities
