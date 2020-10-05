@@ -17,7 +17,7 @@ export type Tenant = {
 
 ```
 
-uwazi will use this config for requests that provide a Tenant header corresponding with the tenant name, for requests that do not provide one uwazi will use the defaultTenant from app/api/config.ts.
+Uwazi will use this config for requests that provide a tenant header corresponding with the tenant name, for requests that do not provide one uwazi will use the defaultTenant from app/api/config.ts.
 
 ## the most basic example working
 
