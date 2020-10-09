@@ -6,4 +6,5 @@
 
    install
    back-up-restore
+   multi-tenant
 ```
