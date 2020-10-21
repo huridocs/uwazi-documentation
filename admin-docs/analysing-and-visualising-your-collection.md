@@ -17,9 +17,7 @@ You can access the API instructions and options for your Uwazi instance by addin
 
 These are a few examples of some endpoints that Uwazi currently offers:
 
-| /search | /entities | /attachments |
-| ------- | --------- | ------------ |
-|         |           |              |
+![](images/api-1.png)
 
 Additional notes regarding the /**entities** endpoint:
 
