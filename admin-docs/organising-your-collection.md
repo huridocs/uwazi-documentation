@@ -69,6 +69,8 @@ Step 1: Click on the document that you want to add the table of contents to.
 
 Step 2: Click on the **Table of Contents** button (the A icon) on the right side panel.
 
+![](images/table-of-contents-icon.png)
+
 Step 3: Now you can highlight the text that you want to add. Three blue icons will appear. Choose the far right circle, **Add to Table of Contents**, and the highlighted text will appear on the right sidebar.
 
 Step 4: Repeat this process until you have created a full table of contents. You can add as many headings and subheadings as you like.
