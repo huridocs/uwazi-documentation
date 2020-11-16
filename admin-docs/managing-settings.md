@@ -97,9 +97,9 @@ Step 2: After you have made all your changes, please ensure that you click **Sav
 ### Customise the favicon
 
 If you want to replace the Uwazi icon for your own:
--   Convert your logo/image into an .ico (icon) format. To do so, search the internet for an .ico converter and convert the image you want as your icon. Save this file on your local drive.
+-   Convert your logo/image into .ico (icon) format. To do so, search the internet for an .ico converter and convert the image you want as your icon. Save this file on your local drive.
 -   On the **Collections** settings page, scroll down to **Custom Uploads**. Select **Browse files to upload** and upload the logo/image that you converted to the .ico format. Once your image uploads, copy the URL. (It will begin with “/assets”.)   
--   Navigate back to the top of the **Collections** settings page, and select **Custom icon** and paste the above URL.
+-   Navigate back to the top of the **Collections** settings page, and under the **Favicon** section, select **Custom icon** and paste the above URL.
 -   Click **Save**, and be sure to reload the webpage after updating your favicon.
 
 ### Make your collection private (or public)
