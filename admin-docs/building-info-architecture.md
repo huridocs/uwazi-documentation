@@ -154,7 +154,7 @@ Step 4: Now select the relationship type under the **Relationship\*** field. The
 
 Step 5: In the Entities dropdown, you can select which template the template you’re currently editing will be connected to. You can either pick "Any entity or document" or you have the option to make the connection to only one specific template.
 
-- Note: this dropdown does not contain the template that is currently being edited. If you want to connect entities of the same template (for example, connecting two Person entities), click [here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-create-relationships.html) to see **How to Create Relationships**.
+- Note: this dropdown does not contain the template that is currently being edited. If you want to connect entities of the same template (for example, connecting two Person entities), click [here](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#how-to-create-relationships) to see **How to Create Relationships**.
 
 ![](images/image_22.png)
 
