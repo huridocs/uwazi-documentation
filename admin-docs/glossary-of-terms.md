@@ -18,6 +18,8 @@
 
 - **Fallback** is an alternative document if the main (or intended) one is not available.
 
+- **Favicon**  is an icon that appears in the browser tab and bookmarks.
+
 - **Filters** allow you to narrow down the number and type of documents and categories.
 
 - **Landing page** is the first page or the home page that the users see when visiting your Uwazi instance.
