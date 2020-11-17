@@ -37,9 +37,7 @@ This guide describes how to translate your content in Uwazi. If you want to lear
 There are three aspects of translating your content:
 1.  Translating entity titles and text values
 2.  Translating data labels
--   [Click here](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates-and-add-properties) to learn more about properties and metadata in Uwazi.
 3.  Uploading translated documents (PDFs)
--   [Click here](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-upload-and-publish-entities) to learn more about documents in Uwazi.
 
 ### 1. How to translate entity titles and text values
 
@@ -69,6 +67,8 @@ Step 3: Click on the content that you want to translate.
 
 Step 4: Translate each term and click **Save**.
 
+-   [Click here](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates-and-add-properties) to learn more about properties and metadata in Uwazi.
+
 ### 3. How to upload translated documents (PDFs)
 
 ![](images/image_96.jpg)
@@ -81,6 +81,8 @@ Step 3: In the right side panel, under **Documents**, click **Upload new file**.
 
 Step 4: For each document now attached to the entity, click on Edit, select the language of the document, and click **Save**.
 -   **Note**: If translations of a document aren’t available for all of your collection’s configured languages, users may see a document in a different language than the interface they’re using.
+
+-   [Click here](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-upload-and-publish-entities) to learn more about documents in Uwazi.
 
 ### Managing Translations Over Time
 
