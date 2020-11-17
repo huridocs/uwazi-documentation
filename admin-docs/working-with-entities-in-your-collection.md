@@ -12,7 +12,7 @@ In Uwazi, there are two areas where entities can be stored:
 
 ## How to Add New Entities
 
-> Entity:  Something that has properties, is filterable, and can have connections. Some examples of entities may include a court, a case, a specific person or event. Before you can create a new entity, make sure you have already created a corresponding template!
+> **Entity**:  Something that has properties, is filterable, and can have connections. Some examples of entities may include a court, a case, a specific person or event. Before you can create a new entity, make sure you have already created a corresponding template!
 
 To create a new entity:
 
@@ -26,13 +26,13 @@ Step 4: Click the **Save** button once you are finished.
 
 When you are ready to share your entity in the Public documents section ![](images/image_0.png), select **Publish** on the entity.
 
-(**Note:** if your Uwazi instance is set to Private, the entities are only shared with other logged in users who have the permission to view this information.)
+**Note:** if your Uwazi instance is set to Private, the entities are only shared with other logged in users who have the permission to view this information.
 
 ## How to Upload and Publish Entities
 
 Uwazi currently supports document uploads in PDF format. This allows Uwazi to be able to carry out numerous functions on the document like conducting full text search, creating a table of contents, text references and other functions.
 
-Other formats like .doc, .txt, .odt, .jpg can be included in your collection, but they must be uploaded as an attachment to your entity. Please refer to [the next section](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-add-attachments-to-entities.html) for further guidelines regarding this. 
+Other formats like .doc, .txt, .odt, .jpg can be included in your collection, but they must be uploaded as an attachment to your entity. Please refer to [the next section](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-add-attachments-to-entities) for further guidelines regarding this. 
 
 Step 1: Create or identify a template that will encapsulate the details of your document.
 
@@ -110,13 +110,11 @@ Step 3: You can add a file that will be visible along with your entity.
 
 ### Import your attachments through csv import (data migration)
 
-Step 1: To import multiple attachments to a single entity, use the pipe symbol | as the separator and do not include spaces between (e.g. example.doc|sample.jpg).
-
-![]()
+Step 1: To import multiple attachments to a single entity, use the pipe symbol **|** as the separator and do not include spaces between (e.g. example.doc|sample.jpg).
 
 **Note:** All attachments using import are going to be assigned to the entity in all languages. *(This option is only available if your instance has more than one UI language.)*
 
-Step 2: Otherwise, follow the rest of the csv import guidelines as outlined [here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-upload-and-publish-documents.html#import-your-documents-through-csv-import-data-migration).
+Step 2: Otherwise, follow the rest of the csv import guidelines as outlined [here](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#import-your-documents-through-csv-import-data-migration).
 
 ## How to Edit Properties on Multiple Entities 
 
@@ -164,9 +162,7 @@ Step 2: Click on the field (e.g. Pais) that you want to include as a filter.
 
 Step 3: Click on the **Edit** button of the property.
 
-Step 4: Check the **Use as filter** and the **Default filter** options.
-
-Step 5: You may optionally want to check the **Show in cards** option, as well.
+Step 4: Check the **Use as filter** and the **Default filter** options. You may optionally want to check the **Show in cards** option, as well.
 
 Step 5: Click on **Save**. You can now go to the library section ![](images/image_0.png) and view the filters you have just configured.
 
@@ -178,38 +174,33 @@ These filters are presented to the users of your collection when no entity is se
 
 - Using the OR operator will display the entities that contain at least one of the properties for which you are filtering.
 
-
 ## How to use Copy From
 
 The copy from feature allows you to copy certain fields from one entity to another.
 
-1. Click on the ‘private library’ view on the top right navigation.
+Step 1: Click on the ‘private library’ view on the top right navigation.
 
-2. When you are in “Private Documents” mode, click on “+New Entity”. (A blank form will slide left and appear) 
+Step 2: When you are in “Private Documents” mode, click on “+New Entity”. (A blank form will slide left and appear) 
 ![](images/copy-from-2.png)
-3. When the blank form appears, click on ‘copy from’ on the bottom right corner.
-![](images/copy-from-3.png)
-4. Under “Title”, select the “Type” of template that you would like to copy data to.
-![](images/copy-from-4.png)
-5. Using the search bar, search for any part of the title of the entity that you would like to copy fields from. As you search, options will appear containing the searched keyword and the matching templates. In the image below, the word “Federal” was typed into the search bar.
-![](images/copy-from-5.png)
-6. Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. Once you have entered a new “Title”, click “Copy Highlighted” then click “Save”.
 
-7. Notice that the overlapping information (ie the victim’s information) has been copied into the destination template. Your new entry will appear first underneath your files.
+Step 3: When the blank form appears, click on ‘copy from’ on the bottom right corner.
+![](images/copy-from-3.png)
+
+Step 4: Under “Title”, select the “Type” of template that you would like to copy data to.
+![](images/copy-from-4.png)
+
+Step 5: Using the search bar, search for any part of the title of the entity that you would like to copy fields from. As you search, options will appear containing the searched keyword and the matching templates. In the image below, the word “Federal” was typed into the search bar.
+![](images/copy-from-5.png)
+
+Step 6: Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. Once you have entered a new “Title”, click “Copy Highlighted” then click “Save”.
+
+Step 7: Notice that the overlapping information (i.e. the victim’s information) has been copied into the destination template. Your new entry will appear first underneath your files.
 ![](images/copy-from-7.png)
 
 ## How to Export Entities
 
 The CSV export feature allows users to export data for further analysis and visualisation.  
 
-**Step 1: Use the filter bar to select the data that you want to export**
-As a user, you can use the filter bar to export specific data or even export the entire collection if you need to. [Use the different filters](https://uwazi.readthedocs.io/en/2601-read-the-docs/admin-docs/how-to-configure-main-and-secondary-filters.html) to select the entities you want to export. If you want a smaller subset of data, ensure that you enable the specific filters in order to be able to do so. 
-If you want to export the entire collection, do not click on any filter as shown in Image 3 below, which will enable you to get the entire collection. 
+Step 1: Use the filter bar to export specific data, or even export the entire collection if you need to. [Use the different filters](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-configure-main-and-secondary-filters) to select the entities you want to export. If you want a smaller subset of data, be sure to click on the specific filters to construct the specific dataset that you want. If you want, however, to export the entire collection, do not click on any filters. This will enable you to export all the entities in the collection. 
 
-![](images/export-csv-1.png) ![](images/export-csv-2.png) ![](images/export-csv-3.png)
-
-**Step 2: Click on the CSV export button.**
-
-On the corner most right hand side, you will see a blue button labelled ‘Export CSV’. Once you have selected the data you want to export, click on this button. A CSV file will automatically get downloaded on your computer for your use.
-
-![](images/export-csv-4.png)
+Step 2: Navigate to the lower part of the filters panel. There is a blue button labelled **Export CSV**. Once you have selected the data you want to export in Step 1 (above), click on this button. A CSV file will automatically get downloaded on your computer for your use. This file will be automatically exported in **UTF-8 csv format**.
