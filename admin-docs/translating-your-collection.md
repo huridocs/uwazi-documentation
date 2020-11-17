@@ -2,12 +2,12 @@
 
 ## How to Translate the Uwazi Interface 
 
-This guide describes how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc. If you want to learn about how to translate your content, [click here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-translate-your-content.html).
+This guide describes how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc. If you want to learn about how to translate your content, [click here](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-translate-your-content).
 
 ![](images/image_91.jpg)
 There are two methods you can use to translate the Uwazi interface.
 
-Option 1: Live Translation
+**Option 1: Live Translation**
 
 This is the recommended translation method. It allows you to translate the interface directly in your Uwazi instance. This method allows you to explicitly see the context in which the text is used.
 
@@ -18,8 +18,7 @@ This is the recommended translation method. It allows you to translate the inter
 -   Step 3: Click on the item you want to translate, add the translations, and click **Submit**. Repeat for the other underlined items on the page.
 -   Step 4: Navigate to other Uwazi views and translate all underlined items.
 
- 
-Option 2: Settings
+**Option 2: Settings**
 
 This option has the advantage of allowing you to translate all Uwazi interface text in a single place. However, it may be difficult to infer the context in which these phrases are used. Unless you are familiar with the Uwazi interface, we recommend Option 1.
 
@@ -33,16 +32,14 @@ This option has the advantage of allowing you to translate all Uwazi interface t
 
 ## How to Translate Your Content	
 
-This guide describes how to translate your content in Uwazi. If you want to learn about how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc, [click here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-translate-the-Uwazi-interface.html).
+This guide describes how to translate your content in Uwazi. If you want to learn about how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc, [click here](hhttps://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-translate-the-uwazi-interface).
 
 There are three aspects of translating your content:
 1.  Translating entity titles and text values
-
 2.  Translating data labels
--   [Click here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-create-templates-and-add-properties.html) to learn more about properties and metadata in Uwazi.
-
+-   [Click here](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates-and-add-properties) to learn more about properties and metadata in Uwazi.
 3.  Uploading translated documents (PDFs)
--   [Click here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-upload-and-publish-documents.html) to learn more about documents in Uwazi.
+-   [Click here](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-upload-and-publish-entities) to learn more about documents in Uwazi.
 
 ### 1. How to translate entity titles and text values
 
@@ -83,7 +80,7 @@ Step 2: Select the entity to which you want to attach documents (PDFs), or creat
 Step 3: In the right side panel, under **Documents**, click **Upload new file**. If one or more documents are already attached to the entity, you’ll see them here. Perform this step for all the translated versions you have of the document.
 
 Step 4: For each document now attached to the entity, click on Edit, select the language of the document, and click **Save**.
--   Note: If translations of a document aren’t available for all of your collection’s configured languages, users may see a document in a different language than the interface they’re using.
+-   **Note**: If translations of a document aren’t available for all of your collection’s configured languages, users may see a document in a different language than the interface they’re using.
 
 ### Managing Translations Over Time
 
@@ -103,6 +100,3 @@ Changes to the following metadata properties will NOT be synced, so you will nee
 * Text references
 * Media
 * Text and Rich Text fields
-
-
-
