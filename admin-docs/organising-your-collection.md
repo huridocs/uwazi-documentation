@@ -2,9 +2,9 @@
 
 ## How to View a Document from a Card
 
-In the library section ![](images/image_0.png), you will find your entire collection. Each entity will be displayed in this library as a card. To open and view the full document or more information about the record, you can either:
+In the library section ![](images/image_0.png), you will find your entire collection. By default, each entity will be displayed in this library as a card. To open and view the full document or more information about the record, you can either:
 
-- hover over the document card and click the **View** button, which will open or
+- hover over the document card and click the **View** button, which will open out into the full entity view, or
 
 ![](images/image_44.png)
 
@@ -17,7 +17,7 @@ In the library section ![](images/image_0.png), you will find your entire collec
 
 Your Uwazi database offers a few different ways to search.
 
-## Use filters to narrow your search
+### Use filters to narrow your search
 
 **Filters**: choose and combine filters to narrow down your search.
 
@@ -69,8 +69,6 @@ Step 1: Click on the document that you want to add the table of contents to.
 
 Step 2: Click on the **Table of Contents** button (the A icon) on the right side panel.
 
-![](images/table-of-contents-icon.png)
-
 Step 3: Now you can highlight the text that you want to add. Three blue icons will appear. Choose the far right circle, **Add to Table of Contents**, and the highlighted text will appear on the right sidebar.
 
 Step 4: Repeat this process until you have created a full table of contents. You can add as many headings and subheadings as you like.
@@ -86,7 +84,7 @@ Step 6: You can always come back later to revise or add more contents by clickin
 
 ## How to Create References
 
-> In Uwazi, a reference is a bookmark that connects highlighted content in one document to something else -- such as other selected content in the same document, other selected content in a different document, or even an entire document or an entity.
+> In Uwazi, a **reference** is a bookmark that connects highlighted content in one document to something else -- such as other selected content in the same document, other selected content in a different document, or even an entire document or an entity.
 
 ### Reference other text in the same or a different document
 
@@ -98,7 +96,7 @@ Step 2: Click **View** on the file for which you want to create the reference. N
 
 Step 3: Select the text you want. Three options will appear. Click on **Connect to a paragraph**.
 
-![image alt text](images/image_51.png)
+![](images/image_51.png)
 
 Step 4: Select the relationship type.
 
@@ -106,13 +104,13 @@ Step 5: Choose the document you want to refer to. You can manually search for it
 
 - Note: only published entities appear in this list.
 
-![image alt text](images/image_52.png)
+![](images/image_52.png)
 
 Step 6: Click **Next**, and this will take you to the document you have selected to refer to.
 
 Step 5: Select the relevant part of the text you want to reference, highlight it and click **Save**.
 
-![image alt text](images/image_53.png)
+![](images/image_53.png)
 
 - This will create the reference for you. Users will see this referenced text under the References tab ![](images/image_54.png) in the right sidebar.
 
@@ -126,7 +124,7 @@ Step 2: Click **View** on the file for which you want to create the reference. N
 
 Step 3: Highlight the segment of text you want and click on **Connect to a document**.
 
-![image alt text](images/image_55.png)
+![](images/image_55.png)
 
 Step 3: Select the relationship type.
 
@@ -143,7 +141,7 @@ When the reference is selected, the highlighted text will be displayed in the PD
 
 ## How to Create Relationships 
 
-> In Uwazi, a relationship connects two or more entities to each other so that it’s possible to investigate and analyse "who did what to whom" (and when, and where, etc). Note: we use the terms “relationship” and “connection” interchangeably.
+> In Uwazi, a **relationship** connects two or more entities to each other so that it’s possible to investigate and analyse "who did what to whom" (and when, and where, etc). Note: we use the terms “relationship” and “connection” interchangeably.
 
 Uwazi supports connecting data in unstructured ways, meaning you don't need to follow a particular data structure or predefine a relational model upfront. Entities can be connected to each other in one-to-one or one-to-many relations arbitrarily:
 
@@ -159,7 +157,7 @@ There are two ways in Uwazi to create connections between entities in your colle
 
 ### Create relationships when adding new entities
 
-You can create relationships when adding new entities if you have defined a template with a "Relationship" property. Click [here](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-connect-properties-on-different-templates.html) to learn how to add a “Relationship” property to a template.
+You can create relationships when adding new entities if you have defined a template with a "Relationship" property. Click [here](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-connect-properties-on-different-templates) to learn how to add a “Relationship” property to a template.
 
 When creating a new entity that has a "Relationship" property in its template, you will see the relevant options that can be linked to the new entity that you are adding. You can search for entities by title using the search box.
 
