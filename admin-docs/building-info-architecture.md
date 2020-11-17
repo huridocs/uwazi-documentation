@@ -42,7 +42,7 @@ Step 4: On the right side panel, there is a list of **Properties**. Each propert
 
 Step 5: For each added property, click **Edit** and give it a name (Label). Review the other options for the property, which may include the following:
 
-- **Select list** - for Select and Multi Select properties, choose which Thesaurus will be used for this property. Related to: [How to create thesauri](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-create-thesauri.html).
+- **Select list** - for Select and Multi Select properties, choose which Thesaurus will be used for this property. Related to: [How to create thesauri](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-thesauri).
 - **Hide label** will show this property without the label/name.
 - **Required property** will prevent the entity from being saved if this property isn't filled in.
 - **Show in cards** means this property will appear in the Uwazi library cards as part of the basic info.
@@ -58,9 +58,9 @@ Step 6: Remember to click on **Save** after you have created properties for each
 
 Watch a [screencast](https://drive.google.com/open?id=1pqcKphveaHFJqrrBPT53b2jE5lo75BMf).
 
-> If you intend to do a CSV import to bring your metadata into Uwazi in bulk, remember that the property names on these templates must match your field names in the CSV file. This will allow the data migration to be imported successfully with all the metadata in the correct template. Related to: [How to migrate data with csv import](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-upload-and-publish-documents.html#import-your-documents-through-csv-import-data-migration).
+> If you intend to do a CSV import to bring your metadata into Uwazi in bulk, remember that the property names on these templates must match your field names in the CSV file. This will allow the data migration to be imported successfully with all the metadata in the correct template. Related to: [How to migrate data with csv import](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#import-your-documents-through-csv-import-data-migration).
 > 
-> **Warning:** Uwazi does not support the use of non-Latin characters (such as Arabic text or accented characters) on template configuration. This includes template titles and property names. In order to use non-Latin characters in template titles or property names, you must first create them in Latin characters, and then translate those phrases under the "Translations" tab in Settings as described in [How to translate your content](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-translate-your-content.html). If this is not done, it will trigger a known bug. Our developers are working to fix it.
+> **Warning:** Uwazi does not support the use of non-Latin characters (such as Arabic text or accented characters) on template configuration. This includes template titles and property names. In order to use non-Latin characters in template titles or property names, you must first create them in Latin characters, and then translate those phrases under the "Translations" tab in Settings as described in [How to translate your content](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-translate-your-content). If this is not done, it will trigger a known bug. Our developers are working to fix it.
 
 ## How to create thesauri
 
@@ -172,7 +172,7 @@ Instead of duplicating the geolocation property and collecting the same data twi
 
 The first step is to create the property for which you want to be inherited. To use the example above, you will create the geolocation property on the **jail** entity template. This will serve as the one place to capture the geolocation of the jails.
 
-The next step is to [create a relationship type](https://github.com/huridocs/uwazi/wiki/Create-Different-Relationships) that will represent the relationship between the **jail** and the **prisoner**. You may want to call this something like "location" or "jail". For this example, we'll use the name "jail".
+The next step is to [create a relationship type](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-connect-properties-on-different-templates) that will represent the relationship between the **jail** and the **prisoner**. You may want to call this something like "location" or "jail". For this example, we'll use the name "jail".
 
 The next step is to create a relationship property _from_ the entity template that you want to inherit a property, _to_ the entity type that has the property you want to inherit. To use the example above, you will edit the **prisoner** entity template to add a relationship property. The name of this relationship property is whatever you named the relationship in the previous step ("jail"). As you are creating this relationship property, you will be asked to select which entity type you want the relationship to include and you will select "Jail" because that is the entity type that has the geolocation property you want to inherit. Then you will be asked if you want to inherit a property from the "Jail" entity template. Here is where you can select the geolocation property.
 
