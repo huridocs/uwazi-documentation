@@ -119,7 +119,7 @@ If you want to replace the Uwazi icon for your own:
 
 - The landing page is the first thing users will see when visiting your Uwazi instance.
 
-- By default, the landing page is set to the full Library![](images/image_0.png) without any filters applied.
+- By default, the landing page is set to the full Library ![](images/image_0.png) without any filters applied.
 
 - But you can use any page from your Uwazi instance as the landing page instead. Copy and paste the URL on the text box, accordingly. These are some examples:
   
@@ -171,17 +171,17 @@ If you have added a contact form on one of your pages, this is where you would a
 
 If you have added a public intake or submission form on one of your pages, this is where you would add the template ID (representing the numbers in the template URL). You must white-list the template IDs for which public forms are expected. Please include a comma-separated list of template IDs without spaces. Click [here](#bookmark=id.7zow8h6oowf5) to learn how to add and configure a public submission form on a webpage.
 
-### Maptiler Key
+### Maptiler key
 
 ![](images/edit-site-settings-1.png)
 
-### Map Starting Point
+### Map starting point
 
 To set your own geolocation default, drag the map and click to select the destination, or enter the latitude and longitude, if known.
 
 ![](images/edit-site-settings-2.png)
 
-### Support Non-Latin Characters in Property Names
+### Support non-Latin characters in property names
 
 Checking the box will update non-latin languages as default languages and properties, automatically. In addition, the links or URLS will be updated as well.
 
