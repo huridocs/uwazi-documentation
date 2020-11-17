@@ -2,8 +2,7 @@
 
 ## How to Access the API for Your Instance	
 
-> An API allows one program to request data from another. API stands for application programming interface. An API provides you with data its programmers have made available to outside users.
-
+> An **API** allows one program to request data from another. API stands for application programming interface. An API provides you with data its programmers have made available to outside users.
 
 The server has the data and sets the language, while the client uses that language to ask for information from the server. To make some of data available to the public, programmers "expose endpoints," meaning they publish a portion of the language they’ve used to build their program. Endpoints return text that’s meant for computers to read.
 There are four types of actions an API can take:
@@ -13,7 +12,7 @@ There are four types of actions an API can take:
 - PUT: revises or adds to existing information
 - DELETE: deletes existing information
 
-You can access the API instructions and options for your Uwazi instance by adding _/api_ to the end of your URL, like this:[ https://yourinstancename.uwazi.io/api](https://yourinstancename.uwazi.io/api). Uwazi requires **authorization** for POST and DELETE actions. Uwazi does not require authorization for GET actions. Uwazi currently does not use PUT actions via the API.
+You can access the API instructions and options for your Uwazi instance by adding _/api_ to the end of your URL, like this:[https://yourinstancename.uwazi.io/api](https://yourinstancename.uwazi.io/api). Uwazi requires **authorization** for POST and DELETE actions. Uwazi does not require authorization for GET actions. Uwazi currently does not use PUT actions via the API.
 
 These are a few examples of some endpoints that Uwazi currently offers:
 
@@ -136,7 +135,7 @@ Renders:
 
  ## How to Configure EntityInfo Components
 
-> EntityInfo is a collection of data visualization components that allows an entity’s information to display by opening the side panel and loading its data inside. It assigns that flow to the "click" event of whatever tag element you define. The default is a DIV, but you can configure this to a button or any other element. (Note: This requires programming knowledge.)
+> EntityInfo is a collection of data visualization components that allows an entity’s information to display by opening the side panel and loading its data inside. It assigns that flow to the "click" event of whatever tag element you define. The default is a DIV, but you can configure this to a button or any other element. (**Note: This requires programming knowledge.**)
 
 EntityInfo allows you to create any HTML element (and HTML children) in a custom page. That element is assigned an _onClick_ event. That click opens the side panel and displays that entity’s info on the panel. It mimics the behavior of clicking a Card in the library: the entity’s info is shown on the side panel.
 
