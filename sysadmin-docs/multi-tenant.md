@@ -76,7 +76,7 @@ server {
   server_name tenant2.localhost;
   listen       3002;
   location / {
-                proxy_set_header tenant tenant1;
+                proxy_set_header tenant tenant2;
                 proxy_set_header host $host;
                 proxy_set_header x-forwarded-server $host;
                 proxy_set_header x-forwarded-for $proxy_add_x_forwarded_for;
