@@ -1,9 +1,9 @@
 # Multi-tenancy 
 
 Multi-tenancy is built-in uwazi and allows for multiple databases/tenants to be served with a single node process.
-the tenant object defines all specific configurations, tenants should be created on a separated db 'uwazi_shared_db' in a 'tenants' collections with the following structure:
+The tenant object defines all specific configurations, tenants should be created on a separated db 'uwazi_shared_db' in a 'tenants' collections with the following structure:
 
-this is from app/api/tenants/tenantContext.ts
+This is from app/api/tenants/tenantContext.ts
 ```
 export type Tenant = {
   name: string; //should be unique
@@ -17,9 +17,9 @@ export type Tenant = {
 
 ```
 
-Uwazi will use this config for requests that provide a tenant header corresponding with the tenant name, for requests that do not provide one uwazi will use the defaultTenant from app/api/config.ts.
+Uwazi will use this config for requests that provide a tenant header corresponding with the tenant name, for requests that do not provide one Uwazi will use the defaultTenant from app/api/config.ts.
 
-## the most basic example working
+## The most basic example working
 
 ```
 //setup tenants, no paths specified for simplicity but they SHOULD be specified in the config, there is no default.
@@ -42,7 +42,7 @@ curl -H "tenant: tenant1" localhost:3000/api/search
 curl -H "tenant: tenant2" localhost:3000/api/search
 ```
 
-as you can see a MULTI_TENANT env variable is set to true, uwazi is multi tenant by default but we need to set this variable to deactivate certain features that do not work with a multi-tenant approach for now, this are the features not supported for now.
+As you can see a MULTI_TENANT env variable is set to true, Uwazi is multi tenant by default but we need to set this variable to deactivate certain features that do not work with a multi-tenant approach for now, this are the features not supported for now.
 
 - evidence vault
 - sync
@@ -50,42 +50,52 @@ as you can see a MULTI_TENANT env variable is set to true, uwazi is multi tenant
 - topic classification
 
 
-## serving the web app
+## Serving the web app
 
-in order for this to work not only for the api but the web app, a proxy mapping the diferent tenants needs to be set up, we use nginx.
-here is a basic nginx config that maps diferent ports the same uwazi process but with diferent tenant header:
+In order for this to work not only for the api but the web app, a proxy mapping the diferent tenants needs to be set up, we use nginx.
+Here is a basic nginx config that maps diferent ports the same Uwazi process but with diferent tenant header:
 
 ```
 server {
+  server_name tenant1.localhost;
   listen       3001;
-
   location / {
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection "upgrade";
-    proxy_set_header tenant tenant1;
-    proxy_pass http://localhost:3000;
+                proxy_set_header tenant tenant1;
+                proxy_set_header host $host;
+                proxy_set_header x-forwarded-server $host;
+                proxy_set_header x-forwarded-for $proxy_add_x_forwarded_for;
+                proxy_pass http://localhost:3000;
+                client_max_body_size 500M;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_connect_timeout 60s;
+                proxy_read_timeout 60s;
   }
-}
 
 server {
+  server_name tenant2.localhost;
   listen       3002;
-
   location / {
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection "upgrade";
-    proxy_set_header tenant tenant2;
-    proxy_pass http://localhost:3000;
+                proxy_set_header tenant tenant1;
+                proxy_set_header host $host;
+                proxy_set_header x-forwarded-server $host;
+                proxy_set_header x-forwarded-for $proxy_add_x_forwarded_for;
+                proxy_pass http://localhost:3000;
+                client_max_body_size 500M;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_connect_timeout 60s;
+                proxy_read_timeout 60s;
   }
-}
 ```
 
-opening the browser on localhost:3001 will serve an app that will work with tenant1, localhost:3002 will work with tenant2.
+Opening the browser on localhost:3001 will serve an app that will work with tenant1, localhost:3002 will work with tenant2.
 
-## maintenance scripts
+## Maintenance scripts
 
-scripts such as yarn migrate, and yarn reindex use the defaultTenant to perform the task, defaultTenant is configured by setting appropiate environment variables, a full list of this variables is on the [install documentation](https://uwazi.readthedocs.io/en/latest/sysadmin-docs/install.html)
+Scripts such as yarn migrate, and yarn reindex use the defaultTenant to perform the task, defaultTenant is configured by setting appropiate environment variables, a full list of this variables is on the [install documentation](https://uwazi.readthedocs.io/en/latest/sysadmin-docs/install.html)
 
-example:
+Example:
 ```
 DATABASE_NAME=tenant1_db INDEX_NAME=tenant1_index yarn migrate
 DATABASE_NAME=tenant2_db INDEX_NAME=tenant2_index yarn reindex
