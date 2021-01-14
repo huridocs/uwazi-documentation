@@ -1,6 +1,6 @@
 # Multi-tenancy 
 
-Multi-tenancy is built-in uwazi and allows for multiple databases/tenants to be served with a single node process.
+Multi-tenancy is built-in Uwazi and allows for multiple databases/tenants to be served with a single node process.
 The tenant object defines all specific configurations, tenants should be created on a separated db 'uwazi_shared_db' in a 'tenants' collections with the following structure:
 
 This is from app/api/tenants/tenantContext.ts
@@ -42,7 +42,7 @@ curl -H "tenant: tenant1" localhost:3000/api/search
 curl -H "tenant: tenant2" localhost:3000/api/search
 ```
 
-As you can see a MULTI_TENANT env variable is set to true, Uwazi is multi tenant by default but we need to set this variable to deactivate certain features that do not work with a multi-tenant approach for now, this are the features not supported for now.
+As you can see a MULTI_TENANT env variable is set to true, Uwazi is multi tenant by default but we need to set this variable to deactivate certain features that do not work with a multi-tenant approach for now. These are the features not supported for now:
 
 - evidence vault
 - sync
@@ -52,8 +52,8 @@ As you can see a MULTI_TENANT env variable is set to true, Uwazi is multi tenant
 
 ## Serving the web app
 
-In order for this to work not only for the api but the web app, a proxy mapping the diferent tenants needs to be set up, we use nginx.
-Here is a basic nginx config that maps diferent ports the same Uwazi process but with diferent tenant header:
+In order for this to work not only for the api but the web app, a proxy mapping the different tenants needs to be set up, we use nginx.
+Here is a basic nginx config that maps different ports the same Uwazi process but with different tenant header:
 
 ```
 server {
