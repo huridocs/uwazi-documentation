@@ -65,7 +65,7 @@ You need to know that every entity has its `metadata` stored in `entity.metadata
 }
 ```
 
-So, to expand on the previous explanation, the way to extract the data for properties other than `title`, you would need something like this:
+So, to expand on the previous explanation, the way to extract the data for properties other than `title`, is with something like this:
 
 ```
 <Value path="currentEntity.metadata.country.0.value />
