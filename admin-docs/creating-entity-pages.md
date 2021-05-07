@@ -24,7 +24,10 @@ The page design follows the same guidelines described in [DESIGNING YOUR WEBSITE
 
 Pay particular attention to the [Query Component](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#query-component) section of the [ANALYSING & VISUALISING YOUR COLLECTION](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#analysing-visualising-your-collection) document.
 
-The prepartion steps of defining the page as "Enabled" to be used in entity view are important because that provides the data you need to display each entity's data. This preparation steps provide you with two automatically-created DATASETS: `currentEntity` and `currentTemplate`.
+The prepartion steps of defining the page as "Enabled" to be used in entity view are important because that provides the data you need to display each entity's data. This preparation steps provide you with two automatically-created DATASETS:
+
+- `currentEntity`
+- `currentTemplate`.
 
 These new datasets can be consumed via the `Value` and `Repeat`, just as with any other `Query` defined data.
 
@@ -38,12 +41,12 @@ This already wraps the entity's title within a parragraph tag element.
 
 Accessing the entity's metadata requires a little more knowledge into the way Uwazi stores the data, but here is a brief explanation of what you can expect. For the following entity example:
 
-| Properties       | Values                                           |
-| ---------------- | ------------------------------------------------ |
-| Title            | Title of Entity                                  |
-| Country          | India (based on a Thesaurus of countries)        |
-| Description      | A rich text description                          |
-| Related Entityes | Title of another entity, Title of a third entity |
+| Properties       | Values                                           | Observations                                                     |
+| ---------------- | ------------------------------------------------ | ---------------------------------------------------------------- |
+| Title            | Title of Entity                                  |                                                                  |
+| Country          | India                                            | Data based on a Thesaurus of countries                           |
+| Description      | A rich text description                          |                                                                  |
+| Related Entities | Title of another entity, Title of a third entity | Data based on a two relationships selected in Relationship field |
 
 You need to know that every entity has its `metadata` stored in `entity.metadata`. This property is an object where property names are the keys (sanitized to lower case and spaces replaced with underscores) and every value is actually an array of objects that have either `value` or `label` keys, depending on their type. So, internally, the above entity will look like:
 
@@ -62,4 +65,36 @@ You need to know that every entity has its `metadata` stored in `entity.metadata
 }
 ```
 
-So, to expand
+So, to expand on the previous explanation, the way to extract the data for properties other than `title`, you would need something like this:
+
+```
+<Value path="currentEntity.metadata.country.0.value />
+```
+
+This will print the value `India` on the page's HTML.
+
+As noted, you could use the `Repeat` component to list al the "Related Entities". Here is a more complex example of how to create a more complex display of property name and property values:
+
+```
+<p><Value path="currentTemplate.properties.2.label" />: </p>
+<ul>
+  <Repeat path="currentEntity.metadata.related_entities">
+    <li>
+      <Value path="label" />
+    </li>
+  </Repeat>
+</ul>
+```
+
+This will print:
+
+---
+
+Related Entities:
+
+- Title of another entitiy
+- Title of a third entity
+
+---
+
+Notice that the position of the property in `currentTemplate` (in this case "2") needs to be inspected via the API or analyzing the respose to the request on the browser. There is no way to know before hand the position of a property in the template. In the entites, they are namespaced by property name, so it is easier to extract the data.
