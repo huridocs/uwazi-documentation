@@ -29,7 +29,7 @@ The prepartion steps of defining the page as "Enabled" to be used in entity view
 - `currentEntity`
 - `currentTemplate`
 
-These new datasets can be consumed via the `Value` and `Repeat`, just as with any other `Query` defined data.
+These new datasets can be consumed via the `Value` and `Repeat` components, just as with any other `Query` defined data.
 
 For example, to extract the Entity's title, you would use something like:
 
