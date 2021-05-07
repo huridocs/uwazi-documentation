@@ -73,7 +73,7 @@ So, to expand on the previous explanation, the way to extract the data for prope
 
 This will print the value `India` on the page's HTML.
 
-As noted, you could use the `Repeat` component to list al the "Related Entities". Here is a more complex example of how to create a more complex display of property name and property values:
+As noted, you could use the `Repeat` component to list all the "Related Entities". Here is a more complex example of how to create a more complex display of property name and property values:
 
 ```
 <p><Value path="currentTemplate.properties.2.label" />: </p>
