@@ -48,7 +48,7 @@ Accessing the entity's metadata requires a little more knowledge into the way Uw
 | Description      | A rich text description                          |                                                                  |
 | Related Entities | Title of another entity, Title of a third entity | Data based on a two relationships selected in Relationship field |
 
-You need to know that every entity has its `metadata` stored in `entity.metadata`. This property is an object where property names are the keys (sanitized to lower case and spaces replaced with underscores) and every value is actually an array of objects that have either `value` or `label` keys, depending on their type. So, internally, the above entity will look like:
+You need to know that every entity has its `metadata` stored in `entity.metadata`. This property is an object where property names are the keys (sanitized to lower case and spaces replaced with underscores) and every value is actually an array of objects that have either `value` or `label` or both keys, depending on their type. So, internally, the above entity will look like:
 
 ```
 {
