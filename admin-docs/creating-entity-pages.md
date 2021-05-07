@@ -27,7 +27,7 @@ Pay particular attention to the [Query Component](https://uwazi.readthedocs.io/e
 The prepartion steps of defining the page as "Enabled" to be used in entity view are important because that provides the data you need to display each entity's data. This preparation steps provide you with two automatically-created DATASETS:
 
 - `currentEntity`
-- `currentTemplate`.
+- `currentTemplate`
 
 These new datasets can be consumed via the `Value` and `Repeat`, just as with any other `Query` defined data.
 
