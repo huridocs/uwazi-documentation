@@ -37,7 +37,7 @@ For example, to extract the Entity's title, you would use something like:
 <p><Value path="currentEntity.title" /></p>
 ```
 
-This already wraps the entity's title within a parragraph tag element.
+This already wraps the entity's title within a paragraph tag element.
 
 Accessing the entity's metadata requires a little more knowledge into the way Uwazi stores the data, but here is a brief explanation of what you can expect. For the following entity example:
 
