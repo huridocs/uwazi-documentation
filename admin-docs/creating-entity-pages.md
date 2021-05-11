@@ -73,7 +73,7 @@ So, to expand on the previous explanation, the way to extract the data for prope
 
 This will print the value `India` on the page's HTML.
 
-As noted, you could use the `Repeat` component to list all the "Related Entities". Here is a more in depth example of how to create a more complex display of property name and property values:
+As noted, you could use the `Repeat` component to list both items that are stored in the "Related Entities" metadata property. Here is a more in depth example of how to create a more complex display of property name and property values:
 
 ```
 <p><Value path="currentTemplate.properties.2.label" />: </p>
@@ -97,4 +97,12 @@ Related Entities:
 
 ---
 
-Notice that the position of the property in `currentTemplate` (in this case "2") needs to be inspected via the API or analyzing the respose to the request on the browser. There is no way to know before hand the position of a property in the template. In the entites, they are namespaced by property name, so it is easier to extract the data.
+Notice that the position of the property in `currentTemplate` (in this case "2") needs to be known by analyzing the correct array position within the template. There are several ways to accomplish this:
+
+- do a `repeat` section of all the properties and extract their labels
+- inspect the respose to the browser request to the `templates` endpoint
+- inspect the redux store in `pages -> datasets -> currentTemplate`
+- doing an API call to fetch the template
+- inspecting the database directly
+
+These are all advanced procedures. Please refer to the different sections of this documentation depending on your desired approach. Currently, there is no way to know before hand the position of a property within the template. Entites, on the other hand, are namespaced by property name, so it is easier to extract the data.
