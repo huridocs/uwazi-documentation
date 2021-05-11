@@ -101,7 +101,7 @@ Notice that the position of the property in `currentTemplate` (in this case "2")
 
 - do a `repeat` section of all the properties and extract their labels
 - inspect the respose to the browser request to the `templates` endpoint
-- inspect the redux store in `pages -> datasets -> currentTemplate`
+- inspect the redux store in `page -> datasets -> currentTemplate`
 - doing an API call to fetch the template
 - inspecting the database directly
 
