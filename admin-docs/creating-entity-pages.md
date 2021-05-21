@@ -85,7 +85,7 @@ Depending on the type, each property could have somewhat diferent structures. As
 }
 ```
 
-Note: this a simplified version of the actual data, if you want to see all the dat, the simplest way is to install the "React Developer Tools" extension for Chrome and inspect the "Redux" state tree. You will find the full structure on `page -> datasets -> entity`.
+Note: this a simplified version of the actual data, if you want to see all the data, the simplest way is to install the "React Developer Tools" extension for Chrome and inspect the "Redux" state tree. You will find the full structure on `page -> datasets -> entity`.
 
 With this data, you can print out values normally. Here's a brief example:
 
