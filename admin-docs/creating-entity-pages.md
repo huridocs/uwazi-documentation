@@ -112,7 +112,7 @@ Name of a book
 
 ---
 
-Please note that, at this point, there is no way to directly use the Cover Image URL (value) to present an image instead of the URL text in the HTML of the page. To accomplish this, you would need to use the javascript area to assign the source of the image dynamically.
+The metadata position in the array is accessed via a "named" property with the array position. Please note that, at this point, there is no way to directly use the Cover Image URL (value) to present an image instead of the URL text in the HTML of the page. To accomplish this, you would need to use the javascript area to assign the source of the image dynamically.
 
 ### entityRaw dataset
 
