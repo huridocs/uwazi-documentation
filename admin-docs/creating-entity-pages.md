@@ -24,22 +24,99 @@ The page design follows the same guidelines described in [DESIGNING YOUR WEBSITE
 
 Pay particular attention to the [Query Component](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#query-component) section of the [ANALYSING & VISUALISING YOUR COLLECTION](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#analysing-visualising-your-collection) document.
 
-The prepartion steps of defining the page as "Enabled" to be used in entity view are important because that provides the data you need to display each entity's data. This preparation steps provide you with two automatically-created DATASETS:
+The prepartion steps of defining the page as "Enabled" to be used in entity view are important because they provide the data you need to display each entity's data. With them you have access to three automatically-created DATASETS:
 
-- `currentEntity`
-- `currentTemplate`
+- `entity`
+- `entityRaw`
+- `template`
 
-These new datasets can be consumed via the `Value` and `Repeat` components, just as with any other `Query` defined data.
+These new datasets can be consumed via the `Value` and `Repeat` components, just as with any other `Query` defined data. The `entity` dataset presents "formatted" entity data, where some values have presentational values or labels added to them (like dates, for example). The `entityRaw` dataset presents you with the unprocessed data as it is stored in the database.
 
-For example, to extract the Entity's title, you would use something like:
+To use this data, you would access the entity's properties normally. For example, to print the Entity's title, you would use something like:
 
 ```
-<p><Value path="currentEntity.title" /></p>
+<p><Value path="entity.title" /></p>
 ```
 
-This already wraps the entity's title within a paragraph tag element.
+This, as expected, wraps the entity's title within a paragraph tag element.
 
-Accessing the entity's metadata requires a little more knowledge into the way Uwazi stores the data, but here is a brief explanation of what you can expect. For the following entity example:
+Accessing the entity's metadata requires a little more knowledge into the way Uwazi data is structured.
+
+### entity dataset
+
+The data has some values stored at the root level of the object, while most are stored inside the `metadata` array.
+
+Whenever possible, this is the easiest dataset to use. This data has the advantage of having some values already processed for you. For example, dates in Uwazi are stored using [Unix time](https://en.wikipedia.org/wiki/Unix_time). The entity dataset provides the original value, but also a formatted value you can use that already takes into account date formats according to language, etc.
+
+Take the following enttiy structure:
+
+| Properties          | Values                             | Observations                           |
+| ------------------- | ---------------------------------- | -------------------------------------- |
+| Title               | Name of a book                     |                                        |
+| Brief Description   | Something nice                     |                                        |
+| Country             | Ecuador                            | Data based on a Thesaurus of countries |
+| Date of Publication | 13 July, 1977                      | Internally this would be: 1621618430   |
+| Cover Image         | yourdomain.com/media/bookCover.jpg |                                        |
+
+Depending on the type, each property could have somewhat diferent structures. As an example, the above entity will look like this in the `entity` dataset:
+
+```
+{
+  title: 'Name of a book',
+  metadata: [
+    {
+      label: "Brief Description",
+      value: "Something nice"
+    },
+    {
+      label: "Country",
+      value: "Ecuador"
+    },
+    {
+      label: "Date of Publication",
+      value: "13 July, 1977",
+      timestamp: 1621618430
+    },
+    {
+      label: "Cover Image",
+      value: "yourdomain.com/media/bookCover.jpg"
+    }
+  ]
+}
+```
+
+Note: this a simplified version of the actual data, if you want to see all the dat, the simplest way is to install the "React Developer Tools" extension for Chrome and inspect the "Redux" state tree. You will find the full structure on `page -> datasets -> entity`.
+
+With this data, you can print out values normally. Here's a brief example:
+
+```
+<h1><Value path="entity.title" /></h1>
+<ul>
+  <li><Value path="entity.metadata.0.label" />: <Value path="entity.metadata.0.value" /></li>
+  <li><Value path="entity.metadata.1.label" />: <Value path="entity.metadata.1.value" /></li>
+  <li><Value path="entity.metadata.2.label" />: <Value path="entity.metadata.2.value" /></li>
+  <li><Value path="entity.metadata.3.label" />: <Value path="entity.metadata.3.value" /></li>
+</ul>
+```
+
+This HTML code will print:
+
+---
+
+Name of a book
+
+- Brief Desription: Something nice
+- Country: Ecuador
+- Date of Publication: 13 July, 1977
+- Image: yourdomain.com/media/bookCover.jpg
+
+---
+
+Please note that, at this point, there is no way to directly use the Cover Image URL (value) to present an image instead of the URL text in the HTML of the page. To accomplish this, you would need to use the javascript area to assign the source of the image dynamically.
+
+### entityRaw dataset
+
+The data has some values stored at the root level of the object, while most are stored inside the `metadata` object. Please note the different from the `entity` data, where metadata is an array of properties. Here is a brief example of what you can expect. Take the following entity structure:
 
 | Properties       | Values                                           | Observations                                                   |
 | ---------------- | ------------------------------------------------ | -------------------------------------------------------------- |
@@ -48,7 +125,7 @@ Accessing the entity's metadata requires a little more knowledge into the way Uw
 | Description      | A rich text description                          |                                                                |
 | Related Entities | Title of another entity, Title of a third entity | Data based on two relationships selected in Relationship field |
 
-You need to know that every entity has its `metadata` stored in `entity.metadata`. This is an object where property names are the keys (sanitized to lower case and spaces replaced with underscores) and every value is actually an array of objects that have either `value` or `label` or both keys, depending on their type. So, internally, the above entity will look like:
+Most properties will be inside the `metadata` object where property names are the keys (sanitized to lower case and spaces replaced with underscores) and every value is actually an array of objects that have either `value` or `label` (or both keys, depending on their type). So, internally, the above entity will look like:
 
 ```
 {
@@ -68,7 +145,7 @@ You need to know that every entity has its `metadata` stored in `entity.metadata
 So, to expand on the previous explanation, the way to extract the data for properties other than `title`, is with something like this:
 
 ```
-<Value path="currentEntity.metadata.country.0.value />
+<Value path="entityRaw.metadata.country.0.value />
 ```
 
 This will print the value `India` on the page's HTML.
@@ -76,9 +153,9 @@ This will print the value `India` on the page's HTML.
 As noted, you could use the `Repeat` component to list both items that are stored in the "Related Entities" metadata property. Here is a more in depth example of how to create a more complex display of property name and property values:
 
 ```
-<p><Value path="currentTemplate.properties.2.label" />: </p>
+<p><Value path="template.properties.2.label" />: </p>
 <ul>
-  <Repeat path="currentEntity.metadata.related_entities">
+  <Repeat path="entityRaw.metadata.related_entities">
     <li>
       <Value path="label" />
     </li>
@@ -97,11 +174,11 @@ Related Entities:
 
 ---
 
-Notice that the position of the property in `currentTemplate` (in this case "2") needs to be known by analyzing the correct array position within the template. There are several ways to accomplish this:
+Notice that the position of the property in `template` (in this case "2") needs to be known. The order is respecting the order in which the properties are defined in the template. Still, you can ensure this by analyzing the correct array position within the template. There are several ways to accomplish this:
 
 - do a `repeat` section of all the properties and extract their labels
 - inspect the respose to the browser request to the `templates` endpoint
-- inspect the redux store in `page -> datasets -> currentTemplate`
+- inspect the redux store in `page -> datasets -> template`
 - doing an API call to fetch the template
 - inspecting the database directly
 
