@@ -44,9 +44,9 @@ Accessing the entity's metadata requires a little more knowledge into the way Uw
 
 ### entity dataset
 
-The data has some values stored at the root level of the object, while most are stored inside the `metadata` array.
+The data has some values stored at the root level of the object, while most are stored inside the `metadata` object.
 
-Whenever possible, this is the easiest dataset to use. This data has the advantage of having some values already processed for you. For example, dates in Uwazi are stored using [Unix time](https://en.wikipedia.org/wiki/Unix_time). The entity dataset provides the original value, but also a formatted value you can use that already takes into account date formats according to language, etc.
+Whenever possible, this is the easiest dataset to use. This data has the advantage of having some values already pre-processed for you. For example, dates in Uwazi are stored using [Unix time](https://en.wikipedia.org/wiki/Unix_time). The entity dataset provides the original value, but also a formatted value you can use that already takes into account date formats according to language, etc. It also includes the template labels correctly translated.
 
 Take the following enttiy structure:
 
@@ -63,25 +63,25 @@ Depending on the type, each property could have somewhat diferent structures. As
 ```
 {
   title: 'Name of a book',
-  metadata: [
-    {
+  metadata: {
+    brief_description: {
       label: "Brief Description",
       value: "Something nice"
     },
-    {
+    country: {
       label: "Country",
       value: "Ecuador"
     },
-    {
+    date_of_publication: {
       label: "Date of Publication",
       value: "13 July, 1977",
       timestamp: 1621618430
     },
-    {
+    cover_image: {
       label: "Cover Image",
       value: "yourdomain.com/media/bookCover.jpg"
     }
-  ]
+  }
 }
 ```
 
@@ -92,10 +92,10 @@ With this data, you can print out values normally. Here's a brief example:
 ```
 <h1><Value path="entity.title" /></h1>
 <ul>
-  <li><Value path="entity.metadata.0.label" />: <Value path="entity.metadata.0.value" /></li>
-  <li><Value path="entity.metadata.1.label" />: <Value path="entity.metadata.1.value" /></li>
-  <li><Value path="entity.metadata.2.label" />: <Value path="entity.metadata.2.value" /></li>
-  <li><Value path="entity.metadata.3.label" />: <Value path="entity.metadata.3.value" /></li>
+  <li><Value path="entity.metadata.brief_description.label" />: <Value path="entity.metadata.brief_description.value" /></li>
+  <li><Value path="entity.metadata.country.label" />: <Value path="entity.metadata.country.value" /></li>
+  <li><Value path="entity.metadata.date_of_publication.label" />: <Value path="entity.metadata.date_of_publication.value" /></li>
+  <li><Value path="entity.metadata.cover_image.label" />: <Value path="entity.metadata.cover_image.value" /></li>
 </ul>
 ```
 
@@ -112,11 +112,11 @@ Name of a book
 
 ---
 
-The metadata position in the array is accessed via a "named" property with the array position. Please note that, at this point, there is no way to directly use the Cover Image URL (value) to present an image instead of the URL text in the HTML of the page. To accomplish this, you would need to use the javascript area to assign the source of the image dynamically.
+The metadata keys are the property names (sanitized to lower case and spaces replaced with underscores). Please note that, at this point, there is no way to directly use the Cover Image URL (value) to present an image instead of the URL text in the HTML of the page. To accomplish this, you would need to use the javascript area to assign the source of the image dynamically.
 
-### entityRaw dataset
+### entityRaw and template datasets
 
-The data has some values stored at the root level of the object, while most are stored inside the `metadata` object. Please note the different from the `entity` data, where metadata is an array of properties. Here is a brief example of what you can expect. Take the following entity structure:
+The entity dataset has some values stored at the root level of the object, while most are stored inside the `metadata` object. Please note the different from the `entity` data, where metadata is an array of properties. Here is a brief example of what you can expect. Take the following entity structure:
 
 | Properties       | Values                                           | Observations                                                   |
 | ---------------- | ------------------------------------------------ | -------------------------------------------------------------- |
@@ -125,7 +125,7 @@ The data has some values stored at the root level of the object, while most are 
 | Description      | A rich text description                          |                                                                |
 | Related Entities | Title of another entity, Title of a third entity | Data based on two relationships selected in Relationship field |
 
-Most properties will be inside the `metadata` object where property names are the keys (sanitized to lower case and spaces replaced with underscores) and every value is actually an array of objects that have either `value` or `label` (or both keys, depending on their type). So, internally, the above entity will look like:
+Most properties will be inside the `metadata` object where the keys are the property names (sanitized to lower case and spaces replaced with underscores) and every value is actually an array of objects that have either `value` or `label` (or both keys, depending on their type). So, internally, the above entity will look like:
 
 ```
 {
@@ -150,7 +150,7 @@ So, to expand on the previous explanation, the way to extract the data for prope
 
 This will print the value `India` on the page's HTML.
 
-As noted, you could use the `Repeat` component to list both items that are stored in the "Related Entities" metadata property. Here is a more in depth example of how to create a more complex display of property name and property values:
+As noted, you could use the `Repeat` component to list both items that are stored in the "Related Entities" metadata property. Here is a more in depth example of how to create a more complex display of property name and property values (also using the `template` dataset):
 
 ```
 <p><Value path="template.properties.2.label" />: </p>
@@ -174,7 +174,7 @@ Related Entities:
 
 ---
 
-Notice that the position of the property in `template` (in this case "2") needs to be known. The order is respecting the order in which the properties are defined in the template. Still, you can ensure this by analyzing the correct array position within the template. There are several ways to accomplish this:
+Notice that the position of the property in `template` (in this case "2") needs to be known. The order is respecting the order in which the properties are defined in the template. Still, you can inspect this by analyzing the correct array position within the template. There are several ways to accomplish this:
 
 - do a `repeat` section of all the properties and extract their labels
 - inspect the respose to the browser request to the `templates` endpoint
@@ -182,4 +182,4 @@ Notice that the position of the property in `template` (in this case "2") needs 
 - doing an API call to fetch the template
 - inspecting the database directly
 
-These are all advanced procedures. Please refer to the different sections of this documentation depending on your desired approach. Currently, there is no way to know before hand the position of a property within the template. Entites, on the other hand, are namespaced by property name, so it is easier to extract the data.
+These are all advanced procedures. Please refer to the different sections of this documentation depending on your desired approach. Currently, there is no way to know before hand the position of a property within the template. Entites, on the other hand, are namespaced by property name, so it is easier to extract the data. As noted, whenever possible, use the `entity` dataset as it has more data and it is simpler to use.
