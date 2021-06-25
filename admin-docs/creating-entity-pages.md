@@ -4,7 +4,7 @@
 
 Uwazi allows you to create pages for two different purposes:
 
-- Designing your webiste (Link to wiki?) with pages that render mostly static content with additional options to include collection-wide data analysis.
+- Designing your website (Link to wiki?) with pages that render mostly static content with additional options to include collection-wide data analysis.
 - Replacing the standard Entity View with a custom page to better display and showcase data for each entity of a particular template type.
 
 ## Defining a page for a particular template
@@ -24,7 +24,7 @@ The page design follows the same guidelines described in [DESIGNING YOUR WEBSITE
 
 Pay particular attention to the [Query Component](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#query-component) section of the [ANALYSING & VISUALISING YOUR COLLECTION](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#analysing-visualising-your-collection) document.
 
-The prepartion steps of defining the page as "Enabled" to be used in entity view are important because they provide the data you need to display each entity's data. With them you have access to three automatically-created DATASETS:
+The preparation steps of defining the page as "Enabled" to be used in entity view are important because they provide the data you need to display each entity's data. With them you have access to three automatically-created DATASETS:
 
 - `entity`
 - `entityRaw`
