@@ -96,7 +96,7 @@ The data has some values stored at the root level of the object, while most are 
 
 Whenever possible, this is the easiest dataset to use. This data has the advantage of having some values already pre-processed for you. For example, dates in Uwazi are stored using [Unix time](https://en.wikipedia.org/wiki/Unix_time). The entity dataset provides the original value, but also a formatted value you can use that already takes into account date formats according to language, etc. It also includes the template labels correctly translated.
 
-Take the following enttiy structure:
+Take the following entity structure:
 
 | Properties          | Values                             | Observations                           |
 | ------------------- | ---------------------------------- | -------------------------------------- |
@@ -106,7 +106,7 @@ Take the following enttiy structure:
 | Date of Publication | 13 July, 1977                      | Internally this would be: 1621618430   |
 | Cover Image         | yourdomain.com/media/bookCover.jpg |                                        |
 
-Depending on the type, each property could have somewhat diferent structures. As an example, the above entity will look like this in the `entity` dataset:
+Depending on the type, each property could have somewhat different structures. As an example, the above entity will look like this in the `entity` dataset:
 
 ```
 {
@@ -153,7 +153,7 @@ This HTML code will print:
 
 Name of a book
 
-- Brief Desription: Something nice
+- Brief Description: Something nice
 - Country: Ecuador
 - Date of Publication: 13 July, 1977
 - Image: yourdomain.com/media/bookCover.jpg
@@ -183,7 +183,7 @@ Most properties will be inside the `metadata` object where the keys are the prop
     country: [{ label: "India", key: "df9a88" }],
     description: [{ value: "A rich text description" }],
     related_entities: [
-      { label: "Title of another entitiy", value: "9ad8f212" },
+      { label: "Title of another entity", value: "9ad8f212" },
       { label: "Title of a third entity", value: "as182736a" },
     ]
   }
@@ -217,7 +217,7 @@ This will print:
 
 Related Entities:
 
-- Title of another entitiy
+- Title of another entity
 - Title of a third entity
 
 ---
@@ -225,9 +225,40 @@ Related Entities:
 Notice that the position of the property in `template` (in this case "2") needs to be known. The order is respecting the order in which the properties are defined in the template. Still, you can inspect this by analyzing the correct array position within the template. There are several ways to accomplish this:
 
 - do a `repeat` section of all the properties and extract their labels
-- inspect the respose to the browser request to the `templates` endpoint
+- inspect the response to the browser request to the `templates` endpoint
 - inspect the redux store in `page -> datasets -> template`
 - doing an API call to fetch the template
 - inspecting the database directly
 
-These are all advanced procedures. Please refer to the different sections of this documentation depending on your desired approach. Currently, there is no way to know before hand the position of a property within the template. Entites, on the other hand, are namespaced by property name, so it is easier to extract the data. As noted, whenever possible, use the `entity` dataset as it has more data and it is simpler to use.
+These are all advanced procedures. Please refer to the different sections of this documentation depending on your desired approach. Currently, there is no way to know before hand the position of a property within the template. Entities, on the other hand, are namespaced by property name, so it is easier to extract the data. As noted, whenever possible, use the `entity` dataset as it has more data and it is simpler to use.
+
+## Exploring your datasets
+
+You can check the specific Entity-related datasets in a page by following this procedure.
+
+1. Create a new page with a title and the following contents:
+
+```
+<h1>My page's Datasets</h1>
+<h3>Formatted entity data</h3>
+<pre id="formatted-entity"></pre>
+<hr />
+<h3>Raw entity data</h3>
+<pre id="raw-entity"></pre>
+<hr />
+<h3>Tamplate data</h3>
+<pre id="template-data"></pre>
+```
+
+2. Add the following script to the page:
+
+```
+document.getElementById('formatted-entity').innerHTML = JSON.stringify(datasets.entity, null, 1);
+document.getElementById('raw-entity').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().entityRaw, null, 1);
+document.getElementById('template-data').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().template, null, 1);
+```
+
+3. Enable the page to be used as an entity view.
+4. Assign the page to any template you would like for viewing it's entities datasets.
+
+Now, when you go to `view` any of the entities using that template, you will be able to see the Entity-specific datasets available.
