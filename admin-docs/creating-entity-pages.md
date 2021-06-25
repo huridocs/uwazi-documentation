@@ -22,7 +22,55 @@ Once this is done, when you enter the entity view for entities of that particula
 
 The page design follows the same guidelines described in [DESIGNING YOUR WEBSITE](https://uwazi.readthedocs.io/en/latest/admin-docs/designing-your-website.html#designing-your-website) and you can include all of the extended components described on the article to further design your page. You can also include the data visualization components described in [ANALYSING & VISUALISING YOUR COLLECTION](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#analysing-visualising-your-collection).
 
-Pay particular attention to the [Query Component](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#query-component) section of the [ANALYSING & VISUALISING YOUR COLLECTION](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#analysing-visualising-your-collection) document.
+### EntityData component
+
+The simplest way to extract values from an Entity in a Page is with the new component `<EntityData>`.
+
+This component will render the same HTML you see when you go to an Entity view. Therefore, it is already pre-processed and text fields will render as plain text, rich texts will have HTML tags to render properly, images will include an HTML `<img>` tag with the correct source, etc. This is a convenient way to quickly access property values and their corresponding labels (properly translated for each language).
+
+The `<EntityData>` component takes one of two properties:
+
+- `value`: a string representing the property name of the value be displayed
+- `propertyName`: a string representing the property name of the label to be displayed
+
+Take the following enttiy structure as example:
+
+| Properties          | Values                             |
+| ------------------- | ---------------------------------- |
+| Title               | Name of a book                     |
+| Brief Description   | Something nice                     |
+| Country             | Ecuador                            |
+| Date of Publication | 13 July, 1977                      |
+| Cover Image         | yourdomain.com/media/bookCover.jpg |
+
+You have access to property names and values passing the correct HTML syntax. For example, the following code:
+
+```
+<h1><EntityData value="title" /></h1>
+<ul>
+  <li><EntityData propertyName="Brief Description" />: <EntityData value="Brief Description" /></li>
+  <li><EntityData propertyName="Country" />: <EntityData value="Country" /></li>
+  <li><EntityData propertyName="Date of Publication" />: <EntityData value="Date of Publication" /></li>
+  <li><EntityData propertyName="Cover Image" />: <EntityData value="cover_image" /></li>
+</ul>
+```
+
+will output:
+
+---
+
+Name of a book
+
+- Brief Desription: Something nice
+- Country: Ecuador
+- Date of Publication: 13 July, 1977
+- Image: ![Book Cover](https://binaries.templates.cdn.office.net/support/templates/en-us/lt22301254_quantized.png)
+
+---
+
+### Advanced design
+
+If the EntityData component is not verstaile enough for your needs, pay particular attention to the [Query Component](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#query-component) section of the [ANALYSING & VISUALISING YOUR COLLECTION](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#analysing-visualising-your-collection) document.
 
 The preparation steps of defining the page as "Enabled" to be used in entity view are important because they provide the data you need to display each entity's data. With them you have access to three automatically-created DATASETS:
 
