@@ -68,11 +68,13 @@ Name of a book
 
 ---
 
+Notice that the code would be identical for different languages if you have your content and labels properly translated, so this is a useful feature. You would still need to define the HTML for each language, but they would all be identical.
+
 ### Advanced design
 
 If the EntityData component is not verstaile enough for your needs, pay particular attention to the [Query Component](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#query-component) section of the [ANALYSING & VISUALISING YOUR COLLECTION](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#analysing-visualising-your-collection) document.
 
-The preparation steps of defining the page as "Enabled" to be used in entity view are important because they provide the data you need to display each entity's data. With them you have access to three automatically-created DATASETS:
+The preparation steps of defining the page as "Enabled" to be used in entity view are important because they provide the data you need to display each entity's data. With them you have access to three automatically-generated DATASETS:
 
 - `entity`
 - `entityRaw`
@@ -94,7 +96,7 @@ Accessing the entity's metadata requires a little more knowledge into the way Uw
 
 The data has some values stored at the root level of the object, while most are stored inside the `metadata` object.
 
-Whenever possible, this is the easiest dataset to use. This data has the advantage of having some values already pre-processed for you. For example, dates in Uwazi are stored using [Unix time](https://en.wikipedia.org/wiki/Unix_time). The entity dataset provides the original value, but also a formatted value you can use that already takes into account date formats according to language, etc. It also includes the template labels correctly translated.
+If `EntityData` is not a valid option for your needs, this is the easiest dataset to use. This data has the advantage of having some values already pre-processed for you, but not to the level of `EntityData`. For example, dates in Uwazi are stored using [Unix time](https://en.wikipedia.org/wiki/Unix_time). The `entity` dataset provides the original value, but also a formatted value you can use that already takes into account date formats according to language, etc. It also includes the template labels correctly translated.
 
 Take the following entity structure:
 
@@ -133,9 +135,9 @@ Depending on the type, each property could have somewhat different structures. A
 }
 ```
 
-Note: this a simplified version of the actual data, if you want to see all the data, the simplest way is to install the "React Developer Tools" extension for Chrome and inspect the "Redux" state tree. You will find the full structure on `page -> datasets -> entity`.
+Note: this a simplified version of the actual data, if you want to see all the data, there are a couple of ways. One is described at the end of this page, another is to install the "React Developer Tools" extension for Chrome and inspect the "Redux" state tree. You will find the full structure on `page -> datasets -> entity`.
 
-With this data, you can print out values normally. Here's a brief example:
+With this data, you can print out values and labels following the usual `Value` component flow. Here's a brief example:
 
 ```
 <h1><Value path="entity.title" /></h1>
@@ -160,11 +162,11 @@ Name of a book
 
 ---
 
-The metadata keys are the property names (sanitized to lower case and spaces replaced with underscores). Please note that, at this point, there is no way to directly use the Cover Image URL (value) to present an image instead of the URL text in the HTML of the page. To accomplish this, you would need to use the javascript area to assign the source of the image dynamically.
+The metadata keys are the property names (sanitized to lower case and spaces replaced with underscores). Please note that you cannot directly use the Cover Image URL (value) to present an image instead of the URL text in the HTML of the page. To accomplish this, you need to use the `EntityData` component or, if you need more options, you would need to use the javascript area to assign the source of the image dynamically.
 
 ### entityRaw and template datasets
 
-The entity dataset has some values stored at the root level of the object, while most are stored inside the `metadata` object. Please note the different from the `entity` data, where metadata is an array of properties. Here is a brief example of what you can expect. Take the following entity structure:
+The `entity` and `entityRaw` datasets have some values stored at the root level of the object, while most are stored inside the `metadata` object. Here is a brief example of what you can expect from the `entityRaw` dataset. Take the following entity structure:
 
 | Properties       | Values                                           | Observations                                                   |
 | ---------------- | ------------------------------------------------ | -------------------------------------------------------------- |
@@ -222,15 +224,16 @@ Related Entities:
 
 ---
 
-Notice that the position of the property in `template` (in this case "2") needs to be known. The order is respecting the order in which the properties are defined in the template. Still, you can inspect this by analyzing the correct array position within the template. There are several ways to accomplish this:
+Notice that the position of the property in `template` (in this case "2") needs to be hardcoded to the array. The order respects the order in which the properties are defined in the template. Still, you can inspect this by analyzing the correct array position within the template. There are several ways to accomplish this:
 
+- explore your datasets (described in the next section)
 - do a `repeat` section of all the properties and extract their labels
 - inspect the response to the browser request to the `templates` endpoint
 - inspect the redux store in `page -> datasets -> template`
 - doing an API call to fetch the template
 - inspecting the database directly
 
-These are all advanced procedures. Please refer to the different sections of this documentation depending on your desired approach. Currently, there is no way to know before hand the position of a property within the template. Entities, on the other hand, are namespaced by property name, so it is easier to extract the data. As noted, whenever possible, use the `entity` dataset as it has more data and it is simpler to use.
+These are all advanced procedures. Please refer to the different sections of this documentation depending on your desired approach. As noted, whenever possible, use the `EntityData` component first, if this does not provide with enough versatility try the `entity` dataset as it has more data and it is simpler to use. If not, default to the `entityRaw` dataset. Only use the javascript section of a page if all else fails.
 
 ## Exploring your datasets
 
