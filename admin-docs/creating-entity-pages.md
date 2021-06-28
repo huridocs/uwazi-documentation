@@ -30,8 +30,8 @@ This component will render the same HTML you see when you go to an Entity view. 
 
 The `<EntityData>` component takes one of two properties:
 
-- `valueOf`: a string representing the name of the property of the value be rendered
-- `labelOf`: a string representing the name of the property of the label to be rendered
+- `value-of`: a string representing the name of the property of the **value** be rendered
+- `label-of`: a string representing the name of the property of the **label** to be rendered
 
 Take the following enttiy structure as example:
 
@@ -46,12 +46,12 @@ Take the following enttiy structure as example:
 You have access to property names and values passing the correct HTML syntax. For example, the following code:
 
 ```
-<h1><EntityData valueOf="title" /></h1>
+<h1><EntityData value-of="title" /></h1>
 <ul>
-  <li><EntityData labelOf="Brief Description" />: <EntityData valueOf="Brief Description" /></li>
-  <li><EntityData labelOf="Country" />: <EntityData valueOf="Country" /></li>
-  <li><EntityData labelOf="Date of Publication" />: <EntityData valueOf="Date of Publication" /></li>
-  <li><EntityData labelOf="Cover Image" />: <EntityData valueOf="cover_image" /></li>
+  <li><EntityData label-of="Brief Description" />: <EntityData value-of="Brief Description" /></li>
+  <li><EntityData label-of="Country" />: <EntityData value-of="Country" /></li>
+  <li><EntityData label-of="Date of Publication" />: <EntityData value-of="Date of Publication" /></li>
+  <li><EntityData label-of="Cover Image" />: <EntityData value-of="cover_image" /></li>
 </ul>
 ```
 
