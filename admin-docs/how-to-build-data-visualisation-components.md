@@ -34,7 +34,7 @@ Charts can be configured to display thesauri that have nested values in two ways
 
 For example:
 
-`<BarChart property="select_with_nested" context="60cb857034f3490ed729e34f" scatter="true" />`
+`<BarChart property="nested_thesauri_propery" context="60cb857034f3490ed729e34f" scatter="true" />`
 
 This way the chart will show thesauri items individually, instead of the groups in which they are organized.
 
