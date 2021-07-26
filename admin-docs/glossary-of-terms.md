@@ -18,7 +18,7 @@
 
 - **Fallback** is an alternative document if the main (or intended) one is not available.
 
-- **Favicon**  is an icon that appears in the browser tab and bookmarks.
+- **Favicon** is an icon that appears in the browser tab and bookmarks.
 
 - **Filters** allow you to narrow down the number and type of documents and categories.
 
@@ -28,15 +28,15 @@
 
 - **Metadata** is data that provides information about other data. In Uwazi, it usually describes an entity.
 
-- **Private Documents** are documents that have been uploaded onto Uwazi but have not been published yet. They are only accessible to the administrator(s) or logged in users
-
 - **Property** is a descriptive attribute that is assigned to entities (e.g. author, significance, status, etc).
 
-- **Public Documents** are visible to anyone who accesses your Uwazi instance.
+- **Published Entities** are visible to anyone who accesses your Uwazi instance.
 
 - **Relationship Types** are different types of connections that you can form in between or even within entities. Each type of connection should be labeled accordingly.
 
 - **Reference** connects selected content in a document to something else. References can be made to: other selected content in the same document, other selected content in another document, an entire document, or an entity.
+
+- **Restricted Entities** are entities that have been uploaded onto Uwazi but have not been published yet. They are only accessible to the administrator(s), or logged in users.
 
 - **Template** is a starting point in Uwazi. They can be built and customised for each type of entity. You can add different metadata properties within each template.
 
