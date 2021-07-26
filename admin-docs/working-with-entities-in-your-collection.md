@@ -1,30 +1,30 @@
-# WORKING WITH ENTITIES IN YOUR COLLECTION 
+# WORKING WITH ENTITIES IN YOUR COLLECTION
 
-## Understanding "Public" versus "Private" Entities
+## Understanding "Published" versus "Restricted" Entities
 
-In Uwazi, there are two areas where entities can be stored:
+In Uwazi, entities can be either published or restricted:
 
-1. The public documents section ![](images/image_0.png) are published entities.
+1. Published entities can be seend by everyone, including visitors that dont have a log in credentials.
 
-2. The private documents section ![](images/image_27.png) are unpublished entities.
+2. Restricted entities can only by seen by admin users, edit users, and collaborator users that have been shared with.
 
 ![](images/image_28.png)
 
 ## How to Add New Entities
 
-> **Entity**:  Something that has properties, is filterable, and can have connections. Some examples of entities may include a court, a case, a specific person or event. Before you can create a new entity, make sure you have already created a corresponding template!
+> **Entity**: Something that has properties, is filterable, and can have connections. Some examples of entities may include a court, a case, a specific person or event. Before you can create a new entity, make sure you have already created a corresponding template!
 
 To create a new entity:
 
-Step 1: Go to the the private documents section ![](images/image_27.png) on the navigation bar.
+Step 1: Go to the the Library section ![](images/image_0.png) on the navigation bar.
 
-Step 2: Click on the **New entity** button.
+Step 2: Click on the **Create entity** button on the bottom right corner.
 
 Step 3: Select which template to use, and give the entity a title and add other metadata that you want to include. (You may always come back to add, edit or delete this information later.)
 
 Step 4: Click the **Save** button once you are finished.
 
-When you are ready to share your entity in the Public documents section ![](images/image_0.png), select **Publish** on the entity.
+When you are ready to share your entity, select it and click the **Share** button on the sidepanel.
 
 **Note:** if your Uwazi instance is set to Private, the entities are only shared with other logged in users who have the permission to view this information.
 
@@ -32,21 +32,21 @@ When you are ready to share your entity in the Public documents section ![](imag
 
 Uwazi currently supports document uploads in PDF format. This allows Uwazi to be able to carry out numerous functions on the document like conducting full text search, creating a table of contents, text references and other functions.
 
-Other formats like .doc, .txt, .odt, .jpg can be included in your collection, but they must be uploaded as an attachment to your entity. Please refer to [the next section](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-add-attachments-to-entities) for further guidelines regarding this. 
+Other formats like .doc, .txt, .odt, .jpg can be included in your collection, but they must be uploaded as an attachment to your entity. Please refer to [the next section](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-add-attachments-to-entities) for further guidelines regarding this.
 
 Step 1: Create or identify a template that will encapsulate the details of your document.
 
 ![](images/image_31.png)
 
-Step 2: Once you have collected your documents and created template(s) for them, you have to upload them. Go to the the private documents section ![](images/image_27.png) on the navigation bar.
+Step 2: Once you have collected your documents and created template(s) for them, you have to upload them. Go to the the Library section ![](images/image_0.png) on the navigation bar.
 
 There are two ways in which documents can be uploaded onto Uwazi -- one is **a direct upload** (Step 2a) and second mode is through **a csv import** (Step 2b), which is helpful for a large migration of documents.
 
 ### Upload the document directly
 
-Step 2a: You can either drag or drop your PDF files into the dotted box, or you can click on **Browse your files to upload** and select the file or files that you want to upload.
+Step 2a: You can click on **Upload PDF(s) to create** button on the bottom right corner, and select the file or files that you want to upload.
 
-- Your files will be added to the upload section ![](images/image_27.png) of Uwazi, but they will remain in the private documents section until you click on **Publish**, which will make them public.
+- Your files will be added to the Library section ![](images/image_0.png) of Uwazi, but they will remain as restricted entities until you publish them.
 
 - Skip to Step 3 to learn more about how to publish your document(s).
 
@@ -72,7 +72,7 @@ Step 2b: Organise your PDFs that are ready to be imported, and create a **Comma-
 
 ![](images/image_35.png) ![](images/image_36.png)
 
-- To import the CSV file, click on the Private Documents icon ![](images/image_27.png) and then **Import**. Select your compressed ZIP file, and ensure that you choose the correct template before clicking import (as illustrated in the screenshot below).
+- To import the CSV file, go to the Library section ![](images/image_0.png) and then click on the **Import CSV** button. Select your compressed ZIP file, and ensure that you choose the correct template before clicking import (as illustrated in the screenshot below).
 
 - All your PDF files along with the corresponding metadata will be imported into Uwazi.
 
@@ -80,15 +80,15 @@ Step 2b: Organise your PDFs that are ready to be imported, and create a **Comma-
 
 ### Publish your documents
 
-- If you have chosen to upload your documents using Step 2(a), you will need to choose a template and assign metadata to your documents before they will be ready to be published.
+- Once the document is ready with all its metadata in place, you can click on **Share**.
 
-- Select the document you want to publish, and click **Edit**. This will open a sidebar (as outlined in the red box here).
+- Click on the **Add people or groups** field.
 
-- Choose the **Type** of template you want to assign it and fill in the corresponding metadata. Unless a specific field is mandatory, you may skip field(s) if you do not currently have that information or if it is not relevant.
+- Select **Public**.
 
-- Ensure that you click **Save** after you are done.
+- Click on **Save changes**.
 
-- Once the document is ready with all its metadata in place, you can click on **Publish**. Users will now be able to view your document publicly in the Library ![](images/image_0.png).
+Visitors will now be able to view your document publicly in the Library ![](images/image_0.png).
 
 ## How to Add Attachments to Entities
 
@@ -112,11 +112,11 @@ Step 3: You can add a file that will be visible along with your entity.
 
 Step 1: To import multiple attachments to a single entity, use the pipe symbol **|** as the separator and do not include spaces between (e.g. example.doc|sample.jpg).
 
-**Note:** All attachments using import are going to be assigned to the entity in all languages. *(This option is only available if your instance has more than one UI language.)*
+**Note:** All attachments using import are going to be assigned to the entity in all languages. _(This option is only available if your instance has more than one UI language.)_
 
 Step 2: Otherwise, follow the rest of the csv import guidelines as outlined [here](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#import-your-documents-through-csv-import-data-migration).
 
-## How to Edit Properties on Multiple Entities 
+## How to Edit Properties on Multiple Entities
 
 Step 1: Click on all the documents that you want to edit.
 
@@ -178,9 +178,9 @@ These filters are presented to the users of your collection when no entity is se
 
 The copy from feature allows you to copy certain fields from one entity to another.
 
-Step 1: Click on the ‘private library’ view on the top right navigation.
+Step 1: Go to the Library section.
 
-Step 2: When you are in “Private Documents” mode, click on “+New Entity”. (A blank form will slide left and appear) 
+Step 2: When you are there, click on “Create entity”. (A blank form will slide left and appear)
 ![](images/copy-from-2.png)
 
 Step 3: When the blank form appears, click on ‘copy from’ on the bottom right corner.
@@ -199,8 +199,8 @@ Step 7: Notice that the overlapping information (i.e. the victim’s information
 
 ## How to Export Entities
 
-The CSV export feature allows users to export data for further analysis and visualisation.  
+The CSV export feature allows users to export data for further analysis and visualisation.
 
-Step 1: Use the filter bar to export specific data, or even export the entire collection if you need to. [Use the different filters](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-configure-main-and-secondary-filters) to select the entities you want to export. If you want a smaller subset of data, be sure to click on the specific filters to construct the specific dataset that you want. If you want, however, to export the entire collection, do not click on any filters. This will enable you to export all the entities in the collection. 
+Step 1: Use the filter bar to export specific data, or even export the entire collection if you need to. [Use the different filters](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-configure-main-and-secondary-filters) to select the entities you want to export. If you want a smaller subset of data, be sure to click on the specific filters to construct the specific dataset that you want. If you want, however, to export the entire collection, do not click on any filters. This will enable you to export all the entities in the collection.
 
 Step 2: Navigate to the lower part of the filters panel. There is a blue button labelled **Export CSV**. Once you have selected the data you want to export in Step 1 (above), click on this button. A CSV file will automatically get downloaded on your computer for your use. This file will be automatically exported in **UTF-8 csv format**.
