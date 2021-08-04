@@ -4,17 +4,17 @@
 
 Uwazi allows you to create pages for two different purposes:
 
-- Designing your website (Link to wiki?) with pages that render mostly static content with additional options to include collection-wide data analysis.
+- [Designing your website](https://uwazi.readthedocs.io/en/latest/admin-docs/designing-your-website.html#designing-your-website) with pages that render mostly static content with additional options to include collection-wide data analysis.
 - Replacing the standard Entity View with a custom page to better display and showcase data for each entity of a particular template type.
 
 ## Defining a page for a particular template
 
 The procedure to assign a page to be used as the default view of entities of a particular template is the following:
 
-- Create a Page: settings -> pages -> Add Page (or edit an existing page).
+- Create a Page: Settings -> Pages -> Add Page (or edit an existing page).
 - Give it a descriptive name and select the "Enable this page to be used as an entity view page" toggle button. This flags this page as enabled for entity view.
-- Edit the desired template configuration (settings -> templates -> edit) and enable the "Display entity view from page" toggle
-- From the dropdown, select the previously created or edited page to use as page for entity view
+- Edit the desired template configuration (Settings -> Templates -> Edit) and enable the "Display entity view from page" toggle.
+- From the dropdown, select the previously created or edited page to use as page for entity view.
 
 Once this is done, when you enter the entity view for entities of that particular template, you will be presented with the page you just defined, instead of the traditional "metadata view" for that entity.
 
