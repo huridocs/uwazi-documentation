@@ -28,6 +28,17 @@ You can add charts and other data visualisation elements to **pages** and **rich
 
 ![image alt text](images/image_81.png)
 
+## Create visualizations of thesauri with groups.
+
+Charts can be configured to display thesauri that have nested values in two ways. By default charts will display an aggregation of parent categories. If you want to visualize each individual item in a thesauri without grouping them in their parent categories you can use the `scatter` parameter. 
+
+For example:
+
+`<BarChart property="nested_thesauri_propery" context="60cb857034f3490ed729e34f" scatter="true" />`
+
+This way the chart will show thesauri items individually, instead of the groups in which they are organized.
+
+
 ## Examples of analysis and data visualisation
 
 Just to give you an idea of what is possible in Uwazi, please take a look at some of the public projects that are documenting human rights violations for advocacy, but please note that these require some technical proficiency in working with HTML, CSS and Javascript.
