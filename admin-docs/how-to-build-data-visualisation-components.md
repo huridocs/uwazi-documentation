@@ -28,9 +28,9 @@ You can add charts and other data visualisation elements to **pages** and **rich
 
 ![image alt text](images/image_81.png)
 
-## Create visualizations of thesauri with groups.
+## Create visualizations of thesauri with groups
 
-Charts can be configured to display thesauri that have nested values in two ways. By default charts will display an aggregation of parent categories. If you want to visualize each individual item in a thesauri without grouping them in their parent categories you can use the `scatter` parameter. 
+Charts can be configured to display thesauri that have nested values in two ways. By default charts will display an aggregation of parent categories. If you want to visualize each individual item in a thesauri without grouping them in their parent categories, you can use the `scatter` parameter. 
 
 For example:
 
