@@ -97,7 +97,7 @@ Step 5: Once this information is entered, click the green **Create Group** butto
 ## How to edit your site settings
 
 - Click on **Settings**, then click on **Collection**.
-- After you have made all your changes, please ensure that you click **Save**!
+- After you have made all your changes, please ensure that you click **Save**.
 
 ### Change the name of your collection
 
