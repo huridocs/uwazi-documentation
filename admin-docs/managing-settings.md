@@ -46,7 +46,7 @@ Watch a [screencast](https://drive.google.com/open?id=1G02gKDvIejl4NxwpyiIqiIU5K
 
 ### Login with two-factor authentication
 
-Step 1: Login to Uwazi with your credentials..
+Step 1: Login to Uwazi with your credentials.
 
 Step 2: You will be prompted to input your authentication code. Enter the code from Authy or Google Authenticator.
 
