@@ -5,24 +5,17 @@
 Templates are the foundation of your Uwazi platform as they allow you to attribute consistent, structured metadata to your entities. Within each template, you can assign a variety of properties like:
 
 - Text
-
 - Numerics
-
 - Select (needs thesaurus)
-
-- Multi-select (needs thesaurus)
-
+- Multiselect (needs thesaurus)
 - Date, date range, multi date, multi date range
-
 - Rich text
-
 - Geolocation
-
 - External links
-
-- Media (for video and audio embedding or self hosting)
-
-- Relationship - allow you to create connections between this entity and another one
+- Image and Media (for image, video and audio embedding)
+- Relationship (to create connections between this entity and another one)
+- Preview 
+- Generated ID
 
 ### Add different properties to a template
 
@@ -166,7 +159,7 @@ Step 6: If you choose a **specific template** in Step 5, another option will aut
 
 There are times when it is useful to display a property on more than one entity.
 
-For example, if your data model includes an entity type that captures information about prisoners, and an entity type that captures information about the jail in which they detained, you may want to be able to display the location of the prisoners on a map via the location of the jails.
+For example, if your data model includes an entity type that captures information about prisoners, and an entity type that captures information about the jail in which they were detained, you may want to be able to display the location of the prisoners on a map via the location of the jails.
 
 Instead of duplicating the geolocation property and collecting the same data twice (once in the **prisoner** entity template, and again in the **jail** template), Uwazi supports the ability to inherit a property from one entity type to another, via a relationship.
 
