@@ -18,13 +18,11 @@ Step 4: Click **Save** when you are finished.
 
 ### Customise the header
 
-To edit the header from the **Settings**, please follow the directions below:
+Step 1: Upload your logo in **Settings** > **Tools** > **Uploads**.
 
-1. Upload the picture in settings > collection > custom uploads (you'll find this option at the bottom).
+Step 2: Add some custom CSS in **Settings** > **Tools** > **Global CSS**.
 
-2. Add some custom CSS in settings > collection > custom CSS.
-
-Here are some sample CSS to help you out:
+Here is some sample CSS to help you out:
 
     header {
     background-color: #191916;
@@ -39,8 +37,7 @@ Here are some sample CSS to help you out:
     text-indent: -9999px;
     width: 265px;
     }
-    
-    
+     
 ## How to Create New Web Pages
 
 You can add static pages to your Uwazi collection in order to share information on what the purpose of your collection is, how the general public can contact you, etc.
