@@ -16,7 +16,7 @@
 
 - **Fallback** is an alternative document if the main (or intended) one is not available.
 
-- **Favicon**  is an icon that appears in the browser tab and bookmarks.
+- **Favicon** is an icon that appears in the browser tab and bookmarks.
 
 - **Filters** allow you to narrow down the number and type of entities and categories.
 
