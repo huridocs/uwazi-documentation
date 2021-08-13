@@ -82,6 +82,18 @@ Step 5: Once this information is entered, click the green **Save** button and an
 
 Watch a [screencast](https://drive.google.com/open?id=12Z-HtNoPU2vcS80CG30496ECAL5vEJI3).
 
+### Create new user groups
+
+Step 1: Only an Admin can create new users. Go to **Settings** and click on **Users**.
+
+Step 2: On the Users tab, you will see a list of all the current users who have access to your collection. Switch to the Groups tab.
+
+Step 3: You can create new groups by clicking the green **Add Group** button at the bottom. Here, you can also edit or delete users in that group, as necessary.
+
+Step 4: Assign a **Name of the group** and add the usernames that you want to include.
+
+Step 5: Once this information is entered, click the green **Create Group** button.
+
 ## How to edit your site settings
 
 - Click on **Settings**, then click on **Collection**.
