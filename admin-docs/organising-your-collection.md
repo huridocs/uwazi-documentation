@@ -1,6 +1,6 @@
 # ORGANISING YOUR COLLECTION
 
-## How to View a Document from a Card
+## How to view a document from a card
 
 In the library section ![](images/image_0.png), you will find your entire collection. By default, each entity will be displayed in this library as a card. To open and view the full document or more information about the record, you can either:
 
@@ -13,7 +13,7 @@ In the library section ![](images/image_0.png), you will find your entire collec
 ![](images/image_45.png)
 
 
-## How to Search Within Your Collection
+## How to search within your collection
 
 Your Uwazi database offers a few different ways to search.
 
@@ -61,7 +61,7 @@ To search for a word or a phrase **within a particular document**.
 
 Please refer to Elasticsearch's [query string syntax page](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/query-dsl-query-string-query.html#query-string-syntax) for more information on search options.
 
-## How to Create a Table of Contents
+## How to create a table of contents
 
 Most documents have a defined structure through its pages. Creating a table of contents will allow your end-users to quickly navigate through the document’s contents. Alternatively, you can create your own structure that would be most useful to them.
 
@@ -82,7 +82,7 @@ Step 5: Once you are done, click **Save**. The table of contents will now be sho
 Step 6: You can always come back later to revise or add more contents by clicking the **Edit** button.
 
 
-## How to Create References
+## How to create references
 
 > In Uwazi, a **reference** is a bookmark that connects highlighted content in one document to something else -- such as other selected content in the same document, other selected content in a different document, or even an entire document or an entity.
 
@@ -139,7 +139,7 @@ Users will see the referenced document under the **References** tab ![](images/i
 When the reference is selected, the highlighted text will be displayed in the PDF.
 
 
-## How to Create Relationships 
+## How to create relationships 
 
 > In Uwazi, a **relationship** connects two or more entities to each other so that it’s possible to investigate and analyse "who did what to whom" (and when, and where, etc). Note: we use the terms “relationship” and “connection” interchangeably.
 
