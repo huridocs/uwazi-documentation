@@ -32,17 +32,27 @@ Remember, if you’d like the entity to be available to everyone who has access 
 
 ## How to directly add PDFs to the Library
 
-Uwazi currently supports document uploads in PDF format. This allows Uwazi to be able to carry out numerous functions on the document like conducting full text search, creating a table of contents, text references and other functions.
+Uwazi particularly supports the management of collections of documents in PDF format. Numerous functions can be carried out when a PDF is uploaded as the "[Primary document](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)" within an entity, such as conducting full text search, creating a clickable table of contents, creating text references, and more.
 
-Other formats like .doc, .txt, .odt, .jpg can be included in your collection, but they must be uploaded as an attachment to your entity. Please refer to [the next section](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-add-attachments-to-entities) for further guidelines regarding this. 
+If many of the entities in your collection feature a "Primary" PDF document, it could become tedious to create entity after entity, giving them a title and filling in any properties, and only after they are saved, finally adding a PDF.
 
-Step 1: Create or identify a template that will encapsulate the details of your document.
+For situations such as these, Uwazi makes it possible to upload PDF(s) directly into the Library as a first step without the prior creation of an entity.
 
-![](images/image_31.png)
+To directly add PDF(s) to the Library:
 
-Step 2: Once you have collected your documents and created template(s) for them, you have to upload them. Go to the the private documents section ![](images/image_27.png) on the navigation bar.
+Step 1: Click on the Library icon ![](images/image_0.png) in the top navigation menu. 
 
-There are two ways in which documents can be uploaded onto Uwazi -- one is **a direct upload** (Step 2a) and second mode is through **a csv import** (Step 2b), which is helpful for a large migration of documents.
+Step 2: On the bottom righthand side of the screen, click on the **Upload PDF(s) to create** button.
+
+Step 3: Select the desired PDF(s) from within the file browser. (To select more than one file, hold down the CTRL key or the Command key before clicking.)
+
+Step 4: Once uploaded, the PDF will appear attached to a new entity in the Library with a title property that is automatically filled in with the PDF file name. To edit the title and other aspects of the entity, click on the **Edit** button in the entity pane. Make sure to save any changes you make.  
+
+Step 5: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. 
+
+To change these settings, click on the **Share** button in the entity pane. Add any new users who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. 
+
+Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the “Public”.
 
 ### Import your documents through csv import (data migration)
 
