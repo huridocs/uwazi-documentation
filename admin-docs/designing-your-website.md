@@ -1,6 +1,6 @@
 # DESIGNING YOUR WEBSITE
 
-## How to Configure the Menu / Navigation Bar
+## How to configure the menu / navigation bar
 
 ### Add pages to the main header
 
@@ -38,7 +38,7 @@ Here is some sample CSS to help you out:
     width: 265px;
     }
      
-## How to Create New Web Pages
+## How to create new web pages
 
 You can add static pages to your Uwazi collection in order to share information on what the purpose of your collection is, how the general public can contact you, etc.
 
@@ -75,7 +75,7 @@ Renders: ![](images/image_69.png)
 - This syntax will display an arbitrary number of cards, defined by the param "limit", based on a library query URL. In this case, the limit is 3 cards.
 
 
-## How to Create Entity Pages
+## How to create entity pages
 
 ### Basic concepts
 
@@ -344,7 +344,7 @@ document.getElementById('template-data').innerHTML = JSON.stringify(window.store
 Now, when you go to `view` any of the entities using that template, you will be able to see the Entity-specific datasets available.
 
 
-## How to Create a Contact Form
+## How to create a contact form
 
 A contact form allows your users to message you and share their ideas.
 
@@ -357,7 +357,7 @@ This form will send a message to the e-mail address that is configured in your *
 ![](images/image_71.png)
 
 
-## How to Create a Public Intake Form on Your Website
+## How to create a public intake form on your website
 
 An intake or submission form allows visitors to submit a form that creates an unpublished/private entity in your database.
 
@@ -390,7 +390,7 @@ Step 2: In the Uwazi instance that has the public intake form:
 - Go to Settings, and click on Collection, add the URL of the _target_ Uwazi instance under **Public Form Destination**. (e.g. https://example.uwazi.io)
 
 
-## How to Configure the Available Languages for Your Collection
+## How to configure the available languages for your collection
 
 You can increase the accessibility of your Uwazi collection by translating it into one or more languages.
 
