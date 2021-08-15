@@ -1,14 +1,12 @@
 # WORKING WITH ENTITIES IN YOUR COLLECTION 
 
-## Understanding Entities
+## Understanding entities
 
-In Uwazi, there are two areas where entities can be stored:
+An Uwazi collection is made up of entities, which contain properties, can feature attached documents or supporting files, and can have connections to one another. Some examples of entities might include a court, a case, a specific person or an event. 
 
-1. The public documents section ![](images/image_0.png) are published entities.
+All of the entities in an Uwazi collection live in an area called the Library ![](images/image_0.png), where they can be viewed as cards, in a table or on a map (as long as entities have an associated geolocation), and can also be filtered according to their properties.
 
-2. The private documents section ![](images/image_27.png) are unpublished entities.
-
-## How to Add New Entities
+## How to add new entities to the Library
 
 > **Entity**:  Something that has properties, is filterable, and can have connections. Some examples of entities may include a court, a case, a specific person or event. Before you can create a new entity, make sure you have already created a corresponding template!
 
@@ -26,7 +24,7 @@ When you are ready to share your entity in the Public documents section ![](imag
 
 **Note:** if your Uwazi instance is set to Private, the entities are only shared with other logged in users who have the permission to view this information.
 
-## How to Upload and Publish Entities
+## How to directly add PDFs to the Library
 
 Uwazi currently supports document uploads in PDF format. This allows Uwazi to be able to carry out numerous functions on the document like conducting full text search, creating a table of contents, text references and other functions.
 
@@ -39,16 +37,6 @@ Step 1: Create or identify a template that will encapsulate the details of your 
 Step 2: Once you have collected your documents and created template(s) for them, you have to upload them. Go to the the private documents section ![](images/image_27.png) on the navigation bar.
 
 There are two ways in which documents can be uploaded onto Uwazi -- one is **a direct upload** (Step 2a) and second mode is through **a csv import** (Step 2b), which is helpful for a large migration of documents.
-
-### Upload the document directly
-
-Step 2a: You can either drag or drop your PDF files into the dotted box, or you can click on **Browse your files to upload** and select the file or files that you want to upload.
-
-- Your files will be added to the upload section ![](images/image_27.png) of Uwazi, but they will remain in the private documents section until you click on **Publish**, which will make them public.
-
-- Skip to Step 3 to learn more about how to publish your document(s).
-
-Watch a [screencast](https://drive.google.com/open?id=1HVadM8ZHQdlDVGq5LBO_3k1abperX_8G).
 
 ### Import your documents through csv import (data migration)
 
@@ -88,9 +76,9 @@ Step 2b: Organise your PDFs that are ready to be imported, and create a **Comma-
 
 - Once the document is ready with all its metadata in place, you can click on **Publish**. Users will now be able to view your document publicly in the Library ![](images/image_0.png).
 
-## How to Add Attachments to Entities
+## How to add supporting files to entities
 
-### Add attachment(s) to your entity
+### Add supporting file(s) to your entity
 
 If you wish, you can also add a .doc, .txt, .odt, .jpg file to your entity as an attachment. This could contain additional information that you would like attached to your entity.
 
@@ -98,7 +86,7 @@ The difference between documents and attachments in Uwazi is that a document is 
 
 Step 1: Open and view the entity.
 
-Step 2: In the sidebar, scroll down and you will see an option for **Attachments**.
+Step 2: In the sidebar, scroll down and you will see an option for **Supporting Files**.
 
 Step 3: You can add a file that will be visible along with your entity.
 
@@ -106,7 +94,7 @@ Step 3: You can add a file that will be visible along with your entity.
 
 ![](images/image_40.png)
 
-### Import your attachments through csv import (data migration)
+### Import your supporting files through csv import (data migration)
 
 Step 1: To import multiple attachments to a single entity, use the pipe symbol **|** as the separator and do not include spaces between (e.g. example.doc|sample.jpg).
 
@@ -114,7 +102,7 @@ Step 1: To import multiple attachments to a single entity, use the pipe symbol *
 
 Step 2: Otherwise, follow the rest of the csv import guidelines as outlined [here](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#import-your-documents-through-csv-import-data-migration).
 
-## How to Edit Properties on Multiple Entities 
+## How to edit properties on multiple entities 
 
 Step 1: Click on all the documents that you want to edit.
 
@@ -130,7 +118,7 @@ Step 3: You can edit any number of the metadata fields, then click **Save**.
 
 ![](images/image_41.png)
 
-## How to Configure Main and Secondary Filters
+## How to configure main and secondary filters
 
 Filter options will depend on the metadata properties you have included on each entity in your collection. In Uwazi, you can choose which fields that you want to show as filters.
 
@@ -195,7 +183,7 @@ Step 6: Select the entity that you are searching for. The system will automatica
 Step 7: Notice that the overlapping information (i.e. the victim’s information) has been copied into the destination template. Your new entry will appear first underneath your files.
 ![](images/copy-from-7.png)
 
-## How to Export Entities
+## How to export entities
 
 The CSV export feature allows users to export data for further analysis and visualisation.  
 
