@@ -8,21 +8,27 @@ All of the entities in an Uwazi collection live in an area called the Library ![
 
 ## How to add new entities to the Library
 
-> **Entity**:  Something that has properties, is filterable, and can have connections. Some examples of entities may include a court, a case, a specific person or event. Before you can create a new entity, make sure you have already created a corresponding template!
+Remember, before you can create a new entity, make sure you have already created a corresponding template.
 
 To create a new entity:
 
-Step 1: Go to the the private documents section ![](images/image_27.png) on the navigation bar.
+Step 1: Click on the Library icon ![](images/image_0.png) in the top navigation menu. 
 
-Step 2: Click on the **New entity** button.
+Step 2: On the bottom right hand side of the screen, click on the **Create entity** button.
 
-Step 3: Select which template to use, and give the entity a title and add other metadata that you want to include. (You may always come back to add, edit or delete this information later.)
+Step 3: Select which template to use, give the entity a title and fill in any of the properties that you want to include. (You may always come back to add, edit or delete this information later.)
 
 Step 4: Click the **Save** button once you are finished.
 
-When you are ready to share your entity in the Public documents section ![](images/image_0.png), select **Publish** on the entity.
+Step 5: If the entity is intended to feature a PDF (“[Primary document](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)”), click the **Upload PDF** button in the entity pane and select the desired PDF from within the file browser. 
 
-**Note:** if your Uwazi instance is set to Private, the entities are only shared with other logged in users who have the permission to view this information.
+If the entity is intended to feature any other attached materials (“[Supporting files](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)”), click the **Add supporting file** button and select the desired file(s) from within the file browser. 
+
+Step 6: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. 
+
+To change these settings, click on the Share button in the entity pane. Add any new users who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. 
+
+Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the “Public”.
 
 ## How to directly add PDFs to the Library
 
