@@ -6,6 +6,14 @@ An Uwazi collection is made up of entities, which contain properties, can featur
 
 All of the entities in an Uwazi collection live in an area called the Library ![](images/image_0.png), where they can be viewed as cards, in a table or on a map (as long as entities have an associated geolocation), and can also be filtered according to their properties.
 
+By default, the visibility of newly created entities is restricted. In practice, this means that only the user who created an entity as well as all users with admin or editor permissions can see and edit it. In order to make an entity visible to everyone who has access to your Uwazi collection, it must be shared accordingly with the “Public”. 
+
+(Keep in mind that if your entire Uwazi collection is configured to be private, “Public” in this case strictly refers to everyone who possesses log-in credentials.)
+
+Users with admin and editor permissions have the ability to filter all entities in the Library by their corresponding visibility: 
+- “Restricted”, meaning that only a selected subset of users are able to see and/or edit the entity
+- “Published”, meaning that everyone with access to the collection is able to see the entity
+
 ## How to add new entities to the Library
 
 Remember, before you can create a new entity, make sure you have already created a corresponding template.
