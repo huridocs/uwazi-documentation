@@ -1,6 +1,6 @@
 # ANALYSING & VISUALISING YOUR COLLECTION
 
-## How to Access the API for Your Instance	
+## How to access the API for your instance	
 
 > An **API** allows one program to request data from another. API stands for application programming interface. An API provides you with data its programmers have made available to outside users.
 
@@ -34,7 +34,7 @@ Uwazi provides a list of "models" that describe the objects you have access to v
 
 
 
-## How to Build Data Visualisation Components	
+## How to build data visualisation components	
 
 You can add charts and other data visualisation elements to **pages** and **rich text fields**, using the code snippets explained below.
 
@@ -76,8 +76,7 @@ Just to give you an idea of what is possible in Uwazi, please take a look at som
 
 ![](images/image_83.png)
 
-
-## How to Display Your Information on a Map
+## How to display your information on a map
 
 > In Uwazi, there are two ways to display your information on a geographic map: by using the map toggle in the Uwazi library, and by using a map visualisation component in a page. These instructions will help you configure your information to include geographic data and display that geographic data on a map.
 
@@ -131,9 +130,7 @@ Renders:
 
 ![](images/image_89.png)
 
-
-
- ## How to Configure EntityInfo Components
+ ## How to configure EntityInfo components
 
 > EntityInfo is a collection of data visualization components that allows an entity’s information to display by opening the side panel and loading its data inside. It assigns that flow to the "click" event of whatever tag element you define. The default is a DIV, but you can configure this to a button or any other element. (**Note: This requires programming knowledge.**)
 
