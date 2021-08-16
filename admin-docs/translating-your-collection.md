@@ -1,6 +1,6 @@
 # TRANSLATING YOUR COLLECTION
 
-## How to Translate the Uwazi Interface 
+## How to translate the Uwazi interface 
 
 This guide describes how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc. If you want to learn about how to translate your content, [click here](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-translate-your-content).
 
@@ -30,7 +30,7 @@ This option has the advantage of allowing you to translate all Uwazi interface t
 -   Step 4: Translate each term and click **Save**.
 
 
-## How to Translate Your Content	
+## How to translate your content	
 
 This guide describes how to translate your content in Uwazi. If you want to learn about how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc, [click here](hhttps://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-translate-the-uwazi-interface).
 
@@ -84,7 +84,7 @@ Step 4: For each document now attached to the entity, click on Edit, select the 
 
 -   [Click here](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-upload-and-publish-entities) to learn more about documents in Uwazi.
 
-### Managing Translations Over Time
+### Managing translations over time
 
 #### Creating a new entity
 When you create a new entity, all of its metadata properties are synced to all languages when the entity is first saved. 
