@@ -66,11 +66,11 @@ To change these settings, click on the **Share** button in the entity pane. Add 
 
 Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the “Public”.
 
-### How to import in bulk
+## How to import in bulk
 
 It may be that you have a large pre-existing collection of data points or materials that you want to add to your Uwazi collection. Doing so one by one would be a tedious task, so for situations such as these, Uwazi makes it possible to upload in bulk by preparing and then importing a **Comma-Separated Values** (CSV) file.
 
-#### Importing entities without documents or files
+### Importing entities without documents or files
 
 Remember, before you can import entities in bulk, make sure you have already created a corresponding template.
 
@@ -99,7 +99,7 @@ Step 6: Finally, click the **Import** button. Once the entities are uploaded int
 
 Remember, after an import has been done, editing of entities should take place within Uwazi.
 
-#### Importing entities that contain a Primary Document
+### Importing entities that contain a Primary Document
 
 If the entities that you would like to import contain a Primary Document, you can follow the previously explained process for importing entities in bulk with a few additional or modified steps:
 
@@ -111,7 +111,7 @@ Step 3 continued: Be sure to name the CSV file as import.csv. Then, compress the
 
 Step 4 modified: Using the file browser to navigate your computer's storage, find and select the ZIP file.
 
-#### Importing entities that contain Supporting Files
+### Importing entities that contain Supporting Files
 
 If the entities that you would like to import contain Supporting Files, you can follow the previously explained process for importing entities in bulk with a few additional or modified steps:
 
@@ -124,7 +124,7 @@ Step 3 continued: Be sure to name the CSV file as import.csv. Then, compress the
 
 Step 4 modified: Using the file browser to navigate your computer's storage, find and select the ZIP file.
 
-### How to edit properties on multiple entities
+## How to edit properties on multiple entities
 
 It may be that you need to make the same edit(s) across a large number of entities in your Uwazi collection. Doing so one by one would be time-consuming, so for situations such as these, Uwazi makes it possible to edit multiple entities at once.
 
@@ -141,11 +141,11 @@ Step 2: Once you have selected all of the entities you need, click the **Edit** 
 
 Step 3: Edit whichever properties you would like, then click **Save**.
 
-### How to configure main and secondary filters
+## How to configure main and secondary filters
 
 Filters appear on the righthand sidebar of the Library. They help users quickly navigate an Uwazi collection as well as generate basic conclusions about its contents.
 
-#### Configure main filters
+### Configure main filters
 
 The main filters are derived from the types of entity templates that exist in your collection. You can define which ones can be used as filters in the Library’s sidebar, customize the order in which the filters appear, and group certain ones together under a label of your choosing.  
 
@@ -157,7 +157,7 @@ Step 3: If you would like to group certain filters together, click on the **Crea
 
 Step 4: Once finished, **Save** the changes you have made.
 
-#### Configure a second tier of filters on the sidebar
+### Configure a second tier of filters on the sidebar
 
 Besides using the types of templates as filters, you can also select which specific properties on the entities act as filters.
 
@@ -176,7 +176,7 @@ Step 5: Click on **Save**. You can now go to the Library and view the filters yo
 - Using the AND operator will display the entities that contain all the properties for which you are filtering.
 - Using the OR operator will display the entities that contain at least one of the properties for which you are filtering.
 
-### How to use Copy From
+## How to use Copy From
 
 Copy From allows you to quickly copy certain properties from one entity to another, all in one go. 
 
@@ -200,7 +200,7 @@ Step 7: Once you have entered a new title, click the **Copy Highlighted** button
 
 Step 8: Fill in any other properties that remain and then click **Save**. (You may always come back to add, edit or delete this information later.)
 
-### How to export entities
+## How to export entities
 
 The CSV export feature allows users to export some or all entities in your Uwazi collection for further analysis and visualisation.
 
