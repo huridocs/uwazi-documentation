@@ -2,7 +2,7 @@
 
 ## Understanding entities
 
-An Uwazi collection is made up of entities, which contain properties, can feature attached documents or supporting files, and can have connections to one another. Some examples of entities might include a court, a case, a specific person or an event. 
+An Uwazi collection is made up of entities, which contain properties, can feature documents or supporting files, and can have connections to one another. Some examples of entities might include a court, a case, a specific person or an event. 
 
 All of the entities in an Uwazi collection live in an area called the Library ![](images/image_0.png), where they can be viewed as cards, in a table or on a map (as long as entities have an associated geolocation), and can also be filtered according to their properties.
 
@@ -10,9 +10,13 @@ By default, the visibility of newly created entities is restricted. In practice,
 
 (Keep in mind that if your entire Uwazi collection is configured to be private, “Public” in this case strictly refers to everyone who possesses log-in credentials.)
 
-Users with admin and editor permissions have the ability to filter all entities in the Library by their corresponding visibility: 
+For users with log-in credentials to an Uwazi collection, there are two sets of blue filters that help quickly sort through the visibility settings of different entities. The first set refers to the visibility of all of the entities on a global level: 
 - “Restricted”, meaning that only a selected subset of users are able to see and/or edit the entity
 - “Published”, meaning that everyone with access to the collection is able to see the entity
+
+The second set indicates which particular entities have been explicitly shared with your individual user account or with a specific user group to which you belong: 
+- “Can view”, meaning your individual user account or a specific user group to which you belong has been given permission to see the entity
+- “Can edit”, meaning your individual user account or a specific user group to which you belong has been given permission to edit the entity
 
 ## How to add new entities to the Library
 
@@ -28,21 +32,21 @@ Step 3: Select which template to use, give the entity a title and fill in any of
 
 Step 4: Click the **Save** button once you are finished.
 
-Step 5: If the entity is intended to feature a PDF (“[Primary document](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)”), click the **Upload PDF** button in the entity pane and select the desired PDF from within the file browser. 
+Step 5: If the entity is intended to feature a PDF (“[Primary Document](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)”), click the **Upload PDF** button in the entity pane and select the desired PDF from within the file browser. 
 
-If the entity is intended to feature any other attached materials (“[Supporting files](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)”), click the **Add supporting file** button and select the desired file(s) from within the file browser. 
+If the entity is intended to feature any other attached materials (“[Supporting Files](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)”), click the **Add supporting file** button and select the desired file(s) from within the file browser. 
 
 Step 6: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. 
 
-To change these settings, click on the Share button in the entity pane. Add any new users who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. 
+To change these settings, click on the Share button in the entity pane. Add any new users (individuals or groups) who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. 
 
 Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the “Public”.
 
 ## How to directly add PDFs to the Library
 
-Uwazi particularly supports the management of collections of documents in PDF format. Numerous functions can be carried out when a PDF is uploaded as the "[Primary document](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)" within an entity, such as conducting full text search, creating a clickable table of contents, creating text references, and more.
+Uwazi particularly supports the management of collections of documents in PDF format. Numerous functions can be carried out when a PDF is uploaded as the "[Primary Document](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)" within an entity, such as conducting full text search, creating a clickable table of contents, creating text references, and more.
 
-If many of the entities in your collection feature a "Primary" PDF document, it could become tedious to create entity after entity, giving them a title and filling in any properties, and only after they are saved, finally adding a PDF.
+If many of the entities in your collection feature a "primary" PDF document, it could become tedious to create entity after entity, giving them a title and filling in any properties, and only after they are saved, finally adding a PDF.
 
 For situations such as these, Uwazi makes it possible to upload PDF(s) directly into the Library as a first step without the prior creation of an entity.
 
@@ -58,159 +62,148 @@ Step 4: Once uploaded, the PDF will appear attached to a new entity in the Libra
 
 Step 5: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. 
 
-To change these settings, click on the **Share** button in the entity pane. Add any new users who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. 
+To change these settings, click on the **Share** button in the entity pane. Add any new users (individuals or groups) who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. 
 
 Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the “Public”.
 
-### Import your documents through csv import (data migration)
+### How to import in bulk
 
-Step 2b: Organise your PDFs that are ready to be imported, and create a **Comma-Separated Values (CSV) file** with each of the field names you had earlier entered as properties in Uwazi.
+It may be that you have a large pre-existing collection of data points or materials that you want to add to your Uwazi collection. Doing so one by one would be a tedious task, so for situations such as these, Uwazi makes it possible to upload in bulk by preparing and then importing a **Comma-Separated Values** (CSV) file.
 
-- Migration works with matching field names – therefore, be meticulous in using the same column header names in the csv file as the field names in Uwazi.
+#### Importing entities without documents or files
 
-- **Note:** Field names are not case sensitive, which means you can use either lowercase, capitals or a combination of both. It is also possible to rename fields in Uwazi after the import.
+Remember, before you can import entities in bulk, make sure you have already created a corresponding template.
 
-![](images/image_34.png)
+Step 1: Create a CSV file on your computer. It should include a column for each of the properties that are included on the entity’s template. Import works by matching property names – therefore, be meticulous in using the same column header names in the CSV file as the property names on the template in Uwazi.
 
-- The "**Title**" field is required in your CSV file. It serves to identify the document or entity, but does not have to be unique.
+- Property names are not case sensitive, which means you can use either lowercase, capitals or a combination of both.
+- The “Title” column is required in your CSV file. It serves to identify the entity, but does not have to be unique.
+- There is no need to include the “Date Added” property because it is filled automatically during the import into Uwazi.
+- If you have a geolocation property, its corresponding column must be styled “[name-of-your-geolocation-property]_geolocation”, replacing the bracketed text with the actual name of your geolocation property (e.g. detention place_geolocation).
 
-- There is no need to include the "**Date Added**" field because it is filled automatically during the import into Uwazi.
+Step 2: Populate the CSV file with your data. Certain properties must follow a specific format:
 
-- The CSV file must contain a **File** column with the names of each **main document** (as illustrated in column H in the above screenshot).
+- For properties with multiple values, the pipe symbol | should be used as the separator. Do not include spaces between. For example: 
+  - For a multi-select property: Arbitrary arrest|Illegal search|Enforced disappearance
+  - For a hyperlink property (which follows the format of label|URL): Website|https://www.example.com
+  - For a geolocation property (which follows the format of latitude|longitude): 46.204391|6.143158
+- If you have a link property, the URLs must contain the http or https protocol (e.g. https://www.example.com). Omitting the protocols will cause the import to fail.
 
-- To do your CSV import, the main PDF file(s) and this csv file should be compressed within a single ZIP file. See the illustration below:
+Step 3: Save the CSV file in UTF-8 format on your computer.
 
-![](images/image_35.png) ![](images/image_36.png)
+Step 4: Go to the Library of your Uwazi collection and on the bottom righthand side of the screen, click on the **Import CSV** button. Using the file browser to navigate your computer's storage, find and select the CSV file. 
 
-- To import the CSV file, click on the Private Documents icon ![](images/image_27.png) and then **Import**. Select your compressed ZIP file, and ensure that you choose the correct template before clicking import (as illustrated in the screenshot below).
+Step 5: Next, select the template that corresponds to the entities you want to upload, using the drop-down menu. 
 
-- All your PDF files along with the corresponding metadata will be imported into Uwazi.
+Step 6: Finally, click the **Import** button. Once the entities are uploaded into your collection, they will appear in the Library. You may need to refresh your screen to see them.
 
-### ![](images/image_38.png)
+Remember, after an import has been done, editing of entities should take place within Uwazi.
 
-### Publish your documents
+#### Importing entities that contain a Primary Document
 
-- If you have chosen to upload your documents using Step 2(a), you will need to choose a template and assign metadata to your documents before they will be ready to be published.
+If the entities that you would like to import contain a Primary Document, you can follow the previously explained process for importing entities in bulk with a few additional or modified steps:
 
-- Select the document you want to publish, and click **Edit**. This will open a sidebar (as outlined in the red box here).
+Step 1 continued: Add a column in your CSV file with the name “File”. 
 
-- Choose the **Type** of template you want to assign it and fill in the corresponding metadata. Unless a specific field is mandatory, you may skip field(s) if you do not currently have that information or if it is not relevant.
+Step 2 continued: In the “File” column, fill in the file name of each entity’s Primary Document (e.g. ExampleDoc1.pdf). 
 
-- Ensure that you click **Save** after you are done.
+Step 3 continued: Be sure to name the CSV file as import.csv. Then, compress the CSV file and all of the PDFs into a single ZIP file. The CSV file and the PDFs should all live alongside each other in the root directory of the ZIP file (i.e. not nested in a folder).
 
-- Once the document is ready with all its metadata in place, you can click on **Publish**. Users will now be able to view your document publicly in the Library ![](images/image_0.png).
+Step 4 modified: Using the file browser to navigate your computer's storage, find and select the ZIP file.
 
-## How to add supporting files to entities
+#### Importing entities that contain Supporting Files
 
-### Add supporting file(s) to your entity
+If the entities that you would like to import contain Supporting Files, you can follow the previously explained process for importing entities in bulk with a few additional or modified steps:
 
-If you wish, you can also add a .doc, .txt, .odt, .jpg file to your entity as an attachment. This could contain additional information that you would like attached to your entity.
+Step 1 continued: Add a column in your CSV file with the name “Attachments”. 
 
-The difference between documents and attachments in Uwazi is that a document is a PDF that gets shown in the main section of Uwazi when an entity is viewed, whereas attachments are visible an filenames only (and are available for download), but their actual contents are not visible in Uwazi.
+Step 2 continued: In the “Attachments” column, fill in the file name of each entity’s corresponding Supporting File (e.g. Example1.jpg).
+ If an entity contains multiple Supported Files, use the pipe symbol | as the separator and do not include spaces between (e.g. example.doc|sample.jpg)
 
-Step 1: Open and view the entity.
+Step 3 continued: Be sure to name the CSV file as import.csv. Then, compress the CSV file and all of the Supporting Files into a single ZIP file. The CSV file and the Supporting Files should all live alongside each other in the root directory of the ZIP file (i.e. not nested in a folder).
 
-Step 2: In the sidebar, scroll down and you will see an option for **Supporting Files**.
+Step 4 modified: Using the file browser to navigate your computer's storage, find and select the ZIP file.
 
-Step 3: You can add a file that will be visible along with your entity.
+### How to edit properties on multiple entities
 
-- You can use the **Add to all languages** option if you would like your attachment to be accessible to those viewing the entity in any of the languages Uwazi supports. **Note:** This option will only be available if your instance has more than one UI language.
+It may be that you need to make the same edit(s) across a large number of entities in your Uwazi collection. Doing so one by one would be time-consuming, so for situations such as these, Uwazi makes it possible to edit multiple entities at once.
 
-![](images/image_40.png)
+Step 1: Go to the Library of your Uwazi collection. If you prefer to use the Library’s Cards View, select all of the entities that you want to edit using your operating system’s multi-select commands: 
 
-### Import your supporting files through csv import (data migration)
+- Windows: Hold down the CTRL key and click on the cards
+- Mac: Hold down the Command key and click on the cards
 
-Step 1: To import multiple attachments to a single entity, use the pipe symbol **|** as the separator and do not include spaces between (e.g. example.doc|sample.jpg).
+Alternatively, if you prefer to use the Library’s Table View: 
+- Windows: Hold down the CTRL key and click the checkbox next to each table entry
+- Mac: Hold down the Command key and click the checkbox next to each table entry
 
-**Note:** All attachments using import are going to be assigned to the entity in all languages. *(This option is only available if your instance has more than one UI language.)*
+Step 2: Once you have selected all of the entities you need, click the **Edit** button in the entity pane. 
 
-Step 2: Otherwise, follow the rest of the csv import guidelines as outlined [here](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#import-your-documents-through-csv-import-data-migration).
+Step 3: Edit whichever properties you would like, then click **Save**.
 
-## How to edit properties on multiple entities 
+### How to configure main and secondary filters
 
-Step 1: Click on all the documents that you want to edit.
+Filters appear on the righthand sidebar of the Library. They help users quickly navigate an Uwazi collection as well as generate basic conclusions about its contents.
 
-In the library of your instance, select the documents you want to edit using your operating system’s multi-select commands:
+#### Configure main filters
 
-- Windows: Hold down the CTRL key and select the files
+The main filters are derived from the types of entity templates that exist in your collection. You can define which ones can be used as filters in the Library’s sidebar, customize the order in which the filters appear, and group certain ones together under a label of your choosing.  
 
-- Mac: Hold down the Command key and select the files
+Step 1: Click on the Settings icon in the top navigation menu and then click on Filters.
 
-Step 2: Once you have selected all the cards, click **Edit**.
+Step 2: On the righthand side in an area named “Entity types”, you will see a list of your templates. For each template that you want to be able to filter in the Library, drag and drop the corresponding item into the space labeled “Drag items here” in the order in which you would like it to appear.
 
-Step 3: You can edit any number of the metadata fields, then click **Save**.
+Step 3: If you would like to group certain filters together, click on the **Create group** button. Give the group a descriptive label. Underneath the label, drag and drop the items that you would like to appear in the group. 
 
-![](images/image_41.png)
+Step 4: Once finished, **Save** the changes you have made.
 
-## How to configure main and secondary filters
+#### Configure a second tier of filters on the sidebar
 
-Filter options will depend on the metadata properties you have included on each entity in your collection. In Uwazi, you can choose which fields that you want to show as filters.
+Besides using the types of templates as filters, you can also select which specific properties on the entities act as filters.
 
-While configuring the filters in your instance, remember this can help users find information or direct them to specific analysis within the collection.
+Step 1: Click on the Settings icon in the top navigation menu and then click on Templates.
 
-### Configure main filters
+Step 2: Select the **Edit** button on the type of template you would like to edit.   
 
-First, determine which templates types are going to be displayed in the right hand menu in the library:
+Step 3: Find the property that you want to include as a filter in the Library and click on the **Edit** button.
 
-Step 1: Go to **Settings**, and click on **Filters**.
+Step 4: Select whichever filter options match your needs: 
+- “Use as filter” checkbox: This activates the ability to filter entities according to this property. When a user visits the Library and selects the corresponding type of template among the main filters in the Library’s sidebar, the option to further filter all of the entities by this property will then appear.     
+- “Default filter” checkbox: This additional option makes it so the property always shows as a filter in the Library’s sidebar by default, no matter if the corresponding type of template among the main filters is selected or not. 
+- “Show in cards” checkbox: While not technically a filter, this additional option makes it so the property appears in the entity card within the Library’s Cards View. Selecting this option on a few key properties can make it easier for users to quickly skim through your collection by sight and identify specific entities.    
 
-Step 2: For each template you want the users to be able to filter, drag and drop that item from the **Document and Entity types** to the Filters area.
-
-Step 3: You can click on the **Create group** option to further organise filters by creating groups under one label.
-
-Step 4: Once you finish, click on **Save**.
-
-Now, the users of your collection will be able to use the filters that you have defined.
-
-### Configure a second tier of filters on the sidebar
-
-Besides having the templates as filters, you can also add which metadata properties you would like to have shown on the right hand menu, for more specific filter options. These filters come from the properties assigned to each entity on a corresponding template.
-
-Step 1: Go to **Settings**, click on **Templates**.
-
-Step 2: Click on the field (e.g. Pais) that you want to include as a filter.
-
-Step 3: Click on the **Edit** button of the property.
-
-Step 4: Check the **Use as filter** and the **Default filter** options. You may optionally want to check the **Show in cards** option, as well.
-
-Step 5: Click on **Save**. You can now go to the library section ![](images/image_0.png) and view the filters you have just configured.
-
-These filters are presented to the users of your collection when no entity is selected. This option is best used when you want to apply relevant filters to several templates.
-
-**Note:** You will see the And/Or toggle only on metadata that have multi-select properties.
-
+Step 5: Click on **Save**. You can now go to the Library and view the filters you have configured. For multi-select properties that you have activated as filters, you will see an “And/Or” toggle next to the filter: 
 - Using the AND operator will display the entities that contain all the properties for which you are filtering.
-
 - Using the OR operator will display the entities that contain at least one of the properties for which you are filtering.
 
-## How to use Copy From
+### How to use Copy From
 
-The copy from feature allows you to copy certain fields from one entity to another.
+Copy From allows you to quickly copy certain properties from one entity to another, all in one go. 
 
-Step 1: Click on the ‘private library’ view on the top right navigation.
+This feature can be particularly useful in case management workflows. For example, consider a collection that receives submissions through a Public Intake Form. Once a submission is made, it appears in the Library as an entity, and an administrator might want to mark it as reviewed as well as take notes about next steps -- without making modifications to the original raw submission. They could do so by “transferring” all of the information in the submission to a new type of entity that also includes properties where they can keep track of such internal metadata.
 
-Step 2: When you are in “Private Documents” mode, click on “+New Entity”. (A blank form will slide left and appear) 
-![](images/copy-from-2.png)
+It wouldn’t be very efficient to copy each property on the submission entity and paste them one by one into the new entity, so for situations like these and more, the Copy From feature comes in handy.
 
-Step 3: When the blank form appears, click on ‘copy from’ on the bottom right corner.
-![](images/copy-from-3.png)
+Step 1: Click on the Library icon in the top navigation menu.
 
-Step 4: Under “Title”, select the “Type” of template that you would like to copy data to.
-![](images/copy-from-4.png)
+Step 2: On the bottom righthand side of the screen, click on the **Create entity** button.
 
-Step 5: Using the search bar, search for any part of the title of the entity that you would like to copy fields from. As you search, options will appear containing the searched keyword and the matching templates. In the image below, the word “Federal” was typed into the search bar.
-![](images/copy-from-5.png)
+Step 3: Using the “Type” drop-down menu, select which entity template you would like to use.
 
-Step 6: Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. Once you have entered a new “Title”, click “Copy Highlighted” then click “Save”.
+Step 4: Click on the **Copy from** button in the bottom righthand corner. 
 
-Step 7: Notice that the overlapping information (i.e. the victim’s information) has been copied into the destination template. Your new entry will appear first underneath your files.
-![](images/copy-from-7.png)
+Step 5: Using the search bar that has appeared, search for any part of the title of the entity that you would like to copy properties from. As you search, entities containing the searched keyword will appear, alongside their corresponding type of template. In the image below, the word “Federal” was typed into the search bar.
 
-## How to export entities
+Step 6: Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. **Note**: The title property cannot be copied using the Copy From feature, so you will need to enter the title of the new entity manually.
 
-The CSV export feature allows users to export data for further analysis and visualisation.  
+Step 7: Once you have entered a new title, click the **Copy Highlighted** button. Notice that the overlapping information has been copied into the new entity. 
 
-Step 1: Use the filter bar to export specific data, or even export the entire collection if you need to. [Use the different filters](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-configure-main-and-secondary-filters) to select the entities you want to export. If you want a smaller subset of data, be sure to click on the specific filters to construct the specific dataset that you want. If you want, however, to export the entire collection, do not click on any filters. This will enable you to export all the entities in the collection. 
+Step 8: Fill in any other properties that remain and then click **Save**. (You may always come back to add, edit or delete this information later.)
 
-Step 2: Navigate to the lower part of the filters panel. There is a blue button labelled **Export CSV**. Once you have selected the data you want to export in Step 1 (above), click on this button. A CSV file will automatically get downloaded on your computer for your use. This file will be automatically exported in **UTF-8 csv format**.
+### How to export entities
+
+The CSV export feature allows users to export some or all entities in your Uwazi collection for further analysis and visualisation.
+
+Step 1: Decide which entities you want to export. You can use different filters in the Library’s sidebar to select a specific subset of entities in the collection for export. Alternatively, if you want to export all of the entities that exist in the entire collection, leave all filters unchecked.
+
+Step 2: Click on the blue **Export CSV** button on the bottom righthand side of the screen. A CSV file in UTF-8 format will automatically be downloaded to your computer for your use.
