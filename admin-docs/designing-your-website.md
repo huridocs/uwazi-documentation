@@ -10,11 +10,13 @@ Step 1: Go to **Settings**, and click on **Menu**.
 
 ![](images/image_66.png)
 
-Step 2: Click on the **Add link** button, or **Edit** any of the existing links.
+Step 2: Click on the **Add link** button, or edit any of the existing links.
 
 Step 3: Add a title for your item and the corresponding URL.
 
-Step 4: Click **Save** when you are finished.
+Step 4 (optional): To create a dropdown of several sub-items on the menu bar, click on **Add group**. Provide a main title for the group, and click on the **Add link** option within the group to add more sub-items. Add a title for each sub-item and its corresponding URL.
+
+Step 5: Click **Save** when you are finished.
 
 ### Customise the header
 
