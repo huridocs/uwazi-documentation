@@ -80,8 +80,6 @@ Step 4: Enter a **username**, their **email address** and select a role (**Admin
 
 Step 5: Once this information is entered, click the green **Save** button and an email will be sent to that person with a link that allows them to set their own password.
 
-Watch a [screencast](https://drive.google.com/open?id=12Z-HtNoPU2vcS80CG30496ECAL5vEJI3).
-
 ### Create new user groups
 
 Step 1: Only an Admin can create new users. Go to **Settings** and click on **Users**.
