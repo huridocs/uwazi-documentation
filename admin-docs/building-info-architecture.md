@@ -146,22 +146,18 @@ Step 9: Click **Save**.
 
 ### When to inherit properties from other entities
 
-There are times when it is useful to display a property on more than one entity.
+Depending on how you have chosen to structure your collection (in other words, your data model), it can be useful for one type of entity to inherit a property from another type of entity because it prevents you from having to enter the same information twice. 
 
-For example, if your data model includes an entity type that captures information about prisoners, and an entity type that captures information about the jail in which they were detained, you may want to be able to display the location of the prisoners on a map via the location of the jails.
+Here’s a simple example: Imagine that there is a type of entity in your collection called Country. This entity includes all sorts of details about individual countries, including their geolocation on a map.
 
-Instead of duplicating the geolocation property and collecting the same data twice (once in the **prisoner** entity template, and again in the **jail** template), Uwazi supports the ability to inherit a property from one entity type to another, via a relationship.
+Now, imagine that you want to create another type of entity called Person. You want this entity to include all sorts of details about individual people, including the geolocation of their country of birth on a map.
 
-The first step is to create the property for which you want to be inherited. To use the example above, you will create the geolocation property on the **jail** entity template. This will serve as the one place to capture the geolocation of the jails.
+The geolocation of countries is information that already exists in your collection – as a property on the Country entity – so you can opt to “inherit” it by setting up a connection between the Person entity and the Country entity. You would do so by following the steps outlined in the previous section: 
+- Define the **Relationship type** (e.g. “Country geolocation”)
+- Add a **Relationship** property to the Person template
+- Select the previously defined **Relationship type** from the dropdown list
+- Select the Country template from the **Entities** dropdown list
+- Select the **Inherit property** checkbox
+- Choose the **Geolocation** property to inherit
 
-The next step is to [create a relationship type](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-connect-properties-on-different-templates) that will represent the relationship between the **jail** and the **prisoner**. You may want to call this something like "location" or "jail". For this example, we'll use the name "jail".
-
-The next step is to create a relationship property _from_ the entity template that you want to inherit a property, _to_ the entity type that has the property you want to inherit. To use the example above, you will edit the **prisoner** entity template to add a relationship property. The name of this relationship property is whatever you named the relationship in the previous step ("jail"). As you are creating this relationship property, you will be asked to select which entity type you want the relationship to include and you will select "Jail" because that is the entity type that has the geolocation property you want to inherit. Then you will be asked if you want to inherit a property from the "Jail" entity template. Here is where you can select the geolocation property.
-
-![](images/image_24.png)
-
-Now that these two entity types have this relationship established and the inherited property, when you create a relationship between prisoner X and jail Y, the prisoner X entity will inherit the geolocation of jail Y, allowing you to show the location of the prisoner (or prisoners) on a map.
-
-![](images/image_25.png)
-
-This is the equivalent to a foreign key in a relation database that gets resolved to a particular property of the linked record.
+From this point on, whenever you create a new Person entity in the future, you will be able to select which specific Country entity – from among all of the Country entities in your collection – is connected to the person. Simply select the relevant country and click Save. By doing so, the new Person entity will include the same Geolocation information that is already found on the selected Country entity.
