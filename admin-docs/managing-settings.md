@@ -132,13 +132,9 @@ However, you can set any page from within your Uwazi instance to act as the land
 
 All of the entities in an Uwazi collection can be viewed on demand as cards, in a table or on a map (as long as entities have an associated geolocation). Based on your preference, you can choose to set a default view.
 
-entities.
-
 ### Change the date format
 
 You may change the date format, based on your preference.
-
-favicon.
 
 ### Make your collection private (or public)
 
@@ -164,7 +160,7 @@ Step 1: Find your unique ID.
   
   - If you are hosting your Uwazi with HURIDOCS, we provide [Matomo Analytics](https://matomo.org/) as part of the hosting. Please contact us to activate your account.
 
-Step 2: Navigate to the Settings area and click on Collection in the left sidebar. 
+Step 2: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
 
 Step 3: Toggle on the option for Google Analytics or Matomo Analytics, depending on your preference, and add the unique ID. 
 
@@ -208,12 +204,20 @@ Step 5: Click the green **Save** button.
 
 ## How to customize your collection's map configurations
 
-### Map starting point
+### Map starting point 
 
-To set your own geolocation default, drag the map and click to select the destination, or enter the latitude and longitude, if known.
+Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
 
-![](images/edit-site-settings-2.png)
+Step 2: To set your own default geolocation, drag the map and click to select the destination, or enter the latitude and longitude, if known.
+
+Step 3: Click the green **Save** button.
 
 ### Maptiler key
 
-We provide a default MapTiler key, but you can change it to your own if you wish to.
+A default MapTiler key is provided with Uwazi, but you are free to swap it for your own. 
+
+Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
+
+Step 2: Input the MapTiler API key in the space provided. 
+
+Step 3: Click the green **Save** button.
