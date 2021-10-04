@@ -79,88 +79,66 @@ Please refer to Elasticsearch’s [query string syntax page](https://www.elastic
 
 ## How to create a table of contents
 
-Most documents have a defined structure through its pages. Creating a table of contents will allow your end-users to quickly navigate through the document’s contents. Alternatively, you can create your own structure that would be most useful to them.
+Within Uwazi, you can create an interactive table of contents for a PDF that is uploaded to an entity as a **Primary Document**, which will make it easier to quickly navigate through its contents. You can access this table of contents by clicking on the **Table of Contents** icon in the right sidebar of an entity.
 
-Step 1: Click on the document that you want to add the table of contents to.
+Step 1: Navigate to the **Library** and locate the entity that contains the document for which you want to create a table of contents. Click the **View** button to see the document in full. 
 
-Step 2: Click on the **Table of Contents** button (the A icon) on the right side panel.
+Step 2: Within the document, use the cursor to highlight the text that you want to add as the first heading in the table of contents. Three blue buttons will appear.  Click on **Add to table of contents**, and the highlighted text will appear on the right sidebar.
 
-Step 3: Now you can highlight the text that you want to add. Three blue icons will appear. Choose the far right circle, **Add to Table of Contents**, and the highlighted text will appear on the right sidebar.
+  - Note: You may need to make small edits to the heading, such as restoring spaces between words. 
 
-Step 4: Repeat this process until you have created a full table of contents. You can add as many headings and subheadings as you like.
+Step 3: Repeat this process until you have created a full table of contents. You can add as many headings and subheadings as you like. You can nest subheadings under headings by clicking on the arrow buttons to the left of the table of content entries. Uwazi currently supports six degrees of such indentations; each is styled differently to improve readability. 
 
-- You can add indentation by clicking on the arrow buttons. Uwazi currently supports 6 levels of indentations with different styles for every level to improve readability.
-
-![](images/image_50.png)
-
-Step 5: Once you are done, click **Save**. The table of contents will now be showing. Users can click on the heading and they will be directed to the relevant segment.
-
-Step 6: You can always come back later to revise or add more contents by clicking the **Edit** button.
+Step 4: Once you have finisheds, click **Save**. The table of contents will now be accessible to anyone who views the document. Clicking on any heading  will take you  to the related section of the document. If you ever need to revise or add more contents in the future, simply click the Edit button.
 
 ## How to create references
 
-> In Uwazi, a **reference** is a bookmark that connects highlighted content in one document to something else -- such as other selected content in the same document, other selected content in a different document, or even an entire document or an entity.
+In Uwazi, a **Reference** connects selected content in a **Primary Document** to other selected content within the same document, to other selected content in a different **Primary Document**, or to an entity (which may or may not have a **Primary Document** attached). You can see all of the **References** that a document has by clicking on the References icon in the right sidebar of its entity.
+
+But before you can configure a **Reference**, you must first define the type(s) of relationship that will be used in your collection.
 
 ### Reference other text in the same or a different document
 
-Step 1: Go to **Settings** and click on **Relationship types** to add a "type of connection."
+Step 1: Navigate to the **Settings** area and click on click on **Relationship types**. 
 
-- **Note:** You must define your relationship type(s) first in order to create references.
+Step 2: Click on the **Add connection** button. Give the relationship a descriptive name and click **Save**. 
 
-Step 2: Click **View** on the file for which you want to create the reference. Note that references can only be made from text selected in a PDF document.
+Step 3: Navigate to the **Library** and locate the entity that contains the document for which you want to create a **Reference**. Click the **View** button to see the document in full. 
 
-Step 3: Select the text you want. Three options will appear. Click on **Connect to a paragraph**.
+Step 4: Within the document, use the cursor to highlight the text to which you want to add a Reference. Three blue buttons will appear. Click on the **Connect to a paragraph** button and an area called **Create Reference** will open in the right sidebar.
 
-![](images/image_51.png)
+Step 5: Using the checkboxes, select the previously defined **type of relationship** that you would like to use as part of this Reference. 
 
-Step 4: Select the relationship type.
+Step 6: Choose the document from the list which contains the text that you want to refer to. If the list is long, you can use the search by to manually search by title to locate the document more quickly. You are free to select the same document that you are currently editing. 
 
-Step 5: Choose the document you want to refer to. You can manually search for it by title if you can't find the document you are looking for. You can also select the same document you’re currently editing.
+Step 7: Click the green arrow button to proceed. You will then be taken to the document you have selected. Using the cursor, highlight the text that you want to reference.
 
-- Note: only published entities appear in this list.
+Step 8: Click the green **Save** button.. The referenced text in both documents will be highlighted in yellow, indicating that it is associated with a Reference. Clicking on the document icon shown alongside the reference in the right sidebar will take you to the related paragraph.
 
-![](images/image_52.png)
+### Reference another entity (with or without a Primary Document)
 
-Step 6: Click **Next**, and this will take you to the document you have selected to refer to.
+Step 1: Navigate to the **Settings** area and click on **Relationship types**. 
 
-Step 5: Select the relevant part of the text you want to reference, highlight it and click **Save**.
+Step 2: Click on the **Add connection** button. Give the relationship a descriptive name and click **Save**. 
 
-![](images/image_53.png)
+Step 3: Navigate to the **Library** and locate the entity that contains the document for which you want to create a **Reference**. Click the **View** button to see the document in full.
 
-- This will create the reference for you. Users will see this referenced text under the References tab ![](images/image_54.png) in the right sidebar.
+Step 4: Within the document, use the cursor to highlight the text to which you want to add a Reference. Three blue buttons will appear. Click on the **Connect to a document** button and an area called **Create Reference** will open in the right sidebar.
 
-### Reference another document
+Step 5: Using the checkboxes, select the previously defined **type of relationship** that you would like to use as part of this Reference.
 
-Step 1: Go to **Settings** and click on **Relationship types** to add a "type of connection."
+Step 6: Choose the entity from the list that you want to refer to. If the list is long, you can use the search bar to manually search by title to locate it more quickly. 
 
-- **Note:** You must define your relationship type(s) first in order to create references.
-
-Step 2: Click **View** on the file for which you want to create the reference. Note that references can only be made from text selected in a PDF document.
-
-Step 3: Highlight the segment of text you want and click on **Connect to a document**.
-
-![](images/image_55.png)
-
-Step 3: Select the relationship type.
-
-Step 4: Select the document you want to reference. You can manually search for it by title if you can't find the document you are looking for.
-
-- Note: only published entities appear in this list.
-
-Step 4: Click on **Save**.
-
-Users will see the referenced document under the **References** tab ![](images/image_54.png) in the right sidebar.
-
-When the reference is selected, the highlighted text will be displayed in the PDF.
-
+Step 7: Click the green **Save** button. The referenced text will be highlighted in yellow, indicating that it is associated with a Reference. Clicking on the document icon shown alongside the reference in the right sidebar will take you to the related entity.
 
 ## How to create relationships 
 
-> In Uwazi, a **relationship** connects two or more entities to each other so that it’s possible to investigate and analyse "who did what to whom" (and when, and where, etc). Note: we use the terms “relationship” and “connection” interchangeably.
+In Uwazi, a **Relationship** connects two or more entities in your collection so that it’s possible to  scrutinise how they interact with one another. You don’t have to predefine a relational model upfront or follow a rigid structure. Uwazi allows you to arbitrarily create Relationships between entities on a one-to-one basis or on a one-to-many basis.
+These Relationships are displayed in a tree called an **Information Hub**. You can see all of the Relationships associated with an entity by clicking on the **Connections** icon in the right sidebar.
 
-Uwazi supports connecting data in unstructured ways, meaning you don't need to follow a particular data structure or predefine a relational model upfront. Entities can be connected to each other in one-to-one or one-to-many relations arbitrarily:
+Note: We sometimes use the term **Connection** to mean **Relationship**. In practice, these refer to the same feature.
 
-![](images/image_57.png)
+There are two ways in Uwazi to create Relationships between entities in your collection.
 
 ### Understanding "information hubs"
 
