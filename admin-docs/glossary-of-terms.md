@@ -20,7 +20,7 @@
 
 - **Favicon** is an icon that appears in the browser tab and bookmarks.
 
-- **Filters** are criteria that you can mix and match to narrow down the types of entities shown at a given moment in the Library.
+- **Filters** are criteria that narrow down the types of entities shown at a given moment in the Library.
 
 - **Instance** is your specific copy of the Uwazi software. In other words, it refers to your collection.
 
@@ -38,7 +38,7 @@
 
 - **Relationship** - In Uwazi, a Relationship allows entities to be connected to each other. We sometimes use the term **Connection** to describe the same feature.
 
-- **Relationship Types** are different types of Relationships, or Connections, that you can form between or even within entities. Each possible type should be given a descriptive name that captures the essence of the Relationship.
+- **Relationship Types** are different types of Relationships, or Connections, that you can establish between or even within entities. Each possible type should be given a descriptive name that captures the essence of the Relationship.
 
 - **Reference** connects selected content in a document to something else. References can be made to: other selected content in the same document, other selected content in another document, an entire document, or an entity.
 
