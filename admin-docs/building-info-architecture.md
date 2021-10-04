@@ -2,80 +2,76 @@
 
 ## How to create templates and add properties
 
-Templates are the foundation of your Uwazi platform as they allow you to attribute consistent, structured metadata to your entities. Within each template, you can assign a variety of properties like:
+An Uwazi collection is made up of types of information called entities that live in the Library ![](images/image_0.png). But before you can add an entity, you must create a template for it. A template gives an entity a standardised structure. It contains metadata properties of various formats, including: 
 
-- Text
-- Numerics
-- Select (needs thesaurus)
-- Multiselect (needs thesaurus)
-- Date, date range, multi date, multi date range
-- Rich text
-- Geolocation
-- External links
-- Image and Media (for image, video and audio embedding)
-- Relationship (to create connections between this entity and another one)
-- Preview 
-- Generated ID
+- Plain text 
+- Numeric 
+- Single select dropdown (requires a **Thesaurus**) 
+- Multiselect dropdown (requires a **Thesaurus**) 
+- Date, date range, multi date, multi date range 
+- Rich text 
+- Geolocation 
+- External link 
+- Image and media (to embed image, video or audio) 
+- Relationship (to create connections between this type of entity and another type) 
+- Preview (to display a thumbnail image of the first page of a **Primary Document**)  
+- Generated ID (to assign an automatically generated unique ID code to each entity)
 
 ### Add different properties to a template
 
-Properties provide an important way for users to view important metadata at a glance and filter the collection to better understand and analyse the collection.
+All templates include two default properties: Title and Date Added. The rest are up to you! You can add as few or as many as you wish. Each property that you add to your template will provide a consistent space to include details about the entity.
 
-Step 1: From **Settings**, click on **Templates**.
+Step 1: Navigate to the **Settings** area and click on **Templates**. 
 
 Step 2: Click on the green **Add Template** button.
 
-- There will be two default properties: Title and Date Added.
-
 Step 3: Name your template and select a color for it.
 
-Step 4: On the right side panel, there is a list of **Properties**. Each property will provide the user with more information about your entity. You can add as few or as many as you wish. Drag and drop one property at a time onto the template.
-
+Step 4: On the right side is a list of **Properties**.  Drag and drop one property at a time onto the template or click on the + icon to add the property. 
 ![](images/image_16.png)
 
-Step 5: For each added property, click **Edit** and give it a name (Label). Review the other options for the property, which may include the following:
+Step 5: For each property, click **Edit** and give it a **Name** or **Label**. Review the other options for the property, which may include the following: 
 
-- **Select list** - for Select and Multi Select properties, choose which Thesaurus will be used for this property. Related to: [How to create thesauri](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-thesauri).
-- **Hide label** will show this property without the label/name.
-- **Required property** will prevent the entity from being saved if this property isn't filled in.
-- **Show in cards** means this property will appear in the Uwazi library cards as part of the basic info.
-  - Note that the Uwazi library cards will also show the user's _current sorting criterion_ even if that property is not configured with "Show in cards." For example, this happens frequently with the "Date added" property, which is the default sorting criterion in the library. When the cards are sorted by "Date added," the "Date added" property is visible in the cards to show the user why the cards are in the current order.
-- **Use as filter** means this property will be able to be used to filter the library view.
-- **Default filter** means this property will be used as a default filter in the library view.
-- **Priority sorting** means this property will be used as default sorting criterion.
-- **Full width** will show this property using the full width available (applies to Media, Image, and Preview properties).
+- **Priority sorting** means that this property will be used as default sorting criterion in the Library.
+- **Generated ID** in the title property means that Uwazi will assign an automatically generated unique ID code as the title of the entity. 
+- **Select list**: For Select and Multi Select properties, you must choose which **Thesaurus** will be used for this property. 
+- **Hide label** means that this property will be displayed without its name or label. 
+- **Required property** will prevent the entity from being saved if this property isn’t filled in.
+- **Show in cards** means that when the entities in the Library are viewed as cards, this property will be displayed on the card, making it visible without having to click on an entity to see it in its entirety.
+  - Note: the cards in the Library will also show a person’s current sorting criterion even if that property is not configured to “Show in cards.” For example, this happens frequently with the “Date added” property, which is the default sorting criterion in the library. When the cards are sorted by “Date added,” the “Date added” property is visible in the cards to demonstrate why the cards are in their current order. 
+- **Use as filter** makes it possible to use this property as a  filter in the Library. When someone visits the Library and selects the corresponding type of template among the main filters in the Library’s sidebar, the option to further filter all of the entities by this property will then appear. Learn more about how to configure filters.
+- **Default filter** makes it so the property always shows as a filter in the Library’s sidebar by default, no matter if the corresponding type of template among the main filters is selected or not. 
+- **Full width** will show this property using the full width available (applies to Media, Image, and Preview properties). 
 
-Step 6: Remember to click on **Save** after you have created properties for each template.
+Step 6: Remember to click on **Save** after creating or making changes to each template.
 
 ![](images/image_17.png)
 
-Watch a [screencast](https://drive.google.com/open?id=1pqcKphveaHFJqrrBPT53b2jE5lo75BMf).
+- [Watch a screencast](https://drive.google.com/open?id=1pqcKphveaHFJqrrBPT53b2jE5lo75BMf).
+- If you intend to add your entities in bulk using CSV import, remember that the property names on these templates must match the property names in the CSV file. [Learn more about CSV import](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-import-in-bulk).
 
-> If you intend to do a CSV import to bring your metadata into Uwazi in bulk, remember that the property names on these templates must match your field names in the CSV file. This will allow the data migration to be imported successfully with all the metadata in the correct template. Related to: [How to migrate data with csv import](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#import-your-documents-through-csv-import-data-migration).
-> 
 > **Warning:** Uwazi does not support the use of non-Latin characters (such as Arabic text or accented characters) on template configuration. This includes template titles and property names. In order to use non-Latin characters in template titles or property names, you must first create them in Latin characters, and then translate those phrases under the "Translations" tab in Settings as described in [How to translate your content](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-translate-your-content). If this is not done, it will trigger a known bug. Our developers are working to fix it.
 
-## How to create thesauri
+## How to create Thesauri
 
-> In Uwazi, a thesaurus is a list of terms that are referred to throughout an Uwazi instance to provide structured details. These terms are also referenced as properties within each entity. Thesauri is the plural form of thesaurus.
+In Uwazi, **Thesauri** refers to lists of terms that are referenced in Select and Multiselect properties. Thesauri is the plural form of thesaurus.
+ 
+Using a **Thesaurus** will make your entities more precise and consistent.
 
-Using a thesaurus will make data entry and retrieval more precise, coherent and easy.
-
-Step 1: Go to **Settings**, click on **Thesauri**.
-
-- Here you will see all the thesauri that have been created so far.
+Step 1: Navigate to the **Settings** area and click on **Thesauri**. Here you will see all the Thesauri that have been created so far.
 
 Step 2: Click on the green **Add thesaurus** button.
 
-Step 3: Name your thesaurus, then you can start typing items to include on this list.
+Step 3: Name your **Thesaurus**.
 
-- You can move items around by dragging and dropping.
+Step 4: Add terms to your Thesaurus by typing them in the spaces provided.
 
-- You can also use the **Sort** option to organize your list alphabetically.
+Step 5: Organise your Thesaurus. There are three main ways to organise the terms on your list:
+- Moving items around by dragging and dropping
+- Clicking the blue Sort button to order the items alphabetically
+- Grouping certain terms together. Click on the **Add group** button. Give the group a name. Underneath the name, you can add terms by typing them in the spaces provided. Alternatively, you can drag and drop existing terms into the group.
 
-- For certain thesauri, nesting values together with the **Add Group** option can make information more accessible.
-
-Step 4: When you are finished, click **Save**.
+Step 6: When you are finished, click **Save**. 
 
 ![](images/image_18.png)
 
