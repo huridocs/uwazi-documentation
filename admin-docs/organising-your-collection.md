@@ -1,65 +1,81 @@
-# ORGANISING YOUR COLLECTION
+# ORGANISING and EXPLORING YOUR COLLECTION
 
-## How to view a document from a card
+## How to view entities as cards, in a table or on a map
 
-In the library section ![](images/image_0.png), you will find your entire collection. By default, each entity will be displayed in this library as a card. To open and view the full document or more information about the record, you can either:
+All of the entities in an Uwazi collection live in an area called the **Library** ![](images/image_0.png), where they can be viewed as cards, in a table or on a map (as long as entities have an associated geolocation). Learn more about how to customise the default Library view.
 
-- hover over the document card and click the **View** button, which will open out into the full entity view, or
+When exploring your collection, you can freely switch between the different views by toggling the icons found along the top of the Library area:
 
-![](images/image_44.png)
+- Click the cards icon ![](images/image_0.png) to turn on **Cards View**. When **Cards View** is activated, simply click on the entity card to expand the right sidebar and see more details about the entity. You can also click the **View** button on the card itself or from within the right sidebar to open the entity in full.
+- Click the table icon to turn on **Table View**. You can customise which columns are shown by using the dropdown menu found along the top of the Library area. When **Table View** is activated, simply select the checkbox next to the entity to expand the right sidebar and see more details. You can also click the **View** button from within the right sidebar to open the entity in full. 
+- Click on the map icon to turn on **Map View**. (This icon will only appear if the entities in your collection have an associated geolocation. Learn more about adding properties to entities.) When **Map View** is activated, simply click on a point within the map to expand the right sidebar and see more details about the entity. You can also click the **View** button from within the right sidebar to open the entity in full.
 
-- click on the card to open the right side panel. From there, you can click on **View,** or you can click on a document itself to download it as a PDF.
+## How to configure main and secondary filters
 
-![](images/image_45.png)
+Filters appear on the righthand sidebar of the Library. They help users quickly navigate an Uwazi collection as well as generate basic conclusions about its contents.
 
+### Configure main filters
+
+The main filters are derived from the types of entity templates that exist in your collection. You can define which ones can be used as filters in the **Library**’s sidebar, customize the order in which the filters appear, and group certain ones together under a label of your choosing.  
+
+Step 1: Click on the **Settings** icon in the top navigation menu and then click on **Filters**.
+
+Step 2: On the righthand side in an area named **Entity types**, you will see a list of your templates. For each template that you want to be able to filter in the **Library**, drag and drop the corresponding item into the space labeled **Drag items here** in the order in which you would like it to appear.
+
+Step 3: If you would like to group certain filters together, click on the **Create group** button. Give the group a descriptive label. Underneath the label, drag and drop the items that you would like to appear in the group. 
+
+Step 4: Once finished, **Save** the changes you have made.
+
+### Configure a second tier of filters on the sidebar
+
+Besides using the types of templates as filters, you can also select which specific properties on the entities act as filters.
+
+Step 1: Click on the **Settings** icon in the top navigation menu and then click on **Templates**.
+
+Step 2: Select the **Edit** button on the type of template you would like to edit.   
+
+Step 3: Find the property that you want to include as a filter in the **Library** and click on the **Edit** button.
+
+Step 4: Select whichever filter options match your needs: 
+- **Use as filter** checkbox: This activates the ability to filter entities according to this property. When a user visits the **Library** and selects the corresponding type of template among the main filters in the Library’s sidebar, the option to further filter all of the entities by this property will then appear.     
+- **Default filter** checkbox: This additional option makes it so the property always shows as a filter in the Library’s sidebar by default, no matter if the corresponding type of template among the main filters is selected or not. 
+- **Show in cards** checkbox: While not technically a filter, this additional option makes it so the property appears in the entity card within the Library’s **Cards View**. Selecting this option on a few key properties can make it easier for users to quickly skim through your collection by sight and identify specific entities.    
+
+Step 5: Click on **Save**. You can now go to the **Library** and view the filters you have configured. For multi-select properties that you have activated as filters, you will see an **And/Or** toggle next to the filter: 
+- Using the **AND** operator will display the entities that contain all the properties for which you are filtering.
+- Using the **OR** operator will display the entities that contain at least one of the properties for which you are filtering.
 
 ## How to search within your collection
 
-Your Uwazi database offers a few different ways to search.
-
-### Use filters to narrow your search
-
-**Filters**: choose and combine filters to narrow down your search.
-
-![](images/image_46.png)
+There are a few different types of search that you can conduct in your Uwazi collection.
 
 ### Search the entire collection
 
-**Text search**: a simple way to search entities in your collection is using the Search box on the top left side of your screen.
-
-![](images/image_47.png)
-
-- You can perform a generic text search, which will show any terms mentioned in the search query.
-
-![](images/image_48.png)
-
-- Or you can search for a specific term or phrase using **"**...**"** to find the exact match, e.g. ''United Nations Committee on Enforced Disappearances'’.
-
-![](images/image_49.png)
+You can perform a search using the search bar found along the top of the Library area.  It can be a generic text search, which will show any terms mentioned in the search query. Or you can search for a specific word or phrase by enclosing it in quotation marks to find the exact match (e.g.‘’United Nations Committee on Enforced Disappearances”).
 
 ### Search only within a particular document
 
-To search for a word or a phrase **within a particular document**.
+You can also perform a search within  PDFs that are uploaded as the **Primary Document** of an entity. Learn more about adding Primary Documents.
 
-- Select the document you want to search.
+Step 1: Navigate to the **Library** and locate the entity that contains the document you want to search. Click the **View** button to see the document in full.
 
-- Click on the search text function and input what you are looking for.
+Step 2: Click on the **Search** icon in the right sidebar. A search bar will appear.
 
-- You will see all the mentions of your search query listed in chronological order as they appear in the document.
+Step 3: Input your search query. All of the mentions within the document of the word or phrase you searched for will appear in chronological order.
 
-- You can click on the number under document content to take you to the correct segment of the text.
+Step 4: Click on any of the search results to be taken to the specific segment of the document.
 
 ### Advanced search queries
 
-**Query string searches**: You can search for specific information using wildcards, boolean search and query strings.
+To make your search queries more targeted, you can use several different advanced techniques: 
 
-- \* for wildcard search. i.e.: "juris*" will match words such as jurisdiction, jurisdictional, jurists, jurisprudence, etc.
-- ? for one character wildcard. Ie: "198?" will match 1980 to 1989 and also 198a, 198b, etc.
-- Exact term match by enclosing your search string with quotes. Ie. "Costa Rica" will toss different results compared to Costa Rica without quotes.
-- ~ for proximity searches. Ie: "the status"~5 will find anything having "the" and "status" within a distance of 5 words, such as "the procedural status", "the specific legal status".
-- AND, OR and NOT for boolean searches. Ie. "status AND women NOT Nicaragua" will match anything containing both the words status and women, and necessarily not containing the word Nicaragua.
+- An asterisk * added to a query will conduct a **multiple character wildcard search**. The asterisk stands in for any number of characters in your query. For example, a search for **juris*** will match words such as jurisdiction, jurisdictional, jurists, jurisprudence, etc. 
+- A question mark ? added to a query will conduct a **one character wildcard search**. The question mark stands in for one single character only. For example, **198?** will match any of the years between 1980 and 1989 as well as 198a, 198b, etc. 
+- Question marks enclosing a query like this “...” will conduct a search that looks for exact term match. For example, **"Costa Rica"** will return different results compared to **Costa Rica** without quotation marks. 
+- A tilde ~ added after a phrase in quotation marks will conduct a **proximity search**. The tilde indicates that you want to look for results that match your query approximately, but not exactly. You can accompany the tilde with a number to set a maximum number of words that separate the original terms in your query. For example, **“the status”~5** will find anything having “the” and “status” within a distance of 5 words, such as “the procedural status” or “the specific legal status”. 
+- **AND**, **OR** and **NOT** added to a query will conduct a **boolean search**. AND indicates that all words searched for must be present; OR indicates that only one of the words searched for must be present; and NOT excludes results that contain the word included. For example, **status AND women NOT Nicaragua** will match anything that contains both the words status and women and does not contain the word Nicaragua. 
 
-Please refer to Elasticsearch's [query string syntax page](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/query-dsl-query-string-query.html#query-string-syntax) for more information on search options.
+Please refer to Elasticsearch’s [query string syntax page](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/query-dsl-query-string-query.html#query-string-syntax) for more information on search options.
 
 ## How to create a table of contents
 
@@ -80,7 +96,6 @@ Step 4: Repeat this process until you have created a full table of contents. You
 Step 5: Once you are done, click **Save**. The table of contents will now be showing. Users can click on the heading and they will be directed to the relevant segment.
 
 Step 6: You can always come back later to revise or add more contents by clicking the **Edit** button.
-
 
 ## How to create references
 
