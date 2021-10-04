@@ -98,7 +98,7 @@ You can control various basic aspects of your Uwazi instance by navigating to th
 
 ### Change the name of your collection
 
-- The name is "Uwazi" by default, but you can change it to anything you like. ([*screencast*](https://drive.google.com/open?id=1_6ele0a2bmdSbLD1-UjUfSd53JaUL54T))
+The name is "Uwazi" by default, but you can change it to anything you like. ([*screencast*](https://drive.google.com/open?id=1_6ele0a2bmdSbLD1-UjUfSd53JaUL54T))
 
 ![](images/image_4.png)
 
@@ -114,25 +114,12 @@ Step 3: Navigate back to the **Collection** settings. Under **Custom favicon**, 
 
 Step 4: Click **Save**, and be sure to reload the webpage after updating your favicon.
 
-### Make your collection private (or public)
-
-![](images/image_5.png)
-
-- If you are handling sensitive information or you just want your collection to be accessible only via login, you can click the checkbox to make the instance private.
-- By activating this option, your information will not be crawled by search engines, and users will be prompted with a login screen when trying to access your entities.
-
-### Change the date format
-
-- You may change the date format, based on your preference.
-
 ### Set your landing page
 
-- The landing page is the first thing users will see when visiting your Uwazi instance.
+The landing page is the first thing visitors will see when they arrive at your Uwazi instance. By default, the landing page is set to the full Library ![](images/image_0.png) without any filters applied.
 
-- By default, the landing page is set to the full Library ![](images/image_0.png) without any filters applied.
+However, you can set any page from within your Uwazi instance to act as the landing page instead. Toggle on the option to **Use custom landing page** and paste the relative URL in the box. A relative URL starts with / and skips the domain name. For example: 
 
-- However, you can use any page from your Uwazi instance as the landing page instead. Toggle on where it says **Use custom landing page** and paste the URL in the box, accordingly. These are some examples:
-  
   - A static page: /page/dicxg0oagy3xgr7ixef80k9
   
   - A library query: /library/?searchTerm=test
@@ -141,27 +128,49 @@ Step 4: Click **Save**, and be sure to reload the webpage after updating your fa
   
   - Always use a URL relative to your site, starting with / and skipping the [https://yoursite.com](https://yoursite.com).
 
+### Customise the default Library view 
+
+All of the entities in an Uwazi collection can be viewed on demand as cards, in a table or on a map (as long as entities have an associated geolocation). Based on your preference, you can choose to set a default view.
+
+entities.
+
+### Change the date format
+
+You may change the date format, based on your preference.
+
+favicon.
+
+### Make your collection private (or public)
+
+If you are handling sensitive information or you just want your collection to be accessible only via login, you can toggle on the option to make the instance private.
+
+By activating this option, your information will not be crawled by search engines, and visitors will be prompted with a login screen when trying to access your entities.
+
 ### Show cookies policy on your site
 
-Cookies are bits of information used by some websites you visit and stored on your computer’s hard drive. Uwazi uses cookies to deliver an optimal experience to users. If you would like users to see a notification about the use of cookies on your instance, toggle on **Show Cookie Policy**.
+Cookies are bits of information used by some websites you visit and stored on your computer’s hard drive. Uwazi uses cookies to deliver an optimal experience for users and visitors alikes. If you would like to display a notification about the use of cookies upon first visit to your instance, toggle on the option to **Show cookie policy**. 
 
 ### Support non-Latin characters in property names
 
-Toggling this on will update non-latin languages as default languages and properties, automatically. In addition, the links or URLS will be updated as well.
+Toggling on the option of **Non-Latin characters support** will enhance support for non-Latin languages as default languages, specifically in the names of properties within your templates. This option triggers an automatic update of all properties, a process that could take several minutes and will likely change URLs to library filters. If you have menus or links using such URLs, you will need to update them manually afterward.
 
-## How to track your site's analytics
+## How to track your collection’s web analytics
 
-If you want to track analytics related to your collection visits, Uwazi supports both Google Analytics and Matomo.
+If you want to track analytics related to the web traffic that visits your collection, Uwazi supports both Google Analytics and Matomo. 
 
-- Find your unique ID.
+Step 1: Find your unique ID.
   
   - FAQ on how to set up a [Google Analytics ID](https://support.google.com/analytics/answer/3123666?hl=en) to track website visits.
   
   - If you are hosting your Uwazi with HURIDOCS, we provide [Matomo Analytics](https://matomo.org/) as part of the hosting. Please contact us to activate your account.
 
-- Add this unique ID to Uwazi.
+Step 2: Navigate to the Settings area and click on Collection in the left sidebar. 
 
-## How to configure your site's mailer and forms
+Step 3: Toggle on the option for Google Analytics or Matomo Analytics, depending on your preference, and add the unique ID. 
+
+Step 4: Click the green **Save** button.
+
+## How to configure your collection's contact and submission forms
 
 ### Mailer configuration
 
@@ -173,13 +182,31 @@ This allows you to configure your own SMTP or any other mail server. Instances h
 
 ### Contact form configuration
 
-If you have added a contact form on one of your pages, this is where you would add the email address that receives the information from that form. Click [here](https://uwazi.readthedocs.io/en/latest/admin-docs/designing-your-website.html#how-to-create-a-contact-form) to learn how to add and configure a contact form on a webpage.
+If you have added a contact form to a page within your Uwazi instance, you must set the email address that receives the information from that form. (Learn more about how to add a contact form to your instance.)
 
-### Public form configuration
+Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
 
-If you have added a public intake or submission form on one of your pages, this is where you would add the template ID (representing the numbers in the template URL). You must white-list the template(s) for which public form(s) are expected. Click [here](https://uwazi.readthedocs.io/en/latest/admin-docs/designing-your-website.html#how-to-create-a-public-intake-form-on-your-website) to learn how to add and configure a public submission form on a webpage.
+Step 2: Toggle on the option of **Contact form** and set the **Receiving email** address. 
 
-## How to change your site's map configurations
+Step 3: You can also set a different address as the **Sending email**. This email address will appear as the sender of emails associated with the contact form. If no email address is set, no-reply@uwazi.io will be used.   
+
+Step 4: Click the green **Save** button.
+
+### Submission form configuration 
+
+If you have added an intake or submission form to a page within your Uwazi instance, you must whitelist the template(s) that are used to create the  form(s). (Learn more about how to add an intake or  submission form to your instance.) 
+
+Step 1: Navigate to the **Settings*^ area and click on **Collection** in the left sidebar. 
+
+Step 2: Toggle on the option of **Public endpoints**.
+
+Step 3: Select the template(s) that need to be whitelisted.
+
+Step 4: In the case that submissions should be sent to a different Uwazi instance than the one where the form is found, add the URL of that destination instance.
+
+Step 5: Click the green **Save** button. 
+
+## How to customize your collection's map configurations
 
 ### Map starting point
 
