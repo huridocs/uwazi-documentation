@@ -6,7 +6,7 @@
 
 Step 1: Login to your Uwazi instance.
 
-Step 2: Under **Settings**, click **Accounts**.
+Step 2: Navigate to the **Settings** area and click **Accounts**.
 
 Step 3: You can change your email address here, as well as your account password.
 
@@ -30,7 +30,7 @@ To add an extra layer of security to your Uwazi instance:
 
 Step 1: Login to your Uwazi instance.
 
-Step 2: Under **Settings**, click **Accounts**.
+Step 2: Navigate to the **Settings** area and click **Accounts**.
 
 Step 3: You will see **Two-step verification**, click on **Protect your Account**.
 
@@ -70,7 +70,7 @@ If you work in a team or in collaboration with other people, Uwazi allows admini
 
 ### Add new users to your instance
 
-Step 1: Only an Admin can create new users. Go to **Settings** and click on **Users**.
+Step 1: Only an Admin can create new users. Navigate to the **Settings** area and click **Users**.
 
 Step 2: You will see a list of all the current users who have access to your collection.
 
@@ -82,7 +82,7 @@ Step 5: Once this information is entered, click the green **Save** button and an
 
 ### Create new user groups
 
-Step 1: Only an Admin can create new users. Go to **Settings** and click on **Users**.
+Step 1: Only an Admin can create new users. Navigate to the **Settings** area and click **Users**.
 
 Step 2: On the Users tab, you will see a list of all the current users who have access to your collection. Switch to the Groups tab.
 
@@ -92,10 +92,9 @@ Step 4: Assign a **Name of the group** and add the usernames that you want to in
 
 Step 5: Once this information is entered, click the green **Create Group** button.
 
-## How to edit your site settings
+## How to configure your collection’s general  settings
 
-- Click on **Settings**, then click on **Collection**.
-- After you have made all your changes, please ensure that you click **Save**.
+You can control various basic aspects of your Uwazi instance by navigating to the **Settings** area, then clicking on **Collection** in the left sidebar. If you make any changes, please ensure that you click **Save**. 
 
 ### Change the name of your collection
 
@@ -105,11 +104,15 @@ Step 5: Once this information is entered, click the green **Create Group** butto
 
 ### Customise the favicon
 
-If you want to replace the Uwazi icon for your own:
--   Convert your logo/image into .ico (icon) format. To do so, search the internet for an .ico converter and convert the image you want as your icon. Save this file on your local drive.
--   On the left sidebar under **Tools** , click on **Uploads**. Select **Browse files to upload** and upload the logo/image that you converted to the .ico format. Once your image uploads, copy the URL. (It will begin with “/assets”.)   
--   Navigate back to the **Collections** settings, and toggle on where it says **Custom Favicon** and paste the above URL.
--   Click **Save**, and be sure to reload the webpage after updating your favicon.
+A favicon is the icon representing your Uwazi collection that appears in browser tabs or in bookmarks. If you want to replace the Uwazi icon for your own:
+
+Step 1: Convert your image into .ico (icon) format. To do so, you can search the internet for an .ico converter. Save the resulting file on your local drive. 
+
+Step 2: On the left sidebar under **Tools**, click on **Uploads**. Select **Browse files to upload** and upload the image that you converted to the .ico format. Once your image uploads, copy the URL. (It will begin with “/assets”.) 
+
+Step 3: Navigate back to the **Collection** settings. Under **Custom favicon**, toggle the option on and paste the above URL. 
+
+Step 4: Click **Save**, and be sure to reload the webpage after updating your favicon.
 
 ### Make your collection private (or public)
 
