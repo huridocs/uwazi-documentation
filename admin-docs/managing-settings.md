@@ -192,7 +192,7 @@ Step 4: Click the green **Save** button.
 
 If you have added an intake or submission form to a page within your Uwazi instance, you must whitelist the template(s) that are used to create the  form(s). (Learn more about how to add an intake or  submission form to your instance.) 
 
-Step 1: Navigate to the **Settings*^ area and click on **Collection** in the left sidebar. 
+Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
 
 Step 2: Toggle on the option of **Public endpoints**.
 
