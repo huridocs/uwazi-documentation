@@ -75,45 +75,38 @@ Step 6: When you are finished, click **Save**.
 
 ![](images/image_18.png)
 
-### Import thesauri from csv files
+### Import Thesauri from a CSV file
 
-This feature allows you to import terminology lists to use as an Uwazi thesaurus. The import feature can be used to include lists in new and existing thesauri.
+It may be that you have a list of terms already prepared that you would like to include in a **Thesaurus**. Typing the terms one by one could become tedious, so for situations such as these, Uwazi makes it possible to upload in bulk by preparing and then importing a Comma-Separated Values (CSV) file.  This import feature can be used to add terms to new or existing Thesauri.
 
-Step 1: Prepare the csv file to import the thesaurus.
+Step 1: Create a CSV file on your computer:
+- If you only have one language configured in your instance, then you should only have one column in your file. The column header name should be the name of the language written in English (e.g. English, Russian, Spanish).
+- If you have more than one language configured in your instance and you want to import a list of terms at the same time as their corresponding translations, then each language should have its own separate column. Use the name of the language written in English (e.g. English, Russian, Spanish).
+  - Note: If your CSV file has columns for languages that are not configured in your Uwazi instance, they will be ignored. Learn more about enabling different languages in Uwazi.
 
-- If you have your data saved in a spreadsheet like Microsoft Excel or Google Sheets, be sure to convert the file to csv format before you import it into Uwazi.
-
-- If you only have one language in your instance, then you will only have that one column in your file and the name of the column will be that language.
-
-- However, if you are importing terminology lists in different languages all at once, the csv file should have a separate column for each language that you want to import.
-
-- Please ensure the language is used as the name of the column. Use the name of the language written in English, e.g. "English," “Arabic,” “Spanish.”
-
-- Each row should contain a term and its translations in different languages.
+Step 2: Populate the CSV file with the terms. Each term should occupy its own row. For example, here’s a sample CSV file viewed as plain text:
 
 Here's a sample CSV file viewed as plain text:
 
 English,French,German
-
 Man,Homme,Mann
-
 Woman,Femme,Frau
-
 Child,Enfant,Kind
 
 Here's the same file viewed in a spreadsheet program:
-
 ![](images/image_19.png)
 
-Step 2: Click the blue **Import** button, and locate and open the csv file.
+  - Note: Avoid including duplicate values in the same column, as this will cause a validation error and prevent the import from working successfully.
 
-Step 3: **Save** the thesauri.
+Step 3: Save the CSV file in UTF-8 format on your computer.
 
-**Note:**
+Step 4: Navigate to the **Settings** area and click on **Thesauri**. Click on the green **Add thesaurus** button and give the Thesaurus a name. Alternatively, if you would like to add to an existing Thesaurus, click the **Edit** button next to it.
 
-- If your csv file has columns for languages that are not enabled in your Uwazi instance in the Languages section, they will be ignored.
+Step 5: Click the blue **Import** button. Using the file browser to navigate your computer’s storage, find and select the CSV file. Once the import has finished, the terms will appear in the Thesaurus. 
 
-- Be careful not to have rows with duplicate values in the same column as this will cause a validation error.
+Step 6: Click the green **Save** button.. 
+
+Step 7: If you imported more than one language, navigate to the **Settings** area and click on **Translations**. Click on the Thesaurus name, and you will see all the terms and their translations that have been imported.
 
 ### View the newly imported thesauri
 
@@ -125,31 +118,31 @@ If you imported more than one language into a thesaurus. Then you can follow the
 
 ## How to connect properties on different templates
 
-Uwazi has a relationship property that can be added as a field on a template. This will allow you to build a connection, or "relationship", with another entity.
+Uwazi has a property called **Relationship** that can be added to your templates. This property allows you to create a connection between different types of entities. But before you can configure a **Relationship** property, you must first define the type(s) of relationship(s) that will be used in your collection.
 
-Step 1: Go to **Settings** and click on **Relationship types** to add a "type of connection."
-
-- **Note:** You must define your relationship type(s) first in order to connect properties. Doing Step 1 ensures that the relationship type(s)that you just created will appear as a dropdown option in the Relationship\* field on your template (see Step 3).
-
+Step 1: Navigate to the **Settings** area and click on **Relationship types**.
 ![](images/image_20.png)
 
-Step 2: Go back to **Settings**, and click on **Templates**. Click **Edit** next to the template you want to change, or click **Add template** to create a new template.
+Step 2: Click on the **Add connection** button. Give the relationship a descriptive name and click **Save**.
 
-Step 3: Drag the **Relationship** property from the right sidebar onto your template, click **Edit** on the newly added line, and rename the **Label**.
+Step 3: Return to the **Settings** area and click on **Templates**. Click **Edit** next to the template you want to change, or click **Add template** to create a new template.
 
+Step 4: Drag the **Relationship** property from the right sidebar onto your template. Alternatively, click on the + icon to add the property.
+
+Step 5: Click **Edit** on the newly added property, and give it a descriptive **Label**.
 ![](images/image_21.png)
 
-Step 4: Now select the relationship type under the **Relationship\*** field. The **\*** indicates that this field is mandatory. This dropdown contains the relationship type(s) that have been defined in Step 1.
+Step 6: Using the dropdown list called **Relationship***, select the Relationship type that you would like to use as part of this property. (The * indicates that it is mandatory.)
 
-Step 5: In the Entities dropdown, you can select which template the template you’re currently editing will be connected to. You can either pick "Any entity or document" or you have the option to make the connection to only one specific template.
+Step 7: By default, the property will allow you to create a connection to any type of entity (“Any entity or document”). However, you also have the option to restrict a connection to only entities that use one specific template. To do so, click on the **Entities** dropdown list and select the template you would like.
 
-- Note: this dropdown does not contain the template that is currently being edited. If you want to connect entities of the same template (for example, connecting two Person entities), click [here](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#how-to-create-relationships) to see **How to Create Relationships**.
+  - Note: The dropdown won’t contain the template that is currently being edited. [Learn more](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#how-to-create-relationships) about how to connect entities of the same template. 
 
-![](images/image_22.png)
+Step 8: If you choose a specific template in Step 7, another option will automatically appear: a checkbox called **Inherit property**. If you select this option, a dropdown will appear containing the properties of the template selected in Step 7. You can then choose a property from the list to “inherit”, meaning that this specific property, which resides on a different template than the one you are currently editing, will nevertheless also be displayed on this type of entity too.
 
-Step 6: If you choose a **specific template** in Step 5, another option will automatically appear -- it is a checkbox called **Inherit property**. If you select the **Inherit property** checkbox, a dropdown appears containing the properties of the template selected in Step 5. Once you choose a property from your options, this property will be inherited from the related entities and be visible as metadata for this type of entity.
+Step 9: Click **Save**.
 
-![](images/image_23.png)
+  - Note: You can also create a **Relationship** between entities without utilising the Relationship property by creating it directly in the Information hub of an entity. Learn more about creating Relationships.
 
 ### When to inherit properties from other entities
 
