@@ -98,9 +98,9 @@ You can control various basic aspects of your Uwazi instance by navigating to th
 
 ### Change the name of your collection
 
-The name is "Uwazi" by default, but you can change it to anything you like. ([*screencast*](https://drive.google.com/open?id=1_6ele0a2bmdSbLD1-UjUfSd53JaUL54T))
+The name is "Uwazi" by default, but you can change it to anything you like. 
 
-![](images/image_4.png)
+- [Watch a screencast](https://drive.google.com/open?id=1_6ele0a2bmdSbLD1-UjUfSd53JaUL54T).
 
 ### Customise the favicon
 
@@ -149,6 +149,8 @@ Cookies are bits of information used by some websites you visit and stored on yo
 ### Support non-Latin characters in property names
 
 Toggling on the option of **Non-Latin characters support** will enhance support for non-Latin languages as default languages, specifically in the names of properties within your templates. This option triggers an automatic update of all properties, a process that could take several minutes and will likely change URLs to library filters. If you have menus or links using such URLs, you will need to update them manually afterward.
+
+- If you are not facing issues with your template property names, we recommend leaving this unchecked.
 
 ## How to track your collection’s web analytics
 
