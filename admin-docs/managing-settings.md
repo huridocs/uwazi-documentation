@@ -118,7 +118,7 @@ Step 4: Click **Save**, and be sure to reload the webpage after updating your fa
 
 The landing page is the first thing visitors will see when they arrive at your Uwazi instance. By default, the landing page is set to the full Library ![](images/image_0.png) without any filters applied.
 
-However, you can set any page from within your Uwazi instance to act as the landing page instead. Toggle on the option to **Use custom landing page** and paste the relative URL in the box. A relative URL starts with / and skips the domain name. For example: 
+However, you can set any page from within your Uwazi instance to act as the landing page instead. Toggle on the option to **Use custom landing page** and paste the relative URL in the box. A relative URL starts with a slash / and skips the domain name. For example: 
 
   - A static page: /page/dicxg0oagy3xgr7ixef80k9
   
@@ -148,7 +148,7 @@ Cookies are bits of information used by some websites you visit and stored on yo
 
 ### Support non-Latin characters in property names
 
-Toggling on the option of **Non-Latin characters support** will enhance support for non-Latin languages as default languages, specifically in the names of properties within your templates. This option triggers an automatic update of all properties, a process that could take several minutes and will likely change URLs to library filters. If you have menus or links using such URLs, you will need to update them manually afterward.
+Toggling on the option of **Non-Latin characters support** will enhance support for non-Latin languages as default languages, specifically in the names of properties within your templates. This option triggers an automatic update of all properties, a process that could take several minutes and will likely change the URLs of library filters. If you have menus or links using such URLs, you will need to update them manually afterward.
 
 - If you are not facing issues with your template property names, we recommend leaving this unchecked.
 
@@ -160,7 +160,7 @@ Step 1: Find your unique ID.
   
   - FAQ on how to set up a [Google Analytics ID](https://support.google.com/analytics/answer/3123666?hl=en) to track website visits.
   
-  - If you are hosting your Uwazi with HURIDOCS, we provide [Matomo Analytics](https://matomo.org/) as part of the hosting. Please contact us to activate your account.
+  - If you are hosting your Uwazi instance with HURIDOCS, we provide [Matomo Analytics](https://matomo.org/) as part of the hosting. Please contact us to activate your account.
 
 Step 2: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
 
@@ -168,11 +168,11 @@ Step 3: Toggle on the option for Google Analytics or Matomo Analytics, depending
 
 Step 4: Click the green **Save** button.
 
-## How to configure your collection's contact and submission forms
+## How to configure your collections contact and submission forms
 
 ### Mailer configuration
 
-This allows you to configure your own SMTP or any other mail server. Instances hosted by HURIDOCS have the mail system already configured.
+This allows you to configure your own SMTP or any other mail server. Uwazi instances hosted by HURIDOCS have the mail system already configured.
 
 - This is a JSON configuration object that should match the options values required by Nodemailer, as explained [here](http://nodemailer.com/smtp/).
 
@@ -192,9 +192,9 @@ Step 4: Click the green **Save** button.
 
 ### Submission form configuration 
 
-If you have added an intake or submission form to a page within your Uwazi instance, you must whitelist the template(s) that are used to create the  form(s). (Learn more about how to add an intake or  submission form to your instance.) 
+If you have added an intake or submission form to a page within your Uwazi instance, it must be configured to work properly. (Learn more about how to add an intake or submission form to your instance.)
 
-Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
+Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar.
 
 Step 2: Toggle on the option of **Public endpoints**.
 
@@ -202,7 +202,7 @@ Step 3: Select the template(s) that need to be whitelisted.
 
 Step 4: In the case that submissions should be sent to a different Uwazi instance than the one where the form is found, add the URL of that destination instance.
 
-Step 5: Click the green **Save** button. 
+Step 5: Click the green **Save** button.
 
 ## How to customize your collection's map configurations
 
@@ -216,7 +216,7 @@ Step 3: Click the green **Save** button.
 
 ### Maptiler key
 
-A default MapTiler key is provided with Uwazi, but you are free to swap it for your own. 
+A default key is provided with Uwazi, but you are free to swap it for your own. 
 
 Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
 
