@@ -1,31 +1,43 @@
-# DESIGNING YOUR WEBSITE
+# CUSTOMISING YOUR COLLECTION'S DESIGN
 
-## How to configure the menu / navigation bar
+Beyond the basic options found within **Settings**, Uwazi offers several ways to enhance the look and feel of your collection. This includes:
+- Personalising your collection’s style via CSS and menu
+- Adding static web pages to feature information about your collection
+- Incorporating submissions forms or contact forms
+- Creating a stylised display for certain types of entities
 
-### Add pages to the main header
+## How to configure the main navigation menu
 
-Menu links are useful because they direct users to either the results of a specific filter or a static page. To configure links on the navigation bar of your website:
+By default, the main navigation menu that runs along the top of an Uwazi instance is styled in a shade of blue, utilises fonts from the [Roboto family](https://fonts.google.com/specimen/Roboto), and includes links to: 
+- the Library
+- different language versions of your collection (if you have multiple languages configured; learn more about translating your collection)
+- and to the collection’s settings (if you are logged in; otherwise you’ll be shown a link to the login page if your collection is configured to be publicly available).
 
-Step 1: Go to **Settings**, and click on **Menu**.
+### Add menu items
 
-![](images/image_66.png)
+It can be  useful to add additional items to the main navigation menu as a way to highlight  specific parts of your collection, such as a filtered subset of entities in the Library or a static web page.. To configure items on the navigation menu:
 
-Step 2: Click on the **Add link** button, or edit any of the existing links.
+Step 1: Navigate to the **Settings** area and click on **Menu**.
 
-Step 3: Add a title for your item and the corresponding URL.
+Step 2: Click on the **Add link** button near the bottom of the screen. Add a title for your item and its corresponding URL.
 
-Step 4 (optional): To create a dropdown of several sub-items on the menu bar, click on **Add group**. Provide a main title for the group, and click on the **Add link** option within the group to add more sub-items. Add a title for each sub-item and its corresponding URL.
+- Note: If the link is for a page within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash / and skips the domain name. For example, /page/dicxg0oagy3xgr7ixef80k9 or /library/?searchTerm=test. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
 
-Step 5: Click **Save** when you are finished.
+Step 3: If you have several related menu items, you can group them together into a dropdown menu. To do so, click the **Add group** button. Provide a main title for the group, then click the **Add link** button found directly below the title. Add a title for your first item and its corresponding URL. Repeat this process for however many menu items you want to include in the dropdown menu.
 
-### Customise the header
+Step 4: You can rearrange items into a different order by dragging and dropping.
 
-Step 1: Upload your logo in **Settings** > **Tools** > **Uploads**.
+Step 5: Click **Save** when you have finished.
 
-Step 2: Add some custom CSS in **Settings** > **Tools** > **Global CSS**.
+### Stylise the main navigation menu
 
-Here is some sample CSS to help you out:
+Using a CSS style sheet, you can add your organisation’s logo to the main navigation menu, as well as change the menu’s color scheme, font size and style, padding and more.
 
+Step 1: If you intend to incorporate a logo, you must first upload it into your collection. To do so, navigate to the **Settings** area and click on **Uploads** in the **Tools** section. Upload the image file from your computer and take note of the URL that Uwazi has assigned it.
+
+Step 2: Go to **Global CSS** in the **Tools** section and add your custom CSS in the space provided. Here is some sample CSS to start out:
+
+```
     header {
     background-color: #191916;
     border-bottom: 0;
@@ -39,16 +51,19 @@ Here is some sample CSS to help you out:
     text-indent: -9999px;
     width: 265px;
     }
-     
-## How to create new web pages
+```
 
-You can add static pages to your Uwazi collection in order to share information on what the purpose of your collection is, how the general public can contact you, etc.
+Step 3: Click the **Update** button to save your changes.
 
-Step 1: Go to **Settings**, and click **Pages**.
+## How to create web pages
 
-Step 2: Create a new page by clicking **Add Page**. Add your page content and click **Save**.
+You can add **Pages** to your Uwazi collection in order to share information about the purpose of your collection, how to use it, how the general public can contact you, etc.
 
-Step 3: After saving a new page, you will see the unique URL assigned to it in a blue box. You may, for example, want to copy this URL and add it to the [main menu / navigation bar](https://uwazi.readthedocs.io/en/initial-setup/admin-docs/how-to-configure-the-menu-navigation-bar.html).
+Step 1: Navigate to the **Settings** area and click **Pages**.
+
+Step 2: Create a new page by clicking **Add Page**. Add the page’s content in the space provided and click **Save**.
+
+Step 3: After saving, a blue box will appear containing the page’s unique URL. You may, for example, want to copy this URL and add it as an item on your collection’s main navigation menu.
 
 ### Format the content of a page
 
@@ -413,7 +428,3 @@ Note:
 Step 5: At the top of the page in the **Active Languages** section, select which language will be the **Default language** for your collection.
 
 When multiple languages are enabled for your collection, you will see the language abbreviation in the navigation menu of your site. The language options are at the top right on desktop and tablet devices, and on mobile they are at the bottom of the menu opened by the collapsed menu icon at the top left.
-
-
-
-
