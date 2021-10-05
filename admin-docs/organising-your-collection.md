@@ -144,7 +144,9 @@ Step 7: Click the green **Save** button. The referenced text will be highlighted
 ## How to create relationships 
 
 In Uwazi, a **Relationship** connects two or more entities in your collection so that it’s possible to  scrutinise how they interact with one another. You don’t have to predefine a relational model upfront or follow a rigid structure. Uwazi allows you to arbitrarily create Relationships between entities on a one-to-one basis or on a one-to-many basis.
-These Relationships are displayed in a tree called an **Information Hub**. You can see all of the Relationships associated with an entity by clicking on the **Connections** icon in the right sidebar.
+
+These Relationships are displayed in a tree called an **Information Hub**. You can see all of the Relationships associated with an entity by clicking on the **Connections** 
+![](images/image_57.png) icon in the right sidebar.
 
 Note: We sometimes use the term **Connection** to mean **Relationship**. In practice, these refer to the same feature.
 
@@ -170,7 +172,7 @@ Step 2: Click on the **Add connection** button. Give the relationship a descript
 
 Step 3: Navigate to the **Library** and locate the entity for which you want to create a **Relationship**. Click the **View** button to see the entity in full.
 
-Step 4: Within the right sidebar, click on the **Connections** icon to open up the **Information Hub**. Then near the bottom of the screen, click on the blue **Edit** button.
+Step 4: Within the right sidebar, click on the **Connections** ![](images/image_57.png) icon to open up the **Information Hub**. Then near the bottom of the screen, click on the blue **Edit** button.
 
 Step 5:  To start building the Relationship, click on the **New relationships group** button on the left side of the **Information Hub**.
 
@@ -188,7 +190,7 @@ Step 10: Once you have finished, click **Save**.
 
 Step 1: Navigate to the **Library** and locate the entity whose **Relationships** you want to edit. Click the **View** button to see the entity in full.
 
-Step 2: Within the right sidebar menu, click on the **Connections** icon to open up the **Information Hub**.
+Step 2: Within the right sidebar menu, click on the **Connections** ![](images/image_57.png) icon to open up the **Information Hub**.
 
 Step 3: Click on the blue **Edit** button. You can change the **Relationship type** labels or remove a Relationship altogether by clicking on the **Delete** button.
 
