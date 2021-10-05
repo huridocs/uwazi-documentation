@@ -1,6 +1,8 @@
 # ORGANISING and EXPLORING YOUR COLLECTION
 
-## How to view entities as cards, in a table or on a map
+## How to view entities and documents
+
+### View entities as cards, in a table or on a map
 
 All of the entities in an Uwazi collection live in an area called the **Library** ![](images/image_0.png), where they can be viewed as cards, in a table or on a map (as long as entities have an associated geolocation). Learn more about how to customise the default Library view.
 
@@ -9,6 +11,14 @@ When exploring your collection, you can freely switch between the different view
 - Click the cards icon ![](images/image_0.png) to turn on **Cards View**. When **Cards View** is activated, simply click on the entity card to expand the right sidebar and see more details about the entity. You can also click the **View** button on the card itself or from within the right sidebar to open the entity in full.
 - Click the table icon to turn on **Table View**. You can customise which columns are shown by using the dropdown menu found along the top of the Library area. When **Table View** is activated, simply select the checkbox next to the entity to expand the right sidebar and see more details. You can also click the **View** button from within the right sidebar to open the entity in full. 
 - Click on the map icon to turn on **Map View**. (This icon will only appear if the entities in your collection have an associated geolocation. Learn more about adding properties to entities.) When **Map View** is activated, simply click on a point within the map to expand the right sidebar and see more details about the entity. You can also click the **View** button from within the right sidebar to open the entity in full.
+
+### Read PDFs within Uwazi
+
+If an entity has a PDF attached as its **Primary Document**, you can view and explore it directly within Uwazi without having to download anything. To do so: 
+
+Step 1: Navigate to the **Library** and locate the entity that contains the Primary Document you want to read. 
+
+Step 2: Either on the entity card or within the right sidebar, click the **View** button. The PDF will be displayed in full.
 
 ## How to configure main and secondary filters
 
@@ -55,7 +65,7 @@ You can perform a search using the search bar found along the top of the Library
 
 ### Search only within a particular document
 
-You can also perform a search within  PDFs that are uploaded as the **Primary Document** of an entity. Learn more about adding Primary Documents.
+You can also perform a search within PDFs that are uploaded as the **Primary Document** of an entity. Learn more about adding Primary Documents.
 
 Step 1: Navigate to the **Library** and locate the entity that contains the document you want to search. Click the **View** button to see the document in full.
 
@@ -70,7 +80,7 @@ Step 4: Click on any of the search results to be taken to the specific segment o
 To make your search queries more targeted, you can use several different advanced techniques: 
 
 - An asterisk * added to a query will conduct a **multiple character wildcard search**. The asterisk stands in for any number of characters in your query. For example, a search for **juris*** will match words such as jurisdiction, jurisdictional, jurists, jurisprudence, etc. 
-- A question mark ? added to a query will conduct a **one character wildcard search**. The question mark stands in for one single character only. For example, **198?** will match any of the years between 1980 and 1989 as well as 198a, 198b, etc. 
+- A question mark **?** added to a query will conduct a **one character wildcard search**. The question mark stands in for one single character only. For example, **198?** will match any of the years between 1980 and 1989 as well as 198a, 198b, etc. 
 - Question marks enclosing a query like this “...” will conduct a search that looks for exact term match. For example, **"Costa Rica"** will return different results compared to **Costa Rica** without quotation marks. 
 - A tilde ~ added after a phrase in quotation marks will conduct a **proximity search**. The tilde indicates that you want to look for results that match your query approximately, but not exactly. You can accompany the tilde with a number to set a maximum number of words that separate the original terms in your query. For example, **“the status”~5** will find anything having “the” and “status” within a distance of 5 words, such as “the procedural status” or “the specific legal status”. 
 - **AND**, **OR** and **NOT** added to a query will conduct a **boolean search**. AND indicates that all words searched for must be present; OR indicates that only one of the words searched for must be present; and NOT excludes results that contain the word included. For example, **status AND women NOT Nicaragua** will match anything that contains both the words status and women and does not contain the word Nicaragua. 
@@ -150,48 +160,36 @@ There are two ways in Uwazi to create connections between entities in your colle
 
 ### Create relationships when adding new entities
 
-You can create relationships when adding new entities if you have defined a template with a "Relationship" property. Click [here](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-connect-properties-on-different-templates) to learn how to add a “Relationship” property to a template.
-
-When creating a new entity that has a "Relationship" property in its template, you will see the relevant options that can be linked to the new entity that you are adding. You can search for entities by title using the search box.
+You can create Relationships when adding new entities if you have first created a template that includes a **Relationship** property. Learn more about how to add a **Relationship** property.
 
 ### Create relationships between existing entities
 
-Step 1: Go to **Settings** and click on **Relationship types** to add a "type of connection."
+Step 1: Before you can configure a **Relationship**, you must first define the type(s) of relationship(s) that will be used in your collection. Navigate to the **Settings** area and click on **Relationship types**.
 
-- **Note:** You must define your relationship type(s) first in order to connect properties. Doing Step 1 ensures that the relationship type(s) that you just created will appear as a dropdown option in the **New relationships group** field in see Step 6.
+Step 2: Click on the **Add connection** button. Give the relationship a descriptive name and click **Save**.
 
-Step 2: Select **View** on the entity that you want to add a connection with.
+Step 3: Navigate to the **Library** and locate the entity for which you want to create a **Relationship**. Click the **View** button to see the entity in full.
 
-Step 3: At the right side menu, click on the **Connection** icon ![](images/image_59.png).
+Step 4: Within the right sidebar, click on the **Connections** icon to open up the **Information Hub**. Then near the bottom of the screen, click on the blue **Edit** button.
 
-Step 4: Click on the blue **Edit** button.
+Step 5:  To start building the Relationship, click on the **New relationships group** button on the left side of the **Information Hub**.
 
-Step 5: Here, you can make your connection. Click on **New relationships group +**.
+Step 6: Using the dropdown list on the left side, select one of the previously defined Relationship types. Whichever you choose should appropriately describe the role that the current entity plays in this Relationship.
 
-![](images/image_60.png)
+Step 7: Moving to the right side of the **Information Hub**, use the dropdown to once again select one of the previously defined **Relationship types**. Whichever you choose should appropriately describe the role that the other entity plays in this Relationship.
 
-Step 6: Select the type of relationship that you want to create in the **New connection type** dropdown.
+Step 8: Remaining on the right side of the Information Hub, click the **Add entities / documents** button. Then, within the right sidebar select the entity from the list that should form the other half of this Relationship. If the list is long, you can use the search bar to manually search by title to locate it more quickly.
 
-Step 6: Select the entity from the right bar. You can search for it by title, if it has not been recommended by the system. You can add more connections in this hub by selecting **Add entities / documents +**.
+Step 9: You can add more entities to this Relationship by repeating the same process as above.
 
-![](images/image_61.png)
+Step 10: Once you have finished, click **Save**.
 
-Step 8: Click **Save** when you have made the connections you want. Your new connections will appear on the Connections tab.
+### Edit relationships
 
-- You can view the connections on an entity by clicking on **View**, then on ![](images/image_59.png) **Connections** in the right side panel. You will see existing connections of that particular entity.
+Step 1: Navigate to the **Library** and locate the entity whose **Relationships** you want to edit. Click the **View** button to see the entity in full.
 
-![](images/image_63.png)
+Step 2: Within the right sidebar menu, click on the **Connections** icon to open up the **Information Hub**.
 
-### Edit connections
+Step 3: Click on the blue **Edit** button. You can change the **Relationship type** labels or remove a Relationship altogether by clicking on the **Delete** button.
 
-Step 1: You can edit existing connections on an entity by clicking on **View** on the entity for which you want to edit existing connections.
-
-Step 2: Click on ![](images/image_59.png) **Connections** in the right side panel.
-
-![](images/image_65.png)
-
-Step 3: Click on the blue **Edit** button. You can change the relationship type labels or remove a connection altogether by clicking on the **Delete** button.
-
-Step 4: Click **Save** when you have completed editing your connections.
-
-
+Step 4: Click **Save** when you have finished.
