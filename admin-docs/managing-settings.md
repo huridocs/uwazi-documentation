@@ -64,7 +64,11 @@ FAQs related to two-factor authentication
 
 ### Understanding user permissions
 
-If you work in a team or in collaboration with other people, Uwazi allows administrators to create new users with specific permissions to help you update your collection of documents. Uwazi currently supports three different kinds of roles:
+If you work in a team or in collaboration with other people, Uwazi allows administrators to create new users with specific permissions to help you update your collection. Uwazi currently supports three different kinds of roles:
+
+- **Admin**: The admin role has the ability to create, see and edit all entities; change all settings throughout the Uwazi instance; and add new users
+- **Editor**: The editor role has the ability to create, see and edit all entities
+- **Collaborator**: The collaborator role has the ability to create new entities and can be invited to see and edit other entities on an entity by entity basis
 
 ![](images/image_3.png)
 
