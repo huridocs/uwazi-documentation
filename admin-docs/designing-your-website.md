@@ -55,7 +55,7 @@ Step 2: Go to **Global CSS** in the **Tools** section and add your custom CSS in
 
 Step 3: Click the **Update** button to save your changes.
 
-## How to create web pages
+## How to add pages to your collection
 
 You can add **Pages** to your Uwazi collection in order to share information about the purpose of your collection, how to use it, how the general public can contact you, etc.
 
