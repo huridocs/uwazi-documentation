@@ -15,7 +15,7 @@ By default, the main navigation menu that runs along the top of an Uwazi instanc
 
 ### Add menu items
 
-It can be  useful to add additional items to the main navigation menu as a way to highlight  specific parts of your collection, such as a filtered subset of entities in the Library or a static web page.. To configure items on the navigation menu:
+It can be  useful to add additional items to the main navigation menu as a way to highlight  specific parts of your collection, such as a filtered subset of entities in the Library or a page. To configure items on the navigation menu:
 
 Step 1: Navigate to the **Settings** area and click on **Menu**.
 
