@@ -38,9 +38,9 @@
 
 - **Relationship** - In Uwazi, a Relationship allows entities to be connected to each other. We sometimes use the term **Connection** to describe the same feature.
 
-- **Relationship Types** are different types of Relationships, or Connections, that you can establish between or even within entities. Each possible type should be given a descriptive name that captures the essence of the Relationship.
+- **Relationship Types** are different types of Relationships, or Connections, that you can establish between or even within entities. Each has a descriptive name that captures the essence of the Relationship.
 
-- **Reference** connects selected content in a document to something else. References can be made to: other selected content in the same document, other selected content in another document, an entire document, or an entity.
+- **Reference** connects selected content in a PDF to something else. References can be made to: other selected content in the same document, other selected content in another document, an entire document, or an entity.
 
 - **Restricted Entities** are entities that have been uploaded onto Uwazi but have not been published yet. They are only accessible to the administrator(s) or logged-in users.
 
@@ -52,4 +52,4 @@
 
 - **User** is anybody who has login credentials to your Uwazi instance. There are different types of user roles and access levels.
 
-- **ZIP file** is a compressed format that you need to use when importing the main pdf(s) along with your csv file during the last step of a data migration. It should contain all the documents that you want to import, as well as your CSV file that has the metadata.
+- **ZIP file** is a compressed format that you need to use with the CSV import feature when adding entities in bulk that contain Primary Documents and/or Supporting Files.
