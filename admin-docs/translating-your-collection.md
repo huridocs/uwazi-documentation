@@ -1,11 +1,32 @@
 # TRANSLATING YOUR COLLECTION
 
+An Uwazi collection can be made available in one language or in multiple languages. In fact, Uwazi supports the localisation of its interface and a collection’s entities into more than 180 different languages. This ranges from the world’s most commonly spoken languages such as Chinese, French, Hindi and Spanish, to less widespread but no less important languages such as Burmese, Kurdish, Quechua and Yoruba.
+
+## How to configure the available languages for your collection
+
+The first step to making your Uwazi collection multilingual is to enable your desired language options. When multiple languages are enabled for your collection, you will see the languages included as items in the main navigation menu of your collection.
+
+It’s important to note that enabling a language does not mean that the interface of your collection or the contents of entities in the Library will automatically be translated into that language. The processes of translating the interface and contents are explained further along in this section.
+
+To configure the available languages for your collection:
+
+Step 1: Navigate to the **Settings** area and click on **Languages**.
+
+Step 2: Locate the language(s) you want and click **Add language**. (If your language is not in the list, please get in touch with us.)
+
+Step 3: Type **CONFIRM** (in all capital letters) in the confirmation dialog and click **Accept**.
+- Note:  Search functionality within the Library will be limited for languages that aren’t supported by ElasticSearch. For further information, consult [ElasticSearch’s website](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html).
+
+Step 4: At the top of the page under **Active Languages**, select which language will be the default language for your collection.
+- Except for the default language, you are free to delete languages from your **Active Languages** list. When you do, however, make sure that you are not currently navigating your Uwazi collection in the same language that you’re trying to delete. If you try to delete a language while the matching language option is toggled on within the main navigation menu, deletion will not work.
+
 ## How to translate the Uwazi interface 
 
-This guide describes how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc. If you want to learn about how to translate your content, [click here](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-translate-your-content).
+The collective of buttons, menu items, system messages, etc. that you interact with while using the Uwazi software is called the interface.  The Uwazi interface is available by default in English, but it can be translated into any of the languages that you have previously enabled.
+
+All interface translations that are currently configured in your instance can be consulted and edited at any time by navigating to the **Settings** area, clicking **Translations** and then clicking **User Interface**.
 
 ![](images/image_91.jpg)
-There are two methods you can use to translate the Uwazi interface.
 
 **Option 1: Live Translation**
 
