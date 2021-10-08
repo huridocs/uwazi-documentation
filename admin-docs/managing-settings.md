@@ -1,4 +1,4 @@
-# MANAGING SETTINGS
+# MANAGING YOUR COLLECTION'S SETTINGS
 
 ## How to configure your account
 
