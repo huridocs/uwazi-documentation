@@ -1,21 +1,15 @@
 # Introduction to Uwazi
 
-To manage records and documents, most organisations today use folders or categories on platforms like DropBox, OneDrive and Google Drive so that staff can access them later. Although safe and effective, these platforms simply provide a safe space for these documents and provide no connections or analysis.
+Uwazi is an open-source database application that allows you to organise a collection of information and, in the process, reveal previously hidden patterns, relationships and opportunities for action. It is developed by HURIDOCS (Human Rights Information and Documentation Systems), an NGO that, for the past four decades, has equipped human rights defenders with tools and strategies to mobilise information.
 
-What if organising documents could make their contents come alive? Uwazi goes beyond tags and filenames to organise your documents. Each document can be critical in telling a story: an email that asks for a favor from a politician, a testimony from a witness of police violence, the ruling of a court on a human rights case. When these stories are connected by the platform, the bigger picture of patterns and systems becomes clearer: ongoing corruption, systematic police violence, legal human rights precedence and abuse of power.
+In Swahili, Uwazi means “openness,” and it was based on this principle that Uwazi was born. Human rights groups deal with enormous amounts of data, accumulating years’ or even decades’ worth of facts and materials that support the case for change. However, without safe, efficient and collaborative ways of managing it all, many of the insights contained in these collections will remain closed off to the very people who need them most.
 
-Uwazi is built to do exactly this – highlight and organise the important information in each document, and create relationships between documents. Uwazi illuminates the bigger picture that human rights document collections uncover.
+Uwazi was first launched in 2017 as a tool to improve access to regional jurisprudence. In consultations with human rights defenders, we had learned that it was difficult for them to not only locate a relevant court ruling, but to also see how it fit into the bigger picture: case documents needed to be connected to the judgment document, which needed to be connected to the deciding judge’s case history, and so on. We thus designed Uwazi as a program for organising a collection of documents that went beyond just metadata (such as title, author, date published, etc.)—because within the substance of a document lies important information to highlight, tag, organise, and relate to other documents.
 
-## What problems does Uwazi solve?
+But it soon became clear that Uwazi had potential to be much more than document management software. Human rights defenders don’t just work with collections of PDFs and text documents—they also gather troves of information, observations, geolocation points, multimedia files and other data that can be hard to parse in bulk.
 
-Most document management systems organise contents based on a document’s metadata such as author, department, person, event, or year.
+We have since expanded Uwazi, creating a database application that is helpful for a wide selection of changemakers, from activists, lawyers and policymakers who conduct human rights work, to academics, archivists, media organisations and others who work to make a difference in the world.
 
-However, for human rights organisations, a document is often much more than these basic descriptors assigned to it . The content within the document also provides important insight.
+Initial Uwazi development received significant financial support from the MacArthur Foundation and the Center for Justice and International Law (CEJIL). Uwazi continues to be updated and refined on a regular basis by the team at HURIDOCS, which is funded through a combination of grants, payments for services and individual donations.
 
-Uwazi addresses these problems by putting content and connections at the heart of the platform. Within each document there is important information to highlight, tag, organise, reference, and connect to other documents. In Uwazi, one paragraph referencing a military commander responsible for a human rights violation can be connected to another paragraph in another document that provides more biographical information about the same person.
-
-## Who is it for?
-
-Uwazi was designed to address the needs of human rights organisations. Human rights NGOs, National Human Rights Institutions, Universities, Journalists, Courts, and others working with large document collections can also benefit from Uwazi’s user friendly features.
-
-More information: [https://www.uwazi.io/](https://www.uwazi.io/)
+Our in-house software engineers openly document the development of Uwazi on GitHub. At HURIDOCS, we believe that any technology being developed for human rights work needs to be open source. Open-source development does not guarantee utility or security, but it does facilitate input from a wide selection of people—human rights defenders, developers, security experts—whose expertise is fundamental to a successful product.
