@@ -5,7 +5,6 @@
    :maxdepth: 2
 
    introduction-to-uwazi
-   history-of-uwazi
    glossary-of-terms
    managing-settings
    building-info-architecture
