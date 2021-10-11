@@ -19,7 +19,7 @@ An Uwazi collection is made up of types of information called entities that live
 
 ### Add different properties to a template
 
-All templates include two default properties: Title and Date Added. The rest are up to you! You can add as few or as many as you wish. Each property that you add to your template will provide a consistent space to include details about the entity.
+All templates include three default properties: Title (Name), Date Added and Date Modified. The rest are up to you! You can add as few or as many as you wish. Each property that you add to your template will provide a consistent space to include details about the entity.
 
 Step 1: Navigate to the **Settings** area and click on **Templates**. 
 
@@ -33,7 +33,7 @@ Step 4: On the right side is a list of **Properties**.  Drag and drop one proper
 Step 5: For each property, click **Edit** and give it a **Name** or **Label**. Review the other options for the property, which may include the following: 
 
 - **Priority sorting** means that this property will be used as default sorting criterion in the Library.
-- **Generated ID** in the title property means that Uwazi will assign an automatically generated unique ID code as the title of the entity. 
+- **Generated ID** in the Title property means that Uwazi will assign an automatically generated unique ID code as the title of the entity. 
 - **Select list**: For Select and Multi Select properties, you must choose which **Thesaurus** will be used for this property. 
 - **Hide label** means that this property will be displayed without its name or label. 
 - **Required property** will prevent the entity from being saved if this property isn’t filled in.
@@ -54,9 +54,7 @@ Step 6: Remember to click on **Save** after creating or making changes to each t
 
 ## How to create Thesauri
 
-In Uwazi, **Thesauri** refers to lists of terms that are referenced in Select and Multiselect properties. Thesauri is the plural form of thesaurus.
- 
-Using a **Thesaurus** will make your entities more precise and consistent.
+In Uwazi, **Thesauri** refers to lists of terms that are referenced in Select and Multiselect properties. Thesauri is the plural form of thesaurus. Using a **Thesaurus** will make your entities more precise and consistent.
 
 Step 1: Navigate to the **Settings** area and click on **Thesauri**. Here you will see all the Thesauri that have been created so far.
 
@@ -77,7 +75,7 @@ Step 6: When you are finished, click **Save**.
 
 ### Import Thesauri from a CSV file
 
-It may be that you have a list of terms already prepared that you would like to include in a **Thesaurus**. Typing the terms one by one could become tedious, so for situations such as these, Uwazi makes it possible to upload in bulk by preparing and then importing a Comma-Separated Values (CSV) file.  This import feature can be used to add terms to new or existing Thesauri.
+It may be that you have a list of terms already prepared that you would like to include in a **Thesaurus**. Typing the terms one by one could become tedious, so for situations such as these, Uwazi makes it possible to upload in bulk by preparing and then importing a Comma-Separated Values (CSV) file. This import feature can be used to add terms to new or existing Thesauri.
 
 Step 1: Create a CSV file on your computer:
 - If you only have one language configured in your instance, then you should only have one column in your file. The column header name should be the name of the language written in English (e.g. English, Russian, Spanish).
@@ -142,7 +140,7 @@ Step 8: If you choose a specific template in Step 7, another option will automat
 
 Step 9: Click **Save**.
 
-  - Note: You can also create a **Relationship** between entities without utilising the Relationship property by creating it directly in the Information hub of an entity. Learn more about creating Relationships.
+  - Note: You can also create a **Relationship** between entities without utilising the Relationship property by creating it directly in the **Information Hub** of an entity. Learn more about creating Relationships.
 
 ### When to inherit properties from other entities
 
