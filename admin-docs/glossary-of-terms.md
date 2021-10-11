@@ -6,15 +6,15 @@
 
 - **Cookies** are bits of information shared by the websites you visit and stored on your computer’s hard drive. They help improve your web browsing experience as they "remember" your preferences from previous visits.
 
-- **CSS** is a language that describes the style of an HTML document. It describes how HTML elements should be displayed.
+- **CSS** is a language that describes how HTML elements should be displayed.
 
-- **CSV file** is a comma separated file that can be imported into Uwazi. It is particularly helpful when you have a large number of documents and metadata that need to be migrated into Uwazi.
+- **CSV file** is a comma-separated values file that can be imported into Uwazi. It is particularly helpful when you have a large number of datapoints that need to be migrated into your collection.
 
 - **Data model** refers to the logical structure of your collection or, in other words, how the different types of entities in your collection are organised and how they relate to one another.
 
 - **Entity** - In Uwazi, an entity is a type of information in your collection (e.g. court, person, event). It has properties, is filterable, and can have connections to other entities.
 
-- **EntityInfo** is a collection of data visualisation components that allows an entity’s information to display by opening the side panel and loading its data inside.
+- **EntityInfo** is a collection of code components that make it possible to click and display an entity’s information in a sidebar that opens directly on a Page.
 
 - **Fallback** is an alternative document if the main (or intended) one is not available.
 
