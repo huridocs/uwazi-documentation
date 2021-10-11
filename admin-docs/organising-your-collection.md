@@ -87,6 +87,16 @@ To make your search queries more targeted, you can use several different advance
 
 Please refer to Elasticsearch’s [query string syntax page](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/query-dsl-query-string-query.html#query-string-syntax) for more information on search options.
 
+## How to sort entities in the Library
+
+Whether you have applied filters, have conducted a keyword search, or are looking at the collection in its entirety, you can sort entities that are shown in the Library according to different criteria by using the dropdown list located beneath the search bar. Default sorting options include: 
+
+- By entity title, in alphabetical order or reverse alphabetical order 
+- By date the entity was added to the collection, from newest to oldest or from oldest to newest
+- By date the entity was modified, from newest to oldest or from oldest to newest
+
+You can add more criteria to the default options by utilising the Priority sorting checkbox when configuring properties on a template. Learn more about creating templates.
+
 ## How to create a table of contents
 
 Within Uwazi, you can create an interactive table of contents for a PDF that is uploaded to an entity as a **Primary Document**, which will make it easier to quickly navigate through its contents. You can access this table of contents by clicking on the **Table of Contents** icon in the right sidebar of an entity.
