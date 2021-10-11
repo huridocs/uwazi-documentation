@@ -56,7 +56,7 @@ Step 2: On the bottom righthand side of the screen, click on the **Upload PDF(s)
 
 Step 3: Select the desired PDF(s) from within the file browser. (To select more than one file, hold down the CTRL key or the Command key before clicking.)
 
-Step 4: Once uploaded, the PDF will appear attached to a new entity in the Library with a title property that is automatically filled in with the PDF file name. To edit the title and other aspects of the entity, click on the **Edit** button in the right sidebar. Make sure to save any changes you make.  
+Step 4: Once uploaded, the PDF will appear attached to a new entity in the Library with a Title (name) property that is automatically filled in with the PDF file name. To edit the title and other aspects of the entity, click on the **Edit** button in the right sidebar. Make sure to save any changes you make.  
 
 Step 5: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. 
 
@@ -159,7 +159,7 @@ Step 4: Click on the **Copy from** button in the bottom righthand corner.
 
 Step 5: Using the search bar that has appeared, search for any part of the title of the entity that you would like to copy properties from. As you search, entities containing the searched keyword will appear, alongside their corresponding type of template. In the image below, the word “Federal” was typed into the search bar.
 
-Step 6: Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. Note: The title property cannot be copied using the **Copy From** feature, so you will need to enter the title of the new entity manually.
+Step 6: Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. Note: The Title (Name) property cannot be copied using the **Copy From** feature, so you will need to enter the title of the new entity manually.
 
 Step 7: Once you have entered a new title, click the **Copy Highlighted** button. Notice that the overlapping information has been copied into the new entity. 
 
