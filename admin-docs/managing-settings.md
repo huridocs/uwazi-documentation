@@ -112,7 +112,7 @@ A favicon is the icon representing your Uwazi collection that appears in browser
 
 Step 1: Convert your image into .ico (icon) format. To do so, you can search the internet for an .ico converter. Save the resulting file on your local drive. 
 
-Step 2: On the left sidebar under **Tools**, click on **Uploads**. Select **Browse files to upload** and upload the image that you converted to the .ico format. Once your image uploads, copy the URL. (It will begin with “/assets”.) 
+Step 2: On the left sidebar under **Tools**, click on **Uploads**. Select **Browse files to upload** and upload the image that you converted to the .ico format. Once your image uploads, copy the URL. (It will begin with ```/assets```.) 
 
 Step 3: Navigate back to the **Collection** settings. Under **Custom favicon**, toggle the option on and paste the above URL. 
 
@@ -122,15 +122,11 @@ Step 4: Click **Save**, and be sure to reload the webpage after updating your fa
 
 The landing page is the first thing visitors will see when they arrive at your Uwazi instance. By default, the landing page is set to the full Library ![](images/image_0.png) without any filters applied.
 
-However, you can set any page from within your Uwazi instance to act as the landing page instead. Toggle on the option to **Use custom landing page** and paste the relative URL in the box. A relative URL starts with a slash / and skips the domain name. For example: 
+However, you can set any page from within your Uwazi instance to act as the landing page instead. Toggle on the option to **Use custom landing page** and paste the relative URL in the box. A relative URL starts with a slash ```/``` and skips the domain name. For example: 
 
-  - A static page: /page/dicxg0oagy3xgr7ixef80k9
-  
-  - A library query: /library/?searchTerm=test
-  
-  - A document or entity: /document/4y9i99fadjp833di /entity/9htbkgpkyy7j5rk9
-  
-  - Always use a URL relative to your site, starting with / and skipping the [https://yoursite.com](https://yoursite.com).
+  - A page: **```/page/dicxg0oagy3xgr7ixef80k9```**
+  - A Library query: **```/library/?searchTerm=test```**
+  - A document or entity: **```/document/4y9i99fadjp833di/entity/9htbkgpkyy7j5rk9```**
 
 ### Customise the default Library view 
 
