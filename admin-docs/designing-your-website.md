@@ -21,7 +21,7 @@ Step 1: Navigate to the **Settings** area and click on **Menu**.
 
 Step 2: Click on the **Add link** button near the bottom of the screen. Add a title for your item and its corresponding URL.
 
-- Note: If the link is for a page within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash **```/```** and skips the domain name. For example, **```/page/dicxg0oagy3xgr7ixef80k9``**` or **```/library/?searchTerm=test```**. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
+- Note: If the link is for a page within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash **```/```** and skips the domain name. For example, **```/page/dicxg0oagy3xgr7ixef80k9```** or **```/library/?searchTerm=test```**. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
 
 Step 3: If you have several related menu items, you can group them together into a dropdown menu. To do so, click the **Add group** button. Provide a main title for the group, then click the **Add link** button found directly below the title. Add a title for your first item and its corresponding URL. Repeat this process for however many menu items you want to include in the dropdown menu.
 
