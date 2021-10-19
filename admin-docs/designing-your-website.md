@@ -3,7 +3,7 @@
 Beyond the basic options found within **Settings**, Uwazi offers several ways to enhance the look and feel of your collection. This includes:
 - Personalising the appearance of your collection by defining CSS styles and/or adding links to the main navigation menu
 - Adding pages to feature information about your collection
-- Incorporating submissions forms or contact forms
+- Incorporating submission forms or contact forms
 - Creating a stylised display for certain types of entities
 
 ## How to configure the main navigation menu
@@ -73,9 +73,9 @@ When you create a new page, you will notice there is no content or design yet. I
 
 We have also extended the Markdown options to include some custom syntax for Uwazi users. This allows users to embed lists of entity cards, based on filter results and embed YouTube Videos.
 
-### Add a search box to a page
+### Add a search bar to a page
 
-This code snippet `<SearchBox />` added to any page or rich text field will render a search box that will run queries on your collections of documents:
+This code snippet `<SearchBox />` added to any page or rich text field will render a search bar that will run queries on your collections of documents:
 
 For example: `<SearchBox placeholder="Search corruption cases..." />`
 
@@ -361,20 +361,20 @@ document.getElementById('template-data').innerHTML = JSON.stringify(window.store
 Now, when you go to `view` any of the entities using that template, you will be able to see the Entity-specific datasets available.
 
 
-## How to create a contact form
+## Add a contact form to a page
 
-A contact form allows your users to message you and share their ideas.
+A **Contact Form** gives visitors an easy way  to get in touch with you. You can quickly add a contact form to a page by including the code snippet `<ContactForm/>`. 
 
-You can quickly create a contact form on a page by placing this code snippet: `<ContactForm/>`. You may add additional text in HTML around the contact form, if you wish.
+You may add additional text in HTML around the contact form, if you wish.
 
 ![](images/image_70.png)
 
-This form will send a message to the e-mail address that is configured in your **Settings** > **Collection** > **Contact Email**.
+Messages sent using the contact form will be delivered to the email address that is configured in your collection’s settings. Learn more about configuring forms.
 
 ![](images/image_71.png)
 
 
-## How to create a public intake form on your website
+## Add a submission form to a page
 
 An intake or submission form allows visitors to submit a form that creates an unpublished/private entity in your database.
 
