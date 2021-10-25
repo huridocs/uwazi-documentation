@@ -54,7 +54,7 @@ As you can see a MULTI_TENANT env variable is set to true, Uwazi is multi-tenant
 
 In order for this to work not only for the api but the web app, a proxy mapping the different tenants needs to be set up. We use nginx.
 
-Here is a basic nginx config that maps different ports the same Uwazi process but with different tenant header:
+Here is a basic nginx config that maps different ports to the same Uwazi process, but with different tenant header:
 
 ```
 server {
