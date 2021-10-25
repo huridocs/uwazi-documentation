@@ -94,7 +94,7 @@ Opening the browser on localhost:3001 will serve an app that will work with tena
 
 ## Maintenance scripts
 
-Scripts such as yarn migrate, and yarn reindex use the defaultTenant to perform the task, defaultTenant is configured by setting appropiate environment variables, a full list of this variables is on the [install documentation](https://uwazi.readthedocs.io/en/latest/sysadmin-docs/install.html)
+Scripts such as yarn migrate, and yarn reindex use the defaultTenant to perform the task, defaultTenant is configured by setting appropiate environment variables, a full list of this variables is on the [install documentation](https://uwazi.readthedocs.io/en/latest/sysadmin-docs/install.html).
 
 Example:
 ```
