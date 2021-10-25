@@ -1,5 +1,5 @@
 # Install Uwazi on your server
-You can download the latest version of Uwazi here on Github. Be sure you have everything configured on your server first - here is a list of Uwazi's dependencies.
+You can download the latest version of Uwazi here on Github. Be sure you have everything configured on your server first. Here is a list of Uwazi's dependencies.
 
 **Production Configuration (advanced)**
 Uwazi is configured to run correctly with its default values. There is no need to change or reconfigure these values.
@@ -25,7 +25,7 @@ Again, please notice that there is no need to export any value for a normal inst
 
 For production environments, you may need to activate your system's sendmail so user's receive sign up and password recovery notifications.
 
-Alternatively, you can use a custom SMTP configuration to send these emails. Find this option in settings > collection.
+Alternatively, you can use a custom SMTP configuration to send these emails. Find this option in Settings > Collection.
 
 Example of linux system service:
 
