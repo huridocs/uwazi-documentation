@@ -1,7 +1,8 @@
 # Multi-tenancy 
 
-Multi-tenancy is built-in Uwazi and allows for multiple databases/tenants to be served with a single node process.
-The tenant object defines all specific configurations, tenants should be created on a separated db 'uwazi_shared_db' in a 'tenants' collections with the following structure:
+Multi-tenancy is built-into Uwazi and allows for multiple databases/tenants to be served with a single node process.
+
+The tenant object defines all specific configurations. Tenants should be created on a separated db 'uwazi_shared_db' in a 'tenants' collections with the following structure:
 
 This is from app/api/tenants/tenantContext.ts
 ```
@@ -19,7 +20,7 @@ export type Tenant = {
 
 Uwazi will use this config for requests that provide a tenant header corresponding with the tenant name, for requests that do not provide one Uwazi will use the defaultTenant from app/api/config.ts.
 
-## The most basic example working
+## The most basic working example
 
 ```
 //setup tenants, no paths specified for simplicity but they SHOULD be specified in the config, there is no default.
@@ -42,17 +43,17 @@ curl -H "tenant: tenant1" localhost:3000/api/search
 curl -H "tenant: tenant2" localhost:3000/api/search
 ```
 
-As you can see a MULTI_TENANT env variable is set to true, Uwazi is multi tenant by default but we need to set this variable to deactivate certain features that do not work with a multi-tenant approach for now. These are the features not supported for now:
+As you can see a MULTI_TENANT env variable is set to true, Uwazi is multi-tenant by default but we need to set this variable to deactivate certain features that do not work with a multi-tenant approach for now. These are the features not supported for now:
 
 - evidence vault
 - sync
 - semantic search
 - topic classification
 
-
 ## Serving the web app
 
-In order for this to work not only for the api but the web app, a proxy mapping the different tenants needs to be set up, we use nginx.
+In order for this to work not only for the api but the web app, a proxy mapping the different tenants needs to be set up. We use nginx.
+
 Here is a basic nginx config that maps different ports the same Uwazi process but with different tenant header:
 
 ```
