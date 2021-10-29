@@ -10,7 +10,7 @@ When exploring your collection, you can freely switch between the different view
 
 - Click the cards icon ![](images/image_0.png) to turn on **Cards View**. When **Cards View** is activated, simply click on the entity card to expand the right sidebar and see more details about the entity. You can also click the **View** button on the card itself or from within the right sidebar to open the entity in full.
 - Click the table icon to turn on **Table View**. You can customise which columns are shown by using the dropdown menu found along the top of the Library area. When **Table View** is activated, simply select the checkbox next to the entity to expand the right sidebar and see more details. You can also click the **View** button from within the right sidebar to open the entity in full. 
-- Click on the map icon to turn on **Map View**. (This icon will only appear if the entities in your collection have an associated geolocation. Learn more about adding properties to entities.) When **Map View** is activated, simply click on a point within the map to expand the right sidebar and see more details about the entity. You can also click the **View** button from within the right sidebar to open the entity in full.
+- Click on the map icon to turn on **Map View**. (This icon will only appear if the entities in your collection have an associated geolocation. Learn more about adding properties to entities.) Using the icons found along the top of the Library area, you can toggle between viewing the map with Street View or Satellite View. When **Map View** is activated, simply click on a point within the map to expand the right sidebar and see more details about the entity. You can also click the **View** button from within the right sidebar to open the entity in full.
 
 ### Read PDFs within Uwazi
 
@@ -22,7 +22,11 @@ Step 2: Either on the entity card or within the right sidebar, click the **View*
 
 ## How to configure main and secondary filters
 
-Filters appear on the righthand sidebar of the Library. They help users quickly navigate an Uwazi collection as well as generate basic conclusions about its contents.
+**Filters** appear on the right sidebar of the Library. Mixing and matching different Filters can help you to quickly navigate your Uwazi collection.. The Filters sidebar also acts as a sort of dashboard for the data in your collection, displaying aggregates of the different types of entities and different properties that they contain. 
+
+As you mix and match different **Filters**, the figure that is displayed alongside each Filter will update to indicate how many entities in total share the criteria that you have applied. This can be a simple yet useful way to answer basic questions about the contents of your collection. For example, how many entities of a certain type are there? Or what is the most or least common property associated with a certain type of entity?
+
+There are two different types of Filters: **Primary** Filters and **Secondary** Filters. 
 
 ### Configure main filters
 
@@ -91,7 +95,7 @@ Please refer to Elasticsearch’s [query string syntax page](https://www.elastic
 
 Whether you have applied filters, have conducted a keyword search, or are looking at the collection in its entirety, you can sort entities that are shown in the Library according to different criteria by using the dropdown list located beneath the search bar. Default sorting options include: 
 
-- By entity title, in alphabetical order or reverse alphabetical order 
+- By entity name, in alphabetical order or reverse alphabetical order 
 - By date the entity was added to the collection, from newest to oldest or from oldest to newest
 - By date the entity was modified, from newest to oldest or from oldest to newest
 
@@ -129,11 +133,11 @@ Step 4: Within the document, use the cursor to highlight the text to which you w
 
 Step 5: Using the checkboxes, select the previously defined **type of relationship** that you would like to use as part of this Reference. 
 
-Step 6: Choose the document from the list which contains the text that you want to refer to. If the list is long, you can use the search by to manually search by title to locate the document more quickly. You are free to select the same document that you are currently editing. 
+Step 6: Choose the document from the list which contains the text that you want to refer to. If the list is long, you can use the search by to manually search by name to locate the document more quickly. You are free to select the same document that you are currently editing. 
 
 Step 7: Click the green arrow button to proceed. You will then be taken to the document you have selected. Using the cursor, highlight the text that you want to reference.
 
-Step 8: Click the green **Save** button.. The referenced text in both documents will be highlighted in yellow, indicating that it is associated with a Reference. Clicking on the document icon shown alongside the reference in the right sidebar will take you to the related paragraph.
+Step 8: Click the green **Save** button. The referenced text in both documents will be highlighted in yellow, indicating that it is associated with a Reference. Clicking on the document icon shown alongside the reference in the right sidebar will take you to the related paragraph.
 
 ### Reference another entity (with or without a Primary Document)
 
@@ -190,7 +194,7 @@ Step 6: Using the dropdown list on the left side, select one of the previously d
 
 Step 7: Moving to the right side of the **Information Hub**, use the dropdown to once again select one of the previously defined **Relationship types**. Whichever you choose should appropriately describe the role that the other entity plays in this Relationship.
 
-Step 8: Remaining on the right side of the Information Hub, click the **Add entities / documents** button. Then, within the right sidebar select the entity from the list that should form the other half of this Relationship. If the list is long, you can use the search bar to manually search by title to locate it more quickly.
+Step 8: Remaining on the right side of the Information Hub, click the **Add entities / documents** button. Then, within the right sidebar select the entity from the list that should form the other half of this Relationship. If the list is long, you can use the search bar to manually search by name to locate it more quickly.
 
 Step 9: You can add more entities to this Relationship by repeating the same process as above.
 
