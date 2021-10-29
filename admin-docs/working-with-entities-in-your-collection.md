@@ -26,7 +26,7 @@ Step 1: Click on the **Library** icon ![](images/image_0.png) in the top navigat
 
 Step 2: On the bottom right hand side of the screen, click on the **Create entity** button.
 
-Step 3: Select which **Template** to use, give the entity a title and fill in any of the properties that you want to include. (You may always come back to add, edit or delete this information later.)
+Step 3: Select which **Template** to use, give the entity a name and fill in any of the properties that you want to include. (You may always come back to add, edit or delete this information later.)
 
 Step 4: Click the **Save** button once you are finished.
 
@@ -56,7 +56,7 @@ Step 2: On the bottom righthand side of the screen, click on the **Upload PDF(s)
 
 Step 3: Select the desired PDF(s) from within the file browser. (To select more than one file, hold down the CTRL key or the Command key before clicking.)
 
-Step 4: Once uploaded, the PDF will appear attached to a new entity in the Library with a Title (name) property that is automatically filled in with the PDF file name. To edit the title and other aspects of the entity, click on the **Edit** button in the right sidebar. Make sure to save any changes you make.  
+Step 4: Once uploaded, the PDF will appear attached to a new entity in the Library with a Name property that is automatically filled in with the PDF file name. To edit the name and other aspects of the entity, click on the **Edit** button in the right sidebar. Make sure to save any changes you make.  
 
 Step 5: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. 
 
@@ -75,12 +75,13 @@ Remember, before you can import entities in bulk, make sure you have already cre
 Step 1: Create a **CSV file** on your computer. It should include a column for each of the properties that are included on the entity’s template. Import works by matching property names – therefore, be meticulous in using the same column header names in the CSV file as the property names on the template in Uwazi. As well, be sure to follow these guidelines:
 
 - Property names are not case sensitive, which means you can use either lowercase, capitals or a combination of both.
-- The “Title” column is required in your CSV file. It serves to identify the entity, but does not have to be unique.
-- There is no need to include the “Date Added” property because it is filled automatically during the import into Uwazi.
-- If you have a geolocation property, its corresponding column must be styled “[name-of-your-geolocation-property]_geolocation”, replacing the bracketed text with the actual name of your geolocation property (e.g. detention place_geolocation).
+- The first column should be called “Title” and is required in your CSV file. This is where you will put the **Name** property of each entity.
+- There is no need to include the **Date Added** property because it is filled automatically during the import into Uwazi.
+- If you have a **geolocation** property, its corresponding column must be styled “[name-of-your-geolocation-property]_geolocation”, replacing the bracketed text with the actual name of your geolocation property (e.g. detention place_geolocation).
 
 Step 2: Populate the **CSV file** with your data. Certain properties must follow a specific format:
 
+- If you have opted to use a **Generated ID** property for the **Name** of your entities, leave the rows underneath the “Title” column blank. They will be filled automatically during the import into Uwazi.
 - For properties with multiple values, the pipe symbol | should be used as the separator. Do not include spaces between. For example: 
   - For a multi-select property: Arbitrary arrest|Illegal search|Enforced disappearance
   - For a hyperlink property (which follows the format of label|URL): Website|https://www.example.com
@@ -157,17 +158,17 @@ Step 3: Using the **Type** drop-down menu, select which entity template you woul
 
 Step 4: Click on the **Copy from** button in the bottom righthand corner. 
 
-Step 5: Using the search bar that has appeared, search for any part of the title of the entity that you would like to copy properties from. As you search, entities containing the searched keyword will appear, alongside their corresponding type of template. In the image below, the word “Federal” was typed into the search bar.
+Step 5: Using the search bar that has appeared, search for any part of the name of the entity that you would like to copy properties from. As you search, entities containing the searched keyword will appear, alongside their corresponding type of template. In the image below, the word “Federal” was typed into the search bar.
 
-Step 6: Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. Note: The Title (Name) property cannot be copied using the **Copy From** feature, so you will need to enter the title of the new entity manually.
+Step 6: Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. Note: The Name property cannot be copied using the **Copy From** feature, so you will need to enter the name of the new entity manually.
 
-Step 7: Once you have entered a new title, click the **Copy Highlighted** button. Notice that the overlapping information has been copied into the new entity. 
+Step 7: Once you have entered a new name, click the **Copy Highlighted** button. Notice that the overlapping information has been copied into the new entity. 
 
 Step 8: Fill in any other properties that remain and then click **Save**. (You may always come back to add, edit or delete this information later.)
 
 ## How to export entities
 
-The **CSV export** feature allows users to export some or all entities in your Uwazi collection for further analysis and visualisation.
+The **CSV export** feature allows you to export some or all entities in your Uwazi collection. This can be useful if you would like to conduct more advanced analysis using services outside of Uwazi.
 
 Step 1: Decide which entities you want to export. You can use different filters in the Library’s sidebar to select a specific subset of entities in the collection for export. Alternatively, if you want to export all of the entities that exist in the entire collection, leave all filters unchecked.
 
