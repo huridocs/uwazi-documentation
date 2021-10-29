@@ -1,21 +1,21 @@
 # CUSTOMISING YOUR COLLECTION'S DESIGN
 
-Beyond the basic options found within **Settings**, Uwazi offers several ways to enhance the look and feel of your collection. This includes:
-- Personalising the appearance of your collection by defining CSS styles and/or adding links to the main navigation menu
-- Adding pages to feature information about your collection
-- Incorporating submission forms or contact forms
+Beyond the basic options found within **Settings**, Uwazi offers several advanced ways to enhance the look and feel of your collection. This includes:
+- Adding links to the main navigation menu
+- Personalising the appearance of your collection by defining CSS styles
+- Adding custom pages that contain information about your collection, incorporate submission or contact forms, or feature charts, maps and other dynamic data visualisation components
 - Creating a stylised display for certain types of entities
+
+Many of these advanced options require coding knowledge, and as such, you may need to seek support from a software developer to implement them. For more information, consult the Uwazi Advanced Design Guide or get in touch with the HURIDOCS team.
 
 ## How to configure the main navigation menu
 
-By default, the main navigation menu that runs along the top of an Uwazi instance is styled in a shade of blue, utilises fonts from the [Roboto family](https://fonts.google.com/specimen/Roboto), and includes links to: 
+By default, the main navigation menu that runs along the top of an Uwazi instance includes links to:
 - the Library
 - different language versions of your collection (if you have multiple languages configured; learn more about translating your collection)
 - and to the collection’s settings (if you are logged in; otherwise you’ll be shown a link to the login page if your collection is configured to be publicly available).
 
-### Add menu items
-
-It can be  useful to add additional items to the main navigation menu as a way to highlight  specific parts of your collection, such as a filtered subset of entities in the Library or a page. To configure items on the navigation menu:
+If you so desire, you can add additional items to the menu such as a filtered subset of entities in the Library or a page. To configure items on the navigation menu:
 
 Step 1: Navigate to the **Settings** area and click on **Menu**.
 
@@ -29,13 +29,13 @@ Step 4: You can rearrange items into a different order by dragging and dropping.
 
 Step 5: Click **Save** when you have finished.
 
-### Stylise the main navigation menu
+### How to customise your collection’s CSS styles
 
-Using a CSS style sheet, you can add your organisation’s logo to the main navigation menu, as well as change the menu’s color scheme, font size and style, padding and more.
+By default, an Uwazi instance is styled in a shade of blue and utilises fonts from the Roboto family. Using a CSS style sheet, you can modify your collection’s appearance, such as by adding your organisation’s logo to the main navigation menu, implementing a different color scheme or font style and more.
 
 Step 1: If you intend to incorporate a logo, you must first upload it into your collection. To do so, navigate to the **Settings** area and click on **Uploads** in the **Tools** section. Upload the image file from your computer and take note of the URL that Uwazi has assigned it.
 
-Step 2: Go to **Global CSS** in the **Tools** section and add your custom CSS in the space provided. Here is some sample CSS to start out:
+Step 2: Go to **Global CSS** in the **Tools** section and add your custom CSS in the space provided. Writing a CSS style sheet requires coding knowledge, but here is some sample CSS to start out:
 
 ```
     header {
@@ -57,7 +57,9 @@ Step 3: Click the **Update** button to save your changes.
 
 ## How to add pages to your collection
 
-You can add **Pages** to your Uwazi collection in order to share information about the purpose of your collection, how to use it, how the general public can contact you, etc.
+A basic Uwazi instance comprises the **Library**, where the entities contained within your collection can be browsed and displayed in several different ways, and the **Settings** area, where you can configure the administrative settings of your collection. You also have the option to create additional **Pages**; these pages could offer background information about your collection; incorporate submission or contact forms so members of the public can get in touch; feature charts, maps and other data visualisation components; and more.
+
+To add a **Page**:
 
 Step 1: Navigate to the **Settings** area and click **Pages**.
 
@@ -65,34 +67,23 @@ Step 2: Create a new page by clicking **Add Page**. Add the page’s content in 
 
 Step 3: After saving, a blue box will appear containing the page’s unique URL. You may, for example, want to copy this URL and add it as an item on your collection’s main navigation menu.
 
-### Format the content of a page
+Creating and formatting the content of a Page in Uwazi requires coding knowledge (Markdown language, HTML, CSS). For experienced developers, there is also the option of appending custom Javascript to a Page by utilising the dedicated “Page Javascript” box. We have created some custom code components for Pages in Uwazi that make it straightforward to:
 
-When you create a new page, you will notice there is no content or design yet. It appears as a blank page. To add elements onto the page requires some understanding of HTML or [Markdown](https://guides.github.com/features/mastering-markdown/). This syntax can help you to add images, lists, charts, headers, quotes and other formatting preferences to your page. If you need help using Markdown, click on [**Help**](https://guides.github.com/features/mastering-markdown/) above the text box on the page.
+- incorporate a Library search bar
+- display a dynamic selection of entities in card format
+- click to view an entity’s full information, displayed in a sidebar that expands directly on the Page
+- incorporate a contact form
+- incorporate a submission form
+- display a dynamic counter, bar chart, pie chart or list chart that visualises a selection of your collection’s data
+- display a dynamic map that visualises a selection of your collection’s data
 
-![](images/image_67.png)
+For further details, consult the Uwazi Advanced Design Guide or get in touch with the HURIDOCS team.
 
-We have also extended the Markdown options to include some custom syntax for Uwazi users. This allows users to embed lists of entity cards, based on filter results and embed YouTube Videos.
+## How to display entities as stylised pages 
 
-### Add a search bar to a page
+An Uwazi collection is made up of different types of entities. You can browse the entities in the **Library** as cards, in a table or on a map (as long as they have an associated geolocation). If you click on an entity, you can see all of the information that it contains displayed within the right sidebar. Furthermore, by clicking the **View** button on an entity, you can also see the same information displayed on a full-width page that by default incorporates minimal formatting.
 
-This code snippet `<SearchBox />` added to any page or rich text field will render a search bar that will run queries on your collections of documents:
-
-For example: `<SearchBox placeholder="Search corruption cases..." />`
-
-Renders: ![](images/image_68.png)
-
-### Display a selection of cards on a page
-
-This code snippet added to any page or rich text field will render a card view:
-
-{list}([https://your_uwazi_url/en/library/?q=(order:desc,sort:creationDate)](<https://your_uwazi_url/en/library/?q=(order:desc,sort:creationDate)>))(limit:3)
-
-Renders: ![](images/image_69.png)
-
-- This syntax will display an arbitrary number of cards, defined by the param "limit", based on a library query URL. In this case, the limit is 3 cards.
-
-
-## How to create entity pages
+In Uwazi, you can replace this default full-width page view with a customised design that incorporates formatting and components of your choosing. This feature is called Entity Page View. Solid coding and programming knowledge is required to fully take advantage of **Entity Page View**. For details, consult the Uwazi Advanced Design Guide or get in touch with the HURIDOCS team.
 
 ### Basic concepts
 
