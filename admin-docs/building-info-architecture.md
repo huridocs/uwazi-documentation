@@ -19,7 +19,7 @@ An Uwazi collection is made up of types of information called entities that live
 
 ### Add different properties to a template
 
-All templates include three default properties: Title (Name), Date Added and Date Modified. The rest are up to you! You can add as few or as many as you wish. Each property that you add to your template will provide a consistent space to include details about the entity.
+All templates include three default properties: Name, Date Added and Date Modified. The rest are up to you! You can add as few or as many as you wish. Each property that you add to your template will provide a consistent space to include details about the entity.
 
 Step 1: Navigate to the **Settings** area and click on **Templates**. 
 
@@ -33,7 +33,7 @@ Step 4: On the right side is a list of **Properties**.  Drag and drop one proper
 Step 5: For each property, click **Edit** and give it a **Name** or **Label**. Review the other options for the property, which may include the following: 
 
 - **Priority sorting** means that this property will be used as default sorting criterion in the Library.
-- **Generated ID** in the Title property means that Uwazi will assign an automatically generated unique ID code as the title of the entity. 
+- **Generated ID** in the Name property means that Uwazi will assign an automatically generated unique ID code as the name of the entity. 
 - **Select list**: For Select and Multi Select properties, you must choose which **Thesaurus** will be used for this property. 
 - **Hide label** means that this property will be displayed without its name or label. 
 - **Required property** will prevent the entity from being saved if this property isn’t filled in.
