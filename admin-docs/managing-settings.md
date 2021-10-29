@@ -180,7 +180,7 @@ This allows you to configure your own SMTP or any other mail server. Uwazi insta
 
 ### Contact form configuration
 
-If you have added a contact form to a page within your Uwazi instance, you must set the email address that receives the information from that form. (Learn more about how to add a contact form to your instance.)
+If you have added a contact form to a page within your Uwazi instance, you must set the email address that receives the information from that form. (Learn more about adding Pages to your collection.)
 
 Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
 
@@ -192,7 +192,7 @@ Step 4: Click the green **Save** button.
 
 ### Submission form configuration 
 
-If you have added an intake or submission form to a page within your Uwazi instance, it must be configured to work properly. (Learn more about how to add an intake or submission form to your instance.)
+If you have added an intake or submission form to a page within your Uwazi instance, it must be configured to work properly. (Learn more about adding Pages to your collection.)
 
 Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar.
 
