@@ -28,28 +28,37 @@ All interface translations that are currently configured in your instance can be
 
 ![](images/image_91.jpg)
 
-**Option 1: Live Translation**
+## Translate interface terms in bulk
 
-This is the recommended translation method. It allows you to translate the interface directly in your Uwazi instance. This method allows you to explicitly see the context in which the text is used.
+The majority of Uwazi’s interface can be translated all in one go by importing a **Comma-Separated Values (CSV) file** that includes the list of terms in English and their corresponding translations. This method can be especially convenient when setting up your Uwazi instance for the first time.
 
--   Step 1: Login to your Uwazi instance.
--   Step 2: Click on the **Translations** toggle in the top bar next to the language options. This will underline all translatable items in the current view.
+A CSV file of the English-language interface terms is available for download on the Uwazi website. We also offer CSV files of already translated interface terms for the following languages: Arabic, French, Spanish and Russian.
 
-![](images/image_92.png)
--   Step 3: Click on the item you want to translate, add the translations, and click **Submit**. Repeat for the other underlined items on the page.
--   Step 4: Navigate to other Uwazi views and translate all underlined items.
+To translate the Uwazi interface using CSV import:
 
-**Option 2: Settings**
+Step 1: If you aren't already in possession of a **CSV file** containing the translated interface terms, then you must first create a **CSV file** on your computer. The file should include one column for the terms in English and then separate columns for each language into which you wish to translate the interface. Column head names for all columns should be the name of the language written in English (e.g. English, Russian, Spanish).
 
-This option has the advantage of allowing you to translate all Uwazi interface text in a single place. However, it may be difficult to infer the context in which these phrases are used. Unless you are familiar with the Uwazi interface, we recommend Option 1.
+Step 2: Populate the **CSV file** with the interface terms and their corresponding translations. Each term should occupy its own row.
 
--   Step 1: Login to your Uwazi instance.
--   Step 2: Under **Settings**, click **Translations**.
--   Step 3: Find the row called “System” and click the **Translate** button in that row.
+Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
-![](images/image_93.png)
--   Step 4: Translate each term and click **Save**.
+Step 4: Navigate to the **Settings area**, click **Translations** and then click **User Interface**.
 
+Step 5: Click the blue **Import** button. Using the file browser to navigate your computer’s storage, find and select the **CSV file**. Once the import has finished, the translations will appear on screen.
+
+Step 6: Click the green **Save** button.
+
+## Translate interface terms via the Live Translation feature
+
+In Uwazi, you have the option to translate interface terms one by one as you encounter them while navigating the software. This feature, which is called Live Translation, allows you to see how a term is used in context. It can be useful for easily translating interface terms that are added to the software as part of newly released development or for quickly correcting an existing translation that isn’t quite right.
+
+To use Live Translation: 
+
+Step 1: When you encounter an interface term that you would like to translate, click on the **Translation** icon found in Uwazi’s main navigation menu. This activates Live Translation. All of the terms on the screen that are translatable will be underlined in orange.
+
+Step 2: Click on the term that you want to translate, add its corresponding translation(s) , and click **Submit**. Repeat this process for any of the other underlined terms on the screen that you would like to translate.
+
+Step 3: When you have finished, click on the **Translation** icon in the main navigation menu once more to deactivate Live Translation.
 
 ## How to translate your content	
 
