@@ -28,7 +28,7 @@ All interface translations that are currently configured in your instance can be
 
 ![](images/image_91.jpg)
 
-## Translate interface terms in bulk
+### Translate interface terms in bulk
 
 The majority of Uwazi’s interface can be translated all in one go by importing a **Comma-Separated Values (CSV) file** that includes the list of terms in English and their corresponding translations. This method can be especially convenient when setting up your Uwazi instance for the first time.
 
@@ -48,7 +48,7 @@ Step 5: Click the blue **Import** button. Using the file browser to navigate you
 
 Step 6: Click the green **Save** button.
 
-## Translate interface terms via the Live Translation feature
+### Translate interface terms via the Live Translation feature
 
 In Uwazi, you have the option to translate interface terms one by one as you encounter them while navigating the software. This feature, which is called Live Translation, allows you to see how a term is used in context. It can be useful for easily translating interface terms that are added to the software as part of newly released development or for quickly correcting an existing translation that isn’t quite right.
 
@@ -60,75 +60,92 @@ Step 2: Click on the term that you want to translate, add its corresponding tran
 
 Step 3: When you have finished, click on the **Translation** icon in the main navigation menu once more to deactivate Live Translation.
 
-## How to translate your content	
+## How to translate the contents of your collection
 
-This guide describes how to translate your content in Uwazi. If you want to learn about how to translate the Uwazi interface -- all the text you see in buttons, menus, messages, etc, [click here](hhttps://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-translate-the-uwazi-interface).
+An Uwazi collection is made up of entities, which contain properties, can feature documents, and can have connections to one another. It might also feature Pages with important information or components like a contact form. It’s possible to translate the contents of your collection into any and all of the languages that you have previously enabled. This means that when you toggle from one language option to another using the links within the main navigation menu, the contents of the Library or a Page will consequently be presented in the language that corresponds to your selection.
 
-There are three aspects of translating your content:
-1.  Translating entity titles and text values
-2.  Translating data labels
-3.  Uploading translated documents (PDFs)
+There are four main aspects of translating the contents of your Uwazi collection:
+- Translating property names, thesauri, relationship types, custom filters and custom menu items  
+- Translating the contents of entity names and Text, Rich Text, Image and Media properties
+- Uploading translated Primary Documents 
+- Translating Pages
 
-### 1. How to translate entity titles and text values
-
-Entity titles and text-based metadata values need to be translated for each of your entities. Until they are translated, they will show in their original language regardless of the user’s interface language.
+### Translate the contents of Text, Rich Text, Image and Media  properties
 
 ![](images/image_94.jpg)
-Step 1: Login to your Uwazi instance.
 
-Step 2: Change the interface language to the language you want to translate to. The language options are at the top right on desktop and tablet devices, and on mobile they are at the bottom of the menu opened by the collapsed menu icon at the top left.
+Until you translate the contents of Text, Rich Text, Image and Media properties, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
 
-Step 3: Select the entity you want to translate.
+Step 1: Using the links within the main navigation menu, switch to the language into which you want to translate. 
 
-Step 4: In the right side panel, update the title and other text-based metadata values that you want translated. Text-based fields include Text properties, Rich Text properties, and Media properties.
+Step 2: Navigate to the **Library** and locate the entity that you want to translate.
 
-Step 5: Click **Save**.
+Step 3: Click on the entity to expand the right sidebar and see more details about the entity. Click the **Edit** button and replace the contents of these properties with the translation.
 
-### 2. How to translate data labels
+Step 4: Click **Save**.
 
-For data labels such as property labels, thesauri values, relationship types, custom menu items or filters, you can translate the terms in Settings and don’t have to do any extra per-entity translation.
+### Translate property names, thesauri values, relationship types, custom filters and custom navigation menu items
 
 ![](images/image_95.jpg)
-Step 1: Login to your Uwazi instance.
 
-Step 2: Under **Settings**, click **Translations**.
+Until you translate the various data labels that appear within an entity or around your collection r such as property names, thesauri values, relationship types, custom filters or custom navigation menu items, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
 
-Step 3: Click on the content that you want to translate.
+Step 1: Navigate to the **Settings** area and click **Translations**.
+Step 2: Click on the template, thesauri, etc. that you want to translate.
+Step 3: Translate each term.
+Step 4: When you have finished, click **Save**.
 
-Step 4: Translate each term and click **Save**.
-
--   [Click here](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates-and-add-properties) to learn more about properties and metadata in Uwazi.
-
-### 3. How to upload translated documents (PDFs)
+### Upload translated Primary Documents
 
 ![](images/image_96.jpg)
 
-Step 1: Login to your Uwazi instance.
+Until you upload a translated version(s) of an entity’s Primary Document, it will appear in the original language regardless of whichever language option is currently selected in the main navigation menu.
 
-Step 2: Select the entity to which you want to attach documents (PDFs), or create a new entity.
+Step 1: Navigate to the **Library** and locate the entity to which you want to upload a translated version of its **Primary Document**.
 
-Step 3: In the right side panel, under **Documents**, click **Upload new file**. If one or more documents are already attached to the entity, you’ll see them here. Perform this step for all the translated versions you have of the document.
+Step 2: Click on the entity to expand the right sidebar and see more details about the entity. You will see the file name of the entity’s **Primary Document** alongside a label indicating the language of its contents (e.g. English).
 
-Step 4: For each document now attached to the entity, click on Edit, select the language of the document, and click **Save**.
--   **Note**: If translations of a document aren’t available for all of your collection’s configured languages, users may see a document in a different language than the interface they’re using.
+Step 3: Click the **Upload PDF** button and select the translated version of the Primary Document from within the file browser.
 
--   [Click here](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-upload-and-publish-entities) to learn more about documents in Uwazi.
+Step 4: Uwazi will automatically detect the language of the uploaded file and attach a corresponding label. If the language of an uploaded **Primary Document** matches a language that is enabled in your collection, then Uwazi will load it by default when that language option is selected in the main navigation menu.
 
-### Managing translations over time
+For example, imagine that you have English and Spanish enabled in your collection, and that you have an entity with a Primary Document in English and a version in Spanish. When you navigate the English-language collection and click the **View** button on this entity, Uwazi will load the English-language version of Primary Document. If you switch to the Spanish-language collection and click the **View** button on this same entity, Uwazi will instead load the Spanish-language version of the Primary Document.
 
-#### Creating a new entity
-When you create a new entity, all of its metadata properties are synced to all languages when the entity is first saved. 
+- **Note**: Uwazi is only able to automatically detect languages that are supported by ElasticSearch, and any other languages will be labeled as “Other”. For further information, consult ElasticSearch’s website.
 
-#### Editing an existing entity
-When you edit an existing entity, changes to the following metadata properties will get synced to all languages:
-* Thesaurus-based properties (select and multiselect fields)
-* Relationships
-* Date-based properties
-* Geolocation
-* Numeric properties
-* The Table of Contents if the same source document is used in other languages (since it depends on the contents of the document)
+### Translate Pages
 
-Changes to the following metadata properties will NOT be synced, so you will need to make any necessary updates in other languages manually:
-* Text references
-* Media
-* Text and Rich Text fields
+Until you translate the contents of a Page, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
+
+Step 1: Using the links within the main navigation menu, switch to the language into which you want to translate.
+
+Step 2: Navigate to the **Settings** area and click **Pages**. Locate the Page that you want to translate and click **Edit**.
+
+Step 3: Translate the contents of the Page. When you have finished, click **Save**.
+
+## Managing translations over time
+
+### Creating a new entity
+
+Whenever you create and save a new entity or Page, all of its contents are synced across all of your collection’s available languages. If the entity has any Text, Rich Text, Image and Media properties or has a translated Primary Document, make sure to follow the previously explained process for translating them. Otherwise, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
+
+### Edit an existing entity or Page
+
+Whenever you edit the contents of an existing entity or Page, some changes will be synced across all of the languages of your collection, while others will not.
+
+Changes made to the contents of the following will be automatically synced to all languages:
+- Select and Multiselect properties
+- Relationships
+- Date, Date Range, Multi Date, Multi Date Range properties
+- Geolocation property
+- Numeric property
+- Table of Contents of a Primary Document if the same source document is used in other languages (since it depends on the contents of the document)
+
+Changes made to the contents of the following will not be automatically synced, so you will need to make any necessary updates in other languages manually:
+- Name of the entity
+- Text property
+- Rich text property
+- Media property
+- Image property
+- Text references
+- Pages
