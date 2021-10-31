@@ -1,7 +1,5 @@
 # Glossary of Terms
 
-- **API** stands for application programming interface. It allows one program to request data from another.
-
 - **Connection** - A word that is sometimes used to describe a **Relationship**, which is a feature that allows entities to be connected to one another.
 
 - **Cookies** are bits of information shared by the websites you visit and stored on your computer’s hard drive. They help improve your web browsing experience as they "remember" your preferences from previous visits.
@@ -14,13 +12,11 @@
 
 - **Entity** - In Uwazi, an entity is a type of information in your collection (e.g. court, person, event). It has properties, is filterable, and can have connections to other entities.
 
-- **EntityInfo** is a collection of code components that make it possible to click and display an entity’s information in a sidebar that opens directly on a Page.
-
 - **Fallback** is an alternative document if the main (or intended) one is not available.
 
 - **Favicon** is an icon that appears in the browser tab and bookmarks.
 
-- **Filters** are criteria that narrow down the types of entities shown at a given moment in the Library.
+- **Filters** are criteria that narrow down the types of entities shown at a given moment in the Library. There are two different kinds: Primary Filters, which are derived from the types of entity templates that exist in your collection, and Secondary Filters, which are derived from specific properties within an entity template.
 
 - **Instance** is your specific copy of the Uwazi software. In other words, it refers to your collection.
 
