@@ -168,7 +168,7 @@ Step 3: Toggle on the option for Google Analytics or Matomo Analytics, depending
 
 Step 4: Click the green **Save** button.
 
-## How to configure your collections contact and submission forms
+## How to configure your collection's contact and submission forms
 
 ### Mailer configuration
 
