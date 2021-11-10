@@ -1,10 +1,11 @@
-# Multi-tenancy 
+# Multi-tenancy
 
 Multi-tenancy is built-into Uwazi and allows for multiple databases/tenants to be served with a single node process.
 
 The tenant object defines all specific configurations. Tenants should be created on a separated db 'uwazi_shared_db' in a 'tenants' collections with the following structure:
 
 This is from app/api/tenants/tenantContext.ts
+
 ```
 export type Tenant = {
   name: string; //should be unique
@@ -14,6 +15,7 @@ export type Tenant = {
   attachments: string;
   customUploads: string;
   temporalFiles: string;
+  activityLogs: string;
 };
 
 ```
@@ -72,6 +74,7 @@ server {
                 proxy_connect_timeout 60s;
                 proxy_read_timeout 60s;
   }
+}
 
 server {
   server_name tenant2.localhost;
@@ -88,6 +91,7 @@ server {
                 proxy_connect_timeout 60s;
                 proxy_read_timeout 60s;
   }
+}
 ```
 
 Opening the browser on localhost:3001 will serve an app that will work with tenant1, localhost:3002 will work with tenant2.
@@ -97,6 +101,7 @@ Opening the browser on localhost:3001 will serve an app that will work with tena
 Scripts such as yarn migrate, and yarn reindex use the defaultTenant to perform the task, defaultTenant is configured by setting appropiate environment variables, a full list of this variables is on the [install documentation](https://uwazi.readthedocs.io/en/latest/sysadmin-docs/install.html).
 
 Example:
+
 ```
 DATABASE_NAME=tenant1_db INDEX_NAME=tenant1_index yarn migrate
 DATABASE_NAME=tenant2_db INDEX_NAME=tenant2_index yarn reindex
