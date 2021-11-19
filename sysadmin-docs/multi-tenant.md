@@ -8,14 +8,14 @@ This is from app/api/tenants/tenantContext.ts
 
 ```
 export type Tenant = {
-  name: string; //should be unique
-  dbName: string; //should be unique
-  indexName: string; //should be unique
-  uploadedDocuments: string;
-  attachments: string;
-  customUploads: string;
-  temporalFiles: string;
-  activityLogs: string;
+  name: string;               //must be unique
+  dbName: string;             //should be unique
+  indexName: string;          //should be unique
+  uploadedDocuments: string;  //defaults to [rootPath]/uploaded_documents/
+  attachments: string;        //defaults to [rootPath]/uploaded_documents/
+  customUploads: string;      //defaults to [rootPath]/custom_uploads/
+  temporalFiles: string;      //defaults to [rootPath]/temporal_files/
+  activityLogs: string;       //defaults to [rootPath]/log/
 };
 
 ```
@@ -25,7 +25,7 @@ Uwazi will use this config for requests that provide a tenant header correspondi
 ## The most basic working example
 
 ```
-//setup tenants, no paths specified for simplicity but they SHOULD be specified in the config, there is no default.
+//setup tenants, no paths specified for simplicity, but they can be specified instead of defaults
 mongo localhost/uwazi_shared_db --eval 'db.tenants.insert({ name : "tenant1", dbName : "tenant1", indexName: "tenant1" });'
 mongo localhost/uwazi_shared_db --eval 'db.tenants.insert({ name : "tenant2", dbName : "tenant2", indexName: "tenant2" });'
 
