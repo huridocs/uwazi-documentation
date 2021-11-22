@@ -1,5 +1,7 @@
 # Glossary of Terms
 
+- **Collection** refers to the database that you are building with the Uwazi software. This can also be called your **Instance**.
+
 - **Connection** - A word that is sometimes used to describe a **Relationship**, which is a feature that allows entities to be connected to one another.
 
 - **Cookies** are bits of information shared by the websites you visit and stored on your computer’s hard drive. They help improve your web browsing experience as they "remember" your preferences from previous visits.
@@ -10,7 +12,7 @@
 
 - **Data model** refers to the logical structure of your collection or, in other words, how the different types of entities in your collection are organised and how they relate to one another.
 
-- **Entity** - In Uwazi, an entity is a type of information in your collection (e.g. court, person, event). It has properties, is filterable, and can have connections to other entities.
+- **Entity** - In Uwazi, an entity is a type of information in your collection (e.g. court, person, event). It has properties, can hold **Primary Documents** and/or **Supporting Files**, and can have **Relationships** to other **Entities**.
 
 - **Fallback** is an alternative document if the main (or intended) one is not available.
 
@@ -34,7 +36,7 @@
 
 - **Relationship** - In Uwazi, a Relationship allows entities to be connected to each other. We sometimes use the term **Connection** to describe the same feature.
 
-- **Relationship Types** are different types of Relationships, or Connections, that you can establish between or even within entities. Each has a descriptive name that captures the essence of the Relationship.
+- **Relationship Types** are different types of Relationships that you can establish between or even within entities. Each has a descriptive name that captures the essence of the Relationship.
 
 - **Reference** connects selected content in a PDF to something else. References can be made to: other selected content in the same document, other selected content in another document, an entire document, or an entity.
 
