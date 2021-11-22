@@ -18,19 +18,19 @@
 
 - **Favicon** is an icon that appears in the browser tab and bookmarks.
 
-- **Filters** are criteria that narrow down the types of entities shown at a given moment in the Library. There are two different kinds: Primary Filters, which are derived from the types of entity templates that exist in your collection, and Secondary Filters, which are derived from specific properties within an entity template.
+- **Filters** are criteria that narrow down the types of **Entities** shown at a given moment in the Library. There are two different kinds: **Primary Filters**, which are derived from the types of entity templates that exist in your **Collection**, and **Secondary Filters**, which are derived from specific **Properties** within an entity **Template**.
 
-- **Instance** is your specific copy of the Uwazi software. In other words, it refers to your collection.
+- **Instance** is your specific copy of the Uwazi software. In other words, it refers to your **Collection**.
 
-- **Landing page** is the first page that visitors see when they arrive at your Uwazi instance.
+- **Landing page** is the first page that visitors see when they arrive at your **Instance**.
 
-- **Library** ![](images/image_0.png) is the place where all of your entities are displayed together for easy access.
+- **Library** ![](images/image_0.png) is the place where all of your **Entities** are displayed together for easy access.
 
-- **Metadata** is data that provides information about other data. In Uwazi, it usually usually describes the types of properties included in an entity.
+- **Metadata** is data that provides information about other data. In Uwazi, it usually usually describes the types of **Properties** included in an **Entity**.
 
-- **Primary Documents** are the main PDFs that can be displayed, read and highlighted within Uwazi.
+- **Primary Document** is the main PDF that can be displayed, read and highlighted within an **Entity** in Uwazi.
 
-- **Property** is a descriptive attribute that is assigned to entities (e.g. author, significance, status, etc).
+- **Property** is a descriptive attribute that is assigned to **Entities** (e.g. author, significance, status, etc).
 
 - **Published Entities** are seen by the public (if the instance is set to public) or everyone who has access to the instance (if the instance is set to private).
 
