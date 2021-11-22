@@ -42,12 +42,12 @@
 
 - **Restricted Entities** exist in the **Library** but have not been **Published** yet. They are only accessible to **Admin** and **Editor** users as well as select individuals who have been granted explicit permission.
 
-- **Supporting Files** are attachments in any format (e.g., .doc, .txt, .jpg, .mp3, etc) that are relevant to an entity.
+- **Supporting Files** are attachments in any format (e.g., .doc, .txt, .jpg, .mp3, etc) that are relevant to an **Entity**.
 
 - **Template** are a starting point for new entities in Uwazi. They can be built and customised with different properties for each type of entity.
 
-- **Thesauri / Thesaurus** - In Uwazi, thesauri refer to lists of terms that are referenced in select and multiselect properties. Thesauri is the plural form of the word thesaurus.
+- **Thesauri / Thesaurus** - In Uwazi, **Thesauri** refer to lists of terms that are referenced in **Select** and **Multiselect** properties. Thesauri is the plural form of the word thesaurus.
 
-- **User** is anybody who has login credentials to your **Instance**. There are different types of user roles and access levels.
+- **User** is anybody who has login credentials to your **Instance**. There are different types of user roles (**Admin**, **Editor**, **Collaborator**) and access levels.
 
-- **ZIP file** is a compressed format that you need to use with the CSV import feature when adding entities in bulk that contain Primary Documents and/or Supporting Files.
+- **ZIP File** is a compressed format that you need to use with the **CSV Import** feature when adding **Entities** that contain **Primary Documents** and/or **Supporting Files**.
