@@ -38,16 +38,16 @@
 
 - **Relationship Types** are different types of **Relationships** that you can establish between or even within **Entities**. Each has a descriptive name that captures the essence of the Relationship.
 
-- **Reference** connects selected content in a PDF to something else. References can be made to other selected content in the same document, other selected content in another document, an entire document, or an entity.
+- **Reference** connects selected content in a PDF to something else. References can be made to other selected content in the same **Primary Document**, other selected content in another **Primary Document**, to an entire other **Primary Document**, or to another **Entity**.
 
-- **Restricted Entities** exist in the **Library** but have not been **Published** yet. They are only accessible to the administrator(s) or logged-in users.
+- **Restricted Entities** exist in the **Library** but have not been **Published** yet. They are only accessible to **Admin** and **Editor** users as well as select individuals who have been granted explicit permission.
 
 - **Supporting Files** are attachments in any format (e.g., .doc, .txt, .jpg, .mp3, etc) that are relevant to an entity.
 
 - **Template** are a starting point for new entities in Uwazi. They can be built and customised with different properties for each type of entity.
 
-- **Thesauri / Thesaurus** - In Uwazi, thesauri refer to lists of terms that are referenced in select and multiselect properties of entities. Thesauri is the plural form of thesaurus.
+- **Thesauri / Thesaurus** - In Uwazi, thesauri refer to lists of terms that are referenced in select and multiselect properties. Thesauri is the plural form of the word thesaurus.
 
-- **User** is anybody who has login credentials to your Uwazi instance. There are different types of user roles and access levels.
+- **User** is anybody who has login credentials to your **Instance**. There are different types of user roles and access levels.
 
 - **ZIP file** is a compressed format that you need to use with the CSV import feature when adding entities in bulk that contain Primary Documents and/or Supporting Files.
