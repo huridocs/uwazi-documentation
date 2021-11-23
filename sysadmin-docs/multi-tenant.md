@@ -1,19 +1,21 @@
-# Multi-tenancy 
+# Multi-tenancy
 
 Multi-tenancy is built-into Uwazi and allows for multiple databases/tenants to be served with a single node process.
 
 The tenant object defines all specific configurations. Tenants should be created on a separated db 'uwazi_shared_db' in a 'tenants' collections with the following structure:
 
 This is from app/api/tenants/tenantContext.ts
+
 ```
 export type Tenant = {
-  name: string; //should be unique
-  dbName: string; //should be unique
-  indexName: string; //should be unique
-  uploadedDocuments: string;
-  attachments: string;
-  customUploads: string;
-  temporalFiles: string;
+  name: string;               //must be unique
+  dbName: string;             //should be unique
+  indexName: string;          //should be unique
+  uploadedDocuments: string;  //defaults to [rootPath]/uploaded_documents/
+  attachments: string;        //defaults to [rootPath]/uploaded_documents/
+  customUploads: string;      //defaults to [rootPath]/custom_uploads/
+  temporalFiles: string;      //defaults to [rootPath]/temporal_files/
+  activityLogs: string;       //defaults to [rootPath]/log/
 };
 
 ```
@@ -23,7 +25,7 @@ Uwazi will use this config for requests that provide a tenant header correspondi
 ## The most basic working example
 
 ```
-//setup tenants, no paths specified for simplicity but they SHOULD be specified in the config, there is no default.
+//setup tenants, no paths specified for simplicity, but they can be specified instead of defaults
 mongo localhost/uwazi_shared_db --eval 'db.tenants.insert({ name : "tenant1", dbName : "tenant1", indexName: "tenant1" });'
 mongo localhost/uwazi_shared_db --eval 'db.tenants.insert({ name : "tenant2", dbName : "tenant2", indexName: "tenant2" });'
 
@@ -72,6 +74,7 @@ server {
                 proxy_connect_timeout 60s;
                 proxy_read_timeout 60s;
   }
+}
 
 server {
   server_name tenant2.localhost;
@@ -88,6 +91,7 @@ server {
                 proxy_connect_timeout 60s;
                 proxy_read_timeout 60s;
   }
+}
 ```
 
 Opening the browser on localhost:3001 will serve an app that will work with tenant1, localhost:3002 will work with tenant2.
@@ -97,6 +101,7 @@ Opening the browser on localhost:3001 will serve an app that will work with tena
 Scripts such as yarn migrate, and yarn reindex use the defaultTenant to perform the task, defaultTenant is configured by setting appropiate environment variables, a full list of this variables is on the [install documentation](https://uwazi.readthedocs.io/en/latest/sysadmin-docs/install.html).
 
 Example:
+
 ```
 DATABASE_NAME=tenant1_db INDEX_NAME=tenant1_index yarn migrate
 DATABASE_NAME=tenant2_db INDEX_NAME=tenant2_index yarn reindex
