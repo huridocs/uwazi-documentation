@@ -20,7 +20,7 @@ These are a few examples of some endpoints that Uwazi currently offers:
 
 Additional notes regarding the /**entities** endpoint:
 
-- The templateId parameter sent in GET /entities/count_by_template is the mongo \_id for a particular template type. For the time being, you could ask the API for templates (you can use [https://yourinstancename.uwazi.io/api/templates](https://yourinstancename.uwazi.io/api/templates)) and then get the \_id from those results. Alternatively, the ID is shown in the URL if you et:dit a particular template.
+- The templateId parameter sent in GET /entities/count_by_template is the mongo \_id for a particular template type. For the time being, you could ask the API for templates (you can use [https://yourinstancename.uwazi.io/api/templates](https://yourinstancename.uwazi.io/api/templates)) and then get the \_id from those results. Alternatively, the ID is shown in the URL if you edit a particular template.
 
 Additional notes regarding the /**search** endpoint:
 
