@@ -249,7 +249,7 @@ You can check the specific Entity-related datasets in a page by following this p
 <h3>Raw entity data</h3>
 <pre id="raw-entity"></pre>
 <hr />
-<h3>Tamplate data</h3>
+<h3>Template data</h3>
 <pre id="template-data"></pre>
 ```
 
