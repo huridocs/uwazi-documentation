@@ -33,7 +33,7 @@ The `<EntityData>` component takes one of two properties:
 - `value-of`: a string representing the name of the property of the **value** be rendered
 - `label-of`: a string representing the name of the property of the **label** to be rendered
 
-Take the following enttiy structure as example:
+Take the following entity structure as example:
 
 | Properties          | Values                             |
 | ------------------- | ---------------------------------- |
