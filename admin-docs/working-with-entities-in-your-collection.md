@@ -1,22 +1,24 @@
 # WORKING WITH ENTITIES IN YOUR COLLECTION 
 
-## Understanding entities
+## Understanding view and edit permissions for entities
 
-An Uwazi collection is made up of entities, which contain properties, can feature documents or supporting files, and can have connections to one another. Some examples of entities might include a court, a case, a specific person or an event. 
+An Uwazi collection is made up of types of information called **Entities** that live in the **Library** ![](images/image_0.png). An entity has **Properties**, can hold **Primary Documents** and/or **Supporting Files**, and can have **Relationships** to other entities. Some examples of entities might include a court, a case, a specific person, a report or an event. 
 
-All of the entities in an Uwazi collection live in an area called the Library ![](images/image_0.png), where they can be viewed as cards, in a table or on a map (as long as entities have an associated geolocation), and can also be filtered according to their properties. Learn more about how to organise and explore your collection.
+In the **Library**, an entity can be viewed as a card, in a table or on a map (as long as it has an associated geolocation), and can also be filtered according to its **Properties**. Learn more about how to organise and explore your collection.
 
-By default, the visibility of newly created entities is **Restricted**. In practice, this means that only the user who created an entity as well as all users with admin or editor permissions can see and edit it. In order to make an entity visible to everyone who has access to your Uwazi collection, it must be shared accordingly with the **Public**. 
+By default, the visibility of newly created entities is **Restricted**. In practice, this means that only the user who created an entity as well as all users with **Admin** or **Editor** permissions can see and edit it. 
 
-(Keep in mind that if your entire Uwazi collection is configured to be private, **Public** in this case strictly refers to everyone who possesses log-in credentials.)
+In order to make an entity visible to everyone who has access to your Uwazi collection, you must click the entity’s **Share** button and explicitly share it with the **Public**.
 
-For users with log-in credentials to an Uwazi collection, there are two sets of blue filters that help quickly sort through the visibility settings of different entities. The first set refers to the visibility of all of the entities on a global level: 
+(Keep in mind that if your entire Uwazi collection is configured to be private, **Public** in this case strictly refers to everyone who possesses login credentials. Learn more about configuring the accessibility of your collection.)
+
+For users with login credentials to an Uwazi collection, there are two sets of blue filters that help quickly sort through the visibility settings of different entities. The first set refers to the visibility of all of the entities on a global level: 
 - **Restricted**, meaning that only a selected subset of users are able to see and/or edit the entity
 - **Published**, meaning that everyone with access to the collection is able to see the entity
 
 The second set of filters indicates which particular entities have been explicitly shared with your individual user account or with a specific user group to which you belong: 
-- **Can view**, meaning your individual user account or a specific user group to which you belong has been given permission to see the entity
-- **Can edit**, meaning your individual user account or a specific user group to which you belong has been given permission to edit the entity
+- **Shared as Viewer**, meaning your individual user account or a specific user group to which you belong has been given permission to see the entity
+- **Shared as Editor**, meaning your individual user account or a specific user group to which you belong has been given permission to edit the entity
 
 ## How to add new entities to the Library
 
@@ -26,53 +28,47 @@ Step 1: Click on the **Library** icon ![](images/image_0.png) in the top navigat
 
 Step 2: On the bottom right hand side of the screen, click on the **Create entity** button.
 
-Step 3: Select which **Template** to use, give the entity a name and fill in any of the properties that you want to include. (You may always come back to add, edit or delete this information later.)
+Step 3: Select which **Template** to use from the list, give the entity a name and fill in any of the properties that you want to include. (You may always come back to add, edit or delete this information later.)
 
-Step 4: Click the **Save** button once you are finished.
+Step 4: Click the **Save** button once you have finished.
 
-Step 5: If the entity is intended to feature a PDF (“[Primary Document](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)”), click the **Upload PDF** button in the right sidebar and select the desired PDF from within the file browser. 
+Step 5: If the entity is intended to feature any PDFs (“[Primary Document](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)”), click the **Upload PDF** button in the right sidebar and select the desired PDF(s) from within the file browser. 
 
 If the entity is intended to feature any other attached materials (“[Supporting Files](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)”), click the **Add supporting file** button and select the desired file(s) from within the file browser. 
 
 Step 6: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. 
 
-To change these settings, click on the **Share** button in the right sidebar. Add any new users (individuals or groups) who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. 
-
-Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the **Public**.
+To change these settings, click on the **Share** button in the right sidebar. Add any new users (individuals or groups) who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the **Public**.
 
 ## How to directly add PDFs to the Library
 
-Uwazi particularly supports the management of collections of documents in PDF format. Numerous functions can be carried out when a PDF is uploaded as the "[Primary Document](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)" within an entity, such as conducting full text search, creating a clickable table of contents, creating text references, and more.
+Uwazi particularly supports the management of collections of documents in PDF format. Numerous functions can be carried out when a PDF is uploaded as a "[Primary Document](https://uwazi.readthedocs.io/en/latest/admin-docs/glossary-of-terms.html#)" within an entity, such as conducting full text search, creating a clickable table of contents, creating text references, and more.
 
-If many of the entities in your collection feature a "primary" PDF document, it could become tedious to create entity after entity, giving them a title and filling in any properties, and only after they are saved, finally adding a PDF.
+If many of the entities in your collection feature "primary" PDF documents, it could become tedious to create entity after entity, giving them a title and filling in any properties, and only after they are saved, finally adding a PDF.
 
-For situations such as these, Uwazi makes it possible to upload PDF(s) directly into the Library as a first step without the prior creation of an entity.
+For situations such as these, Uwazi makes it possible to upload PDF(s) directly into the Library as a first step without the prior creation of an entity:
 
-To directly add PDF(s) to the Library:
-
-Step 1: Click on the Library icon ![](images/image_0.png) in the top navigation menu. 
+Step 1: Click on the **Library** icon ![](images/image_0.png) in the top navigation menu. 
 
 Step 2: On the bottom righthand side of the screen, click on the **Upload PDF(s) to create** button.
 
 Step 3: Select the desired PDF(s) from within the file browser. (To select more than one file, hold down the CTRL key or the Command key before clicking.)
 
-Step 4: Once uploaded, the PDF will appear attached to a new entity in the Library with a Name property that is automatically filled in with the PDF file name. To edit the name and other aspects of the entity, click on the **Edit** button in the right sidebar. Make sure to save any changes you make.  
+Step 4: Once uploaded, the PDF will appear attached to a new entity in the **Library** with a **Name** property that is automatically filled in with the PDF file's name. To edit the name and other aspects of the entity, click on the **Edit** button in the right sidebar. Make sure to save any changes you make.  
 
-Step 5: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. 
+Step 5: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. To change these settings, click on the **Share** button in the right sidebar.
 
-To change these settings, click on the **Share** button in the right sidebar. Add any new users (individuals or groups) who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. 
+Add any new users (individuals or groups) who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the **Public**.
 
-Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the **Public**.
-
-## How to import in bulk
+## How to add entities in bulk with CSV import 
 
 It may be that you have a large pre-existing collection of data points or materials that you want to add to your Uwazi collection. Doing so one by one would be a tedious task, so for situations such as these, Uwazi makes it possible to upload in bulk by preparing and then importing a **Comma-Separated Values (CSV) file**.
 
-### Importing entities without documents or files
+### Import entities without documents or files
 
 Remember, before you can import entities in bulk, make sure you have already created a corresponding template. Learn more about how to create templates.
 
-Step 1: Create a **CSV file** on your computer. It should include a column for each of the properties that are included on the entity’s template. Import works by matching property names – therefore, be meticulous in using the same column header names in the CSV file as the property names on the template in Uwazi. As well, be sure to follow these guidelines:
+Step 1: Create a **CSV file** on your computer. It should include a column for each of the properties that are included on the entity’s template. Import works by matching property names – therefore, be meticulous in using the same column labels in the CSV file as the property names on the template in Uwazi. As well, be sure to follow these guidelines:
 
 - Property names are not case sensitive, which means you can use either lowercase, capitals or a combination of both.
 - The first column should be called “Title” and is required in your CSV file. This is where you will put the **Name** property of each entity.
@@ -98,7 +94,7 @@ Step 6: Finally, click the **Import** button. Once the entities are uploaded int
 
 Remember, after an import has been done, editing of entities should take place within Uwazi.
 
-### Importing entities that contain a Primary Document
+### Import entities that contain a Primary Document
 
 If the entities that you would like to import contain a Primary Document, you can follow the previously explained process for importing entities in bulk with a few additional or modified steps:
 
@@ -110,7 +106,7 @@ Step 3 continued: Be sure to name the **CSV file** as import.csv. Then, compress
 
 Step 4 modified: Using the file browser to navigate your computer's storage, find and select the ZIP file.
 
-### Importing entities that contain Supporting Files
+### Import entities that contain Supporting Files
 
 If the entities that you would like to import contain **Supporting Files**, you can follow the previously explained process for importing entities in bulk with a few additional or modified steps:
 
@@ -158,9 +154,9 @@ Step 3: Using the **Type** drop-down menu, select which entity template you woul
 
 Step 4: Click on the **Copy from** button in the bottom righthand corner. 
 
-Step 5: Using the search bar that has appeared, search for any part of the name of the entity that you would like to copy properties from. As you search, entities containing the searched keyword will appear, alongside their corresponding type of template. In the image below, the word “Federal” was typed into the search bar.
+Step 5: Using the search bar that has appeared, search for any part of the name of the entity that you would like to copy properties from. Entities containing the searched keyword will appear, alongside their corresponding type of template.
 
-Step 6: Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. Note: The Name property cannot be copied using the **Copy From** feature, so you will need to enter the name of the new entity manually.
+Step 6: Select the entity that you are searching for. The system will automatically recognise the overlapping fields in the source and the destination entities. These fields will be highlighted in light blue. Note: The **Name** property cannot be copied using the **Copy From** feature, so you will need to enter the name of the new entity manually.
 
 Step 7: Once you have entered a new name, click the **Copy Highlighted** button. Notice that the overlapping information has been copied into the new entity. 
 
