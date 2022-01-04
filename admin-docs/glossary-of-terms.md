@@ -14,8 +14,6 @@
 
 - **Entity** - In Uwazi, an entity is a type of information in your collection (e.g. court, person, event). It has properties, can hold **Primary Documents** and/or **Supporting Files**, and can have **Relationships** to other **Entities**.
 
-- **Fallback** is an alternative document if the main (or intended) one is not available.
-
 - **Favicon** is an icon that appears in the browser tab and bookmarks.
 
 - **Filters** are criteria that narrow down the types of **Entities** shown at a given moment in the Library. There are two different kinds: **Primary Filters**, which are derived from the types of entity templates that exist in your **Collection**, and **Secondary Filters**, which are derived from specific **Properties** within an entity **Template**.
