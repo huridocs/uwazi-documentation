@@ -56,7 +56,9 @@ Step 3: Select the desired PDF(s) from within the file browser. (To select more 
 
 Step 4: Once uploaded, the PDF will appear attached to a new entity in the **Library** with a **Name** property that is automatically filled in with the PDF file's name. To edit the name and other aspects of the entity, click on the **Edit** button in the right sidebar. Make sure to save any changes you make.  
 
-Step 5: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. To change these settings, click on the **Share** button in the right sidebar.
+Step 5: You can edit the name of the entity by automatically pulling out the content in the PDF file. Click on the **View** button in the right sidebar to view your file, and click on the **Edit** button. Within the document, use the cursor to highlight the text that you want to have as the name of the entity. **Click to fill**, written in blue, will appear in the sidebar. Click on **Click to fill**, and the highlighted text will appear as the name. You can also edit other aspects of the entity in the sidebar. Make sure to save any changes you make.
+
+Step 6: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with admin or editor permissions. To change these settings, click on the **Share** button in the right sidebar.
 
 Add any new users (individuals or groups) who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the **Public**.
 
