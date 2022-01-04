@@ -169,3 +169,14 @@ The **CSV export** feature allows you to export some or all entities in your Uwa
 Step 1: Decide which entities you want to export. You can use different filters in the Library’s sidebar to select a specific subset of entities in the collection for export. Alternatively, if you want to export all of the entities that exist in the entire collection, leave all filters unchecked.
 
 Step 2: Click on the blue **Export CSV** button on the bottom righthand side of the screen. A **CSV file** in UTF-8 format will automatically be downloaded to your computer for your use.
+
+## How to print entities 
+
+You can print your entities in the **Library** by following the steps below. 
+
+Step 1: Decide which entities you want to print. You can use different filters in the **Library**’s sidebar to filter out specific entities you want to print. If you want to print every entity in your collection, leave all filters unchecked. Make sure you load every entity in this case, as only the shown entities in the Library will be printed. 
+
+Step 2: Hold down the keyboard shortcut below to print. You can remove headers and footers or background graphics by unchecking them under More Settings in your pop-up window. 
+
+- Windows: Hold down the CTRL key and P
+- Mac: Hold down the Command key and P You can print your landing page in the same way.
