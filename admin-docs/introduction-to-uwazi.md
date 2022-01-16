@@ -1,6 +1,6 @@
 # Introduction to Uwazi
 
-Uwazi is an open-source database application that allows you to organise a collection of information and, in the process, reveal previously hidden patterns, relationships and opportunities for action. It is developed by HURIDOCS (Human Rights Information and Documentation Systems), an NGO that, for the past four decades, has equipped human rights defenders with tools and strategies to mobilise information.
+Uwazi is an open-source database application that allows you to organise a collection of information and, in the process, reveal previously hidden patterns, relationships and opportunities for action. It is developed by [HURIDOCS](https://huridocs.org/) (Human Rights Information and Documentation Systems), an NGO that, for the past four decades, has equipped human rights defenders with tools and strategies to mobilise information.
 
 In Swahili, Uwazi means “openness,” and it was based on this principle that Uwazi was born. Human rights groups deal with enormous amounts of data, accumulating years’ or even decades’ worth of facts and materials that support the case for change. However, without safe, efficient and collaborative ways of managing it all, many of the insights contained in these collections will remain closed off to the very people who need them most.
 
@@ -12,4 +12,4 @@ We have since expanded Uwazi, creating a database application that is helpful fo
 
 Initial Uwazi development received significant financial support from the MacArthur Foundation and the Center for Justice and International Law (CEJIL). Uwazi continues to be updated and refined on a regular basis by the team at HURIDOCS, which is funded through a combination of grants, payments for services and individual donations.
 
-Our in-house software engineers openly document the development of Uwazi on GitHub. At HURIDOCS, we believe that any technology being developed for human rights work needs to be open source. Open-source development does not guarantee utility or security, but it does facilitate input from a wide selection of people—human rights defenders, developers, security experts—whose expertise is fundamental to a successful product.
+Our in-house software engineers openly document the development of Uwazi on [GitHub](https://github.com/huridocs/uwazi). At HURIDOCS, we believe that any technology being developed for human rights work needs to be open source. Open-source development does not guarantee utility or security, but it does facilitate input from a wide selection of people—human rights defenders, developers, security experts—whose expertise is fundamental to a successful product.
