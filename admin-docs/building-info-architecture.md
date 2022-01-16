@@ -53,11 +53,11 @@ There are several types of properties available, including:
 
 Some properties are a bit more complex and/or require extra steps to configure them correctly. These include **Select** and **Multiselect**, **Geolocation**, **Relationships** and **Generated ID**.
 
-### Select and Multiselect properties
+## Select and Multiselect properties
 
 A **Select** property allows you to assign a single attribute to your entity from a dropdown list of predefined terms. A **Multiselect** property allows you to assign several attributes to your entity from a checklist of predefined terms. Before you can add either a **Select** or **Multiselect** property to a template, you must create your list of predefined terms. In Uwazi, this list is called a **Thesaurus**.
 
-#### How to create Thesauri
+### How to create thesauri
 
 Step 1: Navigate to the **Settings** area and click on **Thesauri**. Here you will see all the **Thesauri** that have been created so far.
 
@@ -77,7 +77,7 @@ Step 5: Organise your **Thesaurus**. There are three main ways to organise the t
 
 Step 6: When you have finished, click **Save**.
 
-#### How to import Thesauri from a CSV file
+### How to import thesauri from a CSV file
 
 It may be that you have a list of terms already prepared that you would like to include in a **Thesaurus**. Typing the terms one by one could become tedious, so for situations such as these, Uwazi makes it possible to upload in bulk by preparing and then importing a comma-separated values (CSV) file. This import feature can be used to add terms to new or existing **Thesauri**.
 
@@ -111,7 +111,7 @@ Step 5: Click the blue **Import** button. Using the file browser to navigate you
 Step 6: Click the green **Save** button.
 - If you imported more than one language, navigate to the **Settings** area and click on **Translations**. Click on the **Thesaurus** name, and you will see all the terms and their translations that have been imported. [Learn more about translating an Uwazi collection](#).
 
-#### How to configure a Select and Multiselect property
+### How to configure a Select and Multiselect property
 
 Step 1: Once you have created your **Thesaurus**, navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add a **Select** or **Multiselect** property and click **Edit**.
 
@@ -121,11 +121,11 @@ Step 3: Click **Edit** and give the property a **Name** or **Label**. Using the 
 
 Step 4: Review the other options for the property as explained previously in this chapter. When you have finished, click **Save**.
 
-### Geolocation property
+## Geolocation property
 
 The **Geolocation** property allows you to add latitude and longitude coordinates to an entity, which can then be displayed as a point on a map. An entity template can have multiple **Geolocation** properties. Depending on the order in which they appear on the template, these geolocation points can be displayed separately on their own individual maps or together in one combined map within the entity.
 
-#### How to display multiple Geolocation properties on separate maps within the same template 
+### How to display multiple geolocation properties on separate maps within the same template 
 
 Step 1: Navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add Geolocation properties and click **Edit**.
 
@@ -141,7 +141,7 @@ This ensures that each **Geolocation** property will display on its own separate
 
 Step 6. When you have finished, click **Save**.
 
-#### How to display multiple Geolocation properties on one combined map within the same template
+### How to display multiple geolocation properties on one combined map within the same template
 
 Step 1: Navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add Geolocation properties and click **Edit**.
 
@@ -163,7 +163,7 @@ A **Relationship** property allows you to create a connection to another entity 
 
 Before you can add a **Relationship** property, you must first create the **Relationship Type** that will be used to define the nature of the connection.
 
-### How to create Relationship Types
+### How to create relationship types
 
 Step 1: Navigate to the **Settings** area and click on **Relationship Types**.
 
@@ -173,7 +173,7 @@ Step 2: Click on the **Add Connection** button. Give the **Relationship Type** a
 
 Step 3: Click **Save**.
 
-### How to configure a basic Relationship property
+### How to configure a basic relationship property
 
 Step 1: Once you have created the **Relationship Type**, navigate to the **Settings** area  and click on **Templates**. Locate the template to which you want to add a **Relationship** property and click **Edit**.
 
@@ -191,7 +191,7 @@ Step 6: Review the other options for the property as explained previously in thi
 Now, whenever you create a new entity using the template that includes this **Relationship** property, you will be presented with a multiselect list of all the existing entities in your collection which meet the criteria that you have configured (i.e. a connection to another specific template or a connection to “Any entity or document”). Simply select the relevant existing entity (or entities) from the list, and then its **Name** property will be displayed as part of the new entity’s metadata.
   - Note: You can also establish a basic connection on an ad hoc basis between entities by creating a Relationship directly in the Information Hub of an entity (without utilising the Relationship property). Learn more.
 
-### How to configure a Relationship property that inherits a property from another template
+### How to configure a relationship property that inherits a property from another template
 
 If you would like to configure a **Relationship** property that inherits a property from another template, you can follow [the previously explained process for configuring a basic Relationship property](#) with a few modified or additional steps:
 
@@ -205,7 +205,7 @@ Now, whenever you create a new entity using the template that includes this **Re
 
 Simply select the relevant existing entity (or entities) from the list, and then the property that you have chosen to inherit will be displayed as part of the new entity’s metadata.
 
-### How to configure a Relationship property that inherits multiple properties from another template
+### How to configure a relationship property that inherits multiple properties from another template
 
 If you would like to configure a **Relationship** property that inherits multiple properties from another template, you can follow the [previously explained process for configuring a basic Relationship property](#) with a few modified or additional steps:
 
@@ -246,11 +246,11 @@ From this point on, whenever you create a new Person entity in the future, you w
 
 Adding a **Generated ID** property to a template means that any time an entity is created using that template, Uwazi will assign it an automatically generated unique ID code. Depending on the configuration you choose, the **Generated ID** can be just another property on the template or it can take the place of the template’s default text-based **Name** property.
 
-### How to add a Generated ID property to a template
+### How to add a generated id property to a template
 
 [Follow the steps for creating an entity template and adding properties](#) as explained previously in this chapter. **Generated ID** will appear among the property options listed on the right side of the screen. When finished, click **Save**.
 
-### How to use a Generated ID as the Name property
+### How to use a generated id as the name/title of an entity
 
 [Follow the steps for creating an entity template](#) as explained previously. In the **Name** property, select the checkbox **Generated ID** to activate the option. When finished, click **Save**.
 
