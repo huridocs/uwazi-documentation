@@ -8,7 +8,7 @@ In the **Library**, an entity can be viewed as a card, in a table or on a map (a
 
 By default, the visibility of newly created entities is **Restricted**. In practice, this means that only the user who created an entity as well as all users with **Admin** or **Editor** permissions can see and edit it. 
 
-In order to make an entity visible to everyone who has access to your Uwazi collection, you must click the entity’s **Share** button and explicitly share it with the **Public**. (Keep in mind that if your entire Uwazi collection is configured to be private, **Public** in this case strictly refers to everyone who possesses login credentials. [Learn more about configuring the accessibility of your collection](#).)
+In order to make an entity visible to everyone who has access to your Uwazi collection, you must click the entity’s **Share** button and explicitly share it with the **Public**. (Keep in mind that if your entire Uwazi collection is configured to be private, **Public** in this case strictly refers to everyone who possesses login credentials. [Learn more about configuring the accessibility of your collection](https://uwazi.readthedocs.io/en/latest/admin-docs/managing-settings.html#make-your-collection-private-or-public).)
 
 For users with login credentials to an Uwazi collection, there are two sets of blue filters that help quickly sort through the visibility settings of different entities. The first set refers to the visibility of all of the entities on a global level: 
 - **Restricted**, meaning that only a selected subset of users are able to see and/or edit the entity
@@ -20,7 +20,7 @@ The second set of filters indicates which particular entities have been explicit
 
 ## How to add new entities to the Library
 
-Remember, before you can create a new entity, make sure you have already created a corresponding template. [Learn more about how to create templates](#). 
+Remember, before you can create a new entity, make sure you have already created a corresponding template. [Learn more about how to create templates](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates). 
 
 To create a new entity:
 
@@ -56,7 +56,9 @@ Step 3: Select the desired PDF(s) from within the file browser. (To select more 
 
 Step 4: Once uploaded, the PDF will appear attached to a new entity in the **Library** with a **Name** property that is automatically filled in with the PDF file's name. 
 
-Step 5: You can edit the name of the entity by automatically pulling out the content in the PDF file. Click on the **View** button in the right sidebar to view your file, and click on the **Edit** button. Within the document, use the cursor to highlight the text that you want to have as the name of the entity. **Click to fill**, written in blue, will appear in the sidebar. Click on **Click to fill**, and the highlighted text will appear as the name. You can also edit other aspects of the entity in the sidebar. Make sure to save any changes you make.
+Step 5: You can edit the name of the entity by automatically pulling out the content in the PDF file. Click on the **View** button in the right sidebar to view your file, and click on the **Edit** button.
+
+Step 5 optional: Within the document, use the cursor to highlight the text that you want to use as the name of the entity. **Click to fill**, written in blue, will appear in the sidebar. Click on **Click to fill**, and the highlighted text will appear as the name. You can also edit other aspects of the entity in the sidebar. Make sure to save any changes you make.
 
 Step 6: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with **Admin** or **Editor** permissions. To change these settings, click on the **Share** button in the right sidebar.
 
@@ -68,7 +70,7 @@ It may be that you have a large pre-existing collection of data points or materi
 
 ### Import entities without documents or supporting files
 
-Remember, before you can import entities in bulk, make sure you have already created a corresponding template. [Learn more about how to create templates](#).
+Remember, before you can import entities in bulk, make sure you have already created a corresponding template. [Learn more about how to create templates](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates).
 
 Step 1: Create a **CSV file** on your computer. It should include a column for each of the properties that are included on the entity’s template. Import works by matching property names – therefore, be meticulous in using the same column labels in the CSV file as the property names on the template in Uwazi. As well, be sure to follow these guidelines:
 
@@ -88,7 +90,7 @@ Step 2: Populate the **CSV file** with your data. Certain properties must follow
 
 Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
-Step 4: Go to the **Library** ![](images/image_0.png) of your Uwazi collection and on the bottom righthand side of the screen, click on the **Import CSV** button. Using the file browser to navigate your computer's storage, find and select the **CSV file**. 
+Step 4: Go to the **Library** ![](images/image_0.png) of your Uwazi collection and on the bottom right side of the screen, click on the **Import CSV** button. Using the file browser to navigate your computer's storage, find and select the **CSV file**. 
 
 Step 5: Next, select the template that corresponds to the entities you want to upload, using the dropdown menu. 
 
@@ -98,7 +100,7 @@ Remember, after an import has been done, editing of entities should take place w
 
 ### Import entities that contain a Primary Document
 
-If the entities that you would like to import contain a **Primary Document**, you can follow the [previously explained process for importing entities in bulk](#) with a few additional or modified steps:
+If the entities that you would like to import contain a **Primary Document**, you can follow the [previously explained process for importing entities in bulk](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html?highlight=csv%20in%20bulk#how-to-add-entities-in-bulk-with-csv-import) with a few additional or modified steps:
 
 Step 1 continued: Add a column in your **CSV file** with the name ```File```. 
 
@@ -110,7 +112,7 @@ Step 4 modified: Using the file browser to navigate your computer's storage, fin
 
 ### Import entities that contain Supporting Files
 
-If the entities that you would like to import contain **Supporting Files**, you can follow the [previously explained process for importing entities in bulk](#) with a few additional or modified steps:
+If the entities that you would like to import contain **Supporting Files**, you can follow the [previously explained process for importing entities in bulk](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html?highlight=csv%20in%20bulk#how-to-add-entities-in-bulk-with-csv-import) with a few additional or modified steps:
 
 Step 1 continued: Add a column in your **CSV file** with the name ```Attachments```. 
 
@@ -133,7 +135,7 @@ Alternatively, if you prefer to use the **Table View**:
 - Windows: Hold down the CTRL key and click the checkbox next to each table entry
 - Mac: Hold down the Command key and click the checkbox next to each table entry
 
-[Learn more about the different ways to view entities](#) in the **Library**.
+[Learn more about the different ways to view entities](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#how-to-view-entities-and-documents) in the **Library**.
 
 Step 2: Once you have selected all of the entities you need, click the **Edit** button in the right sidebar. 
 
@@ -151,7 +153,7 @@ Step 1: Click on the **Library** icon ![](images/image_0.png) in the top navigat
 
 Step 2: On the bottom right side of the screen, click on the **Create entity** button.
 
-Step 3: Using the **Type** dropdown menu, select which entity template you would like to use for the new entity. If you need to create a new template, [refer to the instructions](#) for doing so in the previous chapter.
+Step 3: Using the **Type** dropdown menu, select which entity template you would like to use for the new entity. If you need to create a new template, [refer to the instructions](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates) for doing so in the previous chapter.
 
 Step 4: Click on the **Copy from** button in the bottom right corner. 
 
