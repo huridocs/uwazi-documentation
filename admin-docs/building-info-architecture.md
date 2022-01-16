@@ -23,14 +23,14 @@ Step 5: For each property, click **Edit** and give it a **Name** or **Label**. C
 - **Required Property** will prevent the entity from being saved if this property isn’t filled in.
 - **Show in Cards** means that when the entities in the **Library** are viewed as cards, this property will be displayed on the card, making it visible without having to click on an entity to see it in its entirety.
   - Note: The cards in the **Library** will also show a person’s current sorting criterion even if that property is not configured to **Show in Cards**. For example, this happens frequently with the **Date Added** property, which is the default sorting criterion in the **Library**. When the cards are sorted by “date added”, the **Date Added** property is visible in the cards to demonstrate why the cards are in their current order.
-- **Use as Filter** makes it possible to use this property as a filter in the **Library**. When someone visits the **Library** and selects the corresponding type of template among the **Primary Filters** in the **Library**’s sidebar, the option to further filter all of the entities by this property will then appear. [Learn more about how to configure filters](#).
+- **Use as Filter** makes it possible to use this property as a filter in the **Library**. When someone visits the **Library** and selects the corresponding type of template among the **Primary Filters** in the **Library**’s sidebar, the option to further filter all of the entities by this property will then appear. [Learn more about how to configure filters](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html?highlight=filters#how-to-configure-main-and-secondary-filters).
 - **Default Filter** makes it so the property always shows as a filter in the **Library**’s sidebar by default, no matter if the corresponding type of template among the **Primary Filters** is selected or not.
 - **Full Width** will show this property using the full width available (applies to **Media**, **Image**, and **Preview** properties).
 
 Step 6: Remember to click on **Save** after creating or making changes to each template.
 
 - [Watch a screencast](https://drive.google.com/open?id=1pqcKphveaHFJqrrBPT53b2jE5lo75BMf).
-- If you intend to add your entities in bulk using CSV import, remember that the property names on these templates must match the property names in the CSV file. [Learn more about CSV import](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-import-in-bulk).
+- If you intend to add your entities in bulk using CSV import, remember that the property names on these templates must match the property names in the CSV file. [Learn more about CSV import](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-add-entities-in-bulk-with-csv-import).
 
 ## Understanding properties
 
@@ -183,7 +183,7 @@ Step 3: Click **Edit** on the newly added property, and give it a descriptive **
 
 Step 4: Using the dropdown list called Relationship*, select the **Relationship Type** that you would like to use as part of this property. (The * indicates that it is mandatory.)
 
-Step 5: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, you also have the option to restrict a connection to only entities that use one specific template. To do so, click on the Entities dropdown list and select whichever template you want.
+Step 5: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, you also have the option to restrict a connection to only entities that use one specific template. To do so, click on the **Entities** dropdown list and select whichever template you want.
   - Note: The dropdown won’t contain the template that is currently being edited. [Learn more about how to connect entities of the same template](#). 
 
 Step 6: Review the other options for the property as explained previously in this chapter. When you have finished, click **Save**.
@@ -193,33 +193,33 @@ Now, whenever you create a new entity using the template that includes this **Re
 
 ### How to configure a Relationship property that inherits a property from another template
 
-If you would like to configure a Relationship property that inherits a property from another template, you can follow the previously explained process for configuring a basic Relationship property with a few modified or additional steps:
+If you would like to configure a **Relationship** property that inherits a property from another template, you can follow [the previously explained process for configuring a basic Relationship property](#) with a few modified or additional steps:
 
 Step 5 modified: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, in order to activate the more advanced option of inheriting properties from another template, you must specify the template from which you want to inherit. To do so, click on the Entities dropdown list and select the relevant template.
 
-Step 6 modified: If you choose a specific template in the previous step, another option will automatically appear: a checkbox called Inherit Property. Tick the box and a dropdown will appear containing all of the properties contained within the other template that you have selected. Choose a property from the list to inherit. Be sure to also review the other options for the property as explained previously in this chapter.
+Step 6 modified: If you choose a specific template in the previous step, another option will automatically appear: a checkbox called **Inherit Property**. Tick the box and a dropdown will appear containing all of the properties contained within the other template that you have selected. Choose a property from the list to inherit. Be sure to also review the other options for the property as explained previously in this chapter.
 
 Step 7: Review the other options for the property as explained previously in this chapter. When you have finished, click **Save**. 
 
-Now, whenever you create a new entity using the template that includes this Relationship property, you will be presented with a multiselect list of all the existing entities in your collection which meet the criteria that you have configured (i.e. a connection to another specific template that inherits one of that template’s specific properties).
+Now, whenever you create a new entity using the template that includes this **Relationship** property, you will be presented with a multiselect list of all the existing entities in your collection which meet the criteria that you have configured (i.e. a connection to another specific template that inherits one of that template’s specific properties).
 
 Simply select the relevant existing entity (or entities) from the list, and then the property that you have chosen to inherit will be displayed as part of the new entity’s metadata.
 
 ### How to configure a Relationship property that inherits multiple properties from another template
 
-If you would like to configure a **Relationship** property that inherits multiple properties from another template, you can follow the previously explained process for configuring a basic Relationship property with a few modified or additional steps:
+If you would like to configure a **Relationship** property that inherits multiple properties from another template, you can follow the [previously explained process for configuring a basic Relationship property](#) with a few modified or additional steps:
 
-Step 5 modified: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, in order to activate the more advanced option of inheriting properties from another template, you must specify the template from which you want to inherit. To do so, click on the Entities dropdown list and select the relevant template.
+Step 5 modified: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, in order to activate the more advanced option of inheriting properties from another template, you must specify the template from which you want to inherit. To do so, click on the **Entities** dropdown list and select the relevant template.
 
-Step 6 modified: If you choose a specific template in the previous step, another option will automatically appear: a checkbox called Inherit Property. Tick the box and a dropdown will appear containing all of the properties contained within the other template that you have selected. Choose a property from the list to inherit. Be sure to also review the other options for the property as explained previously in this chapter.
+Step 6 modified: If you choose a specific template in the previous step, another option will automatically appear: a checkbox called **Inherit Property**. Tick the box and a dropdown will appear containing all of the properties contained within the other template that you have selected. Choose a property from the list to inherit. Be sure to also review the other options for the property as explained previously in this chapter.
 
-Step 7: Repeat the above process as many times as needed: add another **Relationship** property to the template, ensuring that it is configured with the same template from the Entities dropdown list and the same Relationship Type as previously selected.
+Step 7: Repeat the above process as many times as needed: add another **Relationship** property to the template, ensuring that it is configured with the same template from the **Entities** dropdown list and the same **Relationship Type** as previously selected.
 
 Step 8: When you have finished, click **Save**.
 
-Now, whenever you create a new entity using this template, within each of these Relationship properties you will be presented with a multiselect list of all the existing entities in your collection which meet the criteria that you have established (i.e. a connection to another specific template that inherits one of that template’s specific properties).
+Now, whenever you create a new entity using this template, within each of these **Relationship** properties you will be presented with a multiselect list of all the existing entities in your collection which meet the criteria that you have established (i.e. a connection to another specific template that inherits one of that template’s specific properties).
 
-Select the relevant existing entity (or entities) from the list contained within whichever Relationship property happens to appear first. Once you do, the same entity (or entities) will also be automatically selected on the other **Relationship** properties.
+Select the relevant existing entity (or entities) from the list contained within whichever **Relationship** property happens to appear first. Once you do, the same entity (or entities) will also be automatically selected on the other **Relationship** properties.
   - Note: When you inherit multiple properties in this way, any changes made to one of the **Relationship** properties of an entity that utilises this template will affect the other **Relationship** properties on this template that share the same connection. For example, If you untick a particular entity within one **Relationship** property, it will also automatically be unticked in the other **Relationship** properties. This is because you have ultimately created one connection with multiple inheritance of properties, instead of multiple separate connections.
 
 Once you save the new entity, the properties that you have chosen to inherit will then be displayed as part of the new entity’s metadata.
@@ -248,10 +248,10 @@ Adding a **Generated ID** property to a template means that any time an entity i
 
 ### How to add a Generated ID property to a template
 
-Follow the steps for creating an entity template and adding properties as explained previously in this chapter. **Generated ID** will appear among the property options listed on the right side of the screen. When finished, click **Save**.
+[Follow the steps for creating an entity template and adding properties](#) as explained previously in this chapter. **Generated ID** will appear among the property options listed on the right side of the screen. When finished, click **Save**.
 
 ### How to use a Generated ID as the Name property
 
-Follow the steps for creating an entity template as explained previously. In the **Name** property, select the checkbox **Generated ID** to activate the option. When finished, click **Save**.
+[Follow the steps for creating an entity template](#) as explained previously. In the **Name** property, select the checkbox **Generated ID** to activate the option. When finished, click **Save**.
 
 - You do not have to add a separate **Generated ID** property for this feature to work. If you do add a separate **Generated ID** property, each entity that you create using this template will consequently have two different unique ID codes assigned to it.
