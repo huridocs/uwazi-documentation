@@ -18,7 +18,7 @@ Step 1: At the login screen, click **Forgot Password?**.
 
 Step 2: You will receive an email from the [no-reply@uwazi.io](mailto:no-reply@uwazi.io) account. Follow the instructions.
 
-- If you cannot find this recovery email, please check if it has been filtered into your ‘’Spam’’ folder.
+- If you cannot find this recovery email, please check if it has been filtered into your Spam folder.
 
 - To reinforce your account’s security, we recommend that you use unique and long passwords (a-Z, 0-9, &%).
 
@@ -32,17 +32,15 @@ Step 1: Log into your instance.
 
 Step 2: Navigate to the **Settings** area and click **Accounts**.
 
-Step 3: You will see **Two-step verification**, click on **Protect your Account**.
+Step 3: You will see **Two-Step Verification**, click on **Protect Your Account**.
 
 Step 4: Open [Authy](https://authy.com/features/setup/) or [Google Authenticator](https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=en) and generate your verification code.
 
-Step 5: Enter the code and click **Confirm**.
+Step 5: Enter the code and click **Confirm**. If you have successfully enabled two-factor authentication, your account settings will reflect this.
 
-- If you have successfully enabled two-factor authentication, your account settings will reflect this.
+- Watch a [screencast](https://drive.google.com/open?id=1G02gKDvIejl4NxwpyiIqiIU5KPjbamBE).
 
 ![](images/image_2.png)
-
-Watch a [screencast](https://drive.google.com/open?id=1G02gKDvIejl4NxwpyiIqiIU5KPjbamBE).
 
 ### Login with two-factor authentication
 
@@ -62,19 +60,19 @@ Step 2: You will be prompted to input your authentication code. Enter the code f
 
 If you work in a team or in collaboration with other people, Uwazi allows administrators to create new users with specific permissions to help you update your collection. Uwazi currently supports three different kinds of roles:
 
-- **Admin**: The admin role has the ability to create, see and edit all **Entities**; change all settings throughout the Uwazi instance; and add new users
-- **Editor**: The editor role has the ability to create, see and edit all **Entities**
-- **Collaborator**: The collaborator role has the ability to create new **Entities** and can be invited to see and edit other on an individual basis
+- **Admin** role has the ability to create, see and edit all **Entities**; change all settings throughout the Uwazi instance; and add new users
+- **Editor** role has the ability to create, see and edit all **Entities**
+- **Collaborator** role has the ability to create new **Entities** and can be invited to see and edit other on an individual basis
 
 ![](images/image_3.png)
 
-### Add new users to your instance
+### Add new users to your collection
 
 Step 1: Only an **Admin** can create new users. Navigate to the **Settings** area and click **Users**.
 
 Step 2: You will see a list of all the current users who have access to your collection.
 
-Step 3: You can create new users by clicking the green **Add user** button at the bottom. Here, you can also edit or delete users, as necessary.
+Step 3: You can create new users by clicking the green **Add User** button at the bottom. Here, you can also edit or delete users, as necessary.
 
 Step 4: Enter a username, their email address and select a role (**Admin**, **Editor** or **Collaborator**) for them.
 
@@ -92,9 +90,9 @@ Step 4: Assign a **Name of the group** and add the usernames that you want to in
 
 Step 5: Once this information is entered, click the green **Create Group** button.
 
-## How to configure your collection’s general  settings
+## How to configure your collection’s general settings
 
-You can control various basic aspects of your instance by navigating to the **Settings** area, then clicking on **Collection** in the left sidebar. If you make any changes, please ensure that you click **Save**. 
+You can control various basic aspects of your instance by navigating to the **Settings** area, then clicking on **Collection** in the left sidebar. If you make any changes, please ensure that you click **Save**.
 
 ### Change the name of your collection
 
@@ -108,9 +106,9 @@ A favicon is the icon representing your Uwazi collection that appears in browser
 
 Step 1: Convert your image into .ico (icon) format. To do so, you can search the internet for an .ico converter. Save the resulting file on your local drive. 
 
-Step 2: On the left sidebar under **Tools**, click on **Uploads**. Select **Browse files to upload** and upload the image that you converted to the .ico format. Once your image uploads, copy the URL. (It will begin with ```/assets```.) 
+Step 2: On the left sidebar under **Tools**, click on **Uploads**. Select **Browse Files to Upload** and upload the image that you converted to the .ico format. Once your image uploads, copy the URL. (It will begin with ```/assets```) 
 
-Step 3: Navigate back to the **Collection** settings. Under **Custom favicon**, toggle the option on and paste the above URL. 
+Step 3: Navigate back to the **Settings** area. Under **Custom Favicon**, toggle the option on and paste the above URL. 
 
 Step 4: Click **Save**, and be sure to reload the webpage after updating your favicon.
 
@@ -120,13 +118,13 @@ The landing page is the first thing visitors will see when they arrive at your U
 
 However, you can set any page from within your Uwazi instance to act as the landing page instead. Toggle on the option to **Use Custom Landing Page** and paste the relative URL in the box. A relative URL starts with a slash ```/``` and skips the domain name. For example: 
 
-  - A page: **```/page/dicxg0oagy3xgr7ixef80k9```**
-  - A Library query: **```/library/?searchTerm=test```**
-  - A document or entity: **```/document/4y9i99fadjp833di/entity/9htbkgpkyy7j5rk9```**
+  - A **Page**: ```/page/dicxg0oagy3xgr7ixef80k9```
+  - A **Library** query: ```/library/?searchTerm=test```
+  - A **Entity**: ```/entity/9htbkgpkyy7j5rk9```
 
 ### Customise the default Library view 
 
-All of the **Entities** in your collection live in the **Library** ![](images/image_0.png) and can be viewed on demand as cards, in a table or on a map (as long as entities have an associated geolocation). Based on your preference, you can choose to set a default view. Learn more about organising and exploring your collection.
+All of the **Entities** in your collection live in the **Library** ![](images/image_0.png) and can be viewed on demand as cards, in a table or on a map (as long as entities have an associated geolocation). Based on your preference, you can choose to set a default view. [Learn more about organising and exploring](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html) your collection.
 
 ### Change the date format
 
@@ -140,11 +138,13 @@ By activating this option, your information will not be crawled by search engine
 
 ### Show cookies policy on your site
 
-Cookies are bits of information used by some websites you visit and stored on your computer’s hard drive. Uwazi uses cookies to deliver an optimal experience for users and visitors alikes. If you would like to display a notification about the use of cookies upon first visit to your instance, toggle on the option to **Show cookie policy**. 
+Cookies are bits of information used by some websites you visit and stored on your computer’s hard drive. Uwazi uses cookies to deliver an optimal experience for users and visitors alike. If you would like to display a notification about the use of cookies upon first visit to your instance, toggle on the option to **Show Cookie Policy**. 
 
-### Support for non-Latin characters in property names
+### Support for non-Latin characters in the names of properties
 
-Older instances of Uwazi have an option called **Non-Latin Characters Support**. It enhances support for non-Latin languages as default languages, specifically in the names of **Properties** within **Templates**. Toggling on this option triggers an automatic update of all properties, a process that could take several minutes and will likely change the URLs of **Filters** in the **Library** ![](images/image_0.png). Menus or links that use such URLs will need to be updated manually afterward. If you are not facing issues with your template property names, we recommend leaving this option alone.
+Older instances of Uwazi have an option called **Non-Latin Characters Support**. It enhances support for non-Latin languages as default languages, specifically in the names of **Properties** within **Templates**. Toggling on this option triggers an automatic update of all properties, a process that could take several minutes and will likely change the URLs of **Filters** in the **Library** ![](images/image_0.png). Menus or links that use such URLs will need to be updated manually afterward.
+
+- If you are not facing issues with your template property names, we recommend leaving this option alone.
 
 - If you do not see this option available in the **Settings** area under **Collection**, it is because support for non-Latin characters is activated in newer instances of Uwazi by default, so you do not need to take any action. 
 
@@ -174,7 +174,7 @@ If your instance is hosted by HURIDOCS, then your mail system is already configu
 
 ### Contact form configuration
 
-If you have added a **Contact Form** to a custom **Page** within your collection, you must set the email address that receives the information from that form. Learn more about adding Pages to your collection.
+If you have added a **Contact Form** to a custom **Page** within your collection, you must set the email address that receives the information from that form. [Learn more about adding Pages](#) to your collection.
 
 Step 1: Navigate to the **Settings** area and click on collection in the left sidebar. 
 
@@ -186,7 +186,7 @@ Step 4: Click the green **Save** button.
 
 ### Submission form configuration 
 
-If you have added an **Intake or Submission Form** to a custom **Page** within your collection, it must be configured to work properly. Learn more about adding Pages to your collection.
+If you have added an **Intake or Submission Form** to a custom **Page** within your collection, it must be configured to work properly. [Learn more about adding Pages](#) to your collection.
 
 Step 1: Navigate to the **Settings** area and click on collection in the left sidebar.
 
@@ -198,7 +198,7 @@ Step 4: In the case that submissions should be sent to a different Uwazi instanc
 
 Step 5: Click the green **Save** button.
 
-## How to customize your collection's map configurations
+## How to customise your collection's map configurations
 
 ### Map starting point 
 
