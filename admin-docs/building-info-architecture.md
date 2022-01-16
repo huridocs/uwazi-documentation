@@ -12,7 +12,9 @@ Step 2: Click on the green **Add Template** button.
 
 Step 3: Name your template and select a color for it. The combination of the name and color will be used to label entities that utilise this template in the **Library** ![](images/image_0.png).
 
-Step 4: On the right side of the screen is a list of **Properties**. Drag and drop one property at a time onto the template or click on the plus icon to add the property.
+Step 4: On the right side of the screen is a list of **Properties**. Drag and drop one property at a time onto the template, or click on the plus icon to add the property.
+
+![](images/image_16.png)
 
 Step 5: For each property, click **Edit** and give it a **Name** or **Label**. Configure any necessary settings required for the particular property in question. Be sure to review the other options available for the property, which may include the following:
 
@@ -77,17 +79,17 @@ Step 5: Organise your **Thesaurus**. There are three main ways to organise the t
 
 Step 6: When you have finished, click **Save**.
 
-### How to import thesauri from a CSV file
+### How to import thesauri from a csv file
 
 It may be that you have a list of terms already prepared that you would like to include in a **Thesaurus**. Typing the terms one by one could become tedious, so for situations such as these, Uwazi makes it possible to upload in bulk by preparing and then importing a comma-separated values (CSV) file. This import feature can be used to add terms to new or existing **Thesauri**.
 
-Step 1: Create a CSV file on your computer:
+Step 1: Create a **CSV file** on your computer:
 
 - If you only have one language configured in your instance, then you should only have one column in your file. The column label should be the name of the language written in English (e.g. English, Russian, Spanish).
 - If you have more than one language configured in your instance and you want to import a list of terms at the same time as their corresponding translations, then each language should have its own separate column. Use the name of the language written in English (e.g. English, Russian, Spanish).
   - Note: If your CSV file has columns for languages that are not configured in your Uwazi instance, they will be ignored. Learn more about enabling different languages in Uwazi.
 
-Step 2: Populate the CSV file with the terms. Each term should occupy its own row. For example, here’s a sample CSV file viewed as plain text:
+Step 2: Populate the **CSV file** with the terms. Each term should occupy its own row. For example, here’s a sample CSV file viewed as plain text:
 
 ```English,French,German```
 
@@ -102,20 +104,20 @@ And here’s the same file viewed in a spreadsheet program:
 
   - Note: Avoid including duplicate values in the same column, as this will cause a validation error and prevent the import from working successfully.
 
-Step 3: Save the CSV file in UTF-8 format on your computer.
+Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
 Step 4: Navigate to the **Settings** area  and click on **Thesauri**. Click on the green **Add Thesaurus** button and give the **Thesaurus** a name. Alternatively, if you would like to add to an existing **Thesaurus**, click the **Edit** button next to it.
 
-Step 5: Click the blue **Import** button. Using the file browser to navigate your computer’s storage, find and select the CSV file. Once the import has finished, the terms will appear in the **Thesaurus**. 
+Step 5: Click the blue **Import** button. Using the file browser to navigate your computer’s storage, find and select the CSV file. Once the import has finished, the terms will appear in the **Thesaurus**.
 
 Step 6: Click the green **Save** button.
-- If you imported more than one language, navigate to the **Settings** area and click on **Translations**. Click on the **Thesaurus** name, and you will see all the terms and their translations that have been imported. [Learn more about translating an Uwazi collection](#).
+- If you imported more than one language, navigate to the **Settings** area and click on **Translations**. Click on the **Thesaurus** name, and you will see all the terms and their translations that have been imported. [Learn more about translating an Uwazi collection](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html).
 
-### How to configure a Select and Multiselect property
+### How to configure a select or multiselect property
 
 Step 1: Once you have created your **Thesaurus**, navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add a **Select** or **Multiselect** property and click **Edit**.
 
-Step 2: Drag and drop the **Select** or **Multiselect** property from the right side of the screen into the template or add it by clicking on the plus icon next to the property. 
+Step 2: Drag and drop the **Select** or **Multiselect** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property. 
 
 Step 3: Click **Edit** and give the property a **Name** or **Label**. Using the **Select List** dropdown, choose the **Thesaurus** that you want to reference in this property.
 
@@ -129,11 +131,11 @@ The **Geolocation** property allows you to add latitude and longitude coordinate
 
 Step 1: Navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add Geolocation properties and click **Edit**.
 
-Step 2: Drag and drop the **Geolocation** property from the right side of the screen into the template or add it by clicking on the plus icon  next to the property.
+Step 2: Drag and drop the **Geolocation** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property.
 
 Step 3: Click **Edit** and give the property a **Name** or **Label**. Review the other options for the property as explained previously in this chapter.
 
-Step 4: Repeat the above process until you have created all of the **Geolocation** properties that you want. 
+Step 4: Repeat the above process until you have created all of the **Geolocation** properties that you want.
 
 Step 5: Using the drag and drop function, move the **Geolocation** properties around so that they are not adjacent to each other on the template. In other words, they should be separated by one or more other non-Geolocation properties. 
 
@@ -145,7 +147,7 @@ Step 6. When you have finished, click **Save**.
 
 Step 1: Navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add Geolocation properties and click **Edit**.
 
-Step 2: Drag and drop the **Geolocation** property from the right side of the screen into the template or add it by clicking on the plus icon next to the property.
+Step 2: Drag and drop the **Geolocation** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property.
 
 Step 3: Click **Edit** and give the property a **Name** or **Label**. Review the other options for the property as explained previously in this chapter.
 
@@ -193,13 +195,13 @@ Now, whenever you create a new entity using the template that includes this **Re
 
 ### How to configure a relationship property that inherits a property from another template
 
-If you would like to configure a **Relationship** property that inherits a property from another template, you can follow [the previously explained process for configuring a basic Relationship property](#) with a few modified or additional steps:
+If you would like to configure a **Relationship** property that inherits a property from another template, you can follow [the previously explained process for configuring a basic Relationship property](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-configure-a-basic-relationship-property) with a few modified or additional steps:
 
-Step 5 modified: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, in order to activate the more advanced option of inheriting properties from another template, you must specify the template from which you want to inherit. To do so, click on the Entities dropdown list and select the relevant template.
+Step 5 modified: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, in order to activate the more advanced option of inheriting properties from another template, you must specify the template from which you want to inherit. To do so, click on the **Entities** dropdown list and select the relevant template.
 
 Step 6 modified: If you choose a specific template in the previous step, another option will automatically appear: a checkbox called **Inherit Property**. Tick the box and a dropdown will appear containing all of the properties contained within the other template that you have selected. Choose a property from the list to inherit. Be sure to also review the other options for the property as explained previously in this chapter.
 
-Step 7: Review the other options for the property as explained previously in this chapter. When you have finished, click **Save**. 
+Step 7: Review the other options for the property as explained previously in this chapter. When you have finished, click **Save**.
 
 Now, whenever you create a new entity using the template that includes this **Relationship** property, you will be presented with a multiselect list of all the existing entities in your collection which meet the criteria that you have configured (i.e. a connection to another specific template that inherits one of that template’s specific properties).
 
@@ -207,7 +209,7 @@ Simply select the relevant existing entity (or entities) from the list, and then
 
 ### How to configure a relationship property that inherits multiple properties from another template
 
-If you would like to configure a **Relationship** property that inherits multiple properties from another template, you can follow the [previously explained process for configuring a basic Relationship property](#) with a few modified or additional steps:
+If you would like to configure a **Relationship** property that inherits multiple properties from another template, you can follow the [previously explained process for configuring a basic Relationship property](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-configure-a-basic-relationship-property) with a few modified or additional steps:
 
 Step 5 modified: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, in order to activate the more advanced option of inheriting properties from another template, you must specify the template from which you want to inherit. To do so, click on the **Entities** dropdown list and select the relevant template.
 
@@ -248,10 +250,10 @@ Adding a **Generated ID** property to a template means that any time an entity i
 
 ### How to add a generated id property to a template
 
-[Follow the steps for creating an entity template and adding properties](#) as explained previously in this chapter. **Generated ID** will appear among the property options listed on the right side of the screen. When finished, click **Save**.
+[Follow the steps for creating an entity template and adding properties](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates) as explained previously in this chapter. **Generated ID** will appear among the property options listed on the right side of the screen. When finished, click **Save**.
 
 ### How to use a generated id as the name/title of an entity
 
-[Follow the steps for creating an entity template](#) as explained previously. In the **Name** property, select the checkbox **Generated ID** to activate the option. When finished, click **Save**.
+[Follow the steps for creating an entity template](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates) as explained previously. In the **Name** property, select the checkbox **Generated ID** to activate the option. When finished, click **Save**.
 
 - You do not have to add a separate **Generated ID** property for this feature to work. If you do add a separate **Generated ID** property, each entity that you create using this template will consequently have two different unique ID codes assigned to it.
