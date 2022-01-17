@@ -201,7 +201,7 @@ Step 8: Once you have finished, click **Save**.
 ### Edit Relationships in the Information Hub
 Step 1: Navigate to the **Library** ![](images/image_0.png) and locate the entity whose **Relationships** you want to edit. Click the **View** button to see the entity in full.
 
-Step 2: Within the right sidebar menu, click on the **Connections** icon![](images/image_59.png) to open up the **Information Hub**.
+Step 2: Within the right sidebar menu, click on the **Connections** icon ![](images/image_59.png) to open up the **Information Hub**.
 
 Step 3: Click on the blue **Edit** button. You can change the **Relationship Type** labels or remove a **Relationship** altogether by clicking on the **Delete** button.
 
