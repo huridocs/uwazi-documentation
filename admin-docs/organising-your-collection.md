@@ -50,7 +50,7 @@ Step 2: On the right side in an area named **Entity Types**, you will see a list
 
 Step 3: If you would like to group certain filters together, click on the **Create Group** button. Give the group a descriptive label. Underneath the label, drag and drop the items that you would like to appear in the group. 
 
-Step 4: Once finished, **Save** the changes you have made. You can now go to the **Library**** and view the primary filters you have configured. You will see an **Featured/All** toggle in the sidebar:
+Step 4: Once finished, **Save** the changes you have made. You can now go to the **Library** and view the primary filters you have configured. You will see an **Featured/All** toggle in the sidebar:
 - Using the **FEATURED** operator will display the list of templates you chose as primary filters.
 - Using the **ALL** operator will display the list of every template in your collection, including the templates you did not choose as primary filters.
 
@@ -127,7 +127,7 @@ Step 2: Within the document, use the cursor to highlight the text that you want 
 
 Step 3: Repeat this process until you have created a full **Table of Contents**. You can add as many headings and subheadings as you like. You can nest subheadings under headings by clicking on the arrow buttons to the left of the table of content entries. Uwazi currently supports six degrees of such indentations; each is styled differently to improve readability. 
 
-Step 4: Once you have finished, click **Save**. The **Table of Contents**** will now be accessible to anyone who views the document. Clicking on any heading will jump to its respective section of the document. If you ever need to revise or add more contents in the future, simply click the **Edit** button.
+Step 4: Once you have finished, click **Save**. The **Table of Contents** will now be accessible to anyone who views the document. Clicking on any heading will jump to its respective section of the document. If you ever need to revise or add more contents in the future, simply click the **Edit** button.
 
 ## How to create references
 
