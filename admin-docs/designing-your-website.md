@@ -11,7 +11,7 @@ Many of these advanced options require coding and programming knowledge, and as 
 ## How to configure the main navigation menu
 
 By default, the main navigation menu that runs along the top of an Uwazi instance includes links to:
-- the **Library**
+- the **Library** ![](images/image_0.png)
 - different language versions of your collection (if you have multiple languages configured; [learn more about translating your collection](#))
 - and to the collection’s settings (if you are logged in; otherwise you’ll be shown a link to the login page if your collection is [configured to be publicly available](#)).
 
@@ -59,7 +59,7 @@ Step 3: Click the **Update** button to save your changes.
 
 ## How to add pages to your collection
 
-A basic Uwazi instance comprises the **Library**, where the entities contained within your collection can be browsed and displayed in several different ways, and the **Settings** area, where you can configure the administrative settings of your collection. You also have the option to create additional **Pages**; these pages could offer background information about your collection; incorporate **Submission Forms** or **Contact Forms** so members of the public can get in touch; feature charts, maps and other data visualisation components; and more.
+A basic Uwazi instance comprises the **Library** ![](images/image_0.png), where the entities contained within your collection can be browsed and displayed in several different ways, and the **Settings** area, where you can configure the administrative settings of your collection. You also have the option to create additional **Pages**; these pages could offer background information about your collection; incorporate **Submission Forms** or **Contact Forms** so members of the public can get in touch; feature charts, maps and other data visualisation components; and more.
 
 To add a **Page**:
 
@@ -83,7 +83,7 @@ For further details, consult the Uwazi Advanced Design Guide (*coming soon*) or 
 
 ## How to display entities as stylised pages 
 
-An Uwazi collection is made up of different types of entities. You can [browse the entities in the **Library**](#) as cards, in a table or on a map (as long as they have an associated geolocation). If you click on an entity, you can see all of the information that it contains displayed within the right sidebar. Furthermore, by clicking the **View** button on an entity, you can also see the same information displayed on a full-width page that by default incorporates minimal formatting.
+An Uwazi collection is made up of different types of entities. You can [browse the entities in the **Library**](#) ![](images/image_0.png) as cards, in a table or on a map (as long as they have an associated geolocation). If you click on an entity, you can see all of the information that it contains displayed within the right sidebar. Furthermore, by clicking the **View** button on an entity, you can also see the same information displayed on a full-width page that by default incorporates minimal formatting.
 
 In Uwazi, you can replace this default full-width page view with a customised design that incorporates formatting and components of your choosing. This feature is called **Entity Page View**. Solid coding and programming knowledge is required to fully take advantage of **Entity Page View**. For details, consult the Uwazi Advanced Design Guide (*coming soon*) or get in touch with the HURIDOCS team.
 
