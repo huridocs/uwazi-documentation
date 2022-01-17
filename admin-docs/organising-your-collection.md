@@ -131,7 +131,7 @@ Step 4: Once you have finished, click **Save**. The **Table of Contents**** will
 
 ## How to create references
 
-In Uwazi, a **Reference** connects selected content in a **Primary Document** to other selected content within the same document, to other selected content in a different **Primary Document**, or to an entity (which may or may not have a **Primary Document** attached). You can see all of the **References** that a document has by clicking on the **References** icon in the right sidebar of its entity.
+In Uwazi, a **Reference** connects selected content in a **Primary Document** to other selected content within the same document, to other selected content in a different **Primary Document**, or to an entity (which may or may not have a **Primary Document** attached). You can see all of the **References** that a document has by clicking on the **References** icon ![](images/image_54.png) in the right sidebar of its entity.
 
 Before you can configure a **Reference**, you must first create the **Relationship Type** that will describe the nature of the **Reference**.
 
