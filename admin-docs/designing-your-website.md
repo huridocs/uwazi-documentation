@@ -1,29 +1,31 @@
 # CUSTOMISING YOUR COLLECTION'S DESIGN
 
-Beyond the basic options found within **Settings**, Uwazi offers several advanced ways to enhance the look and feel of your collection. This includes:
+Beyond the [basic options found within **Settings**](https://uwazi.readthedocs.io/en/latest/admin-docs/managing-settings.html#managing-your-collection-s-settings), Uwazi offers several advanced ways to enhance the look and feel of your collection. This includes:
 - Adding links to the main navigation menu
 - Personalising the appearance of your collection by defining CSS styles
-- Adding custom pages that contain information about your collection, incorporate submission or contact forms, or feature charts, maps and other dynamic data visualisation components
+- Adding custom **Pages** that contain information about your collection, incorporate **Submission Forms** or **Contact Forms**, or feature charts, maps and other dynamic data visualisation components
 - Creating a stylised display for certain types of entities
 
-Many of these advanced options require coding knowledge, and as such, you may need to seek support from a software developer to implement them. For more information, consult the Uwazi Advanced Design Guide or get in touch with the HURIDOCS team.
+Many of these advanced options require coding and programming knowledge, and as such, you may need to seek support from a software developer. For more information, consult the Uwazi Advanced Design Guide (*coming soon*) or get in touch with the HURIDOCS team.
 
 ## How to configure the main navigation menu
 
 By default, the main navigation menu that runs along the top of an Uwazi instance includes links to:
-- the Library
-- different language versions of your collection (if you have multiple languages configured; learn more about translating your collection)
-- and to the collection’s settings (if you are logged in; otherwise you’ll be shown a link to the login page if your collection is configured to be publicly available).
+- the **Library**
+- different language versions of your collection (if you have multiple languages configured; [learn more about translating your collection](#))
+- and to the collection’s settings (if you are logged in; otherwise you’ll be shown a link to the login page if your collection is [configured to be publicly available](#)).
 
-If you so desire, you can add additional items to the menu such as a filtered subset of entities in the Library or a page. To configure items on the navigation menu:
+If you so desire, you can add additional items to the menu such as a filtered subset of entities in the **Library** or a **Page**. 
+
+To configure items on the navigation menu:
 
 Step 1: Navigate to the **Settings** area and click on **Menu**.
 
 Step 2: Click on the **Add link** button near the bottom of the screen. Add a title for your item and its corresponding URL.
 
-- Note: If the link is for a page within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash **```/```** and skips the domain name. For example, **```/page/dicxg0oagy3xgr7ixef80k9```** or **```/library/?searchTerm=test```**. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
+- Note: If the link is for a **Page** within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash ```/``` and skips the domain name. For example, ```/page/dicxg0oagy3xgr7ixef80k9``` or ```/library/?searchTerm=test```. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
 
-Step 3: If you have several related menu items, you can group them together into a dropdown menu. To do so, click the **Add group** button. Provide a main title for the group, then click the **Add link** button found directly below the title. Add a title for your first item and its corresponding URL. Repeat this process for however many menu items you want to include in the dropdown menu.
+Step 3: If you have several related menu items, you can group them together into a dropdown menu. To do so, click the **Add Group** button. Provide a main title for the group, then click the **Add Link** button found directly below the title. Add a title for your first item and its corresponding URL. Repeat this process for however many menu items you want to include in the dropdown menu.
 
 Step 4: You can rearrange items into a different order by dragging and dropping.
 
@@ -57,7 +59,7 @@ Step 3: Click the **Update** button to save your changes.
 
 ## How to add pages to your collection
 
-A basic Uwazi instance comprises the **Library**, where the entities contained within your collection can be browsed and displayed in several different ways, and the **Settings** area, where you can configure the administrative settings of your collection. You also have the option to create additional **Pages**; these pages could offer background information about your collection; incorporate submission or contact forms so members of the public can get in touch; feature charts, maps and other data visualisation components; and more.
+A basic Uwazi instance comprises the **Library**, where the entities contained within your collection can be browsed and displayed in several different ways, and the **Settings** area, where you can configure the administrative settings of your collection. You also have the option to create additional **Pages**; these pages could offer background information about your collection; incorporate **Submission Forms** or **Contact Forms** so members of the public can get in touch; feature charts, maps and other data visualisation components; and more.
 
 To add a **Page**:
 
@@ -65,25 +67,25 @@ Step 1: Navigate to the **Settings** area and click **Pages**.
 
 Step 2: Create a new page by clicking **Add Page**. Add the page’s content in the space provided and click **Save**.
 
-Step 3: After saving, a blue box will appear containing the page’s unique URL. You may, for example, want to copy this URL and add it as an item on your collection’s main navigation menu.
+Step 3: After saving, a blue box will appear containing the **Page**’s unique URL. You may, for example, want to copy this URL and add it as an item on your collection’s main navigation menu.
 
-Creating and formatting the content of a Page in Uwazi requires coding knowledge (Markdown language, HTML, CSS). For experienced developers, there is also the option of appending custom Javascript to a Page by utilising the dedicated “Page Javascript” box. We have created some custom code components for Pages in Uwazi that make it straightforward to:
+Creating and formatting the content of a **Page** in Uwazi requires coding knowledge (Markdown language, HTML, CSS). For experienced developers, there is also the option of appending custom Javascript to a **Page** by utilising the dedicated “Page Javascript” box. We have created some custom code components for **Pages** in Uwazi that make it straightforward to:
 
-- incorporate a Library search bar
+- incorporate a **Library** search bar
 - display a dynamic selection of entities in card format
-- click to view an entity’s full information, displayed in a sidebar that expands directly on the Page
-- incorporate a contact form
-- incorporate a submission form
+- click to view an entity’s full information, displayed in a sidebar that expands directly on the **Page**
+- incorporate a **Contact Form**
+- incorporate a **Submission Form**
 - display a dynamic counter, bar chart, pie chart or list chart that visualises a selection of your collection’s data
 - display a dynamic map that visualises a selection of your collection’s data
 
-For further details, consult the Uwazi Advanced Design Guide or get in touch with the HURIDOCS team.
+For further details, consult the Uwazi Advanced Design Guide (*coming soon*) or get in touch with the HURIDOCS team.
 
 ## How to display entities as stylised pages 
 
-An Uwazi collection is made up of different types of entities. You can browse the entities in the **Library** as cards, in a table or on a map (as long as they have an associated geolocation). If you click on an entity, you can see all of the information that it contains displayed within the right sidebar. Furthermore, by clicking the **View** button on an entity, you can also see the same information displayed on a full-width page that by default incorporates minimal formatting.
+An Uwazi collection is made up of different types of entities. You can [browse the entities in the **Library**](#) as cards, in a table or on a map (as long as they have an associated geolocation). If you click on an entity, you can see all of the information that it contains displayed within the right sidebar. Furthermore, by clicking the **View** button on an entity, you can also see the same information displayed on a full-width page that by default incorporates minimal formatting.
 
-In Uwazi, you can replace this default full-width page view with a customised design that incorporates formatting and components of your choosing. This feature is called Entity Page View. Solid coding and programming knowledge is required to fully take advantage of **Entity Page View**. For details, consult the Uwazi Advanced Design Guide or get in touch with the HURIDOCS team.
+In Uwazi, you can replace this default full-width page view with a customised design that incorporates formatting and components of your choosing. This feature is called **Entity Page View**. Solid coding and programming knowledge is required to fully take advantage of **Entity Page View**. For details, consult the Uwazi Advanced Design Guide (*coming soon*) or get in touch with the HURIDOCS team.
 
 ### Basic concepts
 
