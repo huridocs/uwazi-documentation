@@ -5,7 +5,7 @@ This service receives PDFs and outputs the text and the positions of the differe
 
 To set up this service in Uwazi follow these steps:
 
-1. Set up the service: instructions [here](https://github.com/huridocs/extract_pdf_paragraphs)
+1. Set up the service: instructions [here](https://github.com/huridocs/pdf_paragraphs_extraction)
 2. Set up a [Redis server](https://redis.io/)
 3. Configure Redis in Uwazi using the following environment variables
 
