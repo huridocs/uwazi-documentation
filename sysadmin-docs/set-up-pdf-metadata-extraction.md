@@ -1,7 +1,7 @@
 # Set up the PDF Metadata Extraction
 
-The PDF Metadata Extraction is a Machine Learning service that connects Uwazi. This service facilitates the
-fulfillment of the Uwazi properties that exist in the entities' PDFs.
+The PDF Metadata Extraction is a Machine Learning service that connects to Uwazi. This service facilitates the
+fulfillment of the Uwazi properties values that exist in the entities' PDFs.
 
 To set up this service in Uwazi follow these steps:
 
