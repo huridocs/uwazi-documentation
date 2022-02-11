@@ -42,7 +42,7 @@ There are also two different types of filters that refer to the entity templates
 
 ### Configure primary filters
 
-The **Primary Filters** are derived from the types of entity templates that exist in your collection. You can define which ones can be used as filters in the **Library**’s sidebar, customize the order in which the filters appear, and group certain ones together under a label of your choosing. 
+The **Primary Filters** are derived from the types of entity templates that exist in your collection. You can define which ones can be used as filters in the **Library**’s ![](images/image_0.png) sidebar, customize the order in which the filters appear, and group certain ones together under a label of your choosing. 
 
 Step 1: Navigate to the **Settings** area  and then click on **Filters**. 
 
