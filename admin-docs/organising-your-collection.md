@@ -26,6 +26,23 @@ Step 2: Either on the entity card or within the right sidebar, click the **View*
 
 [Learn more about creating entities](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-add-new-entities-to-the-library) with **Primary Documents** and **Supporting Files**. 
 
+## OCR PDFs within Uwazi
+
+PDFs sometimes have text locked inside of scanned documents or images. You can convert this text inside your pdf into machine-readable and searchable text using the Optical Character Recognition (OCR) functionality within Uwazi.
+
+Step 1: Navigate to the **Settings** area and then click on **Collections**.
+
+Step 2: Under **Services**, toggle on the **Document OCR Trigger** to activate the OCR service and click on **Save**. If you do not see this option in your Collection Settings and would need this service, please contact HURIDOCS.
+
+Step 3: Go to the **Library**, choose the entity that has the main pdf that you want to OCR, and click the **View** button to see the document in full. 
+
+- Note: When non-OCRed documents are uploaded as the primary document, often Uwazi detects and labels the language of the pdf as ‘Other’ because it cannot identify the language of the text. It will also say **Unsupported OCR language** at the top right side of the document viewer. 
+Before initiating the OCR service, click **Edit** by the primary document and change the language from ‘Other’ to the language of the document itself, then click **Save**.
+
+Step 4: In full view, click on the **OCR PDF** button on the top right side of the document viewer. The button will change into **In OCR Queue** while Uwazi is processing your document. Depending on the size and length of your document, it could take a few seconds or minutes. Once the service has completed, the status will change into **OCR ✔**.
+
+- Note: After the process of OCR, the original file that was uploaded to the entity will be placed in the **Supporting Files** section, while the new OCRed file will be prefixed with ‘ocr’ and added into the **Primary Documents** section. The original file can either be retained or deleted, as preferred. 
+
 ## How to configure the filters sidebar in the Library
 
 **Filters** appear on the right sidebar of the **Library** ![](images/image_0.png). Mixing and matching different Filters can help you to quickly navigate your Uwazi collection. The **Filters** sidebar also acts as a sort of dashboard for the data in your collection, displaying aggregates of the different types of entities and different properties that they contain. 
