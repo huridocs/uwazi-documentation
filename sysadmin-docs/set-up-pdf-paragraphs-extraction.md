@@ -1,13 +1,12 @@
 # Set up the PDF Paragraphs Extraction
 
-PDF Paragraphs Extraction is a Machine Learning service that connects to Uwazi. 
-This service receives PDFs and outputs the text and the positions of the PDFs' paragraphs. 
+PDF Paragraphs Extraction is a Machine Learning service that connects to Uwazi. This service receives PDFs and outputs the text and the positions of the PDFs' paragraphs. 
 
-To set up this service in Uwazi follow these steps:
+To set up this service in Uwazi, follow these steps:
 
 1. Set up the service: instructions [here](https://github.com/huridocs/pdf_paragraphs_extraction)
 2. Set up a [Redis server](https://redis.io/)
-3. Configure Redis in Uwazi using the following environment variables
+3. Configure Redis in Uwazi using the following environment variables:
 
    ```
    export REDIS_HOST=[redis_host]
@@ -35,9 +34,9 @@ To set up this service in Uwazi follow these steps:
    }
    ```
    
-   Do NOT forget to put `http://` at the beginning of the URL 
+   Do NOT forget to put `http://` at the beginning of the URL.
    
-   The following command can be used if no other features are set up
+   The following command can be used if no other features are set up.
 
    ```
    mongo localhost/[UWAZI DB NAME] --eval 'db.settings.update({},{$set : {"features":{"segmentation":{"url":"http://[URL TO THE PDF PARAGRAPHS EXTRACTION SERVICE]:5051/async_extraction"}}}},{upsert:false,multi:true})'
