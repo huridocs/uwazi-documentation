@@ -7,4 +7,6 @@
    install
    back-up-restore
    multi-tenant
+   set-up-pdf-metadata-extraction
+   set-up-pdf-paragraphs-extraction
 ```
