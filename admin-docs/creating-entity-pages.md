@@ -22,6 +22,83 @@ Once this is done, when you enter the entity view for entities of that particula
 
 The page design follows the same guidelines described in [DESIGNING YOUR WEBSITE](https://uwazi.readthedocs.io/en/latest/admin-docs/designing-your-website.html#designing-your-website) and you can include all of the extended components described on the article to further design your page. You can also include the data visualization components described in [ANALYSING & VISUALISING YOUR COLLECTION](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#analysing-visualising-your-collection).
 
+### EntitySection component
+
+Sometimes you want to display a section of the entity based on whether a given condition is met.
+
+Examples:
+
+You want to display the name of a person if they are older than 18 years old.
+A simple implementation would look like this:
+
+```html
+<EntitySection show-if='{"metadata.age": { "$gt": 18 }}'>
+  <EntityData label-of="name" />: <EntityData value-of="name" />
+</EntitySection>
+```
+
+you want to only show the name of a person if the name exists in the entity metadata
+
+```html
+<EntitySection show-if='{"metadata.name": { "$exists": true }}'>
+  <EntityData label-of="name" />: <EntityData value-of="name" />
+</EntitySection>
+```
+
+You want to show the name of a person if it matches value `John` in the entity metadata
+
+```html
+<EntitySection show-if='{"metadata.name": "John"}'>
+  <EntityData label-of="name" />: <EntityData value-of="name" />
+</EntitySection>
+```
+
+Inherited properties:
+
+```html
+<EntitySection show-if='{"metadata.inherited_text": { "$in": ["something"] }}'>
+  <EntityData label-of="name" />: <EntityData value-of="name" />
+</EntitySection>
+```
+
+Note: `show-if` value is a JSON string and the query should follow query string specified by [sift](https://github.com/crcn/sift.js)
+
+The metadata is unwrapped into a JSON object with keys as the property names and values as the property values.
+
+```js
+metadata: {
+  name: "John",
+  age: 18
+}
+
+// Note that if the metadata property name has spaces, they are replaced with underscores and uppercase letters are converted to lowercase letters
+// Eg: a metadata property name of "First Name" will be converted to "first_name" therefore:
+metadata: {
+  "first_name": "John",
+  age: 18
+}
+
+```
+
+Some values takes the following format, this includes inherited values and values like multiselect:
+
+```js
+metadata: {
+    inherited_text: ['text value'], //Can contain more than one values depending on entities inherited from
+    inherited_multiselect: ['option 1', 'option 2'],
+    inherited_geolocation: [{ lat: 23, lon: 12}]
+}
+```
+
+Note that some values like Date added and Date modified are replaced with `creationDate` and `editDate` respectively and also are presented as timestamps. So, to use them, you can do this:
+
+```html
+<EntitySection show-if='{"editDate": 12434564323 }'>
+  <EntityData label-of="name" />: <EntityData value-of="name" /> // This only
+  shows if the entity
+</EntitySection>
+```
+
 ### EntityData component
 
 The simplest way to extract values from an Entity in a Page is with the new component `<EntityData>`.
@@ -45,13 +122,21 @@ Take the following entity structure as example:
 
 You have access to property names and values passing the correct HTML syntax. For example, the following code:
 
-```
+```html
 <h1><EntityData value-of="title" /></h1>
 <ul>
-  <li><EntityData label-of="Brief Description" />: <EntityData value-of="Brief Description" /></li>
+  <li>
+    <EntityData label-of="Brief Description" />:
+    <EntityData value-of="Brief Description" />
+  </li>
   <li><EntityData label-of="Country" />: <EntityData value-of="Country" /></li>
-  <li><EntityData label-of="Date of Publication" />: <EntityData value-of="Date of Publication" /></li>
-  <li><EntityData label-of="Cover Image" />: <EntityData value-of="cover_image" /></li>
+  <li>
+    <EntityData label-of="Date of Publication" />:
+    <EntityData value-of="Date of Publication" />
+  </li>
+  <li>
+    <EntityData label-of="Cover Image" />: <EntityData value-of="cover_image" />
+  </li>
 </ul>
 ```
 
@@ -110,7 +195,7 @@ Take the following entity structure:
 
 Depending on the type, each property could have somewhat different structures. As an example, the above entity will look like this in the `entity` dataset:
 
-```
+```js
 {
   title: 'Name of a book',
   metadata: {
