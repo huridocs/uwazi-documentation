@@ -9,4 +9,5 @@
    multi-tenant
    set-up-pdf-metadata-extraction
    set-up-pdf-paragraphs-extraction
+   set-up-twitter-crawler-service
 ```
