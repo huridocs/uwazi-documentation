@@ -324,13 +324,15 @@ These are all advanced procedures. Please refer to the different sections of thi
 
 You can insert values from the entity or the template dynamically by using an expression similarly to JavaScript’s string literal variable interpolation: `${...}`
 
+This dynamic access via property paths is an alternative for other advanced uses. If you only want to display an entity's property, `EntitySection` and `EntityData` components are better suited to do it.
+
 Any property path wrapped in `${...}` will be parsed and converted into the corresponding value. For example:
 
 - `${entity.title}` will return the entity’s title.
 - `${template.color}` will return the template’s color.
-- `${entity.metadata.my_property_name}` will bring the value from that property.
-- `${entity.metadata.my_select_property.displayValue}` will bring the value as displayed by the UI. In the case of selects or dates the display value would be a human readable value, instead of a thesauri ID or a timestamp.
-- `${entity.metadata.my_multiselect_property[1]}` in cases where a property can have multiple values, using a numeric index will select the value corresponding to the index. When the numeric index is omitted it will be interpreted as if it was [0] and bring the first value.
+- `${entity.metadata.my_property_name}` will return the value from that property.
+- `${entity.metadata.my_select_property.displayValue}` will return the value as displayed by the UI. For example: selects or dates would return a human readable value, instead of a thesauri ID or a timestamp.
+- `${entity.metadata.my_multiselect_property[1]}` in cases where a property can have multiple values, using a numeric index will return the value corresponding to the index. When the numeric index is omitted it will be interpreted as if it was [0] and return the first value.
 - `${entity.metadata.my_multiselect_property[2].displayValue}` similar to the previous case, only that this would return the display value.
 
 This can be used to dynamically insert any property from the entity or template anywhere: an HTML label property like a class, an `<img />` source attribute, in the displayed content of the page itself, etc…
@@ -338,8 +340,6 @@ This can be used to dynamically insert any property from the entity or template 
 An interesting way of using these dynamic values is to create `<Query />`components with urls that can vary depending on the entity's values.
 
 For example: `<Query name="myQuery" url="search?limit=10&order=desc&sort=creationDate&filters:(text:'`**${entity.metadata.text}**`')"/>`
-
-If you only want to display an entity's property, `EntitySection` and `EntityData` components are a better suited to do it. This dynamic access via property paths is an alternative for other advanced uses.
 
 ## Exploring your datasets
 
