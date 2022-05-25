@@ -10,7 +10,7 @@ When exploring your collection, you can freely switch between the different view
 
 - Click the cards icon ![](images/image_0.png) to turn on **Cards View**. When **Cards View** is activated, simply click on the entity card to expand the right sidebar and see more details about the entity. You can also click the **View** button on the card itself or from within the right sidebar to open the entity in full.
 - Click the table icon to turn on **Table View**. You can customise which columns are shown by using the dropdown menu found along the top of the Library area. When **Table View** is activated, simply select the checkbox next to the entity to expand the right sidebar and see more details. You can also click the **View** button from within the right sidebar to open the entity in full. 
-- Click on the map icon to turn on **Map View**. (This icon will only appear if the entities in your collection have an associated geolocation. [Learn more about adding properties to entities](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#building-your-information-architecture).) Using the icons found along the top of the **Library** area, you can toggle between viewing the map with **Street View** or **Satellite View**. When **Map View** is activated, simply click on a point within the map to expand the right sidebar and see more details about the entity. You can also click the **View** button from within the right sidebar to open the entity in full.
+- Click on the map icon to turn on **Map View**. (This icon will only appear if the entities in your collection have an associated geolocation. [Learn more about adding properties to entities](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#building-your-information-architecture).) Using the icons found along the top of the **Library** area, you can toggle between viewing the map with **Street View**, **Satellite View** or **Hybrid View**. When **Map View** is activated, simply click on a point within the map to expand the right sidebar and see more details about the entity. You can also click the **View** button from within the right sidebar to open the entity in full.
 
 ### Read PDFs within Uwazi
 
@@ -28,22 +28,21 @@ Step 2: Either on the entity card or within the right sidebar, click the **View*
 
 ## OCR PDFs within Uwazi
 
-PDFs sometimes have text locked inside of scanned documents or images. You can convert this text inside your pdf into machine-readable and searchable text using the Optical Character Recognition (OCR) functionality within Uwazi.
+Sometimes, text contained within a PDF is “locked” inside a digital image, meaning that we can’t directly work with it -- highlight it, copy and paste it elsewhere, annotate it, etc. You can convert it into machine-readable and searchable text using the Optical Character Recognition (OCR) functionality within Uwazi.
 
-Step 1: Navigate to the **Settings** area and then click on **Collections**.
+Step 1: Navigate to the **Settings** area and then click on **Collection**.
 
-Step 2: Under **Services**, toggle on the **Document OCR Trigger** to activate the OCR service and click on **Save**. If you do not see this option in your Collection Settings and would need this service, please contact HURIDOCS.
+Step 2: Under **Services**, toggle on the **Document OCR Trigger** option to activate the OCR service and click on **Save**.
+  - Note: If you do not see this option in your collection’s settings and require this service, please contact HURIDOCS.
 
-Step 3: Go to the **Library**, choose the entity that has the main pdf that you want to OCR, and click the **View** button to see the document in full. 
+Step 3: Navigate to the **Library** and locate the entity which holds the **Primary Document** (PDF) that you want to OCR. Click on the entity to expand the right sidebar and see more details about the entity. You will see the file name of the entity’s **Primary Document** alongside a label indicating the language of its contents (e.g. ```English```). Click the **View** button to see the document in full.
 
-- Note: When non-OCRed documents are uploaded as the primary document, often Uwazi detects and labels the language of the pdf as ‘Other’ because it cannot identify the language of the text. It will also say **Unsupported OCR language** at the top right side of the document viewer. 
-Before initiating the OCR service, click **Edit** by the primary document and change the language from ‘Other’ to the language of the document itself, then click **Save**.
+  - Note: When non-OCRed documents are first uploaded as the Primary Document of an entity, Uwazi often labels the document’s language as Other because it cannot identify the language of the text. Consequently, a notice will appear in the top right of the document viewer that says **Unsupported OCR language**. For such documents, before initiating the OCR service, click the white **Edit** button next to the Primary Document’s file name and change the language from ```Other``` to the actual language of the document. Then click **Save**.
 
-Step 4: In full view, click on the **OCR PDF** button on the top right side of the document viewer. The button will change into **In OCR Queue** while Uwazi is processing your document. Depending on the size and length of your document, it could take a few seconds or minutes. Once the service has completed, the status will change into **OCR ✔**.
+Step 4: Within the document viewer, click on the **OCR PDF** button on the top right. The button will then change to say In **OCR Queue** while Uwazi is processing the document. Depending on the size and length of the document, the process could take anywhere from a few seconds to a few minutes. Once the process has finished, the status will change to say **OCR ✔**.
+  - Note: After the OCR process has finished, the original document that was uploaded to the entity will be placed in the **Supporting Files** section of the entity, while the new OCRed document will be added to the **Primary Documents** section with a filename that is prefixed with OCR. You are free to keep the original file attached as a **Supporting File** or delete it from the entity completely, according to your preference.
 
-- Note: After the process of OCR, the original file that was uploaded to the entity will be placed in the **Supporting Files** section, while the new OCRed file will be prefixed with ‘ocr’ and added into the **Primary Documents** section. The original file can either be retained or deleted, as preferred. 
-
-## How to configure the filters sidebar in the Library
+## Configuring and using the filters sidebar in the Library
 
 **Filters** appear on the right sidebar of the **Library** ![](images/image_0.png). Mixing and matching different Filters can help you to quickly navigate your Uwazi collection. The **Filters** sidebar also acts as a sort of dashboard for the data in your collection, displaying aggregates of the different types of entities and different properties that they contain. 
 
@@ -67,9 +66,7 @@ Step 2: On the right side in an area named **Entity Types**, you will see a list
 
 Step 3: If you would like to group certain filters together, click on the **Create Group** button. Give the group a descriptive label. Underneath the label, drag and drop the items that you would like to appear in the group. 
 
-Step 4: Once finished, **Save** the changes you have made. You can now go to the **Library** and view the primary filters you have configured. You will see an **Featured/All** toggle in the sidebar:
-- Using the **FEATURED** operator will display the list of templates you chose as primary filters.
-- Using the **ALL** operator will display the list of every template in your collection, including the templates you did not choose as primary filters.
+Step 4: Once finished, **Save** the changes you have made. You can now go to the **Library** and view the primary filters you have configured.
 
 ### Configure secondary filters
 
@@ -86,9 +83,31 @@ Step 4: Select whichever filter options match your needs:
 - **Default Filter**: This additional option makes it so the property always shows as a filter in the **Library**’s sidebar by default, no matter if the corresponding type of template among the **Primary Filters** is selected or not.
 - **Show in Cards**: While not technically a filter, this additional option makes it so the property appears in the entity card within the **Cards View**. Selecting this option on a few key properties can make it easier to quickly skim through the **Library** by sight and identify specific entities.
 
-Step 5: Click on **Save**. You can now go to the **Library** ![](images/image_0.png) and view the filters you have configured. For **Multiselect** properties that you have activated as filters, you will see an **And/Or** toggle next to the filter: 
-- Using the **AND** operator will display the entities that contain all the properties for which you are filtering.
+Step 5: Click on **Save**. You can now go to the **Library** ![](images/image_0.png) and view the filters you have configured.
+
+### Using the filters sidebar
+
+While using the filters sidebar in the **Library** ![](images/image_0.png) to explore your entities, there are a few additional options available that can enhance your results.
+
+Next to the Primary Filters, you will see a **Featured/All** toggle in the sidebar:
+
+- Using the FEATURED operator will display only templates that you have explicitly configured as Primary Filters.
+- Using the ALL operator will display a list of every template that exists in your collection, including the templates you haven’t configured as Primary Filters.
+- 
+Next to any **Multiselect** properties that you have configured as filters, you will see an **And/Or** toggle next to the filter: 
+- Using the **AND** operator will display the entities that contain all the properties for which you are filtering. 
 - Using the **OR** operator will display the entities that contain at least one of the properties for which you are filtering.
+
+For **Select** and **Multiselect** properties which utilise **Thesauri** with terms nested into groups, you will notice three different possible configurations when using them as filters in the sidebar:
+
+- Clicking on a group name will select all of the terms nested within the group, resulting in a green checkmark next to the group’s name as well as next to all of the corresponding terms.
+  - For example, imagine a group named Asia which contains the terms ```Bangladesh```, ```Cambodia``` and ```India```. If you click on ```Asia```, the terms ```Bangladesh```, ```Cambodia``` and ```India``` will be selected and consequently, all entities that match these filters will appear in the Library. 
+
+- Clicking on the group name will select all of the terms nested within the group. However, you are free to deselect individual terms that are nested within the group. This will result in a green line next to the group’s name and a green checkmark next to only those terms that you want to apply as filters. 
+  - For example, imagine a group named Asia which contains the terms ```Bangladesh```, ```Cambodia``` and ```India```. If you click on ```Asia```, the terms ```Bangladesh```, ```Cambodia``` and ```India``` will all be selected. You can uncheck ```Cambodia```, and consequently only entities that match the ```Bangladesh``` and ```India``` filters will appear in the Library. 
+
+- Clicking on the group name twice will result in a green box next to the group’s name and checkmarks next to all of the terms nested within it; however, the terms will be grayed out and you will be unable to deselect individual terms. This action selects the group as a unit and creates a URL for the filtered entities that will automatically incorporate any additional terms that are added later on to the group.
+  - For example, imagine a group named ```Asia``` which contains the terms ```Bangladesh```, ```Cambodia``` and ```India```. Now imagine that you need a link to only entities in your Library that have something to do with ```Asia```. Double click on ```Asia``` in the filters sidebar and the terms ```Bangladesh```, ```Cambodia``` and ```India``` will all be selected, and the browser will display a URL for this subset of your entities. If later on you expand the ```Asia``` group and add ```Myanmar```, you can use the same URL as before to see only entities in your Library that have something to do with ```Asia``` – entities that match the ```Myanmar``` filter will be displayed alongside ones that match the ```Bangladesh```, ```Cambodia``` and ```India``` filters.
 
 ## How to search within your collection
 
@@ -146,13 +165,13 @@ Step 3: Repeat this process until you have created a full **Table of Contents**.
 
 Step 4: Once you have finished, click **Save**. The **Table of Contents** will now be accessible to anyone who views the document. Clicking on any heading will jump to its respective section of the document. If you ever need to revise or add more contents in the future, simply click the **Edit** button.
 
-## How to create references
+## How to create References
 
 In Uwazi, a **Reference** connects selected content in a **Primary Document** to other selected content within the same document, to other selected content in a different **Primary Document**, or to an entity (which may or may not have a **Primary Document** attached). You can see all of the **References** that a document has by clicking on the **References** icon ![](images/image_54.png) in the right sidebar of its entity.
 
 Before you can configure a **Reference**, you must first create the **Relationship Type** that will describe the nature of the **Reference**.
 
-### How to create relationship types
+### How to create Relationship Types
 Step 1: Navigate to the **Settings** area and click on **Relationship Types**. 
 Step 2: Click on the **Add Connection** button. Give the relationship a descriptive name.
 Step 3: Click **Save**.
@@ -171,7 +190,7 @@ Step 5: Click the green arrow button to proceed. You will then be taken to the d
 
 Step 6: Click the green **Save** button. The referenced text in both documents will be highlighted in yellow, indicating that it is associated with a **Reference**. Clicking on the document icon shown alongside the reference in the right sidebar will take you to the related paragraph.
 
-### Reference another entity (with or without a primary document)
+### Reference another entity (with or without a Primary Document)
 
 Step 1: Navigate to the **Library** ![](images/image_0.png) and locate the entity that contains the document for which you want to create a **Reference**. Click the **View** button to see the document in full.
 
@@ -181,9 +200,9 @@ Step 3: Using the checkboxes, select the previously defined **Relationship Type*
 
 Step 4: Choose the entity from the list that you want to refer to. If the list is long, you can use the search bar to manually search by title to locate it more quickly.
 
-Step 5: Click the green **Save** button. The referenced text will be highlighted in yellow, indicating that it is associated with a **Reference**. Clicking on the document icon shown alongside the reference in the right sidebar will take you to the related entity
+Step 5: Click the green **Save** button. The referenced text will be highlighted in yellow, indicating that it is associated with a **Reference**. Clicking on the document icon shown alongside the reference in the right sidebar will take you to the related entity.
 
-## How to create relationships between entities in the Information Hub
+## How to create Relationships between entities in the Information Hub
 
 In Uwazi, a **Relationship** connects two or more entities in your collection so that it’s possible to scrutinise how they interact with one another. You can establish a **Relationship** in a consistent and structured way by adding a **Relationship** property to an entity template. Whenever a new entity is created using the template, the **Relationship** metadata is subsequently displayed alongside the entity’s other properties. [Learn more about creating templates](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates).
 
@@ -193,12 +212,12 @@ However, you don’t have to predefine a relational model upfront or follow a ri
 
 Before you configure a **Relationship**, you likely will first want to create a **Relationship Type** that will describe the nature of the **Relationship**. Otherwise, the Relationship will be defined as "No label".
 
-### How to create relationship types 
+### How to create Relationship Types 
 Step 1: Navigate to the **Settings** area and click on **Relationship Types**.
 Step 2: Click on the **Add Connection** button. Give the relationship a descriptive name.
 Step 3: Click **Save**.
 
-### Create relationships between entities in the Information Hub
+### Create Relationships between entities in the Information Hub
 Step 1: Navigate to the **Library** ![](images/image_0.png) and locate the entity for which you want to create a **Relationship**. Click the **View** button to see the entity in full.
 
 Step 2: Within the right sidebar, click on the **Connections** icon ![](images/image_59.png) to open up the **Information Hub**. Then near the bottom of the screen, click on the blue **Edit** button.
