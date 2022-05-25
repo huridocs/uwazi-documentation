@@ -112,8 +112,9 @@ Step 5: Click the blue **Import** button. Using the file browser to navigate you
 
 Step 6: Click the green **Save** button.
 - If you imported more than one language, navigate to the **Settings** area and click on **Translations**. Click on the **Thesaurus** name, and you will see all the terms and their translations that have been imported. [Learn more about translating an Uwazi collection](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html).
+- It is not currently possible to import Thesauri that are already organised into groups. You will need to first import a Thesaurus as described above, and then while working within Uwazi you can organise the terms into whichever groupings you want.
 
-### How to configure a select or multiselect property
+### How to configure a Select or Multiselect property
 
 Step 1: Once you have created your **Thesaurus**, navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add a **Select** or **Multiselect** property and click **Edit**.
 
