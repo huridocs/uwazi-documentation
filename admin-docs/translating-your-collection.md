@@ -28,7 +28,7 @@ All interface translations that are currently configured in your instance can be
 
 ![](images/image_91.jpg)
 
-### Translate interface terms in bulk
+### Translate interface terms in bulk with CSV import
 
 The majority of Uwazi’s interface can be translated all in one go by importing a **Comma-Separated Values (CSV) file** that includes the list of terms in English and their corresponding translations. This method can be especially convenient when setting up your Uwazi instance for the first time.
 
@@ -36,9 +36,11 @@ A CSV file of the English-language interface terms is available for download on 
 
 To translate the Uwazi interface using CSV import:
 
-Step 1: If you aren't already in possession of a **CSV file** containing the translated interface terms, then you must first create a **CSV file** on your computer. The file should include one column for the terms in English and then separate columns for each language into which you wish to translate the interface. Column head names for all columns should be the name of the language written in English (e.g. English, Russian, Spanish).
+Step 1: If you aren't already in possession of a CSV file containing the translated interface terms, then you must first create a CSV file on your computer. The first column within the file should be labeled “Key” and include the list of terms in English. Each term should occupy its own row.
 
-Step 2: Populate the **CSV file** with the interface terms and their corresponding translations. Each term should occupy its own row.
+Step 2: The next column should be labeled with the name of the target language, as written in English (e.g. “Russian”, “Spanish”, “Swahili”), and include the corresponding translations of the English-language terms. For example, here’s a sample CSV file viewed as plain text:
+
+And here’s the same file viewed in a spreadsheet program:
 
 Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
@@ -50,39 +52,37 @@ Step 6: Click the green **Save** button.
 
 ### Translate interface terms via the Live Translation feature
 
-In Uwazi, you have the option to translate interface terms one by one as you encounter them while navigating the software. This feature, which is called Live Translation, allows you to see how a term is used in context. It can be useful for easily translating interface terms that are added to the software as part of newly released development or for quickly correcting an existing translation that isn’t quite right.
+In Uwazi, you have the option to translate interface terms one by one as you encounter them while navigating the software. This feature, which is called **Live Translation**, allows you to see how a term is used in context. It can be useful for easily translating interface terms that are added to the software as part of newly released development or for quickly correcting an existing translation that isn’t quite right.
 
-To use Live Translation: 
+To use **Live Translation**: 
 
-Step 1: When you encounter an interface term that you would like to translate, click on the **Translation** icon found in Uwazi’s main navigation menu. This activates Live Translation. All of the terms on the screen that are translatable will be underlined in orange.
+Step 1: When you encounter an interface term that you would like to translate, click on the **Translation** icon found in Uwazi’s main navigation menu. This activates **Live Translation**. All of the terms on the screen that are translatable will be underlined in orange.
 
 Step 2: Click on the term that you want to translate, add its corresponding translation(s) , and click **Submit**. Repeat this process for any of the other underlined terms on the screen that you would like to translate.
 
-Step 3: When you have finished, click on the **Translation** icon in the main navigation menu once more to deactivate Live Translation.
+Step 3: When you have finished, click on the **Translation** icon in the main navigation menu once more to deactivate **Live Translation**.
 
 ## How to translate the contents of your collection
 
-An Uwazi collection is made up of entities, which contain properties, can feature documents, and can have connections to one another. It might also feature Pages with important information or components like a contact form. It’s possible to translate the contents of your collection into any and all of the languages that you have previously enabled. This means that when you toggle from one language option to another using the links within the main navigation menu, the contents of the Library or a Page will consequently be presented in the language that corresponds to your selection.
+An Uwazi collection is made up of **Entities**, which contain properties, can feature documents, and can have connections to one another. It might also feature Pages with important information or components like a contact form. It’s possible to translate the contents of your collection into any and all of the languages that you have previously enabled. This means that when you toggle from one language option to another using the links within the main navigation menu, the contents of the Library or a Page will consequently be presented in the language that corresponds to your selection.
 
 There are four main aspects of translating the contents of your Uwazi collection:
-- Translating property names, thesauri, relationship types, custom filters and custom menu items  
-- Translating the contents of entity names and Text, Rich Text, Image and Media properties
-- Uploading translated Primary Documents 
-- Translating Pages
+- Translating the **Name** or **Label** of properties, **Thesauri**, **Relationship Types**, custom **Filters** and custom navigation menu items  
+- Translating the contents of entity names and **Text**, **Rich Text**, **Image** and **Media** properties
+Uploading translated **Primary Documents** and recreating **Table of Contents** and **References**
+Translating custom **Pages**
 
-### Translate the contents of Text, Rich Text, Image and Media  properties
+### Translate the Name / Label of properties, Thesauri, Relationship Types, custom Filters and custom navigation menu items
 
-![](images/image_94.jpg)
+Until you translate the various data labels that appear within an entity or around your collection  such as the Name or Label of properties, Thesauri terms, Relationship Types, custom Filters or custom navigation menu items, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
 
-Until you translate the contents of Text, Rich Text, Image and Media properties, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
+Step 1: Navigate to the **Settings** area and click **Translations**.
 
-Step 1: Using the links within the main navigation menu, switch to the language into which you want to translate. 
+Step 2: Click on the entity template, **Thesauri**, **Relationship** (Connection), etc. which contains the data labels that you want to translate.
 
-Step 2: Navigate to the **Library** and locate the entity that you want to translate.
+Step 3: Translate each term.
 
-Step 3: Click on the entity to expand the right sidebar and see more details about the entity. Click the **Edit** button and replace the contents of these properties with the translation.
-
-Step 4: Click **Save**.
+Step 4: When you have finished, click **Save**.
 
 ### Translate property names, thesauri values, relationship types, custom filters and custom navigation menu items
 
@@ -94,6 +94,7 @@ Step 1: Navigate to the **Settings** area and click **Translations**.
 Step 2: Click on the template, thesauri, etc. that you want to translate.
 Step 3: Translate each term.
 Step 4: When you have finished, click **Save**.
+
 
 ### Upload translated Primary Documents
 
@@ -142,10 +143,9 @@ Changes made to the contents of the following will be automatically synced to al
 - Table of Contents of a Primary Document if the same source document is used in other languages (since it depends on the contents of the document)
 
 Changes made to the contents of the following will not be automatically synced, so you will need to make any necessary updates in other languages manually:
-- Name of the entity
-- Text property
-- Rich text property
-- Media property
-- Image property
-- Text references
-- Pages
+- **Name** property
+- **Text** property
+- **Rich text** property
+- **Media** property
+- **Image** property
+- **Pages**
