@@ -8,7 +8,7 @@ Beyond the [basic options found within **Settings**](https://uwazi.readthedocs.i
 
 Many of these advanced options require coding and programming knowledge, and as such, you may need to seek support from a software developer. For more information, consult the Uwazi Advanced Design Guide (*coming soon*) or get in touch with the HURIDOCS team.
 
-## How to configure the main navigation menu
+## How to configure your collection’s main navigation menu
 
 By default, the main navigation menu that runs along the top of an Uwazi instance includes links to:
 - the **Library** ![](images/image_0.png)
@@ -24,6 +24,7 @@ Step 1: Navigate to the **Settings** area and click on **Menu**.
 Step 2: Click on the **Add link** button near the bottom of the screen. Add a title for your item and its corresponding URL.
 
 - Note: If the link is for a **Page** within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash ```/``` and skips the domain name. For example, ```/page/dicxg0oagy3xgr7ixef80k9``` or ```/library/?searchTerm=test```. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
+- Note: If the link is for a subset of entities in your **Library** that makes use of filters organised into a group, it’s important that you generate the URL by double-clicking on the group’s name in the filters sidebar. This action will transform the green checkmark into a green box, which indicates that the entire group has been selected as a unit. If any filters are added to the group in the future, they will automatically be included in the URL of the Library query. [Learn more about filters]().
 
 Step 3: If you have several related menu items, you can group them together into a dropdown menu. To do so, click the **Add Group** button. Provide a main title for the group, then click the **Add Link** button found directly below the title. Add a title for your first item and its corresponding URL. Repeat this process for however many menu items you want to include in the dropdown menu.
 
