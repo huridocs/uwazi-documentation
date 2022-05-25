@@ -82,11 +82,17 @@ Step 1: Create a **CSV file** on your computer. It should include a column for e
 Step 2: Populate the **CSV file** with your data. Certain properties must follow a specific format:
 
 - If you have opted to use a **Generated ID** property for the **Name** of your entities, leave the rows underneath the “Title” column blank. They will be filled automatically during the import into Uwazi.
+- If you have a **Link** property, the URLs must contain the http or https protocol (e.g. https://www.example.com). Omitting the protocols will cause the import to fail.
 - For properties with multiple values, the pipe symbol ```|``` should be used as the separator. Do not include spaces between. For example: 
   - For a **Multiselect** property: ```Arbitrary arrest|Illegal search|Enforced disappearance```
   - For a **Link** property (which follows the format of ```label|URL```): ```Website|https://www.example.com```
   - For a **Geolocation** property (which follows the format of ```latitude|longitude```): ```46.204391|6.143158```
-- If you have a **Link** property, the URLs must contain the http or https protocol (e.g. https://www.example.com). Omitting the protocols will cause the import to fail.
+- If you have a **Select** or **Multiselect** property that utilises a **Thesaurus** containing terms which are organised into groups, do not include the names of the groups. Instead, simply include the terms that are contained within the groups. Upon import, Uwazi will automatically assign them to their corresponding groups.
+  - For example, imagine that your entity template has a **Select** property called ```Country```. This property utilises a **Thesaurus** that contains the terms ```Bangladesh```, ```Cambodia```, and ```India```, which are all contained within a group named ```Asia```. In your **CSV file** in the rows under the column labeled ```Country```, the only possible terms that should appear there are ```Bangladesh```, ```Cambodia``` or ```India```, depending on the information contained in each corresponding entity. Nowhere should the group name ```Asia``` appear. 
+- If you have a basic **Relationship** property, include the name of the other entity which is connected to the entity in question. In the case of multiple values, use the pipe symbol | as the separator and do not include spaces between each value. 
+  - The entities which form the other half of the **Relationship** must already exist in your collection. Otherwise, the import will not work correctly. [Learn more about configuring Relationship properties]().
+- If you have a **Relationship** property that inherits a property from another template, follow the same guidance as above: Include the name of the entity which is the source of the inherited property. Do not include the inherited property itself. In the case of multiple values, use the pipe symbol | as the separator and do not include spaces between each value.
+  - The entities which are the source of the inherited properties must already exist in your collection. Otherwise, the import will not work correctly. [Learn more about configuring Relationship properties]().
 
 Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
