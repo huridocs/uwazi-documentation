@@ -200,20 +200,26 @@ Step 5: Click the green **Save** button.
 
 ## How to customise your collection's map configurations
 
+### Map provider
+
+Uwazi uses Mapbox as the default map provider. However, you have the option to choose Google Maps as your map provider instead.
+
+- Note: Changing the map provider for a collection requires a personal API key.
+
+Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar.
+
+Step 2: Under **Maps**, you can change the map provider for your collection.
+
+Step 3: A default API key for the online map service is provided with Uwazi, but you can swap it for your own API key. Input the map API key in the space provided.
+
+- Detailed guidelines on how to set up a Google Maps API key can be found here.
+
+Step 4: Click the green **Save** button.
+
 ### Map starting point 
 
-Step 1: Navigate to the **Settings** area and click on collection in the left sidebar. 
+Step 1: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
 
 Step 2: To set your own default geolocation, drag the map and click to select the destination, or enter the latitude and longitude, if known.
-
-Step 3: Click the green **Save** button.
-
-### Maptiler key
-
-A default key is provided with Uwazi, but you are free to swap it for your own. 
-
-Step 1: Navigate to the **Settings** area and click on collection in the left sidebar. 
-
-Step 2: Input the MapTiler API key in the space provided. 
 
 Step 3: Click the green **Save** button.
