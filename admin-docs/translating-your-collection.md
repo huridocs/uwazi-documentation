@@ -22,7 +22,7 @@ Step 4: At the top of the page under **Active Languages**, select which language
 
 ## How to translate the Uwazi interface 
 
-The collective of buttons, menu items, system messages, etc. that you interact with while using the Uwazi software is called the interface.  The Uwazi interface is available by default in English, but it can be translated into any of the [languages that you have previously enabled]().
+The collective of buttons, menu items, system messages, etc. that you interact with while using the Uwazi software is called the interface.  The Uwazi interface is available by default in English, but it can be translated into any of the [languages that you have previously enabled](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-configure-the-available-languages-for-your-collection).
 
 All interface translations that are currently configured in your instance can be consulted and edited at any time by navigating to the **Settings** area, clicking **Translations** and then clicking **User Interface**.
 
@@ -114,11 +114,11 @@ For example, imagine that you have English and Spanish enabled in your collectio
 
 Step 5: If the original **Primary Document** has any **References** connecting parts of its text to other parts of its own text, to other text in a different **Primary Document**, or to a different entity entirely, these will need to be configured manually in any of the translated versions of the **Primary Document**. This is because **References** depend on the particular contents of an individual document. 
 
-- [Learn more about configuring **References**]().
+- [Learn more about configuring **References**](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#how-to-create-references).
 
 Step 6: **Table of Contents** for a **Primary Document** function in the same way as **References**. When you upload a translated version of a **Primary Document**, you will need to create a **Table of Contents** manually for the translated version. This is because **Table of Contents** depend on the particular contents of an individual document.
 
-- [Learn more about configuring **Table of Contents**]().
+- [Learn more about configuring **Table of Contents**](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#how-to-create-a-table-of-contents).
 
 ### Translate Pages
 
@@ -130,7 +130,7 @@ Step 2: Navigate to the **Settings** area and click **Pages**. Locate the Page t
 
 Step 3: Translate the contents of the **Page**. When you have finished, click **Save**.
 
-- Note: Depending on the specific components incorporated in the design, it may or may not be necessary to adjust the **Page**’s code. For example, if you have properly translated the entities in your **Library** following the steps explained in the previous sections, then any data visualisations included within the **Page** that are configured using information from your collection’s API will automatically render in whichever language option is currently selected in the main navigation menu. [Learn more about designing pages and about data visualisations]().
+- Note: Depending on the specific components incorporated in the design, it may or may not be necessary to adjust the **Page**’s code. For example, if you have properly translated the entities in your **Library** following the [steps explained in the previous sections](), then any data visualisations included within the **Page** that are configured using information from your collection’s API will automatically render in whichever language option is currently selected in the main navigation menu. [Learn more about designing pages and about data visualisations](https://uwazi.readthedocs.io/en/latest/admin-docs/designing-your-website.html#customising-your-collection-s-design).
 
 ## Managing translations over time
 
