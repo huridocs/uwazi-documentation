@@ -13,5 +13,6 @@
    designing-your-website
    translating-your-collection
    analysing-and-visualising-your-collection
+   integrations-available
    how-to-report-bugs-or-problems-in-uwazi
 ```
