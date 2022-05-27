@@ -12,8 +12,8 @@ Many of these advanced options require coding and programming knowledge, and as 
 
 By default, the main navigation menu that runs along the top of an Uwazi instance includes links to:
 - the **Library** ![](images/image_0.png)
-- different language versions of your collection (if you have multiple languages configured; [learn more about translating your collection](#))
-- and to the collection’s settings (if you are logged in; otherwise you’ll be shown a link to the login page if your collection is [configured to be publicly available](#)).
+- different language versions of your collection (if you have multiple languages configured; [learn more about translating your collection](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#translating-your-collection))
+- and to the collection’s settings (if you are logged in; otherwise you’ll be shown a link to the login page if your collection is [configured to be publicly available](https://uwazi.readthedocs.io/en/latest/admin-docs/managing-settings.html#make-your-collection-private-or-public)).
 
 If you so desire, you can add additional items to the menu such as a filtered subset of entities in the **Library** or a **Page**. 
 
@@ -24,7 +24,7 @@ Step 1: Navigate to the **Settings** area and click on **Menu**.
 Step 2: Click on the **Add link** button near the bottom of the screen. Add a title for your item and its corresponding URL.
 
 - Note: If the link is for a **Page** within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash ```/``` and skips the domain name. For example, ```/page/dicxg0oagy3xgr7ixef80k9``` or ```/library/?searchTerm=test```. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
-- Note: If the link is for a subset of entities in your **Library** that makes use of filters organised into a group, it’s important that you generate the URL by double-clicking on the group’s name in the filters sidebar. This action will transform the green checkmark into a green box, which indicates that the entire group has been selected as a unit. If any filters are added to the group in the future, they will automatically be included in the URL of the Library query. [Learn more about filters]().
+- Note: If the link is for a subset of entities in your **Library** that makes use of filters organised into a group, it’s important that you generate the URL by double-clicking on the group’s name in the filters sidebar. This action will transform the green checkmark into a green box, which indicates that the entire group has been selected as a unit. If any filters are added to the group in the future, they will automatically be included in the URL of the Library query. [Learn more about filters](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#configuring-and-using-the-filters-sidebar-in-the-library).
 
 Step 3: If you have several related menu items, you can group them together into a dropdown menu. To do so, click the **Add Group** button. Provide a main title for the group, then click the **Add Link** button found directly below the title. Add a title for your first item and its corresponding URL. Repeat this process for however many menu items you want to include in the dropdown menu.
 
