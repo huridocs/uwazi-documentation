@@ -1,4 +1,4 @@
-# Integrations Available in Uwazi
+# INTEGRATIONS AVAILABLE IN UWAZI
 
 ## Tella
 
