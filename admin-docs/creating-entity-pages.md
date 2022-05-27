@@ -320,6 +320,27 @@ Notice that the position of the property in `template` (in this case "2") needs 
 
 These are all advanced procedures. Please refer to the different sections of this documentation depending on your desired approach. As noted, whenever possible, use the `EntityData` component first, if this does not provide with enough versatility try the `entity` dataset as it has more data and it is simpler to use. If not, default to the `entityRaw` dataset. Only use the javascript section of a page if all else fails.
 
+## Dynamically accessing data from entities or templates
+
+You can insert values from the entity or the template dynamically by using an expression similarly to JavaScript’s string literal variable interpolation: `${...}`
+
+This dynamic access via property paths is an alternative for other advanced uses. If you only want to display an entity's property, `EntitySection` and `EntityData` components are better suited to do it.
+
+Any property path wrapped in `${...}` will be parsed and converted into the corresponding value. For example:
+
+- `${entity.title}` will return the entity’s title.
+- `${template.color}` will return the template’s color.
+- `${entity.metadata.my_property_name}` will return the value from that property.
+- `${entity.metadata.my_select_property.displayValue}` will return the value as displayed by the UI. For example: selects or dates would return a human readable value, instead of a thesauri ID or a timestamp.
+- `${entity.metadata.my_multiselect_property[1]}` in cases where a property can have multiple values, using a numeric index will return the value corresponding to the index. When the numeric index is omitted it will be interpreted as if it was [0] and return the first value.
+- `${entity.metadata.my_multiselect_property[2].displayValue}` similar to the previous case, only that this would return the display value.
+
+This can be used to dynamically insert any property from the entity or template anywhere: an HTML label property like a class, an `<img />` source attribute, in the displayed content of the page itself, etc…
+
+An interesting way of using these dynamic values is to create `<Query />`components with urls that can vary depending on the entity's values.
+
+For example: `<Query name="myQuery" url="search?limit=10&order=desc&sort=creationDate&filters:(text:'`**${entity.metadata.text}**`')"/>`
+
 ## Exploring your datasets
 
 You can check the specific Entity-related datasets in a page by following this procedure.
@@ -334,6 +355,9 @@ You can check the specific Entity-related datasets in a page by following this p
 <h3>Raw entity data</h3>
 <pre id="raw-entity"></pre>
 <hr />
+<h3>Entity for dynamic values</h3>
+<pre id="entity-data"></pre>
+<hr />
 <h3>Template data</h3>
 <pre id="template-data"></pre>
 ```
@@ -343,6 +367,7 @@ You can check the specific Entity-related datasets in a page by following this p
 ```
 document.getElementById('formatted-entity').innerHTML = JSON.stringify(datasets.entity, null, 1);
 document.getElementById('raw-entity').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().entityRaw, null, 1);
+document.getElementById('entity-data').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().entityData, null, 1);
 document.getElementById('template-data').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().template, null, 1);
 ```
 
