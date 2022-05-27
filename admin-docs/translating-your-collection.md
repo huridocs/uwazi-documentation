@@ -6,7 +6,7 @@ An Uwazi collection can be made available in one language or in multiple languag
 
 The first step to making your Uwazi collection multilingual is to enable your desired language options. When multiple languages are enabled for your collection, you will see the languages included as items in the main navigation menu of your collection.
 
-It’s important to note that enabling a language does not mean that the interface of your collection or the contents of entities in the Library will automatically be translated into that language. The processes of translating the interface and contents are explained further along in this section.
+It’s important to note that enabling a language does not mean that the interface of your collection or the contents of entities in the Library ![](images/image_0.png) will automatically be translated into that language. The processes of translating the interface and contents are explained further along in this section.
 
 To configure the available languages for your collection:
 
@@ -22,11 +22,9 @@ Step 4: At the top of the page under **Active Languages**, select which language
 
 ## How to translate the Uwazi interface 
 
-The collective of buttons, menu items, system messages, etc. that you interact with while using the Uwazi software is called the interface.  The Uwazi interface is available by default in English, but it can be translated into any of the languages that you have previously enabled.
+The collective of buttons, menu items, system messages, etc. that you interact with while using the Uwazi software is called the interface.  The Uwazi interface is available by default in English, but it can be translated into any of the [languages that you have previously enabled]().
 
 All interface translations that are currently configured in your instance can be consulted and edited at any time by navigating to the **Settings** area, clicking **Translations** and then clicking **User Interface**.
-
-![](images/image_91.jpg)
 
 ### Translate interface terms in bulk with CSV import
 
@@ -44,7 +42,7 @@ And here’s the same file viewed in a spreadsheet program:
 
 Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
-Step 4: Navigate to the **Settings area**, click **Translations** and then click **User Interface**.
+Step 4: Navigate to the **Settings** area, click **Translations** and then click **User Interface**.
 
 Step 5: Click the blue **Import** button. Using the file browser to navigate your computer’s storage, find and select the **CSV file**. Once the import has finished, the translations will appear on screen.
 
@@ -64,17 +62,19 @@ Step 3: When you have finished, click on the **Translation** icon in the main na
 
 ## How to translate the contents of your collection
 
-An Uwazi collection is made up of **Entities**, which contain properties, can feature documents, and can have connections to one another. It might also feature Pages with important information or components like a contact form. It’s possible to translate the contents of your collection into any and all of the languages that you have previously enabled. This means that when you toggle from one language option to another using the links within the main navigation menu, the contents of the Library or a Page will consequently be presented in the language that corresponds to your selection.
+An Uwazi collection is made up of **Entities** that live in the **Library** ![](images/image_0.png). An entity has **Properties**, can hold **Primary Documents** and/or **Supporting Files**, and can have **Relationships** to other entities. A collection might also feature **Pages** with important information or components like a **Contact Form**.
+
+It’s possible to translate the contents of your collection into any and all of the [languages that you have previously enabled](). This means that when you toggle from one language option to another using the links within the main navigation menu, the contents of the **Library** or a **Page** will consequently be presented in the language that corresponds to your selection.
 
 There are four main aspects of translating the contents of your Uwazi collection:
 - Translating the **Name** or **Label** of properties, **Thesauri**, **Relationship Types**, custom **Filters** and custom navigation menu items  
 - Translating the contents of entity names and **Text**, **Rich Text**, **Image** and **Media** properties
-Uploading translated **Primary Documents** and recreating **Table of Contents** and **References**
-Translating custom **Pages**
+- Uploading translated **Primary Documents** and recreating **Table of Contents** and **References**
+- Translating custom **Pages**
 
 ### Translate the Name / Label of properties, Thesauri, Relationship Types, custom Filters and custom navigation menu items
 
-Until you translate the various data labels that appear within an entity or around your collection  such as the Name or Label of properties, Thesauri terms, Relationship Types, custom Filters or custom navigation menu items, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
+Until you translate the various data labels that appear within an entity or around your collection, such as the **Name** or **Label** of properties, **Thesauri** terms, **Relationship Types**, custom **Filters** or custom navigation menu items, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
 
 Step 1: Navigate to the **Settings** area and click **Translations**.
 
@@ -84,63 +84,75 @@ Step 3: Translate each term.
 
 Step 4: When you have finished, click **Save**.
 
-### Translate property names, thesauri values, relationship types, custom filters and custom navigation menu items
+### Translate the contents of Text, Rich Text, Image and Media properties
 
-![](images/image_95.jpg)
+Until you translate the contents of **Text**, **Rich Text**, **Image** and **Media** properties, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
 
-Until you translate the various data labels that appear within an entity or around your collection r such as property names, thesauri values, relationship types, custom filters or custom navigation menu items, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
+Step 1: Using the links within the main navigation menu, switch to the language into which you want to translate.
 
-Step 1: Navigate to the **Settings** area and click **Translations**.
-Step 2: Click on the template, thesauri, etc. that you want to translate.
-Step 3: Translate each term.
-Step 4: When you have finished, click **Save**.
+Step 2: Navigate to the **Library** ![](images/image_0.png) and locate the entity that you want to translate.
 
+Step 3: Click on the entity to expand the right sidebar and see more details about the entity. Click the **Edit** button and replace the contents of these properties with the translation.
+
+Step 4: Click **Save**.
 
 ### Upload translated Primary Documents
 
-![](images/image_96.jpg)
-
-Until you upload a translated version(s) of an entity’s Primary Document, it will appear in the original language regardless of whichever language option is currently selected in the main navigation menu.
+Until you upload a translated version(s) of an entity’s **Primary Document**, it will appear in the original language regardless of whichever language option is currently selected in the main navigation menu.
 
 Step 1: Navigate to the **Library** and locate the entity to which you want to upload a translated version of its **Primary Document**.
 
 Step 2: Click on the entity to expand the right sidebar and see more details about the entity. You will see the file name of the entity’s **Primary Document** alongside a label indicating the language of its contents (e.g. English).
 
-Step 3: Click the **Upload PDF** button and select the translated version of the Primary Document from within the file browser.
+Step 3: Click the **Upload PDF** button and select the translated version of the **Primary Document** from within the file browser.
 
 Step 4: Uwazi will automatically detect the language of the uploaded file and attach a corresponding label. If the language of an uploaded **Primary Document** matches a language that is enabled in your collection, then Uwazi will load it by default when that language option is selected in the main navigation menu.
 
-For example, imagine that you have English and Spanish enabled in your collection, and that you have an entity with a Primary Document in English and a version in Spanish. When you navigate the English-language collection and click the **View** button on this entity, Uwazi will load the English-language version of Primary Document. If you switch to the Spanish-language collection and click the **View** button on this same entity, Uwazi will instead load the Spanish-language version of the Primary Document.
+For example, imagine that you have English and Spanish enabled in your collection, and that you have an entity with a **Primary Document** in English and a version in Spanish. When you navigate the English-language collection and click the **View** button on this entity, Uwazi will load the English-language version of **Primary Document**. If you switch to the Spanish-language collection and click the **View** button on this same entity, Uwazi will instead load the Spanish-language version of the **Primary Document**.
 
-- **Note**: Uwazi is only able to automatically detect languages that are supported by ElasticSearch, and any other languages will be labeled as “Other”. For further information, consult ElasticSearch’s website.
+- **Note**: Uwazi is only able to automatically detect languages that are supported by ElasticSearch, and any other languages will be labeled as “Other”. For further information, consult [ElasticSearch’s website](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html).
+
+Step 5: If the original **Primary Document** has any **References** connecting parts of its text to other parts of its own text, to other text in a different **Primary Document**, or to a different entity entirely, these will need to be configured manually in any of the translated versions of the **Primary Document**. This is because **References** depend on the particular contents of an individual document. 
+
+- [Learn more about configuring **References**]().
+
+Step 6: **Table of Contents** for a **Primary Document** function in the same way as **References**. When you upload a translated version of a **Primary Document**, you will need to create a **Table of Contents** manually for the translated version. This is because **Table of Contents** depend on the particular contents of an individual document.
+
+- [Learn more about configuring **Table of Contents**]().
 
 ### Translate Pages
 
-Until you translate the contents of a Page, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
+Until you translate the contents of a **Page**, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
 
 Step 1: Using the links within the main navigation menu, switch to the language into which you want to translate.
 
 Step 2: Navigate to the **Settings** area and click **Pages**. Locate the Page that you want to translate and click **Edit**.
 
-Step 3: Translate the contents of the Page. When you have finished, click **Save**.
+Step 3: Translate the contents of the **Page**. When you have finished, click **Save**.
+
+- Note: Depending on the specific components incorporated in the design, it may or may not be necessary to adjust the **Page**’s code. For example, if you have properly translated the entities in your **Library** following the steps explained in the previous sections, then any data visualisations included within the **Page** that are configured using information from your collection’s API will automatically render in whichever language option is currently selected in the main navigation menu. [Learn more about designing pages and about data visualisations]().
 
 ## Managing translations over time
 
 ### Creating a new entity
 
-Whenever you create and save a new entity or Page, all of its contents are synced across all of your collection’s available languages. If the entity has any Text, Rich Text, Image and Media properties or has a translated Primary Document, make sure to follow the previously explained process for translating them. Otherwise, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
+Whenever you create and save a new entity or **Page**, all of its contents are synced across all of your collection’s available languages. If the entity has any **Text**, **Rich Text**, **Image** and **Media** properties or has a translated **Primary Document**, make sure to follow the previously explained process for translating them. Otherwise, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
 
 ### Edit an existing entity or Page
 
-Whenever you edit the contents of an existing entity or Page, some changes will be synced across all of the languages of your collection, while others will not.
+Whenever you edit the contents of an existing entity or **Page**, some changes will be synced across all of the languages of your collection, while others will not.
 
 Changes made to the contents of the following will be automatically synced to all languages:
-- Select and Multiselect properties
-- Relationships
-- Date, Date Range, Multi Date, Multi Date Range properties
-- Geolocation property
-- Numeric property
-- Table of Contents of a Primary Document if the same source document is used in other languages (since it depends on the contents of the document)
+- **Select** and **Multiselect** properties
+- **Relationship** property and any other arbitrary **Relationships** that an entity may have
+- **Date**, **Date Range**, **Multi Date**, **Multi Date Range** properties
+- **Geolocation** property
+- **Numeric** property
+- **Link** property
+- **Generated ID** property
+- **Table of Contents** of a **Primary Document**. Keep in mind, however, that a **Table of Contents** is specific to an individual document because it depends on its particular contents. If you have multiple language versions of a **Primary Document**, each has its own Table of Contents. Changes to one language version won’t affect the others.
+- **References** connecting text in a **Primary Document** to text in the same or a different **Primary Document**. Keep in mind, however, that **References** are specific to an individual document because they depend on its particular contents. If you have multiple language versions of a **Primary Document**, each has its own set of configured **References**. Changes to one language version won’t affect the others.
+**References** connecting text in a **Primary Document** to other entities. Keep in mind, however, that **References** are specific to an individual document because they depend on its particular contents. If you have multiple language versions of a **Primary Document**, each has its own set of configured **References**. Changes to one language version won’t affect the others.
 
 Changes made to the contents of the following will not be automatically synced, so you will need to make any necessary updates in other languages manually:
 - **Name** property
