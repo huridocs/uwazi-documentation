@@ -40,6 +40,8 @@ Step 6: Decide who should be able to see and edit the entity. By default, the ne
 
 Add any new users (individuals or groups) who should have access to the entity, choose if they should be able to see and/or edit the entity, and click **Save changes**. Remember, if you’d like the entity to be available to everyone who has access to your Uwazi collection, make sure to share it with the **Public**.
 
+- If you are documenting information about human rights violations using the mobile app Tella, you can also add new entities to your Uwazi collection directly from Tella. [Learn more about the Tella-Uwazi integration](https://uwazi.readthedocs.io/en/latest/admin-docs/integrations-available.html#integrations-available-in-uwazi).
+
 ## How to directly add PDFs to the Library
 
 Uwazi particularly supports the management of collections of documents in PDF format. Numerous functions can be carried out when a PDF is uploaded as a **Primary Document** within an entity, such as conducting full text search, creating a clickable table of contents, creating text references, and more.
@@ -90,9 +92,9 @@ Step 2: Populate the **CSV file** with your data. Certain properties must follow
 - If you have a **Select** or **Multiselect** property that utilises a **Thesaurus** containing terms which are organised into groups, do not include the names of the groups. Instead, simply include the terms that are contained within the groups. Upon import, Uwazi will automatically assign them to their corresponding groups.
   - For example, imagine that your entity template has a **Select** property called ```Country```. This property utilises a **Thesaurus** that contains the terms ```Bangladesh```, ```Cambodia```, and ```India```, which are all contained within a group named ```Asia```. In your **CSV file** in the rows under the column labeled ```Country```, the only possible terms that should appear there are ```Bangladesh```, ```Cambodia``` or ```India```, depending on the information contained in each corresponding entity. Nowhere should the group name ```Asia``` appear. 
 - If you have a basic **Relationship** property, include the name of the other entity which is connected to the entity in question. In the case of multiple values, use the pipe symbol | as the separator and do not include spaces between each value. 
-  - The entities which form the other half of the **Relationship** must already exist in your collection. Otherwise, the import will not work correctly. [Learn more about configuring Relationship properties]().
+  - The entities which form the other half of the **Relationship** must already exist in your collection. Otherwise, the import will not work correctly. [Learn more about configuring Relationship properties](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-configure-a-basic-relationship-property).
 - If you have a **Relationship** property that inherits a property from another template, follow the same guidance as above: Include the name of the entity which is the source of the inherited property. Do not include the inherited property itself. In the case of multiple values, use the pipe symbol | as the separator and do not include spaces between each value.
-  - The entities which are the source of the inherited properties must already exist in your collection. Otherwise, the import will not work correctly. [Learn more about configuring Relationship properties]().
+  - The entities which are the source of the inherited properties must already exist in your collection. Otherwise, the import will not work correctly. [Learn more about configuring Relationship properties](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-configure-a-basic-relationship-property).
 
 Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
