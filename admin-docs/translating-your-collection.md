@@ -130,13 +130,13 @@ Step 2: Navigate to the **Settings** area and click **Pages**. Locate the Page t
 
 Step 3: Translate the contents of the **Page**. When you have finished, click **Save**.
 
-- Note: Depending on the specific components incorporated in the design, it may or may not be necessary to adjust the **Page**’s code. For example, if you have properly translated the entities in your **Library** following the [steps explained in the previous sections](), then any data visualisations included within the **Page** that are configured using information from your collection’s API will automatically render in whichever language option is currently selected in the main navigation menu. [Learn more about designing pages and about data visualisations](https://uwazi.readthedocs.io/en/latest/admin-docs/designing-your-website.html#customising-your-collection-s-design).
+- Note: Depending on the specific components incorporated in the design, it may or may not be necessary to adjust the **Page**’s code. For example, if you have properly translated the entities in your **Library** following the [steps explained in the previous sections](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-translate-the-contents-of-your-collection), then any data visualisations included within the **Page** that are configured using information from your collection’s API will automatically render in whichever language option is currently selected in the main navigation menu. [Learn more about designing pages and about data visualisations](https://uwazi.readthedocs.io/en/latest/admin-docs/designing-your-website.html#customising-your-collection-s-design).
 
 ## Managing translations over time
 
 ### Creating a new entity
 
-Whenever you create and save a new entity or **Page**, all of its contents are synced across all of your collection’s available languages. If the entity has any **Text**, **Rich Text**, **Image** and **Media** properties or has a translated **Primary Document**, make sure to follow the previously explained process for translating them. Otherwise, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
+Whenever you create and save a new entity or **Page**, all of its contents are synced across all of your collection’s available languages. If the entity has any **Text**, **Rich Text**, **Image** and **Media** properties or has a translated **Primary Document**, make sure to follow the [previously explained process for translating them](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#translate-the-contents-of-text-rich-text-image-and-media-properties). Otherwise, they will appear in their original language regardless of whichever language option is currently selected in the main navigation menu.
 
 ### Edit an existing entity or Page
 
