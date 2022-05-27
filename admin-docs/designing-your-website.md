@@ -88,6 +88,10 @@ An Uwazi collection is made up of different types of entities. You can [browse t
 
 In Uwazi, you can replace this default full-width page view with a customised design that incorporates formatting and components of your choosing. This feature is called **Entity Page View**. Solid coding and programming knowledge is required to fully take advantage of **Entity Page View**. For details, consult the Uwazi Advanced Design Guide (*coming soon*) or get in touch with the HURIDOCS team.
 
+
+
+
+
 ### Basic concepts
 
 Uwazi allows you to create pages for two different purposes:
@@ -399,26 +403,3 @@ Step 2: In the Uwazi instance that has the public intake form:
 - Add "remote" to the page’s code snippet, for example: `<PublicForm template="ID_OF_THE_TEMPLATE" remote />`
 
 - Go to Settings, and click on Collection, add the URL of the _target_ Uwazi instance under **Public Form Destination**. (e.g. https://example.uwazi.io)
-
-
-## How to configure the available languages for your collection
-
-You can increase the accessibility of your Uwazi collection by translating it into one or more languages.
-
-Step 1: Login to your Uwazi instance.
-Step 2: Under **Settings**, click **Languages**.
-
-![](images/image_90.png)
-
-Step 3: Select the language(s) you want to add.
-Step 4: Type **CONFIRM** (in all capital letters) in the confirmation dialog, and click **Accept**.
-
-If your language is not in the list, please [get in touch with us](https://www.uwazi.io/contact/).
-
-Note:
--   You can select any language for your user interface and content, including right-to-left languages.
--   Search functionality will only work for languages supported by [ElasticSearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html)
-
-Step 5: At the top of the page in the **Active Languages** section, select which language will be the **Default language** for your collection.
-
-When multiple languages are enabled for your collection, you will see the language abbreviation in the navigation menu of your site. The language options are at the top right on desktop and tablet devices, and on mobile they are at the bottom of the menu opened by the collapsed menu icon at the top left.
