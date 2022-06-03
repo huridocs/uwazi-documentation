@@ -1,8 +1,8 @@
 # Sync instances
 
-Uwazi allows syncing specific data from one instance to other instances.
+Uwazi allows syncing specific data from one tenant to other tenants.
 
-Configuration for this should be done manually on the settings collection under the "sync" property.
+Configuration for this should be done manually on the origin tenant settings collection under the "sync" property.
 
 Multiple syncs can be configured to different targets.
 
@@ -71,3 +71,4 @@ The second config in the example will sync all entities that belong to the templ
 ```
 
 The Ts definitions for reference https://github.com/huridocs/uwazi/blob/production/app/shared/types/settingsType.d.ts#L117-L136
+
