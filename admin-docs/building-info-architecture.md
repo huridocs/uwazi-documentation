@@ -104,7 +104,9 @@ And here’s the same file viewed in a spreadsheet program:
 
 - Note: Avoid including duplicate values in the same column, as this will cause a validation error and prevent the import from working successfully.
 
-You can group terms under a parent term by providing the child terms following the parent prefixed with a hyphen.
+You can group terms by including a line with the group name, and immediately include lines for the terms to be grouped, prefixed with a hyphen (-).
+
+As an example, the following CSV
 
 ```
 English,French,German
@@ -114,6 +116,8 @@ Primary,Primaire,Primär
 -Blue,-Bleu,-Blau
 No color,Sans couleur,Farblos
 ```
+
+would result in a thesauri where `Red`, `Green` and `Blue` are grouped under `Primary`, and `No color` is not grouped.
 
 - Note: the prefixing needs to be consistent across translations of a term and all grouped terms need to have a parent. Otherwise, the import will cause a validation error.
 
