@@ -38,18 +38,19 @@ Step 6: Remember to click on **Save** after creating or making changes to each t
 
 **Properties** are descriptive attributes that are assigned to entities. All entity templates include three default properties: **Name**, **Date Added** and **Date Modified**. The rest are up to you! You can add as few or as many as you wish. Each property that you add to your template will provide a consistent space to include details about the entity.
 
-There are several types of properties available, including: 
-- Plain text 
-- Numeric 
-- Single select (requires a **Thesaurus**) 
-- Multiselect (requires a **Thesaurus**) 
-- Relationship (to create connections between this type of entity and another type) 
-- Date, date range, multi date, multi date range 
-- Rich text 
-- External link 
+There are several types of properties available, including:
+
+- Plain text
+- Numeric
+- Single select (requires a **Thesaurus**)
+- Multiselect (requires a **Thesaurus**)
+- Relationship (to create connections between this type of entity and another type)
+- Date, date range, multi date, multi date range
+- Rich text
+- External link
 - Image (to attach an image)
-- Preview (to display a thumbnail image of the first page of a **Primary Document**)  
-- Media (to embed image, video or audio) 
+- Preview (to display a thumbnail image of the first page of a **Primary Document**)
+- Media (to embed image, video or audio)
 - Geolocation (to add latitude and longitude coordinates that can be displayed on a map)
 - Generated ID (to assign an automatically generated unique ID code to each entity)
 
@@ -91,26 +92,43 @@ Step 1: Create a **CSV file** on your computer:
 
 Step 2: Populate the **CSV file** with the terms. Each term should occupy its own row. For example, here’s a sample CSV file viewed as plain text:
 
-```English,French,German```
-
-```Man,Homme,Mann```
-
-```Woman,Femme,Frau```
-
-```Child,Enfant,Kind```
+```
+English,French,German
+Man,Homme,Mann
+Woman,Femme,Frau
+Child,Enfant,Kind
+```
 
 And here’s the same file viewed in a spreadsheet program:
 ![](images/image_19.png)
 
-  - Note: Avoid including duplicate values in the same column, as this will cause a validation error and prevent the import from working successfully.
+- Note: Avoid including duplicate values in the same column, as this will cause a validation error and prevent the import from working successfully.
+
+You can group terms by including a line with the group name, and immediately include lines for the terms to be grouped, prefixed with a hyphen (-).
+
+As an example, the following CSV
+
+```
+English,French,German
+Primary,Primaire,Primär
+-Red,-Rouge,-Rot
+-Green,-Vert,-Grün
+-Blue,-Bleu,-Blau
+No color,Sans couleur,Farblos
+```
+
+would result in a thesauri where `Red`, `Green` and `Blue` are grouped under `Primary`, and `No color` is not grouped.
+
+- Note: the prefixing needs to be consistent across translations of a term and all grouped terms need to have a parent. Otherwise, the import will cause a validation error.
 
 Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
-Step 4: Navigate to the **Settings** area  and click on **Thesauri**. Click on the green **Add Thesaurus** button and give the **Thesaurus** a name. Alternatively, if you would like to add to an existing **Thesaurus**, click the **Edit** button next to it.
+Step 4: Navigate to the **Settings** area and click on **Thesauri**. Click on the green **Add Thesaurus** button and give the **Thesaurus** a name. Alternatively, if you would like to add to an existing **Thesaurus**, click the **Edit** button next to it.
 
 Step 5: Click the blue **Import** button. Using the file browser to navigate your computer’s storage, find and select the CSV file. Once the import has finished, the terms will appear in the **Thesaurus**.
 
 Step 6: Click the green **Save** button.
+
 - If you imported more than one language, navigate to the **Settings** area and click on **Translations**. Click on the **Thesaurus** name, and you will see all the terms and their translations that have been imported. [Learn more about translating an Uwazi collection](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html).
 - It is not currently possible to import Thesauri that are already organised into groups. You will need to first import a Thesaurus as described above, and then while working within Uwazi you can organise the terms into whichever groupings you want.
 
@@ -118,7 +136,7 @@ Step 6: Click the green **Save** button.
 
 Step 1: Once you have created your **Thesaurus**, navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add a **Select** or **Multiselect** property and click **Edit**.
 
-Step 2: Drag and drop the **Select** or **Multiselect** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property. 
+Step 2: Drag and drop the **Select** or **Multiselect** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property.
 
 Step 3: Click **Edit** and give the property a **Name** or **Label**. Using the **Select List** dropdown, choose the **Thesaurus** that you want to reference in this property.
 
@@ -128,7 +146,7 @@ Step 4: Review the other options for the property as explained previously in thi
 
 The **Geolocation** property allows you to add latitude and longitude coordinates to an entity, which can then be displayed as a point on a map. An entity template can have multiple **Geolocation** properties. Depending on the order in which they appear on the template, these geolocation points can be displayed separately on their own individual maps or together in one combined map within the entity.
 
-### How to display multiple geolocation properties on separate maps within the same template 
+### How to display multiple geolocation properties on separate maps within the same template
 
 Step 1: Navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add Geolocation properties and click **Edit**.
 
@@ -138,7 +156,7 @@ Step 3: Click **Edit** and give the property a **Name** or **Label**. Review the
 
 Step 4: Repeat the above process until you have created all of the **Geolocation** properties that you want.
 
-Step 5: Using the drag and drop function, move the **Geolocation** properties around so that they are not adjacent to each other on the template. In other words, they should be separated by one or more other non-Geolocation properties. 
+Step 5: Using the drag and drop function, move the **Geolocation** properties around so that they are not adjacent to each other on the template. In other words, they should be separated by one or more other non-Geolocation properties.
 
 This ensures that each **Geolocation** property will display on its own separate map, each labeled with the **Name** or **Label** that you have given it.
 
@@ -152,7 +170,7 @@ Step 2: Drag and drop the **Geolocation** property from the right side of the sc
 
 Step 3: Click **Edit** and give the property a **Name** or **Label**. Review the other options for the property as explained previously in this chapter.
 
-Step 4: Repeat the above process until you have created all of the **Geolocation** properties that you want. 
+Step 4: Repeat the above process until you have created all of the **Geolocation** properties that you want.
 
 Step 5: Using the drag and drop function, move the **Geolocation** properties around so that they are all adjacent to each other on the template. In other words, they should not be separated by any other non-Geolocation properties placed between them.
 
@@ -178,7 +196,7 @@ Step 3: Click **Save**.
 
 ### How to configure a basic relationship property
 
-Step 1: Once you have created the **Relationship Type**, navigate to the **Settings** area  and click on **Templates**. Locate the template to which you want to add a **Relationship** property and click **Edit**.
+Step 1: Once you have created the **Relationship Type**, navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add a **Relationship** property and click **Edit**.
 
 Step 2: Drag and drop the **Relationship** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property.
 
@@ -187,12 +205,14 @@ Step 3: Click **Edit** on the newly added property, and give it a descriptive **
 Step 4: Using the dropdown list called Relationship*, select the **Relationship Type** that you would like to use as part of this property. (The * indicates that it is mandatory.)
 
 Step 5: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, you also have the option to restrict a connection to only entities that use one specific template. To do so, click on the **Entities** dropdown list and select whichever template you want.
-  - Note: The dropdown won’t contain the template that is currently being edited. [Learn more about how to connect entities of the same template](#). 
+
+- Note: The dropdown won’t contain the template that is currently being edited. [Learn more about how to connect entities of the same template](#).
 
 Step 6: Review the other options for the property as explained previously in this chapter. When you have finished, click **Save**.
 
 Now, whenever you create a new entity using the template that includes this **Relationship** property, you will be presented with a multiselect list of all the existing entities in your collection which meet the criteria that you have configured (i.e. a connection to another specific template or a connection to “Any entity or document”). Simply select the relevant existing entity (or entities) from the list, and then its **Name** property will be displayed as part of the new entity’s metadata.
-  - Note: You can also establish a basic connection on an ad hoc basis between entities by creating a Relationship directly in the Information Hub of an entity (without utilising the Relationship property). Learn more.
+
+- Note: You can also establish a basic connection on an ad hoc basis between entities by creating a Relationship directly in the Information Hub of an entity (without utilising the Relationship property). Learn more.
 
 ### How to configure a relationship property that inherits a property from another template
 
@@ -223,18 +243,20 @@ Step 8: When you have finished, click **Save**.
 Now, whenever you create a new entity using this template, within each of these **Relationship** properties you will be presented with a multiselect list of all the existing entities in your collection which meet the criteria that you have established (i.e. a connection to another specific template that inherits one of that template’s specific properties).
 
 Select the relevant existing entity (or entities) from the list contained within whichever **Relationship** property happens to appear first. Once you do, the same entity (or entities) will also be automatically selected on the other **Relationship** properties.
-  - Note: When you inherit multiple properties in this way, any changes made to one of the **Relationship** properties of an entity that utilises this template will affect the other **Relationship** properties on this template that share the same connection. For example, If you untick a particular entity within one **Relationship** property, it will also automatically be unticked in the other **Relationship** properties. This is because you have ultimately created one connection with multiple inheritance of properties, instead of multiple separate connections.
+
+- Note: When you inherit multiple properties in this way, any changes made to one of the **Relationship** properties of an entity that utilises this template will affect the other **Relationship** properties on this template that share the same connection. For example, If you untick a particular entity within one **Relationship** property, it will also automatically be unticked in the other **Relationship** properties. This is because you have ultimately created one connection with multiple inheritance of properties, instead of multiple separate connections.
 
 Once you save the new entity, the properties that you have chosen to inherit will then be displayed as part of the new entity’s metadata.
 
-### When to inherit properties from other entities 
-Depending on how you have chosen to structure your collection (in other words, your data model), it can be useful for one entity to inherit a property from another entity because it prevents you from having to enter the same information over and over again. 
+### When to inherit properties from other entities
+
+Depending on how you have chosen to structure your collection (in other words, your data model), it can be useful for one entity to inherit a property from another entity because it prevents you from having to enter the same information over and over again.
 
 Here’s a simple example: Imagine that there is a type of entity template in your collection called Country. This entity includes all sorts of details about individual countries, including their geolocation on a map.
 
 Now, imagine that you want to create another type of entity template called Person. You want this template to include all sorts of details about individual people, including the geolocation of their country of birth on a map.
 
-The geolocation of countries is information that already exists in your collection – as a property on the Country entity template – so you can opt to “inherit” it by setting up a connection between the Person template and the Country template. You would do so by following the steps outlined in the previous section: 
+The geolocation of countries is information that already exists in your collection – as a property on the Country entity template – so you can opt to “inherit” it by setting up a connection between the Person template and the Country template. You would do so by following the steps outlined in the previous section:
 
 - Define the **Relationship Type** (e.g. “Country geolocation”)
 - Add a **Relationship** property to the Person template
