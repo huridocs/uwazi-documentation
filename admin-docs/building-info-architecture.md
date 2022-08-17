@@ -104,9 +104,9 @@ And here’s the same file viewed in a spreadsheet program:
 
 - Note: Avoid including duplicate values in the same column, as this will cause a validation error and prevent the import from working successfully.
 
-You can group terms by including a line with the group name, and immediately include lines for the terms to be grouped, prefixed with a hyphen (-).
+Step 2 (optional): You can group terms by including a line with the group name, and immediately include lines for the terms to be grouped, prefixed with a hyphen (-).
 
-As an example, the following CSV
+As an example, here's a sample CSV file viewed as plain text:
 
 ```
 English,French,German
@@ -117,9 +117,12 @@ Primary,Primaire,Primär
 No color,Sans couleur,Farblos
 ```
 
-would result in a thesauri where `Red`, `Green` and `Blue` are grouped under `Primary`, and `No color` is not grouped.
+And here’s the same file viewed in a spreadsheet program:
+![](images/image_97.png)
 
-- Note: the prefixing needs to be consistent across translations of a term and all grouped terms need to have a parent. Otherwise, the import will cause a validation error.
+This would result in a thesauri where `Red`, `Green` and `Blue` are grouped under `Primary`, and `No color` is not grouped.
+
+- Note: The prefixing needs to be consistent across translations of a term, and all grouped terms need to have a parent. Otherwise, the import will cause a validation error.
 
 Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
