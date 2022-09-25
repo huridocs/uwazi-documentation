@@ -172,8 +172,11 @@ In Uwazi, a **Reference** connects selected content in a **Primary Document** to
 Before you can configure a **Reference**, you must first create the **Relationship Type** that will describe the nature of the **Reference**.
 
 ### How to create Relationship Types
+
 Step 1: Navigate to the **Settings** area and click on **Relationship Types**. 
-Step 2: Click on the **Add Connection** button. Give the relationship a descriptive name.
+
+Step 2: Click on the **Add Relationship** button. Give the relationship a descriptive name.
+
 Step 3: Click **Save**.
 
 ### Reference other text in the same or a different document
@@ -206,21 +209,25 @@ Step 5: Click the green **Save** button. The referenced text will be highlighted
 
 In Uwazi, a **Relationship** connects two or more entities in your collection so that it’s possible to scrutinise how they interact with one another. You can establish a **Relationship** in a consistent and structured way by adding a **Relationship** property to an entity template. Whenever a new entity is created using the template, the **Relationship** metadata is subsequently displayed alongside the entity’s other properties. [Learn more about creating templates](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates).
 
-However, you don’t have to predefine a relational model upfront or follow a rigid structure. Uwazi allows you to arbitrarily create **Relationships** between entities on a one-to-one basis or on a one-to-many basis. These **Relationships** are displayed in a tree called an **Information Hub**. You can see all of the **Relationships** associated with an entity by clicking to **View** an entity in full the **Library** ![](images/image_0.png) and then clicking the **Connections** icon ![](images/image_59.png) in the right sidebar.
+However, you don’t have to predefine a relational model upfront or follow a rigid structure. Uwazi allows you to arbitrarily create **Relationships** between entities on a one-to-one basis or on a one-to-many basis. These **Relationships** are displayed in a tree called an **Information Hub**. You can see all of the **Relationships** associated with an entity by clicking to **View** an entity in full the **Library** ![](images/image_0.png) and then clicking the **Relationships** icon ![](images/image_59.png) in the right sidebar.
 
 - Note: We sometimes use the term **Connection** to mean **Relationship**. In practice, these refer to the same feature.
 
 Before you configure a **Relationship**, you likely will first want to create a **Relationship Type** that will describe the nature of the **Relationship**. Otherwise, the Relationship will be defined as "No label".
 
 ### How to create Relationship Types 
+
 Step 1: Navigate to the **Settings** area and click on **Relationship Types**.
-Step 2: Click on the **Add Connection** button. Give the relationship a descriptive name.
+
+Step 2: Click on the **Add Relationship** button. Give the relationship a descriptive name.
+
 Step 3: Click **Save**.
 
 ### Create Relationships between entities in the Information Hub
+
 Step 1: Navigate to the **Library** ![](images/image_0.png) and locate the entity for which you want to create a **Relationship**. Click the **View** button to see the entity in full.
 
-Step 2: Within the right sidebar, click on the **Connections** icon ![](images/image_59.png) to open up the **Information Hub**. Then near the bottom of the screen, click on the blue **Edit** button.
+Step 2: Within the right sidebar, click on the **Relationships** icon ![](images/image_59.png) to open up the **Information Hub**. Then near the bottom of the screen, click on the **Edit** button.
 
 Step 3: To start building the **Relationship**, click on the **New Relationships Group** button on the left side of the **Information Hub**.
 
@@ -235,10 +242,11 @@ Step 7: You can add more entities to this **Relationship** by repeating the same
 Step 8: Once you have finished, click **Save**.
 
 ### Edit Relationships in the Information Hub
+
 Step 1: Navigate to the **Library** ![](images/image_0.png) and locate the entity whose **Relationships** you want to edit. Click the **View** button to see the entity in full.
 
-Step 2: Within the right sidebar menu, click on the **Connections** icon ![](images/image_59.png) to open up the **Information Hub**.
+Step 2: Within the right sidebar menu, click on the **Relationships** icon ![](images/image_59.png) to open up the **Information Hub**.
 
-Step 3: Click on the blue **Edit** button. You can change the **Relationship Type** labels or remove a **Relationship** altogether by clicking on the **Delete** button.
+Step 3: Click on the **Edit** button. You can change the **Relationship Type** labels or remove a **Relationship** altogether by clicking on the **Delete** button.
 
 Step 4: Click **Save** when you have finished.
