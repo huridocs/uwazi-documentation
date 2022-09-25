@@ -26,15 +26,15 @@ To create a new entity:
 
 Step 1: Click on the **Library** icon ![](images/image_0.png) in the top navigation menu. 
 
-Step 2: On the bottom right hand side of the screen, click on the **Create entity** button.
+Step 2: At the bottom of the screen, click on the **Create Entity** button.
 
 Step 3: Select which template to use from the list, give the entity a name and fill in any of the properties that you want to include. (You may always come back to add, edit or delete this information later.)
 
 Step 4: Click the **Save** button once you have finished.
 
-Step 5: If the entity is intended to feature any PDFs (**Primary Document**), click the **Upload PDF** button in the right sidebar and select the desired PDF(s) from within the file browser. 
+Step 5: If the entity is intended to feature any PDFs (**Primary Document**), click the **Addd PDF** button and select the desired PDF(s) from within the file browser. 
 
-If the entity is intended to feature any other attached materials (**Supporting Files**), click the **Add Supporting File** button and select the desired file(s) from within the file browser. 
+If the entity is intended to feature any other attached materials (**Supporting Files**), click the **Add File** button and select the desired file(s) from within the file browser. 
 
 Step 6: Decide who should be able to see and edit the entity. By default, the new entity is only visible to you and other users with **Admin** or **Editor** permissions. To change these settings, click on the **Share** button in the right sidebar. 
 
@@ -44,15 +44,11 @@ Add any new users (individuals or groups) who should have access to the entity, 
 
 ## How to directly add PDFs to the Library
 
-Uwazi particularly supports the management of collections of documents in PDF format. Numerous functions can be carried out when a PDF is uploaded as a **Primary Document** within an entity, such as conducting full text search, creating a clickable table of contents, creating text references, and more.
-
-If many of the entities in your collection feature "primary" PDF documents, it could become tedious to create entity after entity, giving them a title and filling in any properties, and only after they are saved, finally adding a PDF.
-
-For situations such as these, Uwazi makes it possible to upload PDF(s) directly into the Library as a first step without the prior creation of an entity:
+Uwazi particularly supports the management of collections of documents in PDF format. Numerous functions can be carried out when a PDF is uploaded as a **Primary Document** within an entity, such as conducting full text search, creating a clickable table of contents, creating text references, and more. As such, Uwazi makes it possible to quickly upload one or many PDF(s) directly into the **Library**.
 
 Step 1: Click on the **Library** icon ![](images/image_0.png) in the top navigation menu. 
 
-Step 2: On the bottom right side of the screen, click on the **Upload PDF(s) to Create** button.
+Step 2: At the bottom of the screen, click on the **Upload PDF(s) to Create** button.
 
 Step 3: Select the desired PDF(s) from within the file browser. (To select more than one file, hold down the CTRL key or the Command key before clicking.)
 
@@ -91,8 +87,8 @@ Step 2: Populate the **CSV file** with your data. Certain properties must follow
   - For a **Geolocation** property (which follows the format of ```latitude|longitude```): ```46.204391|6.143158```
 - If you have a **Select** or **Multiselect** property that utilises a **Thesaurus** containing terms which are organised into groups, do not include the names of the groups. Instead, simply include the terms that are contained within the groups. Upon import, Uwazi will automatically assign them to their corresponding groups.
   - For example, imagine that your entity template has a **Select** property called ```Country```. This property utilises a **Thesaurus** that contains the terms ```Bangladesh```, ```Cambodia```, and ```India```, which are all contained within a group named ```Asia```. In your **CSV file** in the rows under the column labeled ```Country```, the only possible terms that should appear there are ```Bangladesh```, ```Cambodia``` or ```India```, depending on the information contained in each corresponding entity. Nowhere should the group name ```Asia``` appear. 
-- To import a **Date range** property include the starting and finishing date separated by a colon `:` character: `2022/8/16:2022/9/1`.
-  - In the case of **Multi date** and **Multi date ranges**, separate each date (or range) with the pipe symbol `|`.
+- If you have a **Date Range** property, include the starting and finishing date separated by a colon `:` character: `2022/8/16:2022/9/1`.
+  - In the case of **Multiple Date** and **Multiple Date Ranges**, separate each date (or range) with the pipe symbol `|`.
 - If you have a basic **Relationship** property, include the name of the other entity which is connected to the entity in question. In the case of multiple values, use the pipe symbol | as the separator and do not include spaces between each value. 
   - The entities which form the other half of the **Relationship** must already exist in your collection. Otherwise, the import will not work correctly. [Learn more about configuring Relationship properties](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-configure-a-basic-relationship-property).
 - If you have a **Relationship** property that inherits a property from another template, follow the same guidance as above: Include the name of the entity which is the source of the inherited property. Do not include the inherited property itself. In the case of multiple values, use the pipe symbol | as the separator and do not include spaces between each value.
@@ -100,7 +96,7 @@ Step 2: Populate the **CSV file** with your data. Certain properties must follow
 
 Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
-Step 4: Go to the **Library** ![](images/image_0.png) of your Uwazi collection and on the bottom right side of the screen, click on the **Import CSV** button. Using the file browser to navigate your computer's storage, find and select the **CSV file**. 
+Step 4: Go to the **Library** ![](images/image_0.png) of your Uwazi collection and at the bottom of the screen, click on the **Import CSV** button. Using the file browser to navigate your computer's storage, find and select the **CSV file**. 
 
 Step 5: Next, select the template that corresponds to the entities you want to upload, using the dropdown menu. 
 
@@ -161,11 +157,11 @@ It wouldn’t be very efficient to copy each property on the submission entity a
 
 Step 1: Click on the **Library** icon ![](images/image_0.png) in the top navigation menu.
 
-Step 2: On the bottom right side of the screen, click on the **Create entity** button.
+Step 2: At the bottom of the screen, click on the **Create Entity** button.
 
 Step 3: Using the **Type** dropdown menu, select which entity template you would like to use for the new entity. If you need to create a new template, [refer to the instructions](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates) for doing so in the previous chapter.
 
-Step 4: Click on the **Copy from** button in the bottom right corner. 
+Step 4: Click on the **Copy From** button at the bottom of the right side panel. 
 
 Step 5: Using the search bar that has appeared, search for any part of the name of the entity that you would like to copy properties from. Entities containing the searched keyword will appear, alongside their corresponding type of template.
 
@@ -181,7 +177,7 @@ The **CSV export** feature allows you to export some or all entities in your Uwa
 
 Step 1: Decide which entities you want to export. You can use different filters in the **Library**’s sidebar to select a specific subset of entities in the collection for export. Alternatively, if you want to export all of the entities that exist in the entire collection, leave all filters unchecked.
 
-Step 2: Click on the blue **Export CSV** button on the bottom right side of the screen. A **CSV file** in UTF-8 format will automatically be downloaded to your computer for your use.
+Step 2: Click on the **Export CSV** button at the bottom of the screen. A **CSV file** in UTF-8 format will automatically be downloaded to your computer for your use.
 
 ## How to print entities 
 
