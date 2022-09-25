@@ -72,11 +72,11 @@ Step 1: Only an **Admin** can create new users. Navigate to the **Settings** are
 
 Step 2: You will see a list of all the current users who have access to your collection.
 
-Step 3: You can create new users by clicking the green **Add User** button at the bottom. Here, you can also edit or delete users, as necessary.
+Step 3: You can create new users by clicking the **Add User** button at the bottom. Here, you can also edit or delete users, as necessary.
 
 Step 4: Enter a username, their email address and select a role (**Admin**, **Editor** or **Collaborator**) for them.
 
-Step 5: Once this information is entered, click the green **Save** button and an email will be sent to that person with a link that allows them to set their own password.
+Step 5: Once this information is entered, click the **Save** button and an email will be sent to that person with a link that allows them to set their own password.
 
 ### Create new user groups
 
@@ -84,11 +84,11 @@ Step 1: Only an **Admin** can create new users. Navigate to the **Settings** are
 
 Step 2: On the **Users** tab, you will see a list of all the current users who have access to your collection. Switch to the **Groups** tab.
 
-Step 3: You can create new groups by clicking the green **Add Group** button at the bottom. Here, you can also edit or delete users in that group, as necessary.
+Step 3: You can create new groups by clicking the **Add Group** button at the bottom. Here, you can also edit or delete users in that group, as necessary.
 
 Step 4: Assign a **Name of the group** and add the usernames that you want to include.
 
-Step 5: Once this information is entered, click the green **Create Group** button.
+Step 5: Once this information is entered, click the green **Save** button.
 
 ## How to configure your collection’s general settings
 
