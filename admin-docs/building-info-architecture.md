@@ -8,7 +8,7 @@ To create a template:
 
 Step 1: Navigate to the **Settings** area and click on **Templates**.
 
-Step 2: Click on the green **Add Template** button.
+Step 2: Click on the **Add Template** button.
 
 Step 3: Name your template and select a color for it. The combination of the name and color will be used to label entities that utilise this template in the **Library** ![](images/image_0.png).
 
@@ -58,7 +58,7 @@ Some properties are a bit more complex and/or require extra steps to configure t
 
 ## Select and Multiselect properties
 
-A **Select** property allows you to assign a single attribute to your entity from a dropdown list of predefined terms. A **Multiselect** property allows you to assign several attributes to your entity from a checklist of predefined terms. Before you can add either a **Select** or **Multiselect** property to a template, you must create your list of predefined terms. In Uwazi, this list is called a **Thesaurus**.
+A **Select** property allows you to assign a single attribute to your entity from a dropdown list of predefined terms. A **Multiselect** property allows you to assign several attributes to your entity from a checklist of predefined terms. Before you can add either a **Select** or **Multiselect** property to a template, you must create your list of predefined terms. In Uwazi, this list of terms is called a **Thesaurus**.
 
 ### How to create thesauri
 
@@ -66,7 +66,7 @@ Step 1: Navigate to the **Settings** area and click on **Thesauri**. Here you wi
 
 ![](images/image_18.png)
 
-Step 2: Click on the green **Add Thesaurus** button.
+Step 2: Click on the **Add Thesaurus** button.
 
 Step 3: Name your **Thesaurus**.
 
@@ -75,7 +75,7 @@ Step 4: Add terms to your **Thesaurus** by typing them in the spaces provided.
 Step 5: Organise your **Thesaurus**. There are three main ways to organise the terms on your list:
 
 - Moving items around by dragging and dropping
-- Clicking the blue **Sort** button to order the items alphabetically
+- Clicking the **Sort** button to order the items alphabetically
 - Grouping certain terms together. Click on the **Add Group** button. Give the group a name. Underneath the name, you can add terms by typing them in the spaces provided. Alternatively, you can drag and drop existing terms into the group.
 
 Step 6: When you have finished, click **Save**.
@@ -126,22 +126,23 @@ This would result in a thesauri where `Red`, `Green` and `Blue` are grouped unde
 
 Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
-Step 4: Navigate to the **Settings** area and click on **Thesauri**. Click on the green **Add Thesaurus** button and give the **Thesaurus** a name. Alternatively, if you would like to add to an existing **Thesaurus**, click the **Edit** button next to it.
+Step 4: Navigate to the **Settings** area and click on **Thesauri**. Click on the **Add Thesaurus** button and give the **Thesaurus** a name. Alternatively, if you would like to add to an existing **Thesaurus**, click the **Edit** button next to it.
 
-Step 5: Click the blue **Import** button. Using the file browser to navigate your computer’s storage, find and select the CSV file. Once the import has finished, the terms will appear in the **Thesaurus**.
+Step 5: Click the **Import** button. Using the file browser to navigate your computer’s storage, find and select the CSV file. Once the import has finished, the terms will appear in the **Thesaurus**.
 
 Step 6: Click the green **Save** button.
 
 - If you imported more than one language, navigate to the **Settings** area and click on **Translations**. Click on the **Thesaurus** name, and you will see all the terms and their translations that have been imported. [Learn more about translating an Uwazi collection](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html).
-- It is not currently possible to import Thesauri that are already organised into groups. You will need to first import a Thesaurus as described above, and then while working within Uwazi you can organise the terms into whichever groupings you want.
 
 ### How to configure a Select or Multiselect property
 
 Step 1: Once you have created your **Thesaurus**, navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add a **Select** or **Multiselect** property and click **Edit**.
 
-Step 2: Drag and drop the **Select** or **Multiselect** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property.
+Step 2: Drag and drop the **Select** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property.
 
-Step 3: Click **Edit** and give the property a **Name** or **Label**. Using the **Select List** dropdown, choose the **Thesaurus** that you want to reference in this property.
+Step 3: Click **Edit** and give the property a **Name** or **Label**. Next, identify the **Type** of **Select** property. To allow a single attribute to your entity, chose **Single select**. To allow multiple attributes, choose **Multiple select**. Then, choose the **Thesaurus** that you want to reference in this property from the **Thesauri** dropdown.
+
+- If you have not already created a relevant **Thesaurus** in advance, you can create one at this stage by clicking the **Add Thesaurus** button at the bottom of the screen. When you click the button, a pop-up will appear where you can directly label and create a **Thesaurus**. Once you click **Save**, the new **Thesaurus** will appear in the **Thesauri** dropdown on the **Select** property. After finishing configuring this property, you can go back to the **Settings** area, click **Thesauri** and add relevant items to the **Thesaurus** you just created.
 
 Step 4: Review the other options for the property as explained previously in this chapter. When you have finished, click **Save**.
 
@@ -185,19 +186,17 @@ Step 6. When you have finished, click **Save**.
 
 A **Relationship** property allows you to create a connection to another entity template. The connection can be basic, such that it points in general to a different template. The connection can also be more complex, such that it inherits a specific property from another template.
 
-Before you can add a **Relationship** property, you must first create the **Relationship Type** that will be used to define the nature of the connection.
-
-### How to create relationship types
+### How to create Relationship types
 
 Step 1: Navigate to the **Settings** area and click on **Relationship Types**.
 
 ![](images/image_20.png)
 
-Step 2: Click on the **Add Connection** button. Give the **Relationship Type** a descriptive name.
+Step 2: Click on the **Add Relationship** button. Give the **Relationship Type** a descriptive name.
 
 Step 3: Click **Save**.
 
-### How to configure a basic relationship property
+### How to configure a basic Relationship property
 
 Step 1: Once you have created the **Relationship Type**, navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add a **Relationship** property and click **Edit**.
 
@@ -207,15 +206,17 @@ Step 3: Click **Edit** on the newly added property, and give it a descriptive **
 
 Step 4: Using the dropdown list called Relationship*, select the **Relationship Type** that you would like to use as part of this property. (The * indicates that it is mandatory.)
 
+- If you have not already created a relevant **Relationship Type** in advance, you can create one at this stage by clicking the **Add Relationship Type** button at the bottom of the screen. When you click the button, a pop-up will appear where you can directly label and create a **TRelationship Type**. Once you click **Save**, the new **Relationship Type** will appear in the **Relationship*** dropdown.
+
 Step 5: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, you also have the option to restrict a connection to only entities that use one specific template. To do so, click on the **Entities** dropdown list and select whichever template you want.
 
-- Note: The dropdown won’t contain the template that is currently being edited. [Learn more about how to connect entities of the same template](#).
+- Note: The dropdown won’t contain the template that is currently being edited. [Learn more about how to connect entities of the same template](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#how-to-create-relationships-between-entities-in-the-information-hub).
 
 Step 6: Review the other options for the property as explained previously in this chapter. When you have finished, click **Save**.
 
 Now, whenever you create a new entity using the template that includes this **Relationship** property, you will be presented with a multiselect list of all the existing entities in your collection which meet the criteria that you have configured (i.e. a connection to another specific template or a connection to “Any entity or document”). Simply select the relevant existing entity (or entities) from the list, and then its **Name** property will be displayed as part of the new entity’s metadata.
 
-- Note: You can also establish a basic connection on an ad hoc basis between entities by creating a Relationship directly in the Information Hub of an entity (without utilising the Relationship property). Learn more.
+- Note: You can also establish a basic connection on an ad hoc basis between entities by creating a Relationship directly in the Information Hub of an entity (without utilising the Relationship property). [Learn more](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#how-to-create-relationships-between-entities-in-the-information-hub).
 
 ### How to configure a relationship property that inherits a property from another template
 
