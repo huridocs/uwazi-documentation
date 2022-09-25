@@ -44,21 +44,21 @@ Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
 Step 4: Navigate to the **Settings** area, click **Translations** and then click **User Interface**.
 
-Step 5: Click the blue **Import** button. Using the file browser to navigate your computer’s storage, find and select the **CSV file**. Once the import has finished, the translations will appear on screen.
+Step 5: Click the **Import** button. Using the file browser to navigate your computer’s storage, find and select the **CSV file**. Once the import has finished, the translations will appear on screen.
 
 Step 6: Click the green **Save** button.
 
-### Translate interface terms via the Live Translation feature
+### Translate interface terms via the Live Translate feature
 
-In Uwazi, you have the option to translate interface terms one by one as you encounter them while navigating the software. This feature, which is called **Live Translation**, allows you to see how a term is used in context. It can be useful for easily translating interface terms that are added to the software as part of newly released development or for quickly correcting an existing translation that isn’t quite right.
+In Uwazi, you have the option to translate interface terms one by one as you encounter them while navigating the software. This feature, which is called **Live Translate**, allows you to see how a term is used in context. It can be useful for easily translating interface terms that are added to the software as part of newly released development or for quickly correcting an existing translation that isn’t quite right.
 
-To use **Live Translation**: 
+To use **Live Translate**: 
 
-Step 1: When you encounter an interface term that you would like to translate, click on the **Translation** icon found in Uwazi’s main navigation menu. This activates **Live Translation**. All of the terms on the screen that are translatable will be underlined in orange.
+Step 1: When you encounter an interface term that you would like to translate, click on the interface language dropdown menu found on the right side of Uwazi’s main navigation menu. At the bottom of the dropdown is an option that reads **Live Translate**. Clicking on the yellow circle next to **Live Translate** will activate the feature. Consequently, all of the terms on the screen that are translatable will be underlined in orange, and the circle next to **Live Translate** will turn green.
 
 Step 2: Click on the term that you want to translate, add its corresponding translation(s) , and click **Submit**. Repeat this process for any of the other underlined terms on the screen that you would like to translate.
 
-Step 3: When you have finished, click on the **Translation** icon in the main navigation menu once more to deactivate **Live Translation**.
+Step 3: When you have finished, click on the green circle next to **Live Translate** in the interface language dropdown menu within the main navigation menu. This will deactivate **Live Translate**.
 
 ## How to translate the contents of your collection
 
