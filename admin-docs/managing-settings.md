@@ -22,8 +22,6 @@ Step 2: You will receive an email from the [no-reply@uwazi.io](mailto:no-reply@u
 
 - To reinforce your account’s security, we recommend that you use unique and long passwords (a-Z, 0-9, &%).
 
-- Watch a [screencast](https://drive.google.com/open?id=1fJcdhGPGRZEZMn6ExzS2csinH3FJwcBd).
-
 ### Enable two-factor authentication
 
 To add an extra layer of security to your Uwazi instance:
@@ -38,8 +36,6 @@ Step 4: Open [Authy](https://authy.com/features/setup/) or [Google Authenticator
 
 Step 5: Enter the code and click **Confirm**. If you have successfully enabled two-factor authentication, your account settings will reflect this.
 
-- Watch a [screencast](https://drive.google.com/open?id=1G02gKDvIejl4NxwpyiIqiIU5KPjbamBE).
-
 ![](images/image_2.png)
 
 ### Login with two-factor authentication
@@ -47,8 +43,6 @@ Step 5: Enter the code and click **Confirm**. If you have successfully enabled t
 Step 1: Log into your instance with your credentials.
 
 Step 2: You will be prompted to input your authentication code. Enter the code from Authy or Google Authenticator. If the code is approved, you will be logged in.
-
-- Watch a [screencast](https://drive.google.com/open?id=1lYbJHkDrDoAeYzoVcPcYQPoAWyUf3JmR).
 
 - [FAQs related to Google Authenticator](https://support.google.com/accounts/answer/185834?hl=en)
 
@@ -88,7 +82,7 @@ Step 3: You can create new groups by clicking the **Add Group** button at the bo
 
 Step 4: Assign a **Name of the group** and add the usernames that you want to include.
 
-Step 5: Once this information is entered, click the green **Save** button.
+Step 5: Once this information is entered, click the **Save** button.
 
 ## How to configure your collection’s general settings
 
@@ -97,8 +91,6 @@ You can control various basic aspects of your instance by navigating to the **Se
 ### Change the name of your collection
 
 The name is "Uwazi" by default, but you can change it to anything you like. 
-
-- [Watch a screencast](https://drive.google.com/open?id=1_6ele0a2bmdSbLD1-UjUfSd53JaUL54T).
 
 ### Customise the favicon
 
@@ -160,7 +152,7 @@ Step 1: Find your unique ID.
 
 Step 2: Navigate to the **Settings** area and click on **Collection** in the left sidebar. 
 
-Step 3: Toggle on the option for Google Analytics or Matomo Analytics, depending on your preference, and add the unique ID. Click the green **Save** button.
+Step 3: Toggle on the option for Google Analytics or Matomo Analytics, depending on your preference, and add the unique ID. Click the **Save** button.
 
 ## How to configure a Contact Form or Submission Form
 
@@ -182,7 +174,7 @@ Step 2: Toggle on the option of **Contact Form** and set the **Receiving Email**
 
 Step 3: You can also set a different address as the **Sending Email**. This email address will appear as the sender of emails associated with the contact form. If no email address is set, no-reply@uwazi.io will be used.   
 
-Step 4: Click the green **Save** button.
+Step 4: Click the **Save** button.
 
 ### Submission form configuration 
 
@@ -196,7 +188,7 @@ Step 3: Select the **Template(s)** that need to be whitelisted.
 
 Step 4: In the case that submissions should be sent to a different Uwazi instance than the one where the form is found, add the URL of that destination instance.
 
-Step 5: Click the green **Save** button.
+Step 5: Click the **Save** button.
 
 ## How to customise your collection's map configurations
 
@@ -214,7 +206,7 @@ Step 3: A default API key for the online map service is provided with Uwazi, but
 
 - Detailed guidelines on how to set up a Google Maps API key can be found here.
 
-Step 4: Click the green **Save** button.
+Step 4: Click the **Save** button.
 
 ### Map starting point 
 
@@ -222,4 +214,4 @@ Step 1: Navigate to the **Settings** area and click on **Collection** in the lef
 
 Step 2: To set your own default geolocation, drag the map and click to select the destination, or enter the latitude and longitude, if known.
 
-Step 3: Click the green **Save** button.
+Step 3: Click the **Save** button.
