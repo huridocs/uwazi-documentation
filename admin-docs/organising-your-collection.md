@@ -93,20 +93,21 @@ Next to the Primary Filters, you will see a **Featured/All** toggle in the sideb
 
 - Using the FEATURED operator will display only templates that you have explicitly configured as Primary Filters.
 - Using the ALL operator will display a list of every template that exists in your collection, including the templates you haven’t configured as Primary Filters.
-- 
-Next to any **Multiselect** properties that you have configured as filters, you will see an **And/Or** toggle next to the filter: 
+
+Next to any **Select** properties with multiple select configured that you have set as filters, you will see an **And/Or** toggle next to the filter: 
+
 - Using the **AND** operator will display the entities that contain all the properties for which you are filtering. 
 - Using the **OR** operator will display the entities that contain at least one of the properties for which you are filtering.
 
-For **Select** and **Multiselect** properties which utilise **Thesauri** with terms nested into groups, you will notice three different possible configurations when using them as filters in the sidebar:
+For **Select** properties which utilise **Thesauri** with terms organised into groups, you will notice three different possible configurations when using them as filters in the sidebar:
 
-- Clicking on a group name will select all of the terms nested within the group, resulting in a green checkmark next to the group’s name as well as next to all of the corresponding terms.
+- Clicking on a group name will select all of the terms contained within the group, resulting in a green checkmark next to the group’s name as well as next to all of the corresponding terms.
   - For example, imagine a group named Asia which contains the terms ```Bangladesh```, ```Cambodia``` and ```India```. If you click on ```Asia```, the terms ```Bangladesh```, ```Cambodia``` and ```India``` will be selected and consequently, all entities that match these filters will appear in the Library. 
 
-- Clicking on the group name will select all of the terms nested within the group. However, you are free to deselect individual terms that are nested within the group. This will result in a green line next to the group’s name and a green checkmark next to only those terms that you want to apply as filters. 
+- Clicking on the group name will select all of the terms contained within the group. However, you are free to deselect individual terms within the group. However, you are free to deselect individual terms within the group. This will result in a green line next to the group’s name and a green checkmark next to only those terms that you want to apply as filters. 
   - For example, imagine a group named Asia which contains the terms ```Bangladesh```, ```Cambodia``` and ```India```. If you click on ```Asia```, the terms ```Bangladesh```, ```Cambodia``` and ```India``` will all be selected. You can uncheck ```Cambodia```, and consequently only entities that match the ```Bangladesh``` and ```India``` filters will appear in the Library. 
 
-- Clicking on the group name twice will result in a green box next to the group’s name and checkmarks next to all of the terms nested within it; however, the terms will be grayed out and you will be unable to deselect individual terms. This action selects the group as a unit and creates a URL for the filtered entities that will automatically incorporate any additional terms that are added later on to the group.
+- Clicking on the group name twice will result in a green box next to the group’s name and checkmarks next to all of the terms contained within it; however, the terms will be grayed out and you will be unable to deselect individual terms. This action selects the group as a unit and creates a URL for the filtered entities that will automatically incorporate any additional terms that are added later on to the group.
   - For example, imagine a group named ```Asia``` which contains the terms ```Bangladesh```, ```Cambodia``` and ```India```. Now imagine that you need a link to only entities in your Library that have something to do with ```Asia```. Double click on ```Asia``` in the filters sidebar and the terms ```Bangladesh```, ```Cambodia``` and ```India``` will all be selected, and the browser will display a URL for this subset of your entities. If later on you expand the ```Asia``` group and add ```Myanmar```, you can use the same URL as before to see only entities in your Library that have something to do with ```Asia``` – entities that match the ```Myanmar``` filter will be displayed alongside ones that match the ```Bangladesh```, ```Cambodia``` and ```India``` filters.
 
 ## How to search within your collection
@@ -157,7 +158,7 @@ Within Uwazi, you can create an interactive **Table of Contents** for a PDF that
 
 Step 1: Navigate to the **Library** ![](images/image_0.png) and locate the entity that contains the document for which you want to create a **Table of Contents**. Click the **View** button to see the document in full. 
 
-Step 2: Within the document, use the cursor to highlight the text that you want to add as the first heading in the table of contents. Three blue buttons will appear.  Click on **Add to Table of Contents**, and the highlighted text will appear on the right sidebar.
+Step 2: Within the document, use the cursor to highlight the text that you want to add as the first heading in the table of contents. Three buttons will appear.  Click on **Add to Table of Contents**, and the highlighted text will appear on the right sidebar.
 
   - Note: You may need to make small edits to the heading, such as restoring spaces between words.
 
@@ -177,6 +178,8 @@ Step 1: Navigate to the **Settings** area and click on **Relationship Types**.
 
 Step 2: Click on the **Add Relationship** button. Give the relationship a descriptive name.
 
+- You will also see the **Add Relationship** button as an option when editing an entity template. Here, you can quickly create, name and save a **Relationship Type**. Later on, if you navigate to the **Settings** area  and click on **Relationship Types**, you will see it listed there.  
+
 Step 3: Click **Save**.
 
 ### Reference other text in the same or a different document
@@ -191,13 +194,13 @@ Step 4: Choose the document from the list which contains the text to which you w
 
 Step 5: Click the green arrow button to proceed. You will then be taken to the document you have selected. Using the cursor, highlight the text that you want to reference.
 
-Step 6: Click the green **Save** button. The referenced text in both documents will be highlighted in yellow, indicating that it is associated with a **Reference**. Clicking on the document icon shown alongside the reference in the right sidebar will take you to the related paragraph.
+Step 6: Click the **Save** button. The referenced text in both documents will be highlighted in yellow, indicating that it is associated with a **Reference**. Clicking on the document icon shown alongside the reference in the right sidebar will take you to the related paragraph.
 
 ### Reference another entity (with or without a Primary Document)
 
 Step 1: Navigate to the **Library** ![](images/image_0.png) and locate the entity that contains the document for which you want to create a **Reference**. Click the **View** button to see the document in full.
 
-Step 2: Within the document, use the cursor to highlight the text to which you want to add a **Reference**. Three blue buttons will appear. Click on the **Connect to a Document** button and an area called **Create Reference** will open in the right sidebar.
+Step 2: Within the document, use the cursor to highlight the text to which you want to add a **Reference**. Three buttons will appear. Click on the **Connect to a Document** button and an area called **Create Reference** will open in the right sidebar.
 
 Step 3: Using the checkboxes, select the previously defined **Relationship Type** that you would like to use as part of this **Reference**.
 
@@ -209,7 +212,9 @@ Step 5: Click the green **Save** button. The referenced text will be highlighted
 
 In Uwazi, a **Relationship** connects two or more entities in your collection so that it’s possible to scrutinise how they interact with one another. You can establish a **Relationship** in a consistent and structured way by adding a **Relationship** property to an entity template. Whenever a new entity is created using the template, the **Relationship** metadata is subsequently displayed alongside the entity’s other properties. [Learn more about creating templates](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates).
 
-However, you don’t have to predefine a relational model upfront or follow a rigid structure. Uwazi allows you to arbitrarily create **Relationships** between entities on a one-to-one basis or on a one-to-many basis. These **Relationships** are displayed in a tree called an **Information Hub**. You can see all of the **Relationships** associated with an entity by clicking to **View** an entity in full the **Library** ![](images/image_0.png) and then clicking the **Relationships** icon ![](images/image_59.png) in the right sidebar.
+However, you don’t have to predefine a relational model upfront or follow a rigid structure. Uwazi allows you to arbitrarily create **Relationships** between entities on a one-to-one basis or on a one-to-many basis. These **Relationships** are displayed in a tree called an **Information Hub**. 
+
+You can see an entity’s **Information Hub** with all of its **Relationships** by clicking on an entity in the **Library**, clicking on the **Relationships** icon ![](images/image_59.png) in the sidebar, and clicking the **Collapse All** or **Expand All** buttons at the bottom of the screen to see more detail. You can also access the full view of the **Information Hub** by clicking the **View** button on an entity and then clicking on the Relationships icon ![](images/image_59.png).
 
 - Note: We sometimes use the term **Connection** to mean **Relationship**. In practice, these refer to the same feature.
 
@@ -220,6 +225,8 @@ Before you configure a **Relationship**, you likely will first want to create a 
 Step 1: Navigate to the **Settings** area and click on **Relationship Types**.
 
 Step 2: Click on the **Add Relationship** button. Give the relationship a descriptive name.
+
+- You will also see the **Add Relationship** button as an option when editing an entity template. Here, you can quickly create, name and save a **Relationship Type**. Later on, if you navigate to the **Settings** area and click on **Relationship Types**, you will see it listed there.
 
 Step 3: Click **Save**.
 
