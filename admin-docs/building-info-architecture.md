@@ -31,7 +31,6 @@ Step 5: For each property, click **Edit** and give it a **Name** or **Label**. C
 
 Step 6: Remember to click on **Save** after creating or making changes to each template.
 
-- [Watch a screencast](https://drive.google.com/open?id=1pqcKphveaHFJqrrBPT53b2jE5lo75BMf).
 - If you intend to add your entities in bulk using CSV import, remember that the property names on these templates must match the property names in the CSV file. [Learn more about CSV import](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-add-entities-in-bulk-with-csv-import).
 
 ## Understanding properties
@@ -42,10 +41,9 @@ There are several types of properties available, including:
 
 - Plain text
 - Numeric
-- Single select (requires a **Thesaurus**)
-- Multiselect (requires a **Thesaurus**)
+- Select (can be configured as a single select or multiple select; each requires a **Thesaurus**)
 - Relationship (to create connections between this type of entity and another type)
-- Date, date range, multi date, multi date range
+- Date (can be configured as single date, multiple date, single date range or multiple date range)
 - Rich text
 - External link
 - Image (to attach an image)
@@ -54,11 +52,11 @@ There are several types of properties available, including:
 - Geolocation (to add latitude and longitude coordinates that can be displayed on a map)
 - Generated ID (to assign an automatically generated unique ID code to each entity)
 
-Some properties are a bit more complex and/or require extra steps to configure them correctly. These include **Select** and **Multiselect**, **Geolocation**, **Relationships** and **Generated ID**.
+Some properties are a bit more complex and/or require extra steps to configure them correctly. These include **Select**, **Geolocation**, **Relationships** and **Generated ID**.
 
-## Select and Multiselect properties
+## Select property
 
-A **Select** property allows you to assign a single attribute to your entity from a dropdown list of predefined terms. A **Multiselect** property allows you to assign several attributes to your entity from a checklist of predefined terms. Before you can add either a **Select** or **Multiselect** property to a template, you must create your list of predefined terms. In Uwazi, this list of terms is called a **Thesaurus**.
+A **Select** property allows you to assign a single attribute or multiple attributes to your entity from a dropdown list of predefined terms. Before you can complete the configuration of a **Selet** property to a template, you must create your list of predefined terms. In Uwazi, this list of terms is called a **Thesaurus**.
 
 ### How to create thesauri
 
@@ -67,6 +65,8 @@ Step 1: Navigate to the **Settings** area and click on **Thesauri**. Here you wi
 ![](images/image_18.png)
 
 Step 2: Click on the **Add Thesaurus** button.
+
+- You will also see the **Add Thesaurus** button as an option when editing an entity template. Here, you can quickly create, name and save a **Thesaurus**, but you can only add terms to the **Thesaurus** later by navigating to the **Settings** area , clicking on **Thesauri** and clicking the **Edit** button next to the **Thesaurus** you wish to edit.
 
 Step 3: Name your **Thesaurus**.
 
@@ -90,7 +90,9 @@ Step 1: Create a **CSV file** on your computer:
 - If you have more than one language configured in your instance and you want to import a list of terms at the same time as their corresponding translations, then each language should have its own separate column. Use the name of the language written in English (e.g. English, Russian, Spanish).
   - Note: If your CSV file has columns for languages that are not configured in your Uwazi instance, they will be ignored. Learn more about enabling different languages in Uwazi.
 
-Step 2: Populate the **CSV file** with the terms. Each term should occupy its own row. For example, here’s a sample CSV file viewed as plain text:
+Step 2: Populate the **CSV file** with the terms. Each term should occupy its own row. 
+
+If your **Thesaurus** is a simple list of terms without any hierarchy (i.e. there are no groupings of terms), your CSV file should look like the sample below when viewed as plain text:
 
 ```
 English,French,German
@@ -102,17 +104,15 @@ Child,Enfant,Kind
 And here’s the same file viewed in a spreadsheet program:
 ![](images/image_19.png)
 
-- Note: Avoid including duplicate values in the same column, as this will cause a validation error and prevent the import from working successfully.
+If your **Thesaurus** includes hierarchy (i.e. there are groupings of terms), your CSV file must follow a different format: list the group name, then immediately follow it by the terms that belong to that group, with those terms prefixed by a hyphen (-).  
 
-Step 2 (optional): You can group terms by including a line with the group name, and immediately include lines for the terms to be grouped, prefixed with a hyphen (-).
-
-As an example, here's a sample CSV file viewed as plain text:
+For example, imagine you have a list about colors that includes the terms “Primary” and “No Color”. As it turns out, “Primary” encompasses more than one color, so “Primary” is a parent term that groups together three other terms: “Red”, “Yellow” and “Blue”. “No Color”, however, does not group together any other terms; it stands alone. A CSV file viewed as plain text for this example list of terms would look like the following:
 
 ```
 English,French,German
 Primary,Primaire,Primär
 -Red,-Rouge,-Rot
--Green,-Vert,-Grün
+-Yellow,-Yaune,-Gelb
 -Blue,-Bleu,-Blau
 No color,Sans couleur,Farblos
 ```
@@ -120,9 +120,7 @@ No color,Sans couleur,Farblos
 And here’s the same file viewed in a spreadsheet program:
 ![](images/image_97.png)
 
-This would result in a thesauri where `Red`, `Green` and `Blue` are grouped under `Primary`, and `No color` is not grouped.
-
-- Note: The prefixing needs to be consistent across translations of a term, and all grouped terms need to have a parent. Otherwise, the import will cause a validation error.
+- Note: In all cases, avoid including duplicate values in the same column, as this will cause a validation error and prevent the import from working successfully.
 
 Step 3: Save the **CSV file** in UTF-8 format on your computer.
 
@@ -130,13 +128,13 @@ Step 4: Navigate to the **Settings** area and click on **Thesauri**. Click on th
 
 Step 5: Click the **Import** button. Using the file browser to navigate your computer’s storage, find and select the CSV file. Once the import has finished, the terms will appear in the **Thesaurus**.
 
-Step 6: Click the green **Save** button.
+Step 6: Click the **Save** button.
 
 - If you imported more than one language, navigate to the **Settings** area and click on **Translations**. Click on the **Thesaurus** name, and you will see all the terms and their translations that have been imported. [Learn more about translating an Uwazi collection](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html).
 
-### How to configure a Select or Multiselect property
+### How to configure a Select property
 
-Step 1: Once you have created your **Thesaurus**, navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add a **Select** or **Multiselect** property and click **Edit**.
+Step 1: Once you have created your **Thesaurus**, navigate to the **Settings** area and click on **Templates**. Locate the template to which you want to add a **Select** property and click **Edit**.
 
 Step 2: Drag and drop the **Select** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property.
 
@@ -144,7 +142,9 @@ Step 3: Click **Edit** and give the property a **Name** or **Label**. Next, iden
 
 - If you have not already created a relevant **Thesaurus** in advance, you can create one at this stage by clicking the **Add Thesaurus** button at the bottom of the screen. When you click the button, a pop-up will appear where you can directly label and create a **Thesaurus**. Once you click **Save**, the new **Thesaurus** will appear in the **Thesauri** dropdown on the **Select** property. After finishing configuring this property, you can go back to the **Settings** area, click **Thesauri** and add relevant items to the **Thesaurus** you just created.
 
-Step 4: Review the other options for the property as explained previously in this chapter. When you have finished, click **Save**.
+Step 4: Review the other options for the property as explained previously in this chapter, such as “Use as filter” or “Hide label”. When you have finished, click **Save**.
+
+- If you are an **Admin** user, you can add terms to an already existing **Thesaurus** while browsing entities in the **Library** without going into the **Settings** area. Choose the entity you want to review and click the **Edit** button at the bottom of the screen. Below every **Select** property within the entity, you will see an **Add value** option. Once you click **Add value**, a pop-up will appear where you can directly add a term to the **Thesaurus** that is linked to the property. Once you click **Save**, you can go back to the **Settings** area, click **Thesauri** and see the new term now incorporated into the **Thesaurus**.
 
 ## Geolocation property
 
@@ -156,7 +156,7 @@ Step 1: Navigate to the **Settings** area and click on **Templates**. Locate the
 
 Step 2: Drag and drop the **Geolocation** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property.
 
-Step 3: Click **Edit** and give the property a **Name** or **Label**. Review the other options for the property as explained previously in this chapter.
+Step 3: Click **Edit** and give the property a **Name** or **Label**. Review the other options for the property as explained previously in this chapter, such as “Use as filter” or “Hide label”.
 
 Step 4: Repeat the above process until you have created all of the **Geolocation** properties that you want.
 
@@ -172,7 +172,7 @@ Step 1: Navigate to the **Settings** area and click on **Templates**. Locate the
 
 Step 2: Drag and drop the **Geolocation** property from the right side of the screen into the template, or add it by clicking on the plus icon next to the property.
 
-Step 3: Click **Edit** and give the property a **Name** or **Label**. Review the other options for the property as explained previously in this chapter.
+Step 3: Click **Edit** and give the property a **Name** or **Label**. Review the other options for the property as explained previously in this chapter, such as “Use as filter” or “Hide label”.
 
 Step 4: Repeat the above process until you have created all of the **Geolocation** properties that you want.
 
@@ -186,6 +186,8 @@ Step 6. When you have finished, click **Save**.
 
 A **Relationship** property allows you to create a connection to another entity template. The connection can be basic, such that it points in general to a different template. The connection can also be more complex, such that it inherits a specific property from another template.
 
+Before you can complete the configuration of a **Relationship** property, you must first create the **Relationship Type** that will be used to define the nature of the connection.
+
 ### How to create Relationship types
 
 Step 1: Navigate to the **Settings** area and click on **Relationship Types**.
@@ -193,6 +195,8 @@ Step 1: Navigate to the **Settings** area and click on **Relationship Types**.
 ![](images/image_20.png)
 
 Step 2: Click on the **Add Relationship** button. Give the **Relationship Type** a descriptive name.
+
+- You will also see the **Add Relationship** button as an option when editing an entity template. Here, you can quickly create, name and save a **Relationship Type**. Later on, if you navigate to the **Settings** area  and click on **Relationship Types**, you will see it listed there.   
 
 Step 3: Click **Save**.
 
@@ -206,13 +210,13 @@ Step 3: Click **Edit** on the newly added property, and give it a descriptive **
 
 Step 4: Using the dropdown list called Relationship*, select the **Relationship Type** that you would like to use as part of this property. (The * indicates that it is mandatory.)
 
-- If you have not already created a relevant **Relationship Type** in advance, you can create one at this stage by clicking the **Add Relationship Type** button at the bottom of the screen. When you click the button, a pop-up will appear where you can directly label and create a **TRelationship Type**. Once you click **Save**, the new **Relationship Type** will appear in the **Relationship*** dropdown.
+- If you have not already created a relevant **Relationship Type** in advance, you can create one at this stage by clicking the **Add Relationship Type** button at the bottom of the screen. When you click the button, a pop-up will appear where you can directly label and create a **TRelationship Type**. Once you click **Save**, the new **Relationship Type** will appear in the **Relationship** dropdown.
 
 Step 5: By default, the property will allow you to create a connection to any entity template (“Any entity or document”). However, you also have the option to restrict a connection to only entities that use one specific template. To do so, click on the **Entities** dropdown list and select whichever template you want.
 
 - Note: The dropdown won’t contain the template that is currently being edited. [Learn more about how to connect entities of the same template](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#how-to-create-relationships-between-entities-in-the-information-hub).
 
-Step 6: Review the other options for the property as explained previously in this chapter. When you have finished, click **Save**.
+Step 6: Review the other options for the property as explained previously in this chapter, such as “Use as filter” or “Hide label”. When you have finished, click **Save**.
 
 Now, whenever you create a new entity using the template that includes this **Relationship** property, you will be presented with a multiselect list of all the existing entities in your collection which meet the criteria that you have configured (i.e. a connection to another specific template or a connection to “Any entity or document”). Simply select the relevant existing entity (or entities) from the list, and then its **Name** property will be displayed as part of the new entity’s metadata.
 
