@@ -215,3 +215,21 @@ Step 1: Navigate to the **Settings** area and click on **Collection** in the lef
 Step 2: To set your own default geolocation, drag the map and click to select the destination, or enter the latitude and longitude, if known.
 
 Step 3: Click the **Save** button.
+
+## How to view your collection’s storage and other stats
+
+Step 1: Navigate to the **Settings** area and click on **Dashboard** in the left sidebar.
+
+Step 2: In the **Dashboard**, you will see figures related to the following: 
+
+- How many total user accounts your collection has
+
+- How many types of users (Admin, Editor, Collaborator) your collection has 
+
+- How many entities your collection has across all languages
+
+- How many files (Primary Documents, Supporting Files, Custom Uploads) your collection has
+
+- How much storage space your collection is currently using
+
+
