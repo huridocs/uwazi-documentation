@@ -22,15 +22,32 @@ Step 4: At the top of the page under **Active Languages**, select which language
 
 ## How to translate the Uwazi interface 
 
-The collective of buttons, menu items, system messages, etc. that you interact with while using the Uwazi software is called the interface.  The Uwazi interface is available by default in English, but it can be translated into any of the [languages that you have previously enabled](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-configure-the-available-languages-for-your-collection).
+The collective of buttons, menu items, system messages, etc. that you interact with while using the Uwazi software is called the interface. The Uwazi interface is available by default in English, as well as Arabic, Burmese, French, Korean, Russian, Spanish, Thai and Turkish. However, you are free to customise the default translations of any interface terms found within your Uwazi collection. Furthermore, the interface can be manually translated into any of the [languages that you have previously enabled](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#how-to-configure-the-available-languages-for-your-collection), even if they don’t have an available default translation.
 
-All interface translations that are currently configured in your instance can be consulted and edited at any time by navigating to the **Settings** area, clicking **Translations** and then clicking **User Interface**.
+All interface translations that are currently configured in your instance can be consulted and edited at any time by navigating to the **Settings** area, clicking **Translations** and then clicking **User Interface**. At the top of the screen, you can toggle on the filter “Untranslated Terms” to quickly see what terms require a translation.
+
+### How to load and edit available default translations of the interface
+
+Step 1: Navigate to the **Settings** area and click on **Languages**.
+
+Step 2: Locate the language(s) you want. If there is a translation available, you will see a label next to the name of the language that reads: “Available default translation”. Click **Add Language**.
+
+Step 3: Type `CONFIRM` (in all capital letters) in the confirmation dialog and click **Accept**.
+
+Step 4: You should see the language that you have added at the top of the page under **Active Languages**. If not, simply refresh your browser. The language will now appear in the language dropdown menu found within your collection’s main navigation menu along the top of the screen. When you select the language from the dropdown menu, your collection’s button, system messages, etc. will now appear in that language.
+
+Step 5: If you would like to amend the translation of any particular term, you can do so in two different ways: 
+
+- Navigate back to the **Settings** area and click **Translations**. Under **System Translations**, click **User Interface**, locate the term or terms that you want to modify, input the translation in the space provided, and click **Save**.
+- Remain in the same place where you have seen the term in context. Along the top of the screen, open the language dropdown menu within your collection’s main navigation menu and click to activate the **Live Translate** feature. Consequently, all of the terms on the screen that are translatable will be underlined in orange, and the circle next to **Live Translate** will turn green. Click on the term that you want to translate, add its corresponding translation(s) in the pop-up, and click **Submit**. Repeat this process for any of the other underlined terms on the screen that you would like to translate. When you have finished, click on the green circle next to **Live Translate** in the interface language dropdown menu to deactivate the feature.
+
+Step 6: If at any moment, you would like to “reset” your interface translation and return to the default state, navigate to the **Settings** area, click on **Languages** and click on the **Reset Default Translation** button next to the translation in question.
 
 ### Translate interface terms in bulk with CSV import
 
-The majority of Uwazi’s interface can be translated all in one go by importing a **Comma-Separated Values (CSV) file** that includes the list of terms in English and their corresponding translations. This method can be especially convenient when setting up your Uwazi instance for the first time.
+The majority of Uwazi’s interface can be translated all in one go by importing a **Comma-Separated Values (CSV) file** that includes the list of terms in English and their corresponding translations. This method can be especially convenient when setting up your collection for the first time and the language that you require is not available as a default translation in Uwazi.
 
-A CSV file of the English-language interface terms is available for download on the Uwazi website. We also offer CSV files of already translated interface terms for the following languages: Arabic, French, Spanish and Russian.
+A CSV file of the English-language interface terms is available for download on the Uwazi GitHub repository.
 
 To translate the Uwazi interface using CSV import:
 
@@ -106,7 +123,7 @@ Step 2: Click on the entity to expand the right sidebar and see more details abo
 
 Step 3: Click the **Upload PDF** button and select the translated version of the **Primary Document** from within the file browser.
 
-Step 4: Uwazi will automatically detect the language of the uploaded file and attach a corresponding label. If the language of an uploaded **Primary Document** matches a language that is enabled in your collection, then Uwazi will load it by default when that language option is selected in the main navigation menu.
+Step 4: To the best of its ability, Uwazi will automatically detect the language of the uploaded file and attach a corresponding label. (You are free to modify the resulting label if it does not match the document’s language accurately.) If the language of an uploaded **Primary Document** matches a language that is enabled in your collection, then Uwazi will load it by default when that language option is selected in the main navigation menu.
 
 For example, imagine that you have English and Spanish enabled in your collection, and that you have an entity with a **Primary Document** in English and a version in Spanish. When you navigate the English-language collection and click the **View** button on this entity, Uwazi will load the English-language version of **Primary Document**. If you switch to the Spanish-language collection and click the **View** button on this same entity, Uwazi will instead load the Spanish-language version of the **Primary Document**.
 
@@ -143,9 +160,9 @@ Whenever you create and save a new entity or **Page**, all of its contents are s
 Whenever you edit the contents of an existing entity or **Page**, some changes will be synced across all of the languages of your collection, while others will not.
 
 Changes made to the contents of the following will be automatically synced to all languages:
-- **Select** and **Multiselect** properties
+- **Select** properties
 - **Relationship** property and any other arbitrary **Relationships** that an entity may have
-- **Date**, **Date Range**, **Multi Date**, **Multi Date Range** properties
+- **Date** properties
 - **Geolocation** property
 - **Numeric** property
 - **Link** property
