@@ -217,7 +217,10 @@ body > div.wy-grid-for-nav > nav > div > div.wy-side-nav-search > div.version {
   margin-left: 24px;
   line-height: 24px;
   margin-bottom: 24px;
-  box-shadow: grey 0 0 5px; 
+  box-shadow: grey 0 0 5px;
+  padding: 8px;
+  border-left: solid 8px indigo;
+  background-color: white;
 }
 
 @media screen and (max-width: 768px) {
