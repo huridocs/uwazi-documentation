@@ -14,8 +14,6 @@ Step 3: Name your template and select a color for it. The combination of the nam
 
 Step 4: On the right side of the screen is a list of **Properties**. Drag and drop one property at a time onto the template, or click on the plus icon to add the property.
 
-![](images/image_16.png)
-
 Step 5: For each property, click **Edit** and give it a **Name** or **Label**. Configure any necessary settings required for the particular property in question. Be sure to review the other options available for the property, which may include the following:
 
 - **Priority Sorting** means that this property will be used as default sorting criterion in the **Library**.
@@ -61,8 +59,6 @@ A **Select** property allows you to assign a single attribute or multiple attrib
 ### How to create thesauri
 
 Step 1: Navigate to the **Settings** area and click on **Thesauri**. Here you will see all the **Thesauri** that have been created so far.
-
-![](images/image_18.png)
 
 Step 2: Click on the **Add Thesaurus** button.
 
@@ -191,8 +187,6 @@ Before you can complete the configuration of a **Relationship** property, you mu
 ### How to create Relationship types
 
 Step 1: Navigate to the **Settings** area and click on **Relationship Types**.
-
-![](images/image_20.png)
 
 Step 2: Click on the **Add Relationship** button. Give the **Relationship Type** a descriptive name.
 
