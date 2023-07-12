@@ -10,8 +10,6 @@ Step 2: Navigate to the **Settings** area and click **Accounts**.
 
 Step 3: You can change your email address here, as well as your account password.
 
-![](images/image_1.png)
-
 ### Recover your password
 
 Step 1: At the login screen, click **Forgot Password?**.
@@ -36,8 +34,6 @@ Step 4: Open [Authy](https://authy.com/features/setup/) or [Google Authenticator
 
 Step 5: Enter the code and click **Confirm**. If you have successfully enabled two-factor authentication, your account settings will reflect this.
 
-![](images/image_2.png)
-
 ### Login with two-factor authentication
 
 Step 1: Log into your instance with your credentials.
@@ -57,8 +53,6 @@ If you work in a team or in collaboration with other people, Uwazi allows admini
 - **Admin** role has the ability to create, see and edit all **Entities**; change all settings throughout the Uwazi instance; and add new users
 - **Editor** role has the ability to create, see and edit all **Entities**
 - **Collaborator** role has the ability to create new **Entities** and can be invited to see and edit other on an individual basis
-
-![](images/image_3.png)
 
 ### Add new users to your collection
 
