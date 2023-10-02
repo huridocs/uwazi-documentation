@@ -64,46 +64,66 @@ Add any new users (individuals or groups) who should have access to the entity, 
 
 ## How to add entities in bulk with CSV import
 
-It may be that you have a large pre-existing collection of data points or materials that you want to add to your Uwazi collection. Doing so one by one would be a tedious task, so for situations such as these, Uwazi makes it possible to upload in bulk by preparing and then importing a **Comma-Separated Values (CSV) file**.
+It may be that you have a large pre-existing collection of data that you wish to migrate to your Uwazi collection. Manually adding them one by one would be a tedious task, so for situations such as these, Uwazi makes it possible to upload them in bulk by using CSV import. For CSV import, prepare your dataset in spreadsheets and then convert it to a **Comma-Separated Values (CSV) file** following the guidelines below. However, please note that CSV import is best suited for the initial migration, and we recommend manually populating your Uwazi collection once the initial migration is complete. Please contact HURIDOCS if you need support on data migration.
 
 ### Import entities without documents or supporting files
 
 Remember, before you can import entities in bulk, make sure you have already created a corresponding template. [Learn more about how to create templates](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-templates).
 
-Step 1: Create a **CSV file** on your computer. It should include a column for each of the properties that are included on the entity’s template. Import works by matching property names – therefore, be meticulous in using the same column labels in the CSV file as the property names on the template in Uwazi. As well, be sure to follow these guidelines:
+Step 1: Create a **spreadsheet**. In your **spreadsheet**, create a column for each property that is included in the template you want to import your dataset into. Provide a header for every column following the guidelines below.
 
-- Property names are not case sensitive, which means you can use either lowercase, capitals or a combination of both.
-- The first column should be called “Title” and is required in your CSV file. This is where you will put the **Name** property of each entity.
-- There is no need to include the **Date Added** property because it is filled automatically during the import into Uwazi.
-- If you have a **Geolocation** property, its corresponding column must be styled ```[name-of-your-geolocation-property]_geolocation```, replacing the bracketed text with the actual name of your geolocation property (e.g. ```detention place_geolocation```).
+- Name the column header the same as the title of each property in your template. CSV import works by matching the column headers in your **spreadsheet** with the property titles in your template. Therefore, it is important to label each column following the corresponding property’s title in your template. Please note the exceptions below.
+  - The first column header should be labeled as **Title** and is required in your **spreadsheet**.
+  - If you have a **Geolocation** property, its corresponding column in your **spreadsheet** must be labeled as following: ```[name-of-geolocation-property]_geolocation```. Replace the bracketed text with the actual name of your geolocation property (e.g. ```detention place_geolocation```).
+- The column header is not case sensitive but space sensitive. Which means you can use letter cases that are different from your property titles for the column headers, but you have to have the same spacing.
 
-Step 2: Populate the **CSV file** with your data. Certain properties must follow a specific format:
+Step 2: Organize your pre-existing data into each corresponding column created in the previous step, following the formats and guidelines below.
 
-- If you have opted to use a **Generated ID** property for the **Name** of your entities, leave the rows underneath the “Title” column blank. They will be filled automatically during the import into Uwazi.
-- If you have a **Link** property, the URLs must contain the http or https protocol (e.g. https://www.example.com). Omitting the protocols will cause the import to fail.
-- For properties with multiple values, the pipe symbol ```|``` should be used as the separator. Do not include spaces between. For example: 
-  - For a **Select** property: ```Arbitrary arrest|Illegal search|Enforced disappearance```
-  - For a **Date** property: ```2020/8/16|2021/9/1|2022/11/29```
-  - For a **Link** property (which follows the format of ```label|URL```): ```Website|https://www.example.com```
-  - For a **Geolocation** property (which follows the format of ```latitude|longitude```): ```46.204391|6.143158```
-- If you have a **Select** property that utilises a **Thesaurus** containing terms which are organised into groups, do not include the names of the groups. Instead, simply include the terms that are contained within the groups. Upon import, Uwazi will automatically assign them to their corresponding groups.
-  - For example, imagine that your entity template has a **Select** property called ```Country```. This property utilises a **Thesaurus** that contains the terms ```Bangladesh```, ```Cambodia```, and ```India```, which are all contained within a group named ```Asia```. In your **CSV file** in the rows under the column labeled ```Country```, the only possible terms that should appear there are ```Bangladesh```, ```Cambodia``` or ```India```, depending on the information contained in each corresponding entity. Nowhere should the group name ```Asia``` appear. 
-- If you have a **Date** property  that is configured as a single date range, include the starting and finishing date separated by a colon character ```:```. For example, `2022/8/16:2022/9/1`
-- If you have a **Date** property that is configured as multiple date ranges, include the starting and finishing dates separated by a colon character ```:```. Also, separate each range with the pipe symbol ```|```. For example, `2020/8/16:2020/9/1 | 2022/8/16:2022/9/1`
-- If you have a basic **Relationship** property, include the name of the other entity which is connected to the entity in question. In the case of multiple values, use the pipe symbol | as the separator and do not include spaces between each value. 
-  - The entities which form the other half of the **Relationship** must already exist in your collection. Otherwise, the import will not work correctly. [Learn more about configuring Relationship properties](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-configure-a-basic-relationship-property).
-- If you have a **Relationship** property that inherits a property from another template, follow the same guidance as above: Include the name of the entity which is the source of the inherited property. Do not include the inherited property itself. In the case of multiple values, use the pipe symbol | as the separator and do not include spaces between each value.
-  - The entities which are the source of the inherited properties must already exist in your collection. Otherwise, the import will not work correctly. [Learn more about configuring Relationship properties](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-configure-a-basic-relationship-property).
+- **Date added** and **Date modified** property
+  - You should not include these two properties in your **spreadsheet** as they are filled automatically during the import into Uwazi.
+- **Select** property
+  - If you want to import a **Select** property, you can populate your **spreadsheet** with corresponding thesauri values. [Learn more about Select property and Thesauri](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#select-property). Upon your import, Uwazi will automatically add the imported values to corresponding thesauri if they are not already present.
+  - If you want to import a **Select** property that utilises a **Thesaurus** containing terms which are organised into groups, follow the same guidance as the previous step: populate your **spreadsheet** with thesauri values. Do not include the names of the group, instead, simply include the terms that are contained within the groups. Uwazi will automatically assign them to their corresponding groups upon import. [Learn more about how to group your thesaurus](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-create-thesauri).
+      -  For example, imagine you have a **Thesaurus** titled ```Country``` in which you grouped ```Bangladesh```, ```Cambodia```, and ```India``` under ```Asia```. In your **spreadsheet** in the rows under the column labeled ```Country```, you would only put ```Bangladesh```, ```Cambodia```, or ```India```. Do not include ```Asia```, as Uwazi will automatically assign the group.
+      -  Unlike the case when you import a **Select** property with one-level **Thesaurus**, when importing a **Select** property with grouped (two-level) **Thesaurus**, the corresponding **Thesaurus** must already exist in your collection. Without the predefined grouped **Thesaurus**, the import will not work as Uwazi cannot identify which group each **Thesaurus** values should be assigned to. [Learn more about how to import Thesauri](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-import-thesauri-from-a-csv-file).
+  - If you want to import a **Multiple Select** property with multiple thesauri values, use the pipe symbol | as the separator between your values and do not include spaces between each value (e.g.  ```Arbitrary arrest|Illegal search|Enforced disappearance```).
+- **Relationship** property
+  - If you want to import a **Relationship property**, you have to specify the target template you want to connect your datasets with prior to your import. Navigate to the **Settings** area  and click on **Templates**. Under your **Relationship** property, choose the target template from the **Entity** dropdown.
+      -  The target entities related to your dataset you are importing will be automatically created upon the CSV import; you can manually add additional metadata of the related entities within Uwazi. In case of inheriting certain properties from the related entities, you have to populate the target entities with relevant properties in your collection prior to your import.
+  - Once the target template is specified, populate the column for the **Relationship** property in your **spreadsheet** with the title of each related target entity. In the case of connecting with multiple entities, use the pipe symbol | as the separator and do not include spaces between each value (e.g. ```Arbitrary arrest|Illegal search|Enforced disappearance```). 
+  - If you have a **Relationship** property that inherits a property from the related template, follow the same guidance as the previous step: populate your **spreadsheet** with the title of the target entity, not with the inherited property value. Uwazi will automatically inherit the value from the target entity you specified.
+- **Date** property
+  - When preparing your **spreadsheet** with a **Date** property, follow the default date format of your Uwazi collection. You have to use the date format consistently throughout your dataset. 
+      -  You can check or change your collection’s default date format in **Collection** under **Settings**.
+  - In the case you configured a **Multiple Date** property, use the pipe symbol | as the separator and do not include spaces between each date (e.g.```2000/01/01|2000/12/01```).
+  - You cannot put invalid dates (e.g. ```2000/02/30```), partial dates (e.g.```2000/01```), or text values (e.g. ```Early 2000```) in your **Date** property.
+      -  If your dataset includes partial dates or dates with text values, you can include such information in a **Text** property instead; as **Date** property only recognises valid dates in numeric values.
+- **Date Range** property
+  - If you wish to import a **Date Range** property, as with the **Date** property, you should follow the default date format of your Uwazi collection.
+  - The start and end dates of a date range should be separated with the colon symbol : without spaces (e.g. ```2000/01/01:2000/12/01```).
+      -  For a date range without a start or end date, use the colon symbol : as a separator and leave the missing dates blank (e.g. ```2000/01/01:```or ```:2000/12/01```).
+  - In the case you configured a **Multiple Date Range** property, use the pipe symbol | as the separator and do not include spaces between each date range (e.g. ```2000/01/01:2000/12/01|2015/01/01:2015/12/01```).
+- **Link** property
+  - If you have a **Link** property, the URLs must contain the http or https protocol (e.g. ```https://www.example.com```). Omitting the protocols will cause the import to fail.
+  - If you want to label your URL, follow the format of ```label|URL``` (e.g. ```HURIDOCS Website|https://huridocs.org```) using the pipe symbol | as the separator without spaces between.
+  - If you wish to import multiple links, you can use a **Rich Text*** property instead using the Markup syntax for links (e.g.```[HURIDOCS Website]|https://huridocs.org```). 
+- **Geolocation** property
+  - If you wish to import a **Geolocation** property, as explained above, it is important to label your column following the format:```[name-of-geolocation-property]_geolocation. Replace the bracketed text with the actual name of your geolocation property``` (e.g. ```detention place_geolocation```). This allows Uwazi to convert your values into geolocation values.
+  - Define your latitude and longitude coordinates in decimal degrees (DD) following the format of latitude|longitude (e.g. ```34.0566|-117.1957```) with the pipe symbol | separator without spaces in between. 
+      -  When importing **Geolocation** property, Uwazi only recognise numeric values in the decimal degrees (DD) notation format without any marks. For example, coordinate values such as ```N34.0566|W117.1957``` or ```34° 3'| -117° 11'``` should be converted to ```34.0566|-117.1957```.
+- **Generated ID** property
+  - If you have opted to use a Generated ID as your entities’ default title, leave the Title column in your **spreadsheet** blank. They will be filled automatically during the import process.
+ 
+Step 3: Save the **spreadsheet** and convert it to a **CSV file** in **UTF-8 format** on your computer. 
 
-Step 3: Save the **CSV file** in UTF-8 format on your computer.
-
-Step 4: Go to the **Library** ![](images/image_0.png) of your Uwazi collection and at the bottom of the screen, click on the **Import CSV** button. Using the file browser to navigate your computer's storage, find and select the **CSV file**. 
+Step 4: Go to the **Library** of your Uwazi collection and at the bottom of the screen, click on the **Import CSV** button. Using the file browser to navigate your computer’s storage, find and select the **CSV file**.
 
 Step 5: Next, select the template that corresponds to the entities you want to upload, using the dropdown menu. 
 
-Step 6: Finally, click the **Import** button. Once the entities are uploaded into your collection, they will appear in the **Library**. You may need to refresh your screen to see them.
+Step 6: Finally, click the **Import** button. Once the file is uploaded into your collection, they will appear in the **Library**. You may need to refresh your screen to see them. 
 
 Remember, after an import has been done, editing of entities should take place within Uwazi.
+
 
 ### Import entities that contain a Primary Document
 
@@ -128,6 +148,36 @@ Step 2 continued: In the ```Attachments``` column, fill in the file name of each
 Step 3 continued: Be sure to name the **CSV file** as ```import.csv```. Then, compress the CSV file and all of the Supporting Files into a single ZIP file. The CSV file and the Supporting Files should all live alongside each other in the root directory of the ZIP file (i.e. not nested in a folder).
 
 Step 4 modified: Using the file browser to navigate your computer's storage, find and select the ZIP file.
+
+### Import entities in multiple languages
+
+It may be that you have a pre-existing collection of data in multiple languages that you wish to migrate to your Uwazi collection. In such a case, you can prepare and import your multilingual collection depending on the characteristics of data and their properties. 
+
+- For **Title**, **Text**, or **Rich Text** properties, you can use CSV import for multilingual collections following the guidelines in the next paragraph.
+- For **Select** properties, you can translate them within the Uwazi system without needing to prepare your dataset in multi-languages for CSV import.
+- For **Numeric**, **Date**, **Geolocation**, or **Unique ID** properties that are not language specific, there is no additional preparation needed.
+
+If you have unique contents in **Title**, **Text**, or **Rich Text** properties that vary from entity to entity (e.g. ```names```, ```addresses```, or ```descriptions```) and wish to import those in multiple languages to your collection, you can prepare a **spreadsheet** following [the previously explained process for importing entities in bulk](https://uwazi.readthedocs.io/en/latest/admin-docs/working-with-entities-in-your-collection.html#how-to-add-entities-in-bulk-with-csv-import) with a few modified steps: 
+
+Step 1 continued: In addition to the columns created in a default language, create an additional column for every **Title**, **Text**, or **Rich Text** properties in your dataset as per the number of languages you wish to import. 
+
+- For example, if you wish to have your collection in French and Arabic in addition to the default language of English, you will have three columns in your **spreadsheet** for every **Title**, **Text**, or **Rich Text** properties in respective languages.
+  
+Step 1 continued: Once you create columns for every **Title**, **Text**, or **Rich Text** properties in each language, it is important to label the columns following the format: ```[name-of-corresponding-property]_language-code```. 
+
+- For example, if you have a **Text** property of ```Address``` in English, Arabic, and French, each column should be labeled as ```Address_en```, ```Address_ar```, and ```Address_fr```.
+      -  You have to use accurate language codes for each language. Navigate to the **Settings** area  and then click on **Languages** to see language codes for all available languages. 
+
+Step 2 continued: Populate the additional columns in languages you wish to import.
+
+Next, follow the same guidelines of Step 3 through 6 above.
+
+If you have a **Select** property with **Thesauri**, you can translate **Thesauri** within the Uwazi system prior to the import. You can then prepare your **spreadsheet** in one default language without needing to populate the entire dataset in multiple languages, as Uwazi will assign corresponding translations upon your import. There are two ways to translate your **Thesauri** within Uwazi as follows.
+- [Learn more about how to import multilingual Thesauri](https://uwazi.readthedocs.io/en/latest/admin-docs/building-info-architecture.html#how-to-import-thesauri-from-a-csv-file)
+- [Learn more about how to translate Thesauri](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#translate-the-name-label-of-properties-thesauri-relationship-types-custom-filters-and-custom-navigation-menu-items)
+
+If you have **Numeric**, **Date**, **Geolocation**, or **Unique ID**  properties, you can prepare your **spreadsheet** in one default language without needing to populate the entire dataset in multiple languages as values in such properties are not language specific. 
+
 
 ## How to edit properties on multiple entities
 
