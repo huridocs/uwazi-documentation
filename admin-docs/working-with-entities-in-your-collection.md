@@ -163,9 +163,9 @@ Step 1 continued: In addition to the columns created in a default language, crea
 
 - For example, if you wish to have your collection in French and Arabic in addition to the default language of English, you will have three columns in your **spreadsheet** for every **Title**, **Text**, or **Rich Text** properties in respective languages.
   
-Step 1 continued: Once you create columns for every **Title**, **Text**, or **Rich Text** properties in each language, it is important to label the columns following the format: ```[name-of-corresponding-property]_language-code```. 
+Step 1 continued: Once you create columns for every **Title**, **Text**, or **Rich Text** properties in each language, it is important to label the columns following the format: ```[name-of-corresponding-property]__language-code```. 
 
-- For example, if you have a **Text** property of ```Address``` in English, Arabic, and French, each column should be labeled as ```Address_en```, ```Address_ar```, and ```Address_fr```.
+- For example, if you have a **Text** property of ```Address``` in English, Arabic, and French, each column should be labeled as ```Address__en```, ```Address__ar```, and ```Address__fr```.
       -  You have to use accurate language codes for each language. Navigate to the **Settings** area  and then click on **Languages** to see language codes for all available languages. 
 
 Step 2 continued: Populate the additional columns in languages you wish to import.
