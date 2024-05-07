@@ -24,7 +24,7 @@
 
 - **Library** ![](images/image_0.png) is the place where all of your **Entities** are displayed together for easy access.
 
-- **Metadata** is data that provides information about other data. In Uwazi, it usually usually describes the types of **Properties** included in an **Entity**.
+- **Metadata** is data that provides information about other data. In Uwazi, it usually describes the types of **Properties** included in an **Entity**.
 
 - **Primary Document** is the main PDF that can be displayed, read and highlighted within an **Entity** in Uwazi.
 
