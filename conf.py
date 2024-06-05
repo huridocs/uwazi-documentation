@@ -21,7 +21,7 @@ from recommonmark.transform import AutoStructify
 # -- Project information -----------------------------------------------------
 
 project = 'Uwazi'
-copyright = '2020, HURIDOCS'
+copyright = '2024, HURIDOCS'
 author = 'HURIDOCS'
 
 
@@ -33,7 +33,8 @@ author = 'HURIDOCS'
 
 extensions = [
     'recommonmark',
-    'sphinx_rtd_theme'
+    'sphinx_rtd_theme',
+    'sphinx_markdown_tables'
 ]
 
 master_doc = 'index'
