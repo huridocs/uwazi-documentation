@@ -29,10 +29,10 @@
       <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
     {%- endfor %}
 
-    {# FAVICON #}
-    {% if favicon %}
-      <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
-    {% endif %}
+    {#- FAVICON #}
+    {%- if favicon_url %}
+    <link rel="shortcut icon" href="{{ favicon_url }}" />
+    {%- endif %}
   </head>
   <body class="main-page">
     {% include "header.html" %}

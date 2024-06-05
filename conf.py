@@ -68,7 +68,7 @@ html_css_files = [
     'https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto&amp;ver=5.3.3'
 ]
 
-html_favicon = 'favicon.png'
+html_favicon = '_static/favicon.ico'
 
 def setup(app):
     app.add_config_value('recommonmark_config', {
