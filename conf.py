@@ -33,7 +33,7 @@ author = 'HURIDOCS'
 
 extensions = [
     'myst_parser',
-    'sphinx_rtd_theme',
+    'sphinx_rtd_theme'
 ]
 
 myst_enable_extensions = ["colon_fence"]
