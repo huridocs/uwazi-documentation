@@ -2,7 +2,7 @@
 
 ## Tella
 
-[Tella](https://tella-app.org/) is a mobile app developed by Horizontal that makes it easier and safer to capture and store high-quality documentation about human rights violations, such as images, videos, audio, documents and more. Tella can be connected to your private Uwazi collection so that you can use Uwazi to organise all of the information that you have gathered via the Tella app. It can also be connected to any publicly available Uwazi collection that has a submission form. 
+[Tella](https://tella-app.org/) is a mobile app developed by Horizontal that makes it easier and safer to capture and store high-quality documentation about human rights violations, such as images, videos, audio, documents and more. Tella can be connected to your private Uwazi collection so that you can use Uwazi to organise all of the information that you have gathered via the Tella app. It can also be connected to any publicly available Uwazi collection that has a submission form.
 
 ### How to install and configure Tella on an Android device
 
@@ -19,6 +19,7 @@ Step 3: Go to **Settings** in the top left corner and tap on **General** to conf
   - The Tella app will ask permission to access your GPS location. You can deny this access, but it will be less valuable for those attempting to verify the file.
 
 Step 4: Go to **Settings** in the top left corner and tap on **Security** to configure the security-related settings of the app. This will allow you to:
+
 - Hide the Tella app by choosing a different **Camouflage** option. Tella can “camouflage” itself and appear on your phone as a calculator or differently named app.
 - Turn on **Quick Delete** if you anticipate needing to quickly exit Tella in an emergency situation.
 
@@ -30,8 +31,11 @@ Step 2: Go to **Settings** in the top left corner, then **Servers**.
 
 Step 3: Tap on the + button to add a server, and select **Uwazi**, then **OK**.
 
-Step 4: Enter the **Server URL**. This is the particular Uwazi collection (e.g. https://documentationtraining.uwazi.io/) to which you would like to send the information you have gathered. If you have login credentials for the Uwazi collection, tap **Login**. If you do not and the collection accepts submissions from the public, tap **Public Access**. Then tap **Next**.
-- Users who have login credentials to the Uwazi collection can submit to any or all entity templates available.
+Step 4: Enter the **Server URL**. This is the particular Uwazi collection (e.g. ```https://documentationtraining.uwazi.io/```) to which you would like to send the information you have gathered. If you have login credentials for the Uwazi collection, tap **Login**. If you do not and the collection accepts submissions from the public, tap **Public Access**. Then tap **Next**.
+
+:::{note}
+Users who have login credentials to the Uwazi collection can submit to any or all entity templates available.
+:::
 
 Step 5: If you have chosen to login to a private Uwazi collection, type in your Uwazi **username** and **password**, then tap **Login**.
 
