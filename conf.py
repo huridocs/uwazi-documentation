@@ -32,10 +32,11 @@ author = 'HURIDOCS'
 # ones.
 
 extensions = [
-    'recommonmark',
+    'myst_parser',
     'sphinx_rtd_theme',
-    'sphinx_markdown_tables'
 ]
+
+myst_enable_extensions = ["colon_fence"]
 
 master_doc = 'index'
 
