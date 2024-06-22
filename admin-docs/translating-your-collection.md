@@ -60,7 +60,7 @@ Step 1: If you aren't already in possession of a CSV file containing the transla
 
 Step 2: The next column should be labeled with the name of the target language, as written in English (e.g. “Russian”, “Spanish”, “Swahili”), and include the corresponding translations of the English-language terms. For example, here’s a sample CSV file viewed as plain text:
 
-```csv
+```text
 Key,Spanish
 Account,Cuenta
 Activity log,Registro de actividad
