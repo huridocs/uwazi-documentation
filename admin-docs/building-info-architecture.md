@@ -1,4 +1,4 @@
-# BUILDING YOUR INFORMATION ARCHITECTURE
+# Building Your Information Architecture
 
 ## How to create templates
 

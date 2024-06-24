@@ -1,4 +1,4 @@
-# Set up the Twitter crawler service
+# Set Up the Twitter Crawler Service
 
 The twitter crawler service can be integrated in Uwazi to import tweets from Twitter.
 

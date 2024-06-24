@@ -1,4 +1,4 @@
-# Sync instances
+# Sync Instances
 
 Uwazi allows syncing specific data from one tenant to other tenants.
 

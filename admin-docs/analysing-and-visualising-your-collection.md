@@ -1,6 +1,6 @@
-# VISUALISING & ANALYSING YOUR COLLECTION'S DATA
+# Visualising and Analysing Your Collection’s Data
 
-## How to access the API for your instance	
+## How to access the API for your instance
 
 > An **API** allows one program to request data from another. API stands for application programming interface. An API provides you with data its programmers have made available to outside users.
 
@@ -32,9 +32,7 @@ Uwazi provides a list of "models" that describe the objects you have access to v
 | --- | --- |
 |     |     |
 
-
-
-## How to build data visualisation components	
+## How to build data visualisation components
 
 You can add charts and other data visualisation elements to **pages** and **rich text fields**, using the code snippets explained below.
 
@@ -130,7 +128,7 @@ Renders:
 
 ![](images/image_89.png)
 
- ## How to configure EntityInfo components
+## How to configure EntityInfo components
 
 > EntityInfo is a collection of data visualization components that allows an entity’s information to display by opening the side panel and loading its data inside. It assigns that flow to the "click" event of whatever tag element you define. The default is a DIV, but you can configure this to a button or any other element. (**Note: This requires programming knowledge.**)
 

@@ -7,5 +7,5 @@ UWAZI Documentation
    :maxdepth: 3
    :glob:
 
-   Administrator's guide <admin-docs/index>
-   Systems administrator's guide <sysadmin-docs/index>
+   Administrator's Guide <admin-docs/index>
+   Systems Administrator's Guide <sysadmin-docs/index>
