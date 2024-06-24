@@ -1,4 +1,4 @@
-# CREATING ENTITY PAGES
+# Creating Entity Pages
 
 ## Basic concepts
 

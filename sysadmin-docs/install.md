@@ -1,4 +1,5 @@
-# Install Uwazi on your server
+# Install Uwazi on Your Server
+
 You can download the latest version of Uwazi here on Github. Be sure you have everything configured on your server first. Here is a list of Uwazi's dependencies.
 
 **Production Configuration (advanced)**

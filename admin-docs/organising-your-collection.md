@@ -1,4 +1,4 @@
-# ORGANISING & EXPLORING YOUR COLLECTION
+# Organising and Exploring Your Collection
 
 ## How to view entities and documents
 

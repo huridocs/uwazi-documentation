@@ -1,4 +1,4 @@
-# WORKING WITH ENTITIES IN YOUR COLLECTION 
+# Working with Entities in Your Collection
 
 ## Understanding view and edit permissions for entities
 

@@ -1,4 +1,4 @@
-# REPORTING PROBLEMS IN UWAZI
+# Reporting Problems in Uwazi
 
 If you have encountered a problem while using Uwazi, we want to help!
 
