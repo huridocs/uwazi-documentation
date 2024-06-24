@@ -1,4 +1,4 @@
-# CUSTOMISING YOUR COLLECTION'S DESIGN
+# Customising Your Collection’s Design
 
 Beyond the [basic options found within **Settings**](https://uwazi.readthedocs.io/en/latest/admin-docs/managing-settings.html#managing-your-collection-s-settings), Uwazi offers several advanced ways to enhance the look and feel of your collection. This includes:
 - Adding links to the main navigation menu

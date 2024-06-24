@@ -1,4 +1,4 @@
-# Set up the PDF Paragraphs Extraction
+# Set Up the PDF Paragraphs Extraction
 
 PDF Paragraphs Extraction is a Machine Learning service that connects to Uwazi. This service receives PDFs and outputs the text and the positions of the PDFs' paragraphs. 
 

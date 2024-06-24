@@ -1,4 +1,4 @@
-# Systems administrator's guide
+# Systems Administrator's Guide
 
 ```eval_rst
 .. toctree::
