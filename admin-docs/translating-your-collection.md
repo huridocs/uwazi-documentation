@@ -1,4 +1,4 @@
-# Translating your Collection
+# Translating Your Collection
 
 An Uwazi collection can be made available in one or more languages. In fact, Uwazi supports the localisation of its interface and a collection’s entities into more than 180 different languages. This ranges from the world’s most commonly spoken languages such as Chinese, French, Hindi and Spanish, to less widespread but no less important languages such as Burmese, Kurdish, Quechua and Yoruba.
 
