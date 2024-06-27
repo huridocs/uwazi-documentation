@@ -1,32 +1,41 @@
 # Customising Your Collection’s Design
 
-Beyond the [basic options found within **Settings**](https://uwazi.readthedocs.io/en/latest/admin-docs/managing-settings.html#managing-your-collection-s-settings), Uwazi offers several advanced ways to enhance the look and feel of your collection. This includes:
+Beyond the [basic options found within the **Settings** ![Settings icon](images/cog-solid.png) area](managing-settings.md#managing-your-collection-s-settings), Uwazi offers several advanced ways to enhance the look and feel of your collection. This includes:
+
 - Adding links to the main navigation menu
 - Personalising the appearance of your collection by defining CSS styles
 - Adding custom **Pages** that contain information about your collection, incorporate **Submission Forms** or **Contact Forms**, or feature charts, maps and other dynamic data visualisation components
 - Creating a stylised display for certain types of entities
 
-Many of these advanced options require coding and programming knowledge, and as such, you may need to seek support from a software developer. For more information, consult the Uwazi Advanced Design Guide (*coming soon*) or get in touch with the HURIDOCS team.
+Many of these advanced options require coding and programming knowledge, and as such, you may need to seek support from a software developer.
 
 ## How to configure your collection’s main navigation menu
 
 By default, the main navigation menu that runs along the top of an Uwazi instance includes links to:
-- the **Library** ![](images/image_0.png)
-- different language versions of your collection (if you have multiple languages configured; [learn more about translating your collection](https://uwazi.readthedocs.io/en/latest/admin-docs/translating-your-collection.html#translating-your-collection))
+
+- the **Library** ![Library icon](images/image_0.png)
+
+- different language versions of your collection (if you have multiple languages configured; [learn more about translating your collection](translating-your-collection.md#translating-your-collection))
+
 - and to the collection’s settings (if you are logged in; otherwise you’ll be shown a link to the login page if your collection is [configured to be publicly available](https://uwazi.readthedocs.io/en/latest/admin-docs/managing-settings.html#make-your-collection-private-or-public)).
 
-If you so desire, you can add additional items to the menu such as a filtered subset of entities in the **Library** or a **Page**. 
+You can also add additional items to the menu such as a filtered subset of entities in the **Library** or a **Page**.
 
 To configure items on the navigation menu:
 
-Step 1: Navigate to the **Settings** area and click on **Menu**.
+Step 1: Navigate to the **Settings** ![Settings icon](images/cog-solid.png) area and click on **Menu**.
 
 Step 2: Click on the **Add link** button near the bottom of the screen. Add a title for your item and its corresponding URL.
 
-- Note: If the link is for a **Page** within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash ```/``` and skips the domain name. For example, ```/page/dicxg0oagy3xgr7ixef80k9``` or ```/library/?searchTerm=test```. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
-- Note: If the link is for a subset of entities in your **Library** that makes use of filters organised into a group, it’s important that you generate the URL by double-clicking on the group’s name in the filters sidebar. This action will transform the green checkmark into a green box, which indicates that the entire group has been selected as a unit. If any filters are added to the group in the future, they will automatically be included in the URL of the Library query. [Learn more about filters](https://uwazi.readthedocs.io/en/latest/admin-docs/organising-your-collection.html#configuring-and-using-the-filters-sidebar-in-the-library).
+:::{note}
+If the link is for a **Page** within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash ```/``` and skips the domain name. For example, ```/page/dicxg0oagy3xgr7ixef80k9``` or ```/library/?searchTerm=test```. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
+:::
 
-Step 3: If you have several related menu items, you can group them together into a dropdown menu. To do so, click the **Add Group** button. Provide a main title for the group, then click the **Add Link** button found directly below the title. Add a title for your first item and its corresponding URL. Repeat this process for however many menu items you want to include in the dropdown menu.
+:::{note}
+If the link is for a subset of entities in your **Library** that makes use of filters organised into a group, it’s important that you generate the URL by double-clicking on the group’s name in the filters sidebar. This action will transform the green checkmark into a green box, which indicates that the entire group has been selected as a unit. If any filters are added to the group in the future, they will automatically be included in the URL of the Library query. [Learn more about filters](organising-your-collection.md#configuring-and-using-the-filters-sidebar-in-the-library).
+:::
+
+Step 3: If you have several related menu items, you can group them together into a dropdown menu. To do so, click the **Add group** button. Provide a main title for the group, then click the **Add** button. Then add a new link or edit an existing one and assign it to the created group. Repeat this process for however many menu items you want to include in the dropdown menu.
 
 Step 4: You can rearrange items into a different order by dragging and dropping.
 
@@ -36,11 +45,11 @@ Step 5: Click **Save** when you have finished.
 
 By default, an Uwazi instance is styled in a shade of blue and utilises fonts from the Roboto family. Using a CSS style sheet, you can modify your collection’s appearance, such as by adding your organisation’s logo to the main navigation menu, implementing a different color scheme or font style and more.
 
-Step 1: If you intend to incorporate a logo, you must first upload it into your collection. To do so, navigate to the **Settings** area and click on **Uploads** in the **Tools** section. Upload the image file from your computer and take note of the URL that Uwazi has assigned it.
+Step 1: If you intend to incorporate a logo, you must first upload it into your collection. To do so, navigate to the **Settings** area ![Settings icon](images/cog-solid.png) and click on **Uploads** in the **Tools** section. Upload the image file from your computer and take note of the URL that Uwazi has assigned it.
 
 Step 2: Go to **Global CSS** in the **Tools** section and add your custom CSS in the space provided. Writing a CSS style sheet requires coding knowledge, but here is some sample CSS to start out:
 
-```
+```css
     header {
     background-color: #191916;
     border-bottom: 0;
@@ -56,21 +65,21 @@ Step 2: Go to **Global CSS** in the **Tools** section and add your custom CSS in
     }
 ```
 
-Step 3: Click the **Update** button to save your changes.
+Step 3: Click the **Save** button to save your changes.
 
 ## How to add pages to your collection
 
-A basic Uwazi instance comprises the **Library** ![](images/image_0.png), where the entities contained within your collection can be browsed and displayed in several different ways, and the **Settings** area, where you can configure the administrative settings of your collection. You also have the option to create additional **Pages**; these pages could offer background information about your collection; incorporate **Submission Forms** or **Contact Forms** so members of the public can get in touch; feature charts, maps and other data visualisation components; and more.
+A basic Uwazi instance comprises the **Library** ![Library icon](images/image_0.png), where the entities contained within your collection can be browsed and displayed in several different ways, and the **Settings** ![Settings icon](images/cog-solid.png) area, where you can configure the administrative settings of your collection. You also have the option to create additional **Pages**; these pages could offer background information about your collection; incorporate **Submission Forms** or **Contact Forms** so members of the public can get in touch; feature charts, maps and other data visualisation components; and more.
 
 To add a **Page**:
 
-Step 1: Navigate to the **Settings** area and click **Pages**.
+Step 1: Navigate to the **Settings** ![Settings icon](images/cog-solid.png) area and click **Pages**.
 
-Step 2: Create a new page by clicking **Add Page**. Add the page’s content in the space provided and click **Save**.
+Step 2: Create a new page by clicking **Add page**. Add the page’s title in the corresponding field, the content of the page in the space provided under the **Markdown** tab, and click **Save**.
 
-Step 3: After saving, a blue box will appear containing the **Page**’s unique URL. You may, for example, want to copy this URL and add it as an item on your collection’s main navigation menu.
+Step 3: After saving, the URL field under the **Basic** tab will contain the **Page**’s unique URL. You may, for example, want to copy this URL and add it as an item on your collection’s main navigation menu.
 
-Creating and formatting the content of a **Page** in Uwazi requires coding knowledge (Markdown language, HTML, CSS). For experienced developers, there is also the option of appending custom Javascript to a **Page** by utilising the dedicated “Page Javascript” box. We have created some custom code components for **Pages** in Uwazi that make it straightforward to:
+Creating and formatting the content of a **Page** in Uwazi requires coding knowledge (Markdown language, HTML, CSS). For experienced developers, there is also the option of appending custom Javascript to a **Page** by utilising the dedicated **Javascript** tab. We have created some custom code components for **Pages** in Uwazi that make it straightforward to:
 
 - incorporate a **Library** search bar
 - display a dynamic selection of entities in card format
@@ -80,17 +89,11 @@ Creating and formatting the content of a **Page** in Uwazi requires coding knowl
 - display a dynamic counter, bar chart, pie chart or list chart that visualises a selection of your collection’s data
 - display a dynamic map that visualises a selection of your collection’s data
 
-For further details, consult the Uwazi Advanced Design Guide (*coming soon*) or get in touch with the HURIDOCS team.
+## How to display entities as stylised pages
 
-## How to display entities as stylised pages 
+An Uwazi collection is made up of different types of entities. You can [browse the entities in the **Library** ![Library icon](images/image_0.png)](organising-your-collection.md#view-entities-as-cards-in-a-table-or-on-a-map) as cards, in a table or on a map (as long as they have an associated geolocation). If you click on an entity, you can see all of the information that it contains displayed within the right sidebar. Furthermore, by clicking the **View** button on an entity, you can also see the same information displayed on a full-width page that by default incorporates minimal formatting.
 
-An Uwazi collection is made up of different types of entities. You can [browse the entities in the **Library**](#) ![](images/image_0.png) as cards, in a table or on a map (as long as they have an associated geolocation). If you click on an entity, you can see all of the information that it contains displayed within the right sidebar. Furthermore, by clicking the **View** button on an entity, you can also see the same information displayed on a full-width page that by default incorporates minimal formatting.
-
-In Uwazi, you can replace this default full-width page view with a customised design that incorporates formatting and components of your choosing. This feature is called **Entity Page View**. Solid coding and programming knowledge is required to fully take advantage of **Entity Page View**. For details, consult the Uwazi Advanced Design Guide (*coming soon*) or get in touch with the HURIDOCS team.
-
-
-
-
+In Uwazi, you can replace this default full-width page view with a customised design that incorporates formatting and components of your choosing. This feature is called **Entity Page View**. Solid coding and programming knowledge is required to fully take advantage of **Entity Page View**.
 
 ### Basic concepts
 
@@ -112,7 +115,7 @@ Once this is done, when you enter the entity view for entities of that particula
 
 ### Designing the page
 
-The page design follows the same guidelines described in [DESIGNING YOUR WEBSITE](https://uwazi.readthedocs.io/en/latest/admin-docs/designing-your-website.html#designing-your-website) and you can include all of the extended components described on the article to further design your page. You can also include the data visualization components described in [ANALYSING & VISUALISING YOUR COLLECTION](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#analysing-visualising-your-collection).
+You can include all of the extended components described below to further design your page. You can also include the data visualization components described in [Visualising and Analysing Your Collection’s Data](analysing-and-visualising-your-collection.md).
 
 #### EntityData component
 
@@ -125,7 +128,7 @@ The `<EntityData>` component takes one of two properties:
 - `value-of`: a string representing the name of the property of the **value** be rendered
 - `label-of`: a string representing the name of the property of the **label** to be rendered
 
-Take the following enttiy structure as example:
+Take the following entity structure as example:
 
 | Properties          | Values                             |
 | ------------------- | ---------------------------------- |
@@ -137,7 +140,7 @@ Take the following enttiy structure as example:
 
 You have access to property names and values passing the correct HTML syntax. For example, the following code:
 
-```
+```html
 <h1><EntityData value-of="title" /></h1>
 <ul>
   <li><EntityData label-of="Brief Description" />: <EntityData value-of="Brief Description" /></li>
@@ -153,7 +156,7 @@ will output:
 
 Name of a book
 
-- Brief Desription: Something nice
+- Brief Description: Something nice
 - Country: Ecuador
 - Date of Publication: 13 July, 1977
 - Image: ![Book Cover](https://binaries.templates.cdn.office.net/support/templates/en-us/lt22301254_quantized.png)
@@ -164,9 +167,7 @@ Notice that the code would be identical for different languages if you have your
 
 #### Advanced design
 
-If the EntityData component is not verstaile enough for your needs, pay particular attention to the [Query Component](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#query-component) section of the [ANALYSING & VISUALISING YOUR COLLECTION](https://uwazi.readthedocs.io/en/latest/admin-docs/analysing-and-visualising-your-collection.html#analysing-visualising-your-collection) document.
-
-The preparation steps of defining the page as "Enabled" to be used in entity view are important because they provide the data you need to display each entity's data. With them you have access to three automatically-generated DATASETS:
+If the EntityData component is not versatile enough for your needs, pay particular attention to the [Query Component](analysing-and-visualising-your-collection.md#query-component) section. The preparation steps of defining the page as "Enabled" to be used in entity view are important because they provide the data you need to display each entity's data. With them you have access to three automatically-generated DATASETS:
 
 - `entity`
 - `entityRaw`
@@ -176,7 +177,7 @@ These new datasets can be consumed via the `Value` and `Repeat` components, just
 
 To use this data, you would access the entity's properties normally. For example, to print the Entity's title, you would use something like:
 
-```
+```html
 <p><Value path="entity.title" /></p>
 ```
 
@@ -202,7 +203,7 @@ Take the following entity structure:
 
 Depending on the type, each property could have somewhat different structures. As an example, the above entity will look like this in the `entity` dataset:
 
-```
+```json
 {
   title: 'Name of a book',
   metadata: {
@@ -231,7 +232,7 @@ Note: this a simplified version of the actual data, if you want to see all the d
 
 With this data, you can print out values and labels following the usual `Value` component flow. Here's a brief example:
 
-```
+```html
 <h1><Value path="entity.title" /></h1>
 <ul>
   <li><Value path="entity.metadata.brief_description.label" />: <Value path="entity.metadata.brief_description.value" /></li>
@@ -269,7 +270,7 @@ The `entity` and `entityRaw` datasets have some values stored at the root level 
 
 Most properties will be inside the `metadata` object where the keys are the property names (sanitized to lower case and spaces replaced with underscores) and every value is actually an array of objects that have either `value` or `label` (or both keys, depending on their type). So, internally, the above entity will look like:
 
-```
+```json
 {
   _id: "89af7g8ad98ads"
   title: "Title of Entity"
@@ -286,7 +287,7 @@ Most properties will be inside the `metadata` object where the keys are the prop
 
 So, to expand on the previous explanation, the way to extract the data for properties other than `title`, is with something like this:
 
-```
+```html
 <Value path="entityRaw.metadata.country.0.value />
 ```
 
@@ -294,7 +295,7 @@ This will print the value `India` on the page's HTML.
 
 As noted, you could use the `Repeat` component to list both items that are stored in the "Related Entities" metadata property. Here is a more in depth example of how to create a more complex display of property name and property values (also using the `template` dataset):
 
-```
+```html
 <p><Value path="template.properties.2.label" />: </p>
 <ul>
   <Repeat path="entityRaw.metadata.related_entities">
@@ -333,44 +334,35 @@ You can check the specific Entity-related datasets in a page by following this p
 
 1. Create a new page with a title and the following contents:
 
-```
-<h1>My page's Datasets</h1>
-<h3>Formatted entity data</h3>
-<pre id="formatted-entity"></pre>
-<hr />
-<h3>Raw entity data</h3>
-<pre id="raw-entity"></pre>
-<hr />
-<h3>Tamplate data</h3>
-<pre id="template-data"></pre>
-```
+    ```html
+    <h1>My page's Datasets</h1>
+    <h3>Formatted entity data</h3>
+    <pre id="formatted-entity"></pre>
+    <hr />
+    <h3>Raw entity data</h3>
+    <pre id="raw-entity"></pre>
+    <hr />
+    <h3>Tamplate data</h3>
+    <pre id="template-data"></pre>
+    ```
 
 2. Add the following script to the page:
 
-```
-document.getElementById('formatted-entity').innerHTML = JSON.stringify(datasets.entity, null, 1);
-document.getElementById('raw-entity').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().entityRaw, null, 1);
-document.getElementById('template-data').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().template, null, 1);
-```
+    ```javascript
+    document.getElementById('formatted-entity').innerHTML = JSON.stringify(datasets.entity, null, 1);
+    document.getElementById('raw-entity').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().entityRaw, null, 1);
+    document.getElementById('template-data').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().template, null, 1);
+    ```
 
 3. Enable the page to be used as an entity view.
+
 4. Assign the page to any template you would like for viewing it's entities datasets.
 
 Now, when you go to `view` any of the entities using that template, you will be able to see the Entity-specific datasets available.
 
-
 ## Add a contact form to a page
 
-A **Contact Form** gives visitors an easy way  to get in touch with you. You can quickly add a contact form to a page by including the code snippet `<ContactForm/>`. 
-
-You may add additional text in HTML around the contact form, if you wish.
-
-![](images/image_70.png)
-
-Messages sent using the contact form will be delivered to the email address that is configured in your collection’s settings. Learn more about configuring forms.
-
-![](images/image_71.png)
-
+A **Contact Form** gives visitors an easy way  to get in touch with you. You can quickly add a contact form to a page by including the code snippet `<ContactForm/>`. You may add additional text in HTML around the contact form, if you wish. Messages sent using the contact form will be delivered to the email address that is configured in your collection’s settings. [Learn more about configuring forms](managing-settings.md#how-to-configure-a-contact-form-or-submission-form).
 
 ## Add a submission form to a page
 
@@ -386,20 +378,18 @@ Step 3 (_optional_):
 
 - Attachments are attached to an entity and available for download, but their contents are not visible in Uwazi. To add an attachment field, add this line of code: `<PublicForm template="ID_OF_THE_TEMPLATE" attachments />`
 
-![](images/image_72.png)
-
 In order for the form to sync into its corresponding template, you must also do the following:
 
-Step 1: Go to **Settings**, and click on **Collection**.
+Step 1: Go to the **Settings** ![Settings icon](images/cog-solid.png) area, and click on **Collection**.
 
-Step 2: Add the template ID (the number in the template URL) under **Allowed Public Templates**.
+Step 2: Add the template under **Whitelisted templates**.
 
 In the case of multiple _synced Uwazi instances_ (currently an experimental feature not available to all users), you can configure submissions from a public form on one Uwazi instance to create an unpublished entity in a different Uwazi instance. To accomplish this, do the following:
 
-Step 1: Add the template ID under **Allowed Public Templates **(in **Settings** > **Collection**) for _both_ instances.
+Step 1: Add the template under **Whitelisted templates**(in **Settings** > **Collection**) for _both_ instances.
 
 Step 2: In the Uwazi instance that has the public intake form:
 
 - Add "remote" to the page’s code snippet, for example: `<PublicForm template="ID_OF_THE_TEMPLATE" remote />`
 
-- Go to Settings, and click on Collection, add the URL of the _target_ Uwazi instance under **Public Form Destination**. (e.g. https://example.uwazi.io)
+- Go to the **Settings** ![Settings icon](images/cog-solid.png) area, click on **Collection**, and add the URL of the _target_ Uwazi instance under **Public Form submit URL**. (e.g. `https://example.uwazi.io`)
