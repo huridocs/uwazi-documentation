@@ -122,15 +122,15 @@ All of the **Entities** in your collection live in the **Library** ![Library](im
 
 To change the format that is used to enter dates in form fields, select one of the following supported date formats:
 
-- Year/Month/Day
-- Day/Month/Year
-- Month/Day/Year
-- Year-Month-Day
-- Day-Month-Year
-- Month-Day-Year
+- YYYY/MM/DD (Year/Month/Day)
+- DD/MM/YYYY (Day/Month/Year)
+- MM/DD/YYYY (Month/Day/Year)
+- YYYY-MM-DD (Year-Month-Day)
+- DD-MM-YYYY (Day-Month-Year)
+- MM-DD-YYYY (Month-Day-Year)
 
 :::{note}
-The format that is used to display dates depends on the language you have selected to display the user interface of Uwazi.
+This change will be reflected only when entering data. The format that is used to display dates depends on the language you have selected to display the user interface of Uwazi.
 :::
 
 ### Make your collection public (or private)
