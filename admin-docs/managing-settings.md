@@ -94,7 +94,7 @@ The name default **Collection Name** is "Uwazi", but you can change it to anythi
 
 A favicon is the icon representing your Uwazi collection that appears in browser tabs or in bookmarks. If you want to replace the Uwazi icon for your own:
 
-Step 1: Convert your image into .ico (icon) format. To do so, you can search the internet for an .ico converter. Save the resulting file on your local drive. 
+Step 1: Convert your image into .ico (icon) format. To do so, you can search the internet for an .ico converter. Save the resulting file on your local drive.
 
 Step 2: On the left sidebar under **Tools**, click on **Uploads**. Then **Import asset** and upload the image that you converted to the .ico format. Once your image uploads, copy the URL. It will begin with `/assets`.
 
@@ -118,9 +118,20 @@ However, you can set any page from within your Uwazi instance to act as the land
 
 All of the **Entities** in your collection live in the **Library** ![Library](images/image_0.png) and can be viewed on demand as cards, in a table or on a map (as long as entities have an associated geolocation). Based on your preference, you can choose to set a default view. [Learn more about organising and exploring](organising-your-collection.md) your collection.
 
-### Change the date format
+### Change the format of date-entry fields
 
-You may change the date format, based on your preference.
+To change the format that is used to enter dates in form fields, select one of the following supported date formats:
+
+- YYYY/MM/DD (Year/Month/Day)
+- DD/MM/YYYY (Day/Month/Year)
+- MM/DD/YYYY (Month/Day/Year)
+- YYYY-MM-DD (Year-Month-Day)
+- DD-MM-YYYY (Day-Month-Year)
+- MM-DD-YYYY (Month-Day-Year)
+
+:::{note}
+This change will be reflected only when entering data. The format that is used to display dates depends on the language you have selected to display the user interface of Uwazi.
+:::
 
 ### Make your collection public (or private)
 
