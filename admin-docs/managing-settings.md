@@ -82,7 +82,7 @@ If you work in a team or in collaboration with other people, Uwazi allows admini
 :widths: auto
 :align: left
 | Permission | Collaborator | Editor | Admin |
-| ---------- | ------------ | ------ | ----- |
+| :--------------: | :------------: | :------: | :-----: |
 | Create new entities and upload documents  |  {{key2}}  |  {{key2}} | {{key2}}  |
 | Create table of contents  |  {{key2}}  |  {{key2}} |   {{key2}}    |
 | View entities  |  {{key1}}  |  {{key2}} |   {{key2}}     |
