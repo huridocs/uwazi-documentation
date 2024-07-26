@@ -342,7 +342,7 @@ You can check the specific Entity-related datasets in a page by following this p
     <h3>Raw entity data</h3>
     <pre id="raw-entity"></pre>
     <hr />
-    <h3>Tamplate data</h3>
+    <h3>Template data</h3>
     <pre id="template-data"></pre>
     ```
 
@@ -386,7 +386,7 @@ Step 2: Add the template under **Whitelisted templates**.
 
 In the case of multiple _synced Uwazi instances_ (currently an experimental feature not available to all users), you can configure submissions from a public form on one Uwazi instance to create an unpublished entity in a different Uwazi instance. To accomplish this, do the following:
 
-Step 1: Add the template under **Whitelisted templates**(in **Settings** > **Collection**) for _both_ instances.
+Step 1: Add the template under **Whitelisted templates** (in **Settings** > **Collection**) for _both_ instances.
 
 Step 2: In the Uwazi instance that has the public intake form:
 
