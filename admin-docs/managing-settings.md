@@ -6,6 +6,10 @@
 
 Step 1: Log into your instance.
 
+:::{attention}
+Add your username, which is not the same as your registered email address.
+:::
+
 Step 2: Navigate to the **Settings** ![Settings icon](images/cog-solid.png) area and click **Account**.
 
 Step 3: You can change your email address here, as well as your account password.
