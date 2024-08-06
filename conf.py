@@ -36,7 +36,7 @@ extensions = [
     'sphinx_rtd_theme'
 ]
 
-myst_enable_extensions = ["colon_fence"]
+myst_enable_extensions = ["colon_fence", "substitution"]
 myst_heading_anchors = 3
 
 
