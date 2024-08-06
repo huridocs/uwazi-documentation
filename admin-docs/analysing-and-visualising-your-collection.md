@@ -10,7 +10,7 @@ There are four types of actions an API can take:
 - GET: requests data from a server — can be status or specifics (like last_name)
 - POST: sends changes from the client to the server; think of this as adding information to the server, like making a new entry
 - PUT: revises or adds to existing information
-- DELETE: deletes existing information
+- DELETE: deletes existing information.
 
 You can access the API instructions and options for your Uwazi instance by adding _/api_ to the end of your URL, like this:[https://yourinstancename.uwazi.io/api](https://yourinstancename.uwazi.io/api). Uwazi requires **authorization** for POST and DELETE actions. Uwazi does not require authorization for GET actions. Uwazi currently does not use PUT actions via the API.
 
