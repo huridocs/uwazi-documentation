@@ -80,11 +80,11 @@ The PDF viewing panel is displayed on the right side of the window and is divide
 
 2. The lower section displays the relevant property and its value(s). The interface and available options in this lower section vary depending on the property type.
 
-#### Text, Numeric, and Date Properties
+#### Text, numeric, and date properties
 
 For text, numeric, or date properties, the lower section shows the property name followed by an input field containing the current value. You can highlight any text in the PDF document and select **Click to Fill** to automatically update the property value with the highlighted text. This action also labels the highlighted portion of the document, which helps improve the machine learning model over time. If needed, you can remove the label from the document by clicking **Clear**. Once you’ve made your corrections, click **Accept** to save the updated value for the property.
 
-#### Single Select, Multiple Select, and Relationship Properties
+#### Single select, multiple select, and relationship properties
 
 For single select, multiple select, or relationship properties, the lower section displays the property name followed by a list of available values. You can choose to view all available values with the **All** filter or only the currently selected values using the **Selected** filter. Additionally, you can search for a specific value using the search bar. The **Select & Search** toggle button allows you to highlight text in the document, which then triggers an automatic search for matching values. This makes it quick and easy to find and select the appropriate values. Once you’re satisfied with your selection, click **Accept** to save the chosen values for the property.
 
