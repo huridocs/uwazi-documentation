@@ -38,7 +38,7 @@ Step 2: Click on **Create Extractor**.
 
 Step 3: In the dialog window that appears, enter a name for the extractor in the input field. Choose a descriptive name that makes it easy to identify the type of information you are extracting.
 
-Step 4: From the list of available templates and properties, choose the property to be used for metadata extraction, then click **Next**.
+Step 4: From the list of available templates and properties (only those that qualify for extraction will be shown), select the property to use for metadata extraction, then click **Next**.
 
 Step 5: Review your selections and click **Create**.
 
