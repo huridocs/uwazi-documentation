@@ -36,7 +36,7 @@ Step 1: Go to **Settings** ![Settings icon](images/cog-solid.png) and select **M
 
 Step 2: Click on **Create Extractor**.
 
-Step 3: In the dialog window that appears, enter a name for the extractor in the input field.
+Step 3: In the dialog window that appears, enter a name for the extractor in the input field. Choose a descriptive name that makes it easy to identify the type of information you are extracting.
 
 Step 4: From the list of available templates and properties, choose the property to be used for metadata extraction, then click **Next**.
 
