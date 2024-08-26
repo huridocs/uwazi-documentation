@@ -90,11 +90,17 @@ For single select, multiple select, or relationship properties, the lower sectio
 
 ### Retraining the system for improved suggestions
 
-Once you have reviewed and accepted or corrected several of the system’s suggestions, it’s recommended to retrain the system using this new input. Retraining helps the system learn from your corrections, allowing it to generate suggestions that better align with your expectations in future extractions.
+After reviewing and accepting or correcting several of the system’s suggestions, it’s recommended to retrain the system with this new input. Retraining allows the system to learn from your adjustments, resulting in more accurate and relevant suggestions for future extractions.
 
-To start the retraining process, click **Find suggestions** at the bottom of the page. The system will then provide feedback as it progresses through each step, including messages like "Sending label data...", "Training model...", and "Finding suggestions... x/y." The time required for this process depends on the number of documents in the metadata extractor. However, you don’t need to wait for the entire process to complete before starting your review. As soon as the first new suggestions are generated, you can begin reviewing them while the system continues to deliver additional suggestions in the background.
+To initiate retraining, click **Find suggestions** at the bottom of the page. The system will then update you as it progresses through steps like "Sending label data...," "Training model...," and "Finding suggestions... x/y." The duration of this process depends on the number of documents involved, but you don’t need to wait for it to fully complete. As soon as the first new suggestions are ready, you can start reviewing them while the system continues generating more in the background.
 
-You can repeat this retraining process as many times as necessary to further refine the accuracy of the system’s suggestions.
+You can repeat this retraining process as needed to refine the accuracy of the system’s suggestions. For optimal results, consider this iterative approach:
+
+1. Create an extractor.
+2. Label around 30-40 samples in the relevant documents.
+3. Run **Find suggestions**.
+4. Focus on reviewing suggestions where the model struggles, as correcting these will improve overall performance.
+5. Repeat steps 2-4 until satisfied with the results.
 
 ## Closing remarks
 
