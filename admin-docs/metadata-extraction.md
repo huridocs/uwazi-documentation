@@ -4,13 +4,13 @@
 
 ### Introduction
 
-The metadata extraction tool is designed to help you quickly identify, retrieve, and save key details from PDF documents, such as titles, dates, keywords, and other essential information. Powered by machine learning, this tool automates much of the extraction process, saving you time and making it easier to analyze large sets of documents. Whether you’re documenting case studies, managing witness statements, or reviewing legal reports, this tool simplifies data extraction, allowing you to focus on analysis and decision-making.
+The metadata extraction tool is designed to help you quickly identify, retrieve, and save key details from PDF documents, such as titles, dates, keywords, and other essential information. Powered by machine learning, this tool automates much of the extraction process, saving you time and making it easier to analyze large sets of documents. Whether your focus is on case studies, witness statements, or legal reports, this tool eases the process of data extraction, so you can spend more time to drive advocacy and support your objectives.
 
 ### How it works
 
 The metadata extraction tool uses machine learning models trained on a vast collection of documents to recognize patterns and extract relevant information. It scans your documents, breaks down the content into smaller segments, like words or phrases, and uses the patterns it learned during training to identify which sections of the document contain useful information. The models learn to do this by being trained on large amounts of sample data, known as training data, which includes examples of documents with labeled information. This allows the models to recognize similar patterns in future documents.
 
-The effectiveness of this process is measured by accuracy, which refers to how often the models correctly identify and extract the right information. While the models strive for high accuracy, their performance can vary based on the quality of the documents and how closely they resemble the data the models were trained on. Over time, the models can be improved with more training data, enabling them to handle a broader range of document types and complex layouts.
+The effectiveness of this process is measured by accuracy, which refers to how often the models correctly identify and extract the right information. While the models strive for high accuracy, their performance can vary depending on factors like document formatting, clarity of text, and how closely the content matches the data the models were trained on. Over time, the models can be improved with more training data, enabling them to handle a broader range of document types and complex layouts.
 
 ### Limitations
 
@@ -28,7 +28,7 @@ Before using the metadata extraction tool, there are a few prerequisites to cons
 
 ## How to use metadata extraction effectively
 
-This step-by-step guide will walk you through the process of extracting metadata from your documents. First, initiate the metadata extraction by selecting the relevant properties from the available templates. The tool will then generate and present the extracted metadata as suggestions. Finally, review the suggestions, accepting those that are correct and refining any that need adjustments. Following these steps will help ensure that the extracted metadata is both accurate and relevant.
+This step-by-step guide will walk you through the process of extracting metadata from your documents. Start by initiating the metadata extraction process, where you'll select the relevant properties from the available templates. The tool will then analyze the documents and generate suggestions for the extracted metadata. As you review these suggestions, you can accept those that are accurate and make any necessary adjustments to improve the results. By following these steps, you help ensure that the extracted metadata is both precise and meaningful.
 
 ### Creating a metadata extractor
 
