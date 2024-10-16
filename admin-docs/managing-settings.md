@@ -92,16 +92,15 @@ If you work in a team or in collaboration with other people, Uwazi allows admini
 | View entities  |  {{key1}}  |  {{key2}} |   {{key2}}     |
 | Edit metadata of entities  |  {{key1}}  |  {{key2}} |   {{key2}}     |
 | Delete entities and documents  |  {{key1}}  |  {{key2}} |   {{key2}}     |
-| Create connections and references  |  {{key1}}  |  {{key2}} |   {{key2}}     |
+| Create relationships and references  |  {{key1}}  |  {{key2}} |   {{key2}}     |
 | Share entities with the public  |  {{key3}}  |  {{key2}} |    {{key2}}    |
 | Manage site settings and configuration |  {{key3}}  |  {{key3}} |   {{key2}}     |
 | Add/delete users and assign roles  |  {{key3}}  |  {{key3}} |    {{key2}}    |
 | Configure filters  |  {{key3}}  |  {{key3}}|    {{key2}}    |
-| Add/edit translations  |  {{key3}} |  {{key3}} |    {{key2}}    |
 | Add/edit translations  |  {{key3}}  |  {{key3}} |   {{key2}}     |
 | Configure templates  |  {{key3}}  |  {{key3}} |    {{key2}}    |
 | Create and edit thesauri  |  {{key3}}  |  {{key3}} |   {{key2}}     |
-| Create connection types |  {{key3}}  |  {{key3}} |    {{key2}}    |
+| Create relationship types |  {{key3}}  |  {{key3}} |    {{key2}}    |
 
 :::
 
