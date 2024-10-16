@@ -1,6 +1,7 @@
 # Administrator's Guide
 
 > The Uwazi Admin User Guide is currently also available in the following languages:
+>
 > - [အက်မင် အသုံးပြုသူ လမ်းညွှန်](https://drive.google.com/file/d/1gbU3P-6vADYwsDkX2UO2VSswFYWDrol8/view) (မြန်မာဘာသာ)
 > - [Guide Utilisateur pour Administrateurs](https://drive.google.com/file/d/1vd7qLRNH4D6k7zJmGcHZJe8tizp8sQtI/view) (Français)
 > - [Руководство для пользователя с правами администратора](https://drive.google.com/file/d/1--aJvhiH-1g67st2QG6qkUTQ-5xNUYbs/view) (Русский)
@@ -16,6 +17,7 @@
    glossary-of-terms
    managing-settings
    building-info-architecture
+   metadata-extraction
    working-with-entities-in-your-collection
    organising-your-collection
    designing-your-website
