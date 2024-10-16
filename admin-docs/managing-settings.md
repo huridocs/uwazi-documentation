@@ -1,3 +1,23 @@
+---
+myst:
+  substitutions:
+    key1: |
+      ```{image} images/fa-user-plus.png
+      :alt: user-plus icon
+      :width: 20px
+      ```
+    key2: |
+      ```{image} images/fa-check.png
+      :alt: check mark icon
+      :width: 20px
+      ```
+    key3: |
+      ```{image} images/fa-xmark.png
+      :alt: x mark icon
+      :width: 20px
+      ```  
+---
+
 # Managing Your Collection’s Settings
 
 ## How to configure your account
@@ -61,6 +81,28 @@ If you work in a team or in collaboration with other people, Uwazi allows admini
 - **admin** role has the ability to create, see and edit all **Entities**; change all settings throughout the Uwazi instance; and add new users
 - **editor** role has the ability to create, see and edit all **Entities**
 - **collaborator** role has the ability to create new **Entities** and can be invited to see and edit other on an individual basis
+
+:::{table} Permissions by role
+:widths: auto
+:align: left
+| Permission | Collaborator | Editor | Admin |
+| :--------------: | :------------: | :------: | :-----: |
+| Create new entities and upload documents  |  {{key2}}  |  {{key2}} | {{key2}}  |
+| Create table of contents  |  {{key2}}  |  {{key2}} |   {{key2}}    |
+| View entities  |  {{key1}}  |  {{key2}} |   {{key2}}     |
+| Edit metadata of entities  |  {{key1}}  |  {{key2}} |   {{key2}}     |
+| Delete entities and documents  |  {{key1}}  |  {{key2}} |   {{key2}}     |
+| Create relationships and references  |  {{key1}}  |  {{key2}} |   {{key2}}     |
+| Share entities with the public  |  {{key3}}  |  {{key2}} |    {{key2}}    |
+| Manage site settings and configuration |  {{key3}}  |  {{key3}} |   {{key2}}     |
+| Add/delete users and assign roles  |  {{key3}}  |  {{key3}} |    {{key2}}    |
+| Configure filters  |  {{key3}}  |  {{key3}}|    {{key2}}    |
+| Add/edit translations  |  {{key3}}  |  {{key3}} |   {{key2}}     |
+| Configure templates  |  {{key3}}  |  {{key3}} |    {{key2}}    |
+| Create and edit thesauri  |  {{key3}}  |  {{key3}} |   {{key2}}     |
+| Create relationship types |  {{key3}}  |  {{key3}} |    {{key2}}    |
+
+:::
 
 ### Add new users to your collection
 
