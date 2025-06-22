@@ -33,6 +33,35 @@ Before using the paragraph extraction tool, consider the following prerequisites
 
 ## How to use paragraph extraction effectively
 
+Follow these steps to extract paragraphs from your uploaded documents. First, create a paragraph extractor, then run the extraction process and review the results.
+
 ### Creating a paragraph extractor
+
+To create a paragraph extractor:
+
+Step 1: Go to **Settings** ![Settings icon](images/cog-solid.png) and select **Paragraph Extraction**.
+
+Step 2: Click **Add extractor**.
+
+Step 3: Select the target template. Choose from the available templates and click **Select**. Use the search box to filter templates if needed. Click **Next** to continue.
+
+:::{note}
+Only templates with at least one rich text property and one numeric property are available for selection.
+:::
+
+Step 4: Select the source template. Choose the template that stores your source documents and click **Select**. Use the search box to filter templates if needed. Click **Next** to continue.
+
+:::{note}
+Only templates that are not used as source in any other extractor and are not selected as target in this extractor are available for selection.
+:::
+
+Step 5: Configure extraction settings. Use the dropdown menus to define how paragraphs will be extracted, stored, and connected to source documents:
+
+- **Paragraph text extraction property (rich text):** Select where the actual paragraph text will be stored. Choose from the available rich text fields in your target template.
+- **Paragraph number extraction property (numeric):** Select where the paragraph number will be stored. Choose from the available numeric fields in your target template.
+- **Target relationship type:** Define how the extracted paragraphs will relate to the source document. Select the appropriate relationship type from the dropdown.
+- **Source relationship type:** Define how the source document will relate to the extracted paragraphs. Select the appropriate relationship type from the dropdown.
+
+Once all fields are completed, click **Create**. Your new extractor will appear in the table showing the source and target templates, along with the number of source entities available for extraction.
 
 ### Viewing extracted paragraphs
