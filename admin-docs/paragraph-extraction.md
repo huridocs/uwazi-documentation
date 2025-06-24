@@ -102,3 +102,7 @@ When you click the **View** button next to a processed entity, you'll see a deta
 - **View** button: Click to see additional details about the extracted paragraph in a panel on the right side of the screen from where you can also navigate to the related paragraph entity.
 
 Click **Open PDF** in the top right to reference the original document in the default language while reviewing extractions to verify that paragraphs were extracted correctly. This interface allows you to quality-check the extraction results.
+
+## Closing remarks
+
+By following the steps outlined in this guide, you can effectively use the paragraph extraction tool to streamline your document processing workflow. This feature is designed to enhance your ability to manage and utilize large collections of documents by making individual paragraphs easily accessible and searchable, thus improving overall efficiency in handling textual data.
