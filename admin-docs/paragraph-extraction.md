@@ -27,7 +27,7 @@ Before using the paragraph extraction tool, consider the following prerequisites
 
 **Access:** This feature is not enabled by default for all Uwazi instances. Contact us if you’d like to use it. When activated, paragraph extraction is available only to users with admin or editor roles.
 
-**Available data and configuration:** The tool works with PDF documents that have been uploaded using a source template. Paragraphs are extracted and saved using a target template. Your system must have a relationship type configured to connect source documents with their extracted paragraphs.
+**Available data and configuration:** The tool works with PDF documents that have been uploaded using a source template. Paragraphs are extracted and saved using a target template. You must also configure relationship types to connect source documents with their extracted paragraphs.
 
 **Language support:** The tool supports multiple languages, but can only extract paragraphs in languages that are configured in your Uwazi instance. To extract paragraphs in a new language, you must first add that language to your system settings.
 
@@ -36,8 +36,6 @@ Before using the paragraph extraction tool, consider the following prerequisites
 Follow these steps to extract paragraphs from your uploaded documents. First, create a paragraph extractor, then run the extraction process and review the results.
 
 ### Creating a paragraph extractor
-
-To create a paragraph extractor:
 
 Step 1: Go to **Settings** ![Settings icon](images/cog-solid.png) and select **Paragraph Extraction**.
 
@@ -52,7 +50,7 @@ Only templates with at least one rich text property and one numeric property are
 Step 4: Select the source template. Choose the template that stores your source documents and click **Select**. Use the search box to filter templates if needed. Click **Next** to continue.
 
 :::{note}
-Only templates that are not used as source in any other extractor and are not selected as target in this extractor are available for selection.
+Only templates that are not used as source in any other paragraph extractor and are not selected as target in this extractor are available for selection.
 :::
 
 Step 5: Configure extraction settings. Use the dropdown menus to define how paragraphs will be extracted, stored, and connected to source documents:
@@ -62,11 +60,11 @@ Step 5: Configure extraction settings. Use the dropdown menus to define how para
 - **Target relationship type:** Define how the extracted paragraphs will relate to the source document. Select the appropriate relationship type from the dropdown.
 - **Source relationship type:** Define how the source document will relate to the extracted paragraphs. Select the appropriate relationship type from the dropdown.
 
-Once all fields are completed, click **Create**. Your new extractor will appear in the table showing the source and target templates, along with the number of source entities available for extraction.
+Once all fields are completed, click **Create**. Your new paragraph extractor will appear in the table showing the source and target templates, along with the number of source entities available for extraction.
 
 ### Extracting paragraphs
 
-After creating your extractor, locate it in the **Extractors** list and click the **View** button next to it. This will take you to the extractor details page, where you can see all the entities that belong to the source template and contain documents for extraction. The extractor details page displays a table with the following information:
+After creating your paragraph extractor, locate it in the **Extractors** list and click the **View** button next to it. This will take you to the paragraph extractor details page, where you can see all the entities that belong to the source template and contain documents for extraction. The paragraph extractor details page displays a table with the following information:
 
 - **ENTITY**: The name of each entity that contains document(s) for extraction
 - **LANGUAGE(S)**: Shows which languages were detected in the document(s) (e.g., EN for English, FR for French). Only languages configured in your Uwazi instance will be displayed.
@@ -83,9 +81,9 @@ After creating your extractor, locate it in the **Extractors** list and click th
 
 There are two ways to start the extraction process:
 
-1. **Run extraction for all new entities**: Click the **Extract new paragraphs** button at the bottom left of the extractor details page. This will process all entities in the list that are marked as `New`.
+1. **Run extraction for all new entities**: Click the **Extract new paragraphs** button at the bottom left of the paragraph extractor details page. This will process all entities in the list that are marked as `New`.
 
-2. **Run extraction for specific entities**: Select the entities you want to process by checking the boxes next to them. Then click the **Extract paragraphs** button at the bottom left of the extractor details page. This will process only the selected entities.
+2. **Run extraction for specific entities**: Select the entities you want to process by checking the boxes next to them. Then click the **Extract paragraphs** button at the bottom left of the paragraph extractor details page. This will process only the selected entities.
 
 :::{warning}
 Running the extraction process for selected entities will delete all previously extracted paragraphs for these entities and recreate them based on their current document(s). Any previously added metadata to the paragraphs will be lost. Continue only if you are sure you want to update the paragraphs.
