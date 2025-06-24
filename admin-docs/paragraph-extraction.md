@@ -64,4 +64,41 @@ Step 5: Configure extraction settings. Use the dropdown menus to define how para
 
 Once all fields are completed, click **Create**. Your new extractor will appear in the table showing the source and target templates, along with the number of source entities available for extraction.
 
+### Extracting paragraphs
+
+After creating your extractor, locate it in the **Extractors** list and click the **View** button next to it. This will take you to the extractor details page, where you can see all the entities that belong to the source template and contain documents for extraction. The extractor details page displays a table with the following information:
+
+- **ENTITY**: The name of each entity that contains document(s) for extraction
+- **LANGUAGE(S)**: Shows which languages were detected in the document(s) (e.g., EN for English, FR for French). Only languages configured in your Uwazi instance will be displayed.
+- **PARAGRAPHS**: The number of paragraphs extracted from each document (0 if the entity has not been processed yet)
+- **STATUS**: Shows the current processing status:
+
+  - New: A new entity is detected and ready for paragraph extraction
+  - Processing: Entity is currently being processed
+  - Obsolete: A change in the source entity (e.g. adding or replacing a document) has made the extracted paragraphs obsolete, and the entity needs to be reprocessed
+  - Error: An error occurred during extraction
+  - Green checkmark: Extraction has been completed successfully
+
+- **View** button: Click to see the extracted paragraphs from that specific entity
+
+There are two ways to start the extraction process:
+
+1. **Run extraction for all new entities**: Click the **Extract new paragraphs** button at the bottom left of the extractor details page. This will process all entities in the list that are marked as `New`.
+
+2. **Run extraction for specific entities**: Select the entities you want to process by checking the boxes next to them. Then click the **Extract paragraphs** button at the bottom left of the extractor details page. This will process only the selected entities.
+
+:::{warning}
+Running the extraction process for selected entities will delete all previously extracted paragraphs for these entities and recreate them based on their current document(s). Any previously added metadata to the paragraphs will be lost. Continue only if you are sure you want to update the paragraphs.
+:::
+
 ### Viewing extracted paragraphs
+
+When you click the **View** button next to a processed entity, you'll see a detailed view of all extracted paragraphs from the document(s) of that specific entity. The view includes a table with the following columns:
+
+- **PARAGRAPH #**: Sequential number showing the order of paragraphs in the document
+- **LANGUAGE**: Shows which language was detected for each paragraph (EN for English, FR for French)
+- **TEXT**: The actual extracted paragraph content
+- **Group** button: Click to expand or collapse a specific paragraph group. Each paragraph group contains the specific paragraph in all available extracted languages. This allows you to see the same paragraph in different languages if available. By default, all paragraph groups are collapsed, showing the paragraph in the instance's default language.
+- **View** button: Click to see additional details about the extracted paragraph in a panel on the right side of the screen from where you can also navigate to the related paragraph entity.
+
+Click **Open PDF** in the top right to reference the original document in the default language while reviewing extractions to verify that paragraphs were extracted correctly. This interface allows you to quality-check the extraction results.
