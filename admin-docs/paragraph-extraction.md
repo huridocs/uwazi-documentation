@@ -27,7 +27,7 @@ Before using the paragraph extraction tool, consider the following prerequisites
 
 **Access:** This feature is not enabled by default for all Uwazi instances. Contact us if you’d like to use it. When activated, paragraph extraction is available only to users with admin or editor roles.
 
-**Available data and configuration:** The tool works with PDF documents that have been uploaded using a source template. Paragraphs are extracted and saved using a target template. You must also configure relationship types to connect source documents with their extracted paragraphs.
+**Available data and configuration:** The tool works with PDF documents that have been uploaded to entities in your collection. The template used by these entities becomes the source template for paragraph extraction. Extracted paragraphs are saved as new entities using a target template. You must also configure relationship types to connect source documents with their extracted paragraphs.
 
 **Language support:** The tool supports multiple languages, but can only extract paragraphs in languages that are configured in your Uwazi instance. To extract paragraphs in a new language, you must first add that language to your system settings.
 
