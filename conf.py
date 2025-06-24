@@ -21,7 +21,7 @@ from recommonmark.transform import AutoStructify
 # -- Project information -----------------------------------------------------
 
 project = 'Uwazi'
-copyright = '2024, HURIDOCS'
+copyright = '2025, HURIDOCS'
 author = 'HURIDOCS'
 
 

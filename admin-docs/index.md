@@ -17,6 +17,7 @@
    glossary-of-terms
    managing-settings
    building-info-architecture
+   paragraph-extraction
    metadata-extraction
    working-with-entities-in-your-collection
    organising-your-collection
