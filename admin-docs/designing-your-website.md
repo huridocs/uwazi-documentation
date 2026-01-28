@@ -28,7 +28,7 @@ Step 1: Navigate to the **Settings** ![Settings icon](images/cog-solid.png) area
 Step 2: Click on the **Add link** button near the bottom of the screen. Add a title for your item and its corresponding URL.
 
 :::{note}
-If the link is for a **Page** within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash ```/``` and skips the domain name. For example, ```/page/dicxg0oagy3xgr7ixef80k9``` or ```/library/?searchTerm=test```. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
+If the link is for a **Page** within your Uwazi collection, make sure to use the relative URL. A relative URL starts with a slash `/` and skips the domain name. For example, `/page/dicxg0oagy3xgr7ixef80k9` or `/library/?searchTerm=test`. This ensures that the link will open within the same browser tab. If you use the full (absolute) URL including the domain name, the link will open in a new browser tab.
 :::
 
 :::{note}
@@ -50,19 +50,19 @@ Step 1: If you intend to incorporate a logo, you must first upload it into your 
 Step 2: Go to **Global CSS** in the **Tools** section and add your custom CSS in the space provided. Writing a CSS style sheet requires coding knowledge, but here is some sample CSS to start out:
 
 ```css
-    header {
-    background-color: #191916;
-    border-bottom: 0;
-    }
+header {
+  background-color: #191916;
+  border-bottom: 0;
+}
 
-    .logotype {
-    background-image: url(/uploaded_documents/1532354013023uzqh9gcnmztchlw8iacibpgb9.png);
-    background-size: auto 30px;
-    background-position: left 15px center;
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-    width: 265px;
-    }
+.logotype {
+  background-image: url(/uploaded_documents/1532354013023uzqh9gcnmztchlw8iacibpgb9.png);
+  background-size: auto 30px;
+  background-position: left 15px center;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  width: 265px;
+}
 ```
 
 Step 3: Click the **Save** button to save your changes.
@@ -143,10 +143,18 @@ You have access to property names and values passing the correct HTML syntax. Fo
 ```html
 <h1><EntityData value-of="title" /></h1>
 <ul>
-  <li><EntityData label-of="Brief Description" />: <EntityData value-of="Brief Description" /></li>
+  <li>
+    <EntityData label-of="Brief Description" />:
+    <EntityData value-of="Brief Description" />
+  </li>
   <li><EntityData label-of="Country" />: <EntityData value-of="Country" /></li>
-  <li><EntityData label-of="Date of Publication" />: <EntityData value-of="Date of Publication" /></li>
-  <li><EntityData label-of="Cover Image" />: <EntityData value-of="cover_image" /></li>
+  <li>
+    <EntityData label-of="Date of Publication" />:
+    <EntityData value-of="Date of Publication" />
+  </li>
+  <li>
+    <EntityData label-of="Cover Image" />: <EntityData value-of="cover_image" />
+  </li>
 </ul>
 ```
 
@@ -205,24 +213,24 @@ Depending on the type, each property could have somewhat different structures. A
 
 ```json
 {
-  title: 'Name of a book',
-  metadata: {
-    brief_description: {
-      label: "Brief Description",
-      value: "Something nice"
+  "title": "Name of a book",
+  "metadata": {
+    "brief_description": {
+      "label": "Brief Description",
+      "value": "Something nice"
     },
-    country: {
-      label: "Country",
-      value: "Ecuador"
+    "country": {
+      "label": "Country",
+      "value": "Ecuador"
     },
-    date_of_publication: {
-      label: "Date of Publication",
-      value: "13 July, 1977",
-      timestamp: 1621618430
+    "date_of_publication": {
+      "label": "Date of Publication",
+      "value": "13 July, 1977",
+      "timestamp": 1621618430
     },
-    cover_image: {
-      label: "Cover Image",
-      value: "yourdomain.com/media/bookCover.jpg"
+    "cover_image": {
+      "label": "Cover Image",
+      "value": "yourdomain.com/media/bookCover.jpg"
     }
   }
 }
@@ -235,10 +243,22 @@ With this data, you can print out values and labels following the usual `Value` 
 ```html
 <h1><Value path="entity.title" /></h1>
 <ul>
-  <li><Value path="entity.metadata.brief_description.label" />: <Value path="entity.metadata.brief_description.value" /></li>
-  <li><Value path="entity.metadata.country.label" />: <Value path="entity.metadata.country.value" /></li>
-  <li><Value path="entity.metadata.date_of_publication.label" />: <Value path="entity.metadata.date_of_publication.value" /></li>
-  <li><Value path="entity.metadata.cover_image.label" />: <Value path="entity.metadata.cover_image.value" /></li>
+  <li>
+    <Value path="entity.metadata.brief_description.label" />:
+    <Value path="entity.metadata.brief_description.value" />
+  </li>
+  <li>
+    <Value path="entity.metadata.country.label" />:
+    <Value path="entity.metadata.country.value" />
+  </li>
+  <li>
+    <Value path="entity.metadata.date_of_publication.label" />:
+    <Value path="entity.metadata.date_of_publication.value" />
+  </li>
+  <li>
+    <Value path="entity.metadata.cover_image.label" />:
+    <Value path="entity.metadata.cover_image.value" />
+  </li>
 </ul>
 ```
 
@@ -296,7 +316,7 @@ This will print the value `India` on the page's HTML.
 As noted, you could use the `Repeat` component to list both items that are stored in the "Related Entities" metadata property. Here is a more in depth example of how to create a more complex display of property name and property values (also using the `template` dataset):
 
 ```html
-<p><Value path="template.properties.2.label" />: </p>
+<p><Value path="template.properties.2.label" />:</p>
 <ul>
   <Repeat path="entityRaw.metadata.related_entities">
     <li>
@@ -334,25 +354,37 @@ You can check the specific Entity-related datasets in a page by following this p
 
 1. Create a new page with a title and the following contents:
 
-    ```html
-    <h1>My page's Datasets</h1>
-    <h3>Formatted entity data</h3>
-    <pre id="formatted-entity"></pre>
-    <hr />
-    <h3>Raw entity data</h3>
-    <pre id="raw-entity"></pre>
-    <hr />
-    <h3>Template data</h3>
-    <pre id="template-data"></pre>
-    ```
+   ```html
+   <h1>My page's Datasets</h1>
+   <h3>Formatted entity data</h3>
+   <pre id="formatted-entity"></pre>
+   <hr />
+   <h3>Raw entity data</h3>
+   <pre id="raw-entity"></pre>
+   <hr />
+   <h3>Template data</h3>
+   <pre id="template-data"></pre>
+   ```
 
 2. Add the following script to the page:
 
-    ```javascript
-    document.getElementById('formatted-entity').innerHTML = JSON.stringify(datasets.entity, null, 1);
-    document.getElementById('raw-entity').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().entityRaw, null, 1);
-    document.getElementById('template-data').innerHTML = JSON.stringify(window.store.getState().page.datasets.toJS().template, null, 1);
-    ```
+   ```javascript
+   document.getElementById("formatted-entity").innerHTML = JSON.stringify(
+     datasets.entity,
+     null,
+     1,
+   );
+   document.getElementById("raw-entity").innerHTML = JSON.stringify(
+     window.store.getState().page.datasets.toJS().entityRaw,
+     null,
+     1,
+   );
+   document.getElementById("template-data").innerHTML = JSON.stringify(
+     window.store.getState().page.datasets.toJS().template,
+     null,
+     1,
+   );
+   ```
 
 3. Enable the page to be used as an entity view.
 
@@ -362,7 +394,7 @@ Now, when you go to `view` any of the entities using that template, you will be 
 
 ## Add a contact form to a page
 
-A **Contact Form** gives visitors an easy way  to get in touch with you. You can quickly add a contact form to a page by including the code snippet `<ContactForm/>`. You may add additional text in HTML around the contact form, if you wish. Messages sent using the contact form will be delivered to the email address that is configured in your collection’s settings. [Learn more about configuring forms](managing-settings.md#how-to-configure-a-contact-form-or-submission-form).
+A **Contact Form** gives visitors an easy way to get in touch with you. You can quickly add a contact form to a page by including the code snippet `<ContactForm/>`. You may add additional text in HTML around the contact form, if you wish. Messages sent using the contact form will be delivered to the email address that is configured in your collection’s settings. [Learn more about configuring forms](managing-settings.md#how-to-configure-a-contact-form-or-submission-form).
 
 ## Add a submission form to a page
 
@@ -372,11 +404,7 @@ Step 1: You need to define a template for this form in your instance.
 
 Step 2: To any page, you can add this code snippet with the template ID (the numbers in your template URL): `<PublicForm template="ID_OF_THE_TEMPLATE" />`
 
-Step 3 (_optional_):
-
-- A document is a PDF that gets shown in the main section of Uwazi when an entity is viewed. To add a document field to the form, add this line of code: `<PublicForm template="ID_OF_THE_TEMPLATE" file />`
-
-- Attachments are attached to an entity and available for download, but their contents are not visible in Uwazi. To add an attachment field, add this line of code: `<PublicForm template="ID_OF_THE_TEMPLATE" attachments />`
+Step 3 (_optional_): You can allow users to upload files as attachments when submitting the form. These files will be linked to the created entity and available for download, but their contents will not be displayed within Uwazi. To enable this, add the `attachments` attribute to your form code, like this: `<PublicForm template="ID_OF_THE_TEMPLATE" attachments />`
 
 In order for the form to sync into its corresponding template, you must also do the following:
 
