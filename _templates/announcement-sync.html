@@ -1,0 +1,17 @@
+<script>
+  // Keep the layout offsets in sync with the real header height so the
+  // announcement bar never overlaps content, even when its text wraps.
+  (function () {
+    function syncHeaderHeight() {
+      var header = document.querySelector("header");
+      if (!header) return;
+      document.documentElement.style.setProperty(
+        "--header-total",
+        header.offsetHeight + "px",
+      );
+    }
+    syncHeaderHeight();
+    window.addEventListener("load", syncHeaderHeight);
+    window.addEventListener("resize", syncHeaderHeight);
+  })();
+</script>
