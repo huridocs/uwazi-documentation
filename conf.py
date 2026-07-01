@@ -67,8 +67,17 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# Cache-busting hash for the stylesheet so browsers (Safari especially)
+# refetch it whenever its contents change instead of serving a stale copy.
+import hashlib
+import os
+
+_styles_path = os.path.join(os.path.dirname(__file__), '_static', 'styles.css')
+with open(_styles_path, 'rb') as _f:
+    _styles_hash = hashlib.md5(_f.read()).hexdigest()[:8]
+
 html_css_files = [
-    'styles.css',
+    f'styles.css?v={_styles_hash}',
     'https://fonts.googleapis.com/css?family=Ubuntu%7CRoboto&amp;ver=5.3.3'
 ]
 
